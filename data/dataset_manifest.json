@@ -1,0 +1,53 @@
+{
+  "project": "Document Classification & Invoice Extraction",
+  "phase": "Phase 1 - Data Collection & Preprocessing",
+  "classes": ["invoice", "receipt", "email", "contract"],
+  "target_samples_per_class_pilot": 20,
+  "target_samples_per_class_full": 200,
+  "datasets": {
+    "invoice": {
+      "source": "Kaggle Invoice Dataset / RVL-CDIP invoice subset",
+      "url": "https://www.kaggle.com/datasets",
+      "access": "requires_login",
+      "format": "pdf/image",
+      "notes": "Kaggle requires login. RVL-CDIP requires separate download. Pilot uses synthetic text samples."
+    },
+    "receipt": {
+      "source": "SROIE (ICDAR 2019 Scanned Receipts OCR and Information Extraction)",
+      "url": "https://github.com/zzzDavid/ICDAR-2019-SROIE",
+      "access": "public_github",
+      "format": "image/jpg",
+      "notes": "Receipt images with OCR ground truth. Available on GitHub mirror."
+    },
+    "email": {
+      "source": "Enron Email Dataset (CMU)",
+      "url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+      "access": "public_direct",
+      "format": "text",
+      "notes": "1.7GB full dataset. We extract a small subset of ~20-200 emails."
+    },
+    "contract": {
+      "source": "CUAD (Contract Understanding Atticus Dataset)",
+      "url": "https://huggingface.co/datasets/cuad",
+      "access": "public_huggingface",
+      "format": "pdf/text",
+      "notes": "Available via HuggingFace datasets library or direct PDF download from atticus-project GitHub."
+    }
+  },
+  "file_types_supported": [".pdf", ".png", ".jpg", ".jpeg", ".txt"],
+  "metadata_columns": [
+    "doc_id", "file_name", "label", "source_dataset",
+    "file_type", "extraction_method", "raw_text", "clean_text"
+  ],
+  "split_ratios": {
+    "train": 0.70,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "tfidf_settings": {
+    "ngram_range": [1, 2],
+    "max_features": 5000,
+    "min_df": 2,
+    "max_df": 0.9
+  }
+}
