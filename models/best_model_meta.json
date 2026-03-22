@@ -1,0 +1,6 @@
+{
+  "selected_model": "LogisticRegression",
+  "selection_criterion": "macro_f1",
+  "validation_macro_f1": 0.876,
+  "validation_accuracy": 0.8739
+}

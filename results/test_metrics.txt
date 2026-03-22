@@ -1,0 +1,13 @@
+Phase 2 — Final Test Evaluation
+==================================================
+
+Model: LogisticRegression
+Selection criterion: macro_f1
+Validation macro F1: 0.8760
+
+Test Results
+------------------------------
+Accuracy:        0.8917
+Macro Precision: 0.8952
+Macro Recall:    0.8917
+Macro F1:        0.8926

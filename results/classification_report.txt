@@ -1,0 +1,13 @@
+Classification Report — LogisticRegression (Test Set)
+============================================================
+
+              precision    recall  f1-score   support
+
+       email       1.00      0.93      0.97        30
+        form       0.79      0.77      0.78        30
+     invoice       0.79      0.87      0.83        30
+     receipt       1.00      1.00      1.00        30
+
+    accuracy                           0.89       120
+   macro avg       0.90      0.89      0.89       120
+weighted avg       0.90      0.89      0.89       120
