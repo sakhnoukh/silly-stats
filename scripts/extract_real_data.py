@@ -29,8 +29,8 @@ EXT_DIR    = os.path.join(DATA_DIR, "extracted")
 PROC_DIR   = os.path.join(DATA_DIR, "processed")
 FEAT_DIR   = os.path.join(DATA_DIR, "features")
 
-SROIE_IMG_DIR = os.path.join(DATA_DIR, "data - receipts", "img")
-SROIE_BOX_DIR = os.path.join(DATA_DIR, "data - receipts", "box")
+SROIE_IMG_DIR = os.path.join(DATA_DIR, "data - receipts", "data", "img")
+SROIE_BOX_DIR = os.path.join(DATA_DIR, "data - receipts", "data", "box")
 
 RVL_CDIP_MANIFEST   = os.path.join(RAW_DIR, "rvl_cdip_manifest.csv")
 RVL_FORMS_MANIFEST  = os.path.join(RAW_DIR, "rvl_forms_manifest.csv")
@@ -167,11 +167,19 @@ def ocr_image(args):
     abs_path, split, class_name, file_name = args
     try:
         import pytesseract
+        import shutil
         from PIL import Image
+
+        # Auto-detect tesseract — works on Windows, Mac, Linux
+        tess_path = shutil.which("tesseract")
+        if tess_path:
+            pytesseract.pytesseract.tesseract_cmd = tess_path
+
         img = Image.open(abs_path)
         text = pytesseract.image_to_string(img).strip()
         return (abs_path, split, class_name, file_name, text, "ocr", True)
     except Exception as e:
+        print(f"  OCR error on {file_name}: {e}")
         return (abs_path, split, class_name, file_name, "", "ocr_failed", False)
 
 
