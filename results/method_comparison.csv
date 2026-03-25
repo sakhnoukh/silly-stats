@@ -1,0 +1,13 @@
+method,field,gold_docs,correct,accuracy,predicted,missed
+baseline,recipient_name,69,2,0.029,4,65
+baseline,invoice_number,15,9,0.6,10,5
+baseline,total_amount,103,22,0.2136,25,78
+template,recipient_name,69,3,0.0435,14,55
+template,invoice_number,15,9,0.6,11,4
+template,total_amount,103,22,0.2136,25,78
+layout,recipient_name,69,10,0.1449,27,42
+layout,invoice_number,15,8,0.5333,9,6
+layout,total_amount,103,9,0.0874,45,58
+ml,recipient_name,69,60,0.8696,68,1
+ml,invoice_number,15,14,0.9333,15,0
+ml,total_amount,103,83,0.8058,96,7

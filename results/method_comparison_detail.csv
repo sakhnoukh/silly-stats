@@ -1,0 +1,749 @@
+method,doc_id,field,gold,predicted,correct
+baseline,doc_0200,recipient_name,"SHOOK, HARDY & BACON and Ls, Inc.",,0
+baseline,doc_0211,recipient_name,- BROWN & WILLIAMSON TOBACCO CORPORATION,,0
+baseline,doc_0212,recipient_name,payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat,,0
+baseline,doc_0213,recipient_name,T torittard Research center 1,,0
+baseline,doc_0217,recipient_name,LORILLARD INC.,,0
+baseline,doc_0221,recipient_name,RJ. Reynolds Tobacco Company,,0
+baseline,doc_0226,recipient_name,LORILLARD MEDIA SERVICES,,0
+baseline,doc_0228,recipient_name,To: LORILLARD,,0
+baseline,doc_0229,recipient_name,"Operations Center,",,0
+baseline,doc_0231,recipient_name,BROWN & WILLIAMSON TOBACCO CORP. ko,,0
+baseline,doc_0235,recipient_name,Lorillard Research Center,,0
+baseline,doc_0237,recipient_name,"yo__The Tobacco Institute, Inc.",,0
+baseline,doc_0244,recipient_name,8| artwork Reproductions Inc. S| see attached,,0
+baseline,doc_0245,recipient_name,GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER,,0
+baseline,doc_0250,recipient_name,"YO: LEONARD ZAHN & ASSOCIATES, INC,",,0
+baseline,doc_0254,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,,0
+baseline,doc_0256,recipient_name,"Anevican Tobacco Company January 27, 1986",,0
+baseline,doc_0258,recipient_name,"LORILLARD, INC.",,0
+baseline,doc_0260,recipient_name,John Kreisher,,0
+baseline,doc_0261,recipient_name,"Brown & Williamson Tobacco Corporation,",,0
+baseline,doc_0262,recipient_name,CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS,,0
+baseline,doc_0264,recipient_name,LORILLARD MEDIA SERVICES,,0
+baseline,doc_0266,recipient_name,LORILLARD RESEARCH CENTER,,0
+baseline,doc_0267,recipient_name,To: Lorillard Research Center,,0
+baseline,doc_0271,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,,0
+baseline,doc_0272,recipient_name,Lorillard Research Center,,0
+baseline,doc_0274,recipient_name,LORILLARD MEDTA seRvIces Frorasres) | s003736,,0
+baseline,doc_0275,recipient_name,Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT,,0
+baseline,doc_0276,recipient_name,Pp. LORILLARD COMPANY,,0
+baseline,doc_0278,recipient_name,ILIP MORRIS INC RICHMON,,0
+baseline,doc_0281,recipient_name,"®| PHILLIP MORRIS USA, ‘Make checks payable to:",,0
+baseline,doc_0291,recipient_name,‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.,,0
+baseline,doc_0292,recipient_name,R.J. Reynolds Tobacco Company,,0
+baseline,doc_0293,recipient_name,Customer John Vaughan 3==aaaaes,,0
+baseline,doc_0297,recipient_name,PAY TO:___Covington & Burling,,0
+baseline,doc_0303,recipient_name,Lorillard Research Center,,0
+baseline,doc_0307,recipient_name,LORILLARD RESEARCH CENTER,,0
+baseline,doc_0311,recipient_name,FLetsMeAN MILLARD Joenver nasezorr. se 2,SCALE,0
+baseline,doc_0312,recipient_name,"The Council for Tobacco Research, U.S.A.",,0
+baseline,doc_0314,recipient_name,To: Lorillard,,0
+baseline,doc_0315,recipient_name,Philip Morris USA,Philip Morris USA,1
+baseline,doc_0322,recipient_name,sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP,,0
+baseline,doc_0329,recipient_name,Lorillard Research Center,,0
+baseline,doc_0332,recipient_name,LORILLARD RESEARCH CENTER 3i7tore,,0
+baseline,doc_0335,recipient_name,ALLY GARGANG INC.,,0
+baseline,doc_0337,recipient_name,PARENT LOEW'S CORPORATION emus 2% 1004s,,0
+baseline,doc_0338,recipient_name,"Philip Morris, Inc.",,0
+baseline,doc_0339,recipient_name,"Ally & Gargano, Inc.",,0
+baseline,doc_0341,recipient_name,more <i. sid £2 CONTRACT RESEARCH CENTER BVBA,,0
+baseline,doc_0343,recipient_name,Philip Morris Inc. j 25-218:,,0
+baseline,doc_0345,recipient_name,LORILLARD MEDIA SERVICES 2,,0
+baseline,doc_0346,recipient_name,TAN ToBaceo coMPANY NTS INTL,TAN ToBaceo coMPANY NTS INTL,1
+baseline,doc_0347,recipient_name,To: Madison Square Garden,,0
+baseline,doc_0349,recipient_name,The American Tobacco Company,,0
+baseline,doc_0355,recipient_name,Lorillard Research Center,,0
+baseline,doc_0356,recipient_name,PHILIP MORRIS MANAGEMENT CORPORATION,,0
+baseline,doc_0357,recipient_name,"CLIENT: PHILIP MORRIS COMPANIES, INC.",,0
+baseline,doc_0358,recipient_name,Lorillard Inc.,,0
+baseline,doc_0362,recipient_name,LORTLLARD MEDIA SERVICES,,0
+baseline,doc_0364,recipient_name,"‘Check Payable to, [Friends of Joe Roberts",,0
+baseline,doc_0367,recipient_name,"‘The Council for Tobacco Research June 28, 1972",,0
+baseline,doc_0381,recipient_name,"T vorittard, Inc.",,0
+baseline,doc_0382,recipient_name,To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A.,,0
+baseline,doc_0387,recipient_name,Lorillard Média Service ‘reat,,0
+baseline,doc_0388,recipient_name,Philip Morris Inc.,,0
+baseline,doc_0390,recipient_name,YO Lorillard Media Service sovrmeen Lorillard,,0
+baseline,doc_0391,recipient_name,Bill To: Philip Morris,120 Park Avenue,0
+baseline,doc_0395,recipient_name,To: Vlorittard Research Center 7,,0
+baseline,doc_0399,recipient_name,IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP,,0
+baseline,doc_0217,invoice_number,1567-1,1567-1,1
+baseline,doc_0241,invoice_number,90220,90220,1
+baseline,doc_0256,invoice_number,807653,807653,1
+baseline,doc_0258,invoice_number,1558-1,1558-1,1
+baseline,doc_0264,invoice_number,y40018,,0
+baseline,doc_0292,invoice_number,61967,61967,1
+baseline,doc_0302,invoice_number,9109161,9109161,1
+baseline,doc_0307,invoice_number,906516,,0
+baseline,doc_0336,invoice_number,V-91-131,,0
+baseline,doc_0337,invoice_number,371960-01,,0
+baseline,doc_0348,invoice_number,30712,30712,1
+baseline,doc_0357,invoice_number,67550435,,0
+baseline,doc_0358,invoice_number,1496-4,1496-4,1
+baseline,doc_0362,invoice_number,1550850,o3e06,0
+baseline,doc_0380,invoice_number,104264528,104264528,1
+baseline,doc_0201,total_amount,1337.0,,0
+baseline,doc_0202,total_amount,99418.15,,0
+baseline,doc_0205,total_amount,50.92,,0
+baseline,doc_0211,total_amount,73.2,,0
+baseline,doc_0212,total_amount,7910.0,,0
+baseline,doc_0213,total_amount,2250.0,2250.0,1
+baseline,doc_0215,total_amount,3000.0,,0
+baseline,doc_0217,total_amount,7500.0,,0
+baseline,doc_0220,total_amount,102.9,10250.0,0
+baseline,doc_0228,total_amount,599.9,,0
+baseline,doc_0232,total_amount,20.75,,0
+baseline,doc_0233,total_amount,3500.0,,0
+baseline,doc_0234,total_amount,4628.09,,0
+baseline,doc_0238,total_amount,200.0,,0
+baseline,doc_0240,total_amount,203.04,,0
+baseline,doc_0242,total_amount,200.0,,0
+baseline,doc_0244,total_amount,4600.0,,0
+baseline,doc_0247,total_amount,69.19,69.19,1
+baseline,doc_0250,total_amount,540.06,,0
+baseline,doc_0254,total_amount,1203.35,1203.35,1
+baseline,doc_0256,total_amount,7791.12,,0
+baseline,doc_0258,total_amount,7650.0,,0
+baseline,doc_0260,total_amount,31401.8,,0
+baseline,doc_0261,total_amount,68543.58,,0
+baseline,doc_0262,total_amount,7498.08,,0
+baseline,doc_0266,total_amount,2624.26,,0
+baseline,doc_0267,total_amount,2050.0,,0
+baseline,doc_0268,total_amount,4850.0,,0
+baseline,doc_0275,total_amount,77.53,,0
+baseline,doc_0276,total_amount,250.0,,0
+baseline,doc_0277,total_amount,95951.25,,0
+baseline,doc_0279,total_amount,12.35,12.35,1
+baseline,doc_0280,total_amount,49200.6,,0
+baseline,doc_0281,total_amount,137500.0,137500.0,1
+baseline,doc_0282,total_amount,13500.0,,0
+baseline,doc_0285,total_amount,2706.25,,0
+baseline,doc_0286,total_amount,200.89,,0
+baseline,doc_0289,total_amount,13799.0,,0
+baseline,doc_0292,total_amount,29600.0,29600.0,1
+baseline,doc_0293,total_amount,1933.25,,0
+baseline,doc_0294,total_amount,281.06,,0
+baseline,doc_0297,total_amount,100000.0,,0
+baseline,doc_0298,total_amount,50.0,50.0,1
+baseline,doc_0299,total_amount,35730.0,,0
+baseline,doc_0302,total_amount,1405.61,,0
+baseline,doc_0304,total_amount,695.0,,0
+baseline,doc_0305,total_amount,16470.0,16470.0,1
+baseline,doc_0306,total_amount,324.0,,0
+baseline,doc_0307,total_amount,6800.0,6800.0,1
+baseline,doc_0310,total_amount,46400000.0,46400000.0,1
+baseline,doc_0311,total_amount,35.75,,0
+baseline,doc_0312,total_amount,19988.92,19988.92,1
+baseline,doc_0314,total_amount,1200.0,,0
+baseline,doc_0315,total_amount,13000.0,,0
+baseline,doc_0316,total_amount,9809.0,,0
+baseline,doc_0319,total_amount,3600.0,,0
+baseline,doc_0322,total_amount,195079.0,195079.0,1
+baseline,doc_0323,total_amount,1350.0,1350.0,1
+baseline,doc_0326,total_amount,6013.82,,0
+baseline,doc_0327,total_amount,2286.08,2286.08,1
+baseline,doc_0329,total_amount,2050.0,,0
+baseline,doc_0332,total_amount,4400.0,,0
+baseline,doc_0333,total_amount,1.25,1.25,1
+baseline,doc_0334,total_amount,8000.0,,0
+baseline,doc_0335,total_amount,181359.0,,0
+baseline,doc_0336,total_amount,3693.64,,0
+baseline,doc_0338,total_amount,74158.16,,0
+baseline,doc_0341,total_amount,157.5,,0
+baseline,doc_0343,total_amount,76904.0,,0
+baseline,doc_0345,total_amount,95640.5,,0
+baseline,doc_0346,total_amount,20000.0,,0
+baseline,doc_0347,total_amount,68750.0,,0
+baseline,doc_0348,total_amount,297.52,,0
+baseline,doc_0352,total_amount,25000.0,254000.0,0
+baseline,doc_0354,total_amount,2.7,2.7,1
+baseline,doc_0355,total_amount,900.0,,0
+baseline,doc_0356,total_amount,45000.0,,0
+baseline,doc_0357,total_amount,123250.0,123250.0,1
+baseline,doc_0358,total_amount,10580.0,,0
+baseline,doc_0359,total_amount,25000.0,,0
+baseline,doc_0360,total_amount,295.53,,0
+baseline,doc_0361,total_amount,100.0,,0
+baseline,doc_0362,total_amount,69008.0,,0
+baseline,doc_0364,total_amount,500.0,,0
+baseline,doc_0365,total_amount,3000.0,,0
+baseline,doc_0367,total_amount,1903.0,,0
+baseline,doc_0368,total_amount,2010600.06,,0
+baseline,doc_0371,total_amount,2320.72,,0
+baseline,doc_0372,total_amount,8517.26,,0
+baseline,doc_0373,total_amount,2916.75,86.0,0
+baseline,doc_0374,total_amount,53400.0,53400.0,1
+baseline,doc_0380,total_amount,100058.0,,0
+baseline,doc_0381,total_amount,2250.0,,0
+baseline,doc_0382,total_amount,22936.8,,0
+baseline,doc_0383,total_amount,500.0,,0
+baseline,doc_0387,total_amount,43929.04,,0
+baseline,doc_0388,total_amount,60.0,,0
+baseline,doc_0390,total_amount,27599.6,27599.6,1
+baseline,doc_0393,total_amount,46300.0,46300.0,1
+baseline,doc_0395,total_amount,2250.0,2250.0,1
+baseline,doc_0398,total_amount,92458.16,,0
+baseline,doc_0399,total_amount,2529.0,,0
+baseline,doc_0400,total_amount,1557.52,1557.52,1
+template,doc_0200,recipient_name,"SHOOK, HARDY & BACON and Ls, Inc.",,0
+template,doc_0211,recipient_name,- BROWN & WILLIAMSON TOBACCO CORPORATION,,0
+template,doc_0212,recipient_name,payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat,,0
+template,doc_0213,recipient_name,T torittard Research center 1,,0
+template,doc_0217,recipient_name,LORILLARD INC.,"5, Ot",0
+template,doc_0221,recipient_name,RJ. Reynolds Tobacco Company,,0
+template,doc_0226,recipient_name,LORILLARD MEDIA SERVICES,,0
+template,doc_0228,recipient_name,To: LORILLARD,,0
+template,doc_0229,recipient_name,"Operations Center,",,0
+template,doc_0231,recipient_name,BROWN & WILLIAMSON TOBACCO CORP. ko,,0
+template,doc_0235,recipient_name,Lorillard Research Center,PROEETNOMOER Tee,0
+template,doc_0237,recipient_name,"yo__The Tobacco Institute, Inc.",,0
+template,doc_0244,recipient_name,8| artwork Reproductions Inc. S| see attached,,0
+template,doc_0245,recipient_name,GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER,,0
+template,doc_0250,recipient_name,"YO: LEONARD ZAHN & ASSOCIATES, INC,",,0
+template,doc_0254,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,,0
+template,doc_0256,recipient_name,"Anevican Tobacco Company January 27, 1986",,0
+template,doc_0258,recipient_name,"LORILLARD, INC.",,0
+template,doc_0260,recipient_name,John Kreisher,,0
+template,doc_0261,recipient_name,"Brown & Williamson Tobacco Corporation,",,0
+template,doc_0262,recipient_name,CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS,,0
+template,doc_0264,recipient_name,LORILLARD MEDIA SERVICES,,0
+template,doc_0266,recipient_name,LORILLARD RESEARCH CENTER,,0
+template,doc_0267,recipient_name,To: Lorillard Research Center,"Attention: Melanee B, Bennett",0
+template,doc_0271,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,,0
+template,doc_0272,recipient_name,Lorillard Research Center,,0
+template,doc_0274,recipient_name,LORILLARD MEDTA seRvIces Frorasres) | s003736,,0
+template,doc_0275,recipient_name,Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT,,0
+template,doc_0276,recipient_name,Pp. LORILLARD COMPANY,,0
+template,doc_0278,recipient_name,ILIP MORRIS INC RICHMON,,0
+template,doc_0281,recipient_name,"®| PHILLIP MORRIS USA, ‘Make checks payable to:",,0
+template,doc_0291,recipient_name,‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.,,0
+template,doc_0292,recipient_name,R.J. Reynolds Tobacco Company,,0
+template,doc_0293,recipient_name,Customer John Vaughan 3==aaaaes,,0
+template,doc_0297,recipient_name,PAY TO:___Covington & Burling,,0
+template,doc_0303,recipient_name,Lorillard Research Center,ROKER Tae,0
+template,doc_0307,recipient_name,LORILLARD RESEARCH CENTER,699E0TL8,0
+template,doc_0311,recipient_name,FLetsMeAN MILLARD Joenver nasezorr. se 2,SCALE,0
+template,doc_0312,recipient_name,"The Council for Tobacco Research, U.S.A.",,0
+template,doc_0314,recipient_name,To: Lorillard,"P.O, Box 21688",0
+template,doc_0315,recipient_name,Philip Morris USA,Philip Morris USA,1
+template,doc_0322,recipient_name,sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP,,0
+template,doc_0329,recipient_name,Lorillard Research Center,mens,0
+template,doc_0332,recipient_name,LORILLARD RESEARCH CENTER 3i7tore,,0
+template,doc_0335,recipient_name,ALLY GARGANG INC.,,0
+template,doc_0337,recipient_name,PARENT LOEW'S CORPORATION emus 2% 1004s,,0
+template,doc_0338,recipient_name,"Philip Morris, Inc.",,0
+template,doc_0339,recipient_name,"Ally & Gargano, Inc.",,0
+template,doc_0341,recipient_name,more <i. sid £2 CONTRACT RESEARCH CENTER BVBA,,0
+template,doc_0343,recipient_name,Philip Morris Inc. j 25-218:,,0
+template,doc_0345,recipient_name,LORILLARD MEDIA SERVICES 2,,0
+template,doc_0346,recipient_name,TAN ToBaceo coMPANY NTS INTL,TAN ToBaceo coMPANY NTS INTL,1
+template,doc_0347,recipient_name,To: Madison Square Garden,,0
+template,doc_0349,recipient_name,The American Tobacco Company,,0
+template,doc_0355,recipient_name,Lorillard Research Center,Lorillard Research Center,1
+template,doc_0356,recipient_name,PHILIP MORRIS MANAGEMENT CORPORATION,,0
+template,doc_0357,recipient_name,"CLIENT: PHILIP MORRIS COMPANIES, INC.",,0
+template,doc_0358,recipient_name,Lorillard Inc.,,0
+template,doc_0362,recipient_name,LORTLLARD MEDIA SERVICES,,0
+template,doc_0364,recipient_name,"‘Check Payable to, [Friends of Joe Roberts",,0
+template,doc_0367,recipient_name,"‘The Council for Tobacco Research June 28, 1972",,0
+template,doc_0381,recipient_name,"T vorittard, Inc.",Attn: Dr. Danfel J. Heck,0
+template,doc_0382,recipient_name,To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A.,,0
+template,doc_0387,recipient_name,Lorillard Média Service ‘reat,,0
+template,doc_0388,recipient_name,Philip Morris Inc.,,0
+template,doc_0390,recipient_name,YO Lorillard Media Service sovrmeen Lorillard,,0
+template,doc_0391,recipient_name,Bill To: Philip Morris,120 Park Avenue,0
+template,doc_0395,recipient_name,To: Vlorittard Research Center 7,"Attn: Dn, Connie Stone",0
+template,doc_0399,recipient_name,IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP,,0
+template,doc_0217,invoice_number,1567-1,1567-1,1
+template,doc_0241,invoice_number,90220,90220,1
+template,doc_0256,invoice_number,807653,807653,1
+template,doc_0258,invoice_number,1558-1,1558-1,1
+template,doc_0264,invoice_number,y40018,,0
+template,doc_0292,invoice_number,61967,61967,1
+template,doc_0302,invoice_number,9109161,9109161,1
+template,doc_0307,invoice_number,906516,OR184,0
+template,doc_0336,invoice_number,V-91-131,,0
+template,doc_0337,invoice_number,371960-01,,0
+template,doc_0348,invoice_number,30712,30712,1
+template,doc_0357,invoice_number,67550435,,0
+template,doc_0358,invoice_number,1496-4,1496-4,1
+template,doc_0362,invoice_number,1550850,o3e06,0
+template,doc_0380,invoice_number,104264528,104264528,1
+template,doc_0201,total_amount,1337.0,,0
+template,doc_0202,total_amount,99418.15,,0
+template,doc_0205,total_amount,50.92,,0
+template,doc_0211,total_amount,73.2,,0
+template,doc_0212,total_amount,7910.0,,0
+template,doc_0213,total_amount,2250.0,2250.0,1
+template,doc_0215,total_amount,3000.0,,0
+template,doc_0217,total_amount,7500.0,,0
+template,doc_0220,total_amount,102.9,10250.0,0
+template,doc_0228,total_amount,599.9,,0
+template,doc_0232,total_amount,20.75,,0
+template,doc_0233,total_amount,3500.0,,0
+template,doc_0234,total_amount,4628.09,,0
+template,doc_0238,total_amount,200.0,,0
+template,doc_0240,total_amount,203.04,,0
+template,doc_0242,total_amount,200.0,,0
+template,doc_0244,total_amount,4600.0,,0
+template,doc_0247,total_amount,69.19,69.19,1
+template,doc_0250,total_amount,540.06,,0
+template,doc_0254,total_amount,1203.35,1203.35,1
+template,doc_0256,total_amount,7791.12,,0
+template,doc_0258,total_amount,7650.0,,0
+template,doc_0260,total_amount,31401.8,,0
+template,doc_0261,total_amount,68543.58,,0
+template,doc_0262,total_amount,7498.08,,0
+template,doc_0266,total_amount,2624.26,,0
+template,doc_0267,total_amount,2050.0,,0
+template,doc_0268,total_amount,4850.0,,0
+template,doc_0275,total_amount,77.53,,0
+template,doc_0276,total_amount,250.0,,0
+template,doc_0277,total_amount,95951.25,,0
+template,doc_0279,total_amount,12.35,12.35,1
+template,doc_0280,total_amount,49200.6,,0
+template,doc_0281,total_amount,137500.0,137500.0,1
+template,doc_0282,total_amount,13500.0,,0
+template,doc_0285,total_amount,2706.25,,0
+template,doc_0286,total_amount,200.89,,0
+template,doc_0289,total_amount,13799.0,,0
+template,doc_0292,total_amount,29600.0,29600.0,1
+template,doc_0293,total_amount,1933.25,,0
+template,doc_0294,total_amount,281.06,,0
+template,doc_0297,total_amount,100000.0,,0
+template,doc_0298,total_amount,50.0,50.0,1
+template,doc_0299,total_amount,35730.0,,0
+template,doc_0302,total_amount,1405.61,,0
+template,doc_0304,total_amount,695.0,,0
+template,doc_0305,total_amount,16470.0,16470.0,1
+template,doc_0306,total_amount,324.0,,0
+template,doc_0307,total_amount,6800.0,6800.0,1
+template,doc_0310,total_amount,46400000.0,46400000.0,1
+template,doc_0311,total_amount,35.75,,0
+template,doc_0312,total_amount,19988.92,19988.92,1
+template,doc_0314,total_amount,1200.0,,0
+template,doc_0315,total_amount,13000.0,,0
+template,doc_0316,total_amount,9809.0,,0
+template,doc_0319,total_amount,3600.0,,0
+template,doc_0322,total_amount,195079.0,195079.0,1
+template,doc_0323,total_amount,1350.0,1350.0,1
+template,doc_0326,total_amount,6013.82,,0
+template,doc_0327,total_amount,2286.08,2286.08,1
+template,doc_0329,total_amount,2050.0,,0
+template,doc_0332,total_amount,4400.0,,0
+template,doc_0333,total_amount,1.25,1.25,1
+template,doc_0334,total_amount,8000.0,,0
+template,doc_0335,total_amount,181359.0,,0
+template,doc_0336,total_amount,3693.64,,0
+template,doc_0338,total_amount,74158.16,,0
+template,doc_0341,total_amount,157.5,,0
+template,doc_0343,total_amount,76904.0,,0
+template,doc_0345,total_amount,95640.5,,0
+template,doc_0346,total_amount,20000.0,,0
+template,doc_0347,total_amount,68750.0,,0
+template,doc_0348,total_amount,297.52,,0
+template,doc_0352,total_amount,25000.0,254000.0,0
+template,doc_0354,total_amount,2.7,2.7,1
+template,doc_0355,total_amount,900.0,,0
+template,doc_0356,total_amount,45000.0,,0
+template,doc_0357,total_amount,123250.0,123250.0,1
+template,doc_0358,total_amount,10580.0,,0
+template,doc_0359,total_amount,25000.0,,0
+template,doc_0360,total_amount,295.53,,0
+template,doc_0361,total_amount,100.0,,0
+template,doc_0362,total_amount,69008.0,,0
+template,doc_0364,total_amount,500.0,,0
+template,doc_0365,total_amount,3000.0,,0
+template,doc_0367,total_amount,1903.0,,0
+template,doc_0368,total_amount,2010600.06,,0
+template,doc_0371,total_amount,2320.72,,0
+template,doc_0372,total_amount,8517.26,,0
+template,doc_0373,total_amount,2916.75,86.0,0
+template,doc_0374,total_amount,53400.0,53400.0,1
+template,doc_0380,total_amount,100058.0,,0
+template,doc_0381,total_amount,2250.0,,0
+template,doc_0382,total_amount,22936.8,,0
+template,doc_0383,total_amount,500.0,,0
+template,doc_0387,total_amount,43929.04,,0
+template,doc_0388,total_amount,60.0,,0
+template,doc_0390,total_amount,27599.6,27599.6,1
+template,doc_0393,total_amount,46300.0,46300.0,1
+template,doc_0395,total_amount,2250.0,2250.0,1
+template,doc_0398,total_amount,92458.16,,0
+template,doc_0399,total_amount,2529.0,,0
+template,doc_0400,total_amount,1557.52,1557.52,1
+layout,doc_0200,recipient_name,"SHOOK, HARDY & BACON and Ls, Inc.","SHOOK, HARDY & BACON and Ls, Inc.",1
+layout,doc_0211,recipient_name,- BROWN & WILLIAMSON TOBACCO CORPORATION,,0
+layout,doc_0212,recipient_name,payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat,,0
+layout,doc_0213,recipient_name,T torittard Research center 1,Dr. Daniel J. Heck,0
+layout,doc_0217,recipient_name,LORILLARD INC.,"Borriston Laboratories, Ine",0
+layout,doc_0221,recipient_name,RJ. Reynolds Tobacco Company,,0
+layout,doc_0226,recipient_name,LORILLARD MEDIA SERVICES,CENTURY PUBLISHING COMPANY,0
+layout,doc_0228,recipient_name,To: LORILLARD,,0
+layout,doc_0229,recipient_name,"Operations Center,",,0
+layout,doc_0231,recipient_name,BROWN & WILLIAMSON TOBACCO CORP. ko,,0
+layout,doc_0235,recipient_name,Lorillard Research Center,,0
+layout,doc_0237,recipient_name,"yo__The Tobacco Institute, Inc.",,0
+layout,doc_0244,recipient_name,8| artwork Reproductions Inc. S| see attached,,0
+layout,doc_0245,recipient_name,GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER,53535,0
+layout,doc_0250,recipient_name,"YO: LEONARD ZAHN & ASSOCIATES, INC,",,0
+layout,doc_0254,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,,0
+layout,doc_0256,recipient_name,"Anevican Tobacco Company January 27, 1986",,0
+layout,doc_0258,recipient_name,"LORILLARD, INC.","Boriston Laboratories, Inc",0
+layout,doc_0260,recipient_name,John Kreisher,10 ast 5!,0
+layout,doc_0261,recipient_name,"Brown & Williamson Tobacco Corporation,","Brown & Williamson Tobacco Corporation,",1
+layout,doc_0262,recipient_name,CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS,,0
+layout,doc_0264,recipient_name,LORILLARD MEDIA SERVICES,LORILLARD MEDIA SERVICES,1
+layout,doc_0266,recipient_name,LORILLARD RESEARCH CENTER,"MICROBIOLOGICAL — so su100we.L Ro, Sereno aay",0
+layout,doc_0267,recipient_name,To: Lorillard Research Center,To: Lorillard Research Center,1
+layout,doc_0271,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,PHILIP MORRIS MANAGEMENT CORP.,1
+layout,doc_0272,recipient_name,Lorillard Research Center,,0
+layout,doc_0274,recipient_name,LORILLARD MEDTA seRvIces Frorasres) | s003736,,0
+layout,doc_0275,recipient_name,Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT,Ree PHILIP MORRIS U.S.A. .,0
+layout,doc_0276,recipient_name,Pp. LORILLARD COMPANY,,0
+layout,doc_0278,recipient_name,ILIP MORRIS INC RICHMON,,0
+layout,doc_0281,recipient_name,"®| PHILLIP MORRIS USA, ‘Make checks payable to:","Miami, FL 33056",0
+layout,doc_0291,recipient_name,‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.,,0
+layout,doc_0292,recipient_name,R.J. Reynolds Tobacco Company,R.J. Reynolds Tobacco Company,1
+layout,doc_0293,recipient_name,Customer John Vaughan 3==aaaaes,Service charge of 3% per month (36% per annum),0
+layout,doc_0297,recipient_name,PAY TO:___Covington & Burling,,0
+layout,doc_0303,recipient_name,Lorillard Research Center,,0
+layout,doc_0307,recipient_name,LORILLARD RESEARCH CENTER,"HAZLETON LABORATORIES AMERICA, INC. USE THIS NUMBER",0
+layout,doc_0311,recipient_name,FLetsMeAN MILLARD Joenver nasezorr. se 2,,0
+layout,doc_0312,recipient_name,"The Council for Tobacco Research, U.S.A.",,0
+layout,doc_0314,recipient_name,To: Lorillard,,0
+layout,doc_0315,recipient_name,Philip Morris USA,Sold to:,0
+layout,doc_0322,recipient_name,sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP,,0
+layout,doc_0329,recipient_name,Lorillard Research Center,L_ Attention: Melanee B. Bennett J,0
+layout,doc_0332,recipient_name,LORILLARD RESEARCH CENTER 3i7tore,LORILLARD RESEARCH CENTER 3i7tore,1
+layout,doc_0335,recipient_name,ALLY GARGANG INC.,ALLY GARGANG INC.,1
+layout,doc_0337,recipient_name,PARENT LOEW'S CORPORATION emus 2% 1004s,PARENT LOEW'S CORPORATION emus 2% 1004s,1
+layout,doc_0338,recipient_name,"Philip Morris, Inc.",,0
+layout,doc_0339,recipient_name,"Ally & Gargano, Inc.",,0
+layout,doc_0341,recipient_name,more <i. sid £2 CONTRACT RESEARCH CENTER BVBA,,0
+layout,doc_0343,recipient_name,Philip Morris Inc. j 25-218:,,0
+layout,doc_0345,recipient_name,LORILLARD MEDIA SERVICES 2,"TRIANGLE PUBLICATIONS, INC. TEAMS.",0
+layout,doc_0346,recipient_name,TAN ToBaceo coMPANY NTS INTL,,0
+layout,doc_0347,recipient_name,To: Madison Square Garden,,0
+layout,doc_0349,recipient_name,The American Tobacco Company,,0
+layout,doc_0355,recipient_name,Lorillard Research Center,"Payment Address: LITTON BIONETICS, INC. - (103)",0
+layout,doc_0356,recipient_name,PHILIP MORRIS MANAGEMENT CORPORATION,,0
+layout,doc_0357,recipient_name,"CLIENT: PHILIP MORRIS COMPANIES, INC.",,0
+layout,doc_0358,recipient_name,Lorillard Inc.,,0
+layout,doc_0362,recipient_name,LORTLLARD MEDIA SERVICES,"TRIANGLE PUBLICATIONS, INC.",0
+layout,doc_0364,recipient_name,"‘Check Payable to, [Friends of Joe Roberts",,0
+layout,doc_0367,recipient_name,"‘The Council for Tobacco Research June 28, 1972",,0
+layout,doc_0381,recipient_name,"T vorittard, Inc.","LABORATORIES AMERICA, INC",0
+layout,doc_0382,recipient_name,To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A.,,0
+layout,doc_0387,recipient_name,Lorillard Média Service ‘reat,,0
+layout,doc_0388,recipient_name,Philip Morris Inc.,,0
+layout,doc_0390,recipient_name,YO Lorillard Media Service sovrmeen Lorillard,,0
+layout,doc_0391,recipient_name,Bill To: Philip Morris,,0
+layout,doc_0395,recipient_name,To: Vlorittard Research Center 7,To: Vlorittard Research Center 7,1
+layout,doc_0399,recipient_name,IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP,,0
+layout,doc_0217,invoice_number,1567-1,1567-1,1
+layout,doc_0241,invoice_number,90220,,0
+layout,doc_0256,invoice_number,807653,807653,1
+layout,doc_0258,invoice_number,1558-1,1558-1,1
+layout,doc_0264,invoice_number,y40018,,0
+layout,doc_0292,invoice_number,61967,61967,1
+layout,doc_0302,invoice_number,9109161,9109161,1
+layout,doc_0307,invoice_number,906516,,0
+layout,doc_0336,invoice_number,V-91-131,,0
+layout,doc_0337,invoice_number,371960-01,,0
+layout,doc_0348,invoice_number,30712,30712,1
+layout,doc_0357,invoice_number,67550435,,0
+layout,doc_0358,invoice_number,1496-4,1496-4,1
+layout,doc_0362,invoice_number,1550850,o3e06,0
+layout,doc_0380,invoice_number,104264528,104264528,1
+layout,doc_0201,total_amount,1337.0,,0
+layout,doc_0202,total_amount,99418.15,9262.05,0
+layout,doc_0205,total_amount,50.92,,0
+layout,doc_0211,total_amount,73.2,,0
+layout,doc_0212,total_amount,7910.0,,0
+layout,doc_0213,total_amount,2250.0,25065.0,0
+layout,doc_0215,total_amount,3000.0,,0
+layout,doc_0217,total_amount,7500.0,600.0,0
+layout,doc_0220,total_amount,102.9,205.0,0
+layout,doc_0228,total_amount,599.9,18.0,0
+layout,doc_0232,total_amount,20.75,,0
+layout,doc_0233,total_amount,3500.0,,0
+layout,doc_0234,total_amount,4628.09,,0
+layout,doc_0238,total_amount,200.0,,0
+layout,doc_0240,total_amount,203.04,,0
+layout,doc_0242,total_amount,200.0,,0
+layout,doc_0244,total_amount,4600.0,,0
+layout,doc_0247,total_amount,69.19,,0
+layout,doc_0250,total_amount,540.06,,0
+layout,doc_0254,total_amount,1203.35,,0
+layout,doc_0256,total_amount,7791.12,7791.12,1
+layout,doc_0258,total_amount,7650.0,11140.0,0
+layout,doc_0260,total_amount,31401.8,31401.8,1
+layout,doc_0261,total_amount,68543.58,482.0,0
+layout,doc_0262,total_amount,7498.08,,0
+layout,doc_0266,total_amount,2624.26,2624.26,1
+layout,doc_0267,total_amount,2050.0,2050.0,1
+layout,doc_0268,total_amount,4850.0,7149056.0,0
+layout,doc_0275,total_amount,77.53,80.0,0
+layout,doc_0276,total_amount,250.0,,0
+layout,doc_0277,total_amount,95951.25,90.0,0
+layout,doc_0279,total_amount,12.35,,0
+layout,doc_0280,total_amount,49200.6,,0
+layout,doc_0281,total_amount,137500.0,28.0,0
+layout,doc_0282,total_amount,13500.0,466.0,0
+layout,doc_0285,total_amount,2706.25,,0
+layout,doc_0286,total_amount,200.89,,0
+layout,doc_0289,total_amount,13799.0,,0
+layout,doc_0292,total_amount,29600.0,54999.0,0
+layout,doc_0293,total_amount,1933.25,12.0,0
+layout,doc_0294,total_amount,281.06,,0
+layout,doc_0297,total_amount,100000.0,,0
+layout,doc_0298,total_amount,50.0,,0
+layout,doc_0299,total_amount,35730.0,11140.0,0
+layout,doc_0302,total_amount,1405.61,15.0,0
+layout,doc_0304,total_amount,695.0,5959.0,0
+layout,doc_0305,total_amount,16470.0,,0
+layout,doc_0306,total_amount,324.0,85.0,0
+layout,doc_0307,total_amount,6800.0,6800.0,1
+layout,doc_0310,total_amount,46400000.0,,0
+layout,doc_0311,total_amount,35.75,,0
+layout,doc_0312,total_amount,19988.92,,0
+layout,doc_0314,total_amount,1200.0,98.0,0
+layout,doc_0315,total_amount,13000.0,,0
+layout,doc_0316,total_amount,9809.0,289.0,0
+layout,doc_0319,total_amount,3600.0,,0
+layout,doc_0322,total_amount,195079.0,,0
+layout,doc_0323,total_amount,1350.0,,0
+layout,doc_0326,total_amount,6013.82,6013.0,1
+layout,doc_0327,total_amount,2286.08,,0
+layout,doc_0329,total_amount,2050.0,90.0,0
+layout,doc_0332,total_amount,4400.0,4400.0,1
+layout,doc_0333,total_amount,1.25,1995.0,0
+layout,doc_0334,total_amount,8000.0,,0
+layout,doc_0335,total_amount,181359.0,2588.0,0
+layout,doc_0336,total_amount,3693.64,10378.0,0
+layout,doc_0338,total_amount,74158.16,,0
+layout,doc_0341,total_amount,157.5,,0
+layout,doc_0343,total_amount,76904.0,,0
+layout,doc_0345,total_amount,95640.5,,0
+layout,doc_0346,total_amount,20000.0,,0
+layout,doc_0347,total_amount,68750.0,30.0,0
+layout,doc_0348,total_amount,297.52,297.52,1
+layout,doc_0352,total_amount,25000.0,,0
+layout,doc_0354,total_amount,2.7,8967.0,0
+layout,doc_0355,total_amount,900.0,119.0,0
+layout,doc_0356,total_amount,45000.0,,0
+layout,doc_0357,total_amount,123250.0,,0
+layout,doc_0358,total_amount,10580.0,11140.0,0
+layout,doc_0359,total_amount,25000.0,,0
+layout,doc_0360,total_amount,295.53,,0
+layout,doc_0361,total_amount,100.0,,0
+layout,doc_0362,total_amount,69008.0,90.0,0
+layout,doc_0364,total_amount,500.0,,0
+layout,doc_0365,total_amount,3000.0,,0
+layout,doc_0367,total_amount,1903.0,1130.0,0
+layout,doc_0368,total_amount,2010600.06,,0
+layout,doc_0371,total_amount,2320.72,,0
+layout,doc_0372,total_amount,8517.26,,0
+layout,doc_0373,total_amount,2916.75,902.0,0
+layout,doc_0374,total_amount,53400.0,43200.0,0
+layout,doc_0380,total_amount,100058.0,2030394178.0,0
+layout,doc_0381,total_amount,2250.0,90.0,0
+layout,doc_0382,total_amount,22936.8,,0
+layout,doc_0383,total_amount,500.0,,0
+layout,doc_0387,total_amount,43929.04,,0
+layout,doc_0388,total_amount,60.0,,0
+layout,doc_0390,total_amount,27599.6,,0
+layout,doc_0393,total_amount,46300.0,20.0,0
+layout,doc_0395,total_amount,2250.0,60.0,0
+layout,doc_0398,total_amount,92458.16,,0
+layout,doc_0399,total_amount,2529.0,,0
+layout,doc_0400,total_amount,1557.52,1557.52,1
+ml,doc_0200,recipient_name,"SHOOK, HARDY & BACON and Ls, Inc.","SHOOK, HARDY & BACON and Ls, Inc.",1
+ml,doc_0211,recipient_name,- BROWN & WILLIAMSON TOBACCO CORPORATION,- BROWN & WILLIAMSON TOBACCO CORPORATION,1
+ml,doc_0212,recipient_name,payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat,payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat,1
+ml,doc_0213,recipient_name,T torittard Research center 1,T torittard Research center 1,1
+ml,doc_0217,recipient_name,LORILLARD INC.,"Borriston Laboratories, Ine",0
+ml,doc_0221,recipient_name,RJ. Reynolds Tobacco Company,RJ. Reynolds Tobacco Company,1
+ml,doc_0226,recipient_name,LORILLARD MEDIA SERVICES,LORILLARD MEDIA SERVICES,1
+ml,doc_0228,recipient_name,To: LORILLARD,Telemarketing Services voice Numaer; 116936,0
+ml,doc_0229,recipient_name,"Operations Center,","Operations Center,",1
+ml,doc_0231,recipient_name,BROWN & WILLIAMSON TOBACCO CORP. ko,BROWN & WILLIAMSON TOBACCO CORP. ko,1
+ml,doc_0235,recipient_name,Lorillard Research Center,Lorillard Research Center,1
+ml,doc_0237,recipient_name,"yo__The Tobacco Institute, Inc.","yo__The Tobacco Institute, Inc.",1
+ml,doc_0244,recipient_name,8| artwork Reproductions Inc. S| see attached,8| artwork Reproductions Inc. S| see attached,1
+ml,doc_0245,recipient_name,GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER,GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER,1
+ml,doc_0250,recipient_name,"YO: LEONARD ZAHN & ASSOCIATES, INC,","YO: LEONARD ZAHN & ASSOCIATES, INC,",1
+ml,doc_0254,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,PHILIP MORRIS MANAGEMENT CORP.,1
+ml,doc_0256,recipient_name,"Anevican Tobacco Company January 27, 1986","Anevican Tobacco Company January 27, 1986",1
+ml,doc_0258,recipient_name,"LORILLARD, INC.","Boriston Laboratories, Inc",0
+ml,doc_0260,recipient_name,John Kreisher,John Kreisher,1
+ml,doc_0261,recipient_name,"Brown & Williamson Tobacco Corporation,","Brown & Williamson Tobacco Corporation,",1
+ml,doc_0262,recipient_name,CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS,CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS,1
+ml,doc_0264,recipient_name,LORILLARD MEDIA SERVICES,LORILLARD MEDIA SERVICES,1
+ml,doc_0266,recipient_name,LORILLARD RESEARCH CENTER,LORILLARD RESEARCH CENTER,1
+ml,doc_0267,recipient_name,To: Lorillard Research Center,To: Lorillard Research Center,1
+ml,doc_0271,recipient_name,PHILIP MORRIS MANAGEMENT CORP.,PHILIP MORRIS MANAGEMENT CORP.,1
+ml,doc_0272,recipient_name,Lorillard Research Center,Lorillard Research Center,1
+ml,doc_0274,recipient_name,LORILLARD MEDTA seRvIces Frorasres) | s003736,LORILLARD MEDTA seRvIces Frorasres) | s003736,1
+ml,doc_0275,recipient_name,Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT,Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT,1
+ml,doc_0276,recipient_name,Pp. LORILLARD COMPANY,Pp. LORILLARD COMPANY,1
+ml,doc_0278,recipient_name,ILIP MORRIS INC RICHMON,ILIP MORRIS INC RICHMON,1
+ml,doc_0281,recipient_name,"®| PHILLIP MORRIS USA, ‘Make checks payable to:","®| PHILLIP MORRIS USA, ‘Make checks payable to:",1
+ml,doc_0291,recipient_name,‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.,‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.,1
+ml,doc_0292,recipient_name,R.J. Reynolds Tobacco Company,R.J. Reynolds Tobacco Company,1
+ml,doc_0293,recipient_name,Customer John Vaughan 3==aaaaes,Customer John Vaughan 3==aaaaes,1
+ml,doc_0297,recipient_name,PAY TO:___Covington & Burling,‘THE TOBACCO INSTITUTE,0
+ml,doc_0303,recipient_name,Lorillard Research Center,Lorillard Research Center,1
+ml,doc_0307,recipient_name,LORILLARD RESEARCH CENTER,LORILLARD RESEARCH CENTER,1
+ml,doc_0311,recipient_name,FLetsMeAN MILLARD Joenver nasezorr. se 2,FLetsMeAN MILLARD Joenver nasezorr. se 2,1
+ml,doc_0312,recipient_name,"The Council for Tobacco Research, U.S.A.",Bt Mason RESEARCH INSTITUTE,0
+ml,doc_0314,recipient_name,To: Lorillard,Research Center,0
+ml,doc_0315,recipient_name,Philip Morris USA,Philip Morris USA,1
+ml,doc_0322,recipient_name,sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP,sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP,1
+ml,doc_0329,recipient_name,Lorillard Research Center,Lorillard Research Center,1
+ml,doc_0332,recipient_name,LORILLARD RESEARCH CENTER 3i7tore,LORILLARD RESEARCH CENTER 3i7tore,1
+ml,doc_0335,recipient_name,ALLY GARGANG INC.,ALLY GARGANG INC.,1
+ml,doc_0337,recipient_name,PARENT LOEW'S CORPORATION emus 2% 1004s,PARENT LOEW'S CORPORATION emus 2% 1004s,1
+ml,doc_0338,recipient_name,"Philip Morris, Inc.","Philip Morris, Inc.",1
+ml,doc_0339,recipient_name,"Ally & Gargano, Inc.","Ally & Gargano, Inc.",1
+ml,doc_0341,recipient_name,more <i. sid £2 CONTRACT RESEARCH CENTER BVBA,more <i. sid £2 CONTRACT RESEARCH CENTER BVBA,1
+ml,doc_0343,recipient_name,Philip Morris Inc. j 25-218:,Philip Morris Inc. j 25-218:,1
+ml,doc_0345,recipient_name,LORILLARD MEDIA SERVICES 2,LORILLARD MEDIA SERVICES 2,1
+ml,doc_0346,recipient_name,TAN ToBaceo coMPANY NTS INTL,TAN ToBaceo coMPANY NTS INTL,1
+ml,doc_0347,recipient_name,To: Madison Square Garden,To: Madison Square Garden,1
+ml,doc_0349,recipient_name,The American Tobacco Company,91 wR 633 | Professional Services:,0
+ml,doc_0355,recipient_name,Lorillard Research Center,Lorillard Research Center,1
+ml,doc_0356,recipient_name,PHILIP MORRIS MANAGEMENT CORPORATION,PHILIP MORRIS MANAGEMENT CORPORATION,1
+ml,doc_0357,recipient_name,"CLIENT: PHILIP MORRIS COMPANIES, INC.","CLIENT: PHILIP MORRIS COMPANIES, INC.",1
+ml,doc_0358,recipient_name,Lorillard Inc.,Lorillard Inc.,1
+ml,doc_0362,recipient_name,LORTLLARD MEDIA SERVICES,LORTLLARD MEDIA SERVICES,1
+ml,doc_0364,recipient_name,"‘Check Payable to, [Friends of Joe Roberts",,0
+ml,doc_0367,recipient_name,"‘The Council for Tobacco Research June 28, 1972","‘The Council for Tobacco Research June 28, 1972",1
+ml,doc_0381,recipient_name,"T vorittard, Inc.","T vorittard, Inc.",1
+ml,doc_0382,recipient_name,To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A.,To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A.,1
+ml,doc_0387,recipient_name,Lorillard Média Service ‘reat,Lorillard Média Service ‘reat,1
+ml,doc_0388,recipient_name,Philip Morris Inc.,Philip Morris Inc.,1
+ml,doc_0390,recipient_name,YO Lorillard Media Service sovrmeen Lorillard,YO Lorillard Media Service sovrmeen Lorillard,1
+ml,doc_0391,recipient_name,Bill To: Philip Morris,Description: Digital imaging Services,0
+ml,doc_0395,recipient_name,To: Vlorittard Research Center 7,To: Vlorittard Research Center 7,1
+ml,doc_0399,recipient_name,IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP,IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP,1
+ml,doc_0217,invoice_number,1567-1,1567-1,1
+ml,doc_0241,invoice_number,90220,90220,1
+ml,doc_0256,invoice_number,807653,807653,1
+ml,doc_0258,invoice_number,1558-1,1558-1,1
+ml,doc_0264,invoice_number,y40018,y40018,1
+ml,doc_0292,invoice_number,61967,61967,1
+ml,doc_0302,invoice_number,9109161,9109161,1
+ml,doc_0307,invoice_number,906516,906516,1
+ml,doc_0336,invoice_number,V-91-131,V-91-131,1
+ml,doc_0337,invoice_number,371960-01,371960-01,1
+ml,doc_0348,invoice_number,30712,30712,1
+ml,doc_0357,invoice_number,67550435,67550435,1
+ml,doc_0358,invoice_number,1496-4,1496-4,1
+ml,doc_0362,invoice_number,1550850,o3e06,0
+ml,doc_0380,invoice_number,104264528,104264528,1
+ml,doc_0201,total_amount,1337.0,1337.0,1
+ml,doc_0202,total_amount,99418.15,99418.15,1
+ml,doc_0205,total_amount,50.92,50.92,1
+ml,doc_0211,total_amount,73.2,,0
+ml,doc_0212,total_amount,7910.0,7910.0,1
+ml,doc_0213,total_amount,2250.0,2250.0,1
+ml,doc_0215,total_amount,3000.0,3000.0,1
+ml,doc_0217,total_amount,7500.0,7500.0,1
+ml,doc_0220,total_amount,102.9,10250.0,0
+ml,doc_0228,total_amount,599.9,599.9,1
+ml,doc_0232,total_amount,20.75,23.19,0
+ml,doc_0233,total_amount,3500.0,,0
+ml,doc_0234,total_amount,4628.09,19625.0,0
+ml,doc_0238,total_amount,200.0,200.0,1
+ml,doc_0240,total_amount,203.04,,0
+ml,doc_0242,total_amount,200.0,200.0,1
+ml,doc_0244,total_amount,4600.0,4600.0,1
+ml,doc_0247,total_amount,69.19,9500.0,0
+ml,doc_0250,total_amount,540.06,540.06,1
+ml,doc_0254,total_amount,1203.35,1203.35,1
+ml,doc_0256,total_amount,7791.12,6652.98,0
+ml,doc_0258,total_amount,7650.0,7650.0,1
+ml,doc_0260,total_amount,31401.8,31401.8,1
+ml,doc_0261,total_amount,68543.58,52540.05,0
+ml,doc_0262,total_amount,7498.08,4346.4,0
+ml,doc_0266,total_amount,2624.26,2624.26,1
+ml,doc_0267,total_amount,2050.0,2050.0,1
+ml,doc_0268,total_amount,4850.0,4850.0,1
+ml,doc_0275,total_amount,77.53,,0
+ml,doc_0276,total_amount,250.0,250.0,1
+ml,doc_0277,total_amount,95951.25,95951.25,1
+ml,doc_0279,total_amount,12.35,12.35,1
+ml,doc_0280,total_amount,49200.6,49200.6,1
+ml,doc_0281,total_amount,137500.0,137500.0,1
+ml,doc_0282,total_amount,13500.0,13500.0,1
+ml,doc_0285,total_amount,2706.25,2706.25,1
+ml,doc_0286,total_amount,200.89,200.89,1
+ml,doc_0289,total_amount,13799.0,13799.0,1
+ml,doc_0292,total_amount,29600.0,29600.0,1
+ml,doc_0293,total_amount,1933.25,1933.25,1
+ml,doc_0294,total_amount,281.06,,0
+ml,doc_0297,total_amount,100000.0,100000.0,1
+ml,doc_0298,total_amount,50.0,50.0,1
+ml,doc_0299,total_amount,35730.0,35730.0,1
+ml,doc_0302,total_amount,1405.61,1405.61,1
+ml,doc_0304,total_amount,695.0,695.0,1
+ml,doc_0305,total_amount,16470.0,16470.0,1
+ml,doc_0306,total_amount,324.0,324.0,1
+ml,doc_0307,total_amount,6800.0,6800.0,1
+ml,doc_0310,total_amount,46400000.0,46400000.0,1
+ml,doc_0311,total_amount,35.75,35.75,1
+ml,doc_0312,total_amount,19988.92,16525.23,0
+ml,doc_0314,total_amount,1200.0,1200.0,1
+ml,doc_0315,total_amount,13000.0,13000.0,1
+ml,doc_0316,total_amount,9809.0,9809.0,1
+ml,doc_0319,total_amount,3600.0,3600.0,1
+ml,doc_0322,total_amount,195079.0,195079.0,1
+ml,doc_0323,total_amount,1350.0,1350.0,1
+ml,doc_0326,total_amount,6013.82,6013.82,1
+ml,doc_0327,total_amount,2286.08,2286.08,1
+ml,doc_0329,total_amount,2050.0,2050.0,1
+ml,doc_0332,total_amount,4400.0,75230.38,0
+ml,doc_0333,total_amount,1.25,1.25,1
+ml,doc_0334,total_amount,8000.0,8000.0,1
+ml,doc_0335,total_amount,181359.0,181359.0,1
+ml,doc_0336,total_amount,3693.64,3693.64,1
+ml,doc_0338,total_amount,74158.16,65058.16,0
+ml,doc_0341,total_amount,157.5,157.5,1
+ml,doc_0343,total_amount,76904.0,76514.0,1
+ml,doc_0345,total_amount,95640.5,95640.5,1
+ml,doc_0346,total_amount,20000.0,20000.0,1
+ml,doc_0347,total_amount,68750.0,68750.0,1
+ml,doc_0348,total_amount,297.52,297.52,1
+ml,doc_0352,total_amount,25000.0,254000.0,0
+ml,doc_0354,total_amount,2.7,,0
+ml,doc_0355,total_amount,900.0,900.0,1
+ml,doc_0356,total_amount,45000.0,45000.0,1
+ml,doc_0357,total_amount,123250.0,123250.0,1
+ml,doc_0358,total_amount,10580.0,10580.0,1
+ml,doc_0359,total_amount,25000.0,,0
+ml,doc_0360,total_amount,295.53,295.53,1
+ml,doc_0361,total_amount,100.0,100.0,1
+ml,doc_0362,total_amount,69008.0,58690.8,0
+ml,doc_0364,total_amount,500.0,500.0,1
+ml,doc_0365,total_amount,3000.0,3000.0,1
+ml,doc_0367,total_amount,1903.0,1903.0,1
+ml,doc_0368,total_amount,2010600.06,2010600.06,1
+ml,doc_0371,total_amount,2320.72,2320.72,1
+ml,doc_0372,total_amount,8517.26,8517.26,1
+ml,doc_0373,total_amount,2916.75,2916.75,1
+ml,doc_0374,total_amount,53400.0,53400.0,1
+ml,doc_0380,total_amount,100058.0,100058.0,1
+ml,doc_0381,total_amount,2250.0,2250.0,1
+ml,doc_0382,total_amount,22936.8,22936.8,1
+ml,doc_0383,total_amount,500.0,500.0,1
+ml,doc_0387,total_amount,43929.04,43929.04,1
+ml,doc_0388,total_amount,60.0,60.0,1
+ml,doc_0390,total_amount,27599.6,21280.6,0
+ml,doc_0393,total_amount,46300.0,46300.0,1
+ml,doc_0395,total_amount,2250.0,2250.0,1
+ml,doc_0398,total_amount,92458.16,92458.16,1
+ml,doc_0399,total_amount,2529.0,2529.0,1
+ml,doc_0400,total_amount,1557.52,1557.52,1

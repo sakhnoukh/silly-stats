@@ -1,0 +1,167 @@
+====================================================================================================
+Phase 2 — Validation Metrics
+====================================================================================================
+
+SUMMARY TABLE (sorted by Macro F1)
+----------------------------------------------------------------------------------------------------
+Model                                      Accuracy   F1 (macro)  F1 (weighted)  Train (s)
+----------------------------------------------------------------------------------------------------
+LogisticRegression (Baseline)                1.0000       1.0000         1.0000      0.007
+RandomForest (Baseline)                      1.0000       1.0000         1.0000      0.062
+LinearSVM (Baseline)                         1.0000       1.0000         1.0000      0.003
+MultinomialNB (Baseline)                     1.0000       1.0000         1.0000      0.001
+LogisticRegression (PCA)                     1.0000       1.0000         1.0000      0.042
+RandomForest (PCA)                           1.0000       1.0000         1.0000      0.114
+LinearSVM (PCA)                              1.0000       1.0000         1.0000      0.070
+LogisticRegression (SVD)                     1.0000       1.0000         1.0000      0.021
+RandomForest (SVD)                           1.0000       1.0000         1.0000      0.081
+LinearSVM (SVD)                              1.0000       1.0000         1.0000      0.043
+
+====================================================================================================
+CONFUSION MATRICES (Row = True, Col = Predicted)
+====================================================================================================
+
+LogisticRegression (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+RandomForest (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LinearSVM (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+MultinomialNB (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LogisticRegression (PCA)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+RandomForest (PCA)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LinearSVM (PCA)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LogisticRegression (SVD)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+RandomForest (SVD)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LinearSVM (SVD)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+====================================================================================================
+DETAILED METRICS (Precision, Recall, F1 per class)
+====================================================================================================
+
+
+LogisticRegression (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+RandomForest (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+LinearSVM (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+MultinomialNB (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+LogisticRegression (PCA)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+RandomForest (PCA)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+LinearSVM (PCA)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+LogisticRegression (SVD)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+RandomForest (SVD)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
+
+LinearSVM (SVD)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000

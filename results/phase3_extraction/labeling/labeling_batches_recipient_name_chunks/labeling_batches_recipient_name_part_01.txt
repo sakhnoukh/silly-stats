@@ -1,0 +1,639 @@
+================================================================================
+doc_id=doc_0323
+file_name=rvl_train_21065.png
+field=recipient_name
+
+raw_text_excerpt:
+@ HAZLETON casonatonies AMERICA. INC
+
+—— Se
+
+5200 LEESBURG TURNPIKE VIENNA VA 27160, USA 5 rere
+CLIENT COPY
+
+Lorillard Research Center uyr6saz 1710026
+
+P.O. Box 21686
+
+Greensboro, NC 27420
+
+Attn: Dr. J. Daniel Heck
+REMIT TO:
+
+FRORET NOOR TENS
+
+699-633/ 642-369 Net 30 days
+DER NUMER
+
+DeSCRETON
+
+Multidose Range-finding Study in Rats
+
+Test Materi:
+A178
+
+—
+TOTAL AMOUNT DUE: $ 1,350.00
+
+ZZ9LETLS
+
+candidates:
+1) candidate_text=@ HAZLETON casonatonies AMERICA. INC | source=early_org_line | line_idx=0
+2) candidate_text=Attn: Dr. J. Daniel Heck | source=attention_line | line_idx=7
+3) candidate_text=FRORET NOOR TENS | source=after_label | line_idx=9
+4) candidate_text=DER NUMER | source=after_label | line_idx=11
+5) candidate_text=DeSCRETON | source=after_label | line_idx=12
+
+================================================================================
+doc_id=doc_0297
+file_name=rvl_train_08022.png
+field=recipient_name
+
+raw_text_excerpt:
+DATE:___October 23,
+
+d
+
+1989
+
+‘THE TOBACCO INSTITUTE
+
+(CHECK REQUEST
+
+AMOUNT,
+
+$100,000.00
+
+PAY TO:___Covington & Burling
+
+RECEIVED.
+
+1201 Pennsylvania Avenue, N.W.
+
+Washington, D.C. 20044
+
+TOT BH
+
+Attention:
+
+EXPLANATION:
+
+John P. Rupp, Esquire
+
+ACCOUNTING
+
+Support of international ETS symposium at McGill University |
+
+in Montreal, Quebec.
+
+DISTRIBUTION OF CHARGES
+
+cost cewrer | accour | sop cost
+NUMBER MUMBER | | NUMBER EXPLANATION aMouNT
+1302 7301 1100 000.0
+=
+bali
+Requested By:_John Lyons ‘Approved By:_( verity
+
+Mail check to vendor:,
+
+v_ Return check to:
+
+‘Specify date the check is to be maile October 30
+
+1939
+
+vs
+
+v
+
+TH016-1258
+
+candidates:
+1) candidate_text=‘THE TOBACCO INSTITUTE | source=early_org_line | line_idx=3
+2) candidate_text=PAY TO:___Covington & Burling | source=early_org_line | line_idx=7
+3) candidate_text=John P. Rupp, Esquire | source=after_label | line_idx=14
+4) candidate_text=Support of international ETS symposium at McGill University | | source=after_label | line_idx=16
+5) candidate_text=in Montreal, Quebec. | source=after_label | line_idx=17
+
+================================================================================
+doc_id=doc_0244
+file_name=rvl_train_09106.png
+field=recipient_name
+
+raw_text_excerpt:
+Stamos connecricur 0042380
+
+REQUISITIONER'S
+
+wet
+
+BRAN WESTRUCTIONS — Wm, YOUR BWCICES N_OUBLGATE TD CONBGNEE
+(MESS STRUCTED OTERMSE BELOW
+
+MAL IVOGES TO OF ADMRUSTRATWE CENTER
+FH ciiena. accounts omneE
+
+GHESTER vane 20891-8100
+
+re Dorit
+
+puncase onoer no. MI 10465
+Yebruary 26, 198
+
+Tis som ec.ow PEON peace a stil
+8| artwork Reproductions Inc. S| see attached
+Pp Attn: Mr. A. Workstel "
+Pp 111 Bighth Avene P
+v New York, BY 20011
+€ t
+R °
+SRST OT SLT FEBE OBEY ZI
+To Greensboro: Week of February 29 See Attached
+See Attached Met Cash 10 Days
+‘ouanmTY | _ CODE NO DESCRIPTION PACE
+MALIBU Kings Point of Sale Mater
+12,00 Horizontal Header Cards, 19" x 15" $640.00/4
+$3.00 off
+Material Code No. CDA-02600-m85—3A
+12,00 Vertical Header Cards, 15" x 19" 9640.00/%
+$3.00 off
+Material Code wo. CDA-10500-N85-3A
+20,00) Carton Cards, 8-1/2" x 9" $290.00/4
+$3.00 off
+Mater{al Code Wo. CDA-02600-M85-3A
+15,00 Posters, 15* x 19° $300.00/¥
+$3.00 off
+Material Code wo. CDA~20000-H85-3A
+20,00 Bhelf Talkers, 10" x 4-1/2" $240.00/4
+Material Code No. CDA~26300-MB5-A
+Plus Separations, Plates & Prep $4,600.00
+¥ Continued on next page
+ACCOUNTING CHARGE NO Sales Adv. Exp.
+TD SeTON CERRO Tw your UES
+Ci emre sales vie N
+
+candidates:
+1) candidate_text=MAL IVOGES TO OF ADMRUSTRATWE CENTER | source=early_org_line | line_idx=5
+2) candidate_text=8| artwork Reproductions Inc. S| see attached | source=early_org_line | line_idx=12
+3) candidate_text=Pp Attn: Mr. A. Workstel " | source=attention_line | line_idx=13
+4) candidate_text=Pp 111 Bighth Avene P | source=after_label | line_idx=14
+5) candidate_text=v New York, BY 20011 | source=after_label | line_idx=15
+6) candidate_text=SRST OT SLT FEBE OBEY ZI | source=after_label | line_idx=18
+7) candidate_text=To Greensboro: Week of February 29 See Attached | source=early_org_line | line_idx=19
+
+================================================================================
+doc_id=doc_0205
+file_name=rvl_train_09013.png
+field=recipient_name
+
+raw_text_excerpt:
+uw » MAIL
+
+SO 4053
+
+#4 20° 64
+. R 7 . Re .
+Cc CG CONTRACT RESEARCH CENTER | avaase.at.
+
+B+1932 Zaventem
+
+TollaarvAverue du Poage 1016
+‘TELEFAX (fax nr: 02/763 06 13 TeletooryTéiéphone 2-720 65 04
+Hewlett-Packard N.V. ~ ten eibtex: 02-728 12.00 f
+
+t.a.v. Verkoopsdienst HPLC -
+Woluwedal 100
+
+JGB/MIV :
+B-1200 Bru '
+Bestel Nr./Commande Noy 834/93 DatinvOate: . 11 feb.93
+10 in lade eval 09 oe Petula varweted
+POSITIE - HOEVEELHEID EENHEIO ARMKELOMSCHRUVING PRUS
+POSITION QUANTITE UNITE DESIGNATION O’ARTICLE PRK
+(a)
+¥ z
+1 3 stuk ODS. Hypersil, 250 x 4 mm
+HP ref. 79926 OD - 584
+aan BF 8.452,-/stuk + 25.356,
+2 5 tuk Lichrospher, RP 18, 4 x 4 mm
+uP ref. 79925 OD - 504.
+: : aan BE 5.114,-/stuk 22.210.=
+
+a TOTAAL: = 50.926,-
+
+:
+Loveringstermip/Déial de Iason: 7*de week 8s y agen 3
+
+woe \ Management Accountant. ..
+Loveringsvoorwaarden/Condiions de Ivison: franko
+
+_ Botalngen4ze/Mode de palament: 30 dagen einde shy . ot,
+; ° -
+
+ynaopeuxs ze: Zaventem, Beigit ~
+
+SLTWATVA Generale tanealniee ob Bang
+we.
+
+candidates:
+1) candidate_text=Cc CG CONTRACT RESEARCH CENTER | avaase.at. | source=early_org_line | line_idx=4
+
+================================================================================
+doc_id=doc_0267
+file_name=rvl_train_06301.png
+field=recipient_name
+
+raw_text_excerpt:
+@HAZLETON
+
+LABORATORIES AMERICA, INC.
+8200 LEESBURG TURNPIKE, VIENNA, VA 22180, US A
+
+INVOICE
+r
+
+To: Lorillard Research Center
+420 English Street
+P.O. Box 21688
+Greensboro, NC 27420
+
+[Attention: Melanee B, Bennett
+
+Invoice Date_October 23, 1984 payment Terms,__Net_30 Days.
+
+“HANG ¢
+
+TELEPHONE
+(703) 893-5400
+
+a]
+
+Charges
+Thru Period
+
+Description
+
+| Mebay Subacute Toxicity Study in Rats with | +,
+1 B76 B 3 .
+
+&
+
+ae Tle- ey
+
+ba 4590
+se Rect HIN
+
+i, Final report mailed: 10/22/1984 $ 2,050.00
+
+“8D Soa
+
+aay
+
+$ 2,050.00
+
+candidates:
+1) candidate_text=LABORATORIES AMERICA, INC. | source=early_org_line | line_idx=1
+2) candidate_text=To: Lorillard Research Center | source=early_org_line | line_idx=5
+3) candidate_text=[Attention: Melanee B, Bennett | source=attention_line | line_idx=9
+
+================================================================================
+doc_id=doc_0357
+file_name=rvl_train_17339.png
+field=recipient_name
+
+raw_text_excerpt:
+® staTewet e weve
+BAKER, DONELSON, BEARMAN & CALDWELL iors
+"A PROFESSIONAL CORPORATION
+01 Pennsylvania Avenue, NW.
+Suite £00, Market Square
+WASHINGTON, D.C. 20004
+
+(202) 508-3400 / FACSIMILE (20) 508-3402
+
+‘MURRAY H. BRING, ESQUIRE June 24, 1998
+PHILIP MORRIS COMPANIES, INC. 1D: 824063-0001
+120 PARK AVENUE Invoice No,: 67550435
+NEW YORK, NEW YORK 10017-5592
+
+ser
+CLIENT: PHILIP MORRIS COMPANIES, INC.
+
+MATTER: GENERAL
+
+CURRENT PROFESSIONAL SERVICES RENDERED $ 123,250.00
+
+TOTAL AMOUNT DUE $ 123,250.00
+
+OK TO PAY.
+
+Charge Acct. Code:
+
+Approved By:
+__
+
+PLEASE RETURN THIS SUMMARY PAGE WITH YOUR
+REMITTANCE TO INSURE ACCURATE CREDIT
+
+sLeessezoz
+
+candidates:
+1) candidate_text="A PROFESSIONAL CORPORATION | source=early_org_line | line_idx=2
+2) candidate_text=CLIENT: PHILIP MORRIS COMPANIES, INC. | source=early_org_line | line_idx=12
+3) candidate_text=OK TO PAY. | source=early_org_line | line_idx=16
+4) candidate_text=REMITTANCE TO INSURE ACCURATE CREDIT | source=early_org_line | line_idx=21
+
+================================================================================
+doc_id=doc_0241
+file_name=rvl_train_13849.png
+field=recipient_name
+
+raw_text_excerpt:
+Metropolitan Sunday Newspapers, Inc.
+
+P.0. BOX 8188 CHURCH STREET STATION © NEW YORK. N.Y. 10008 © (212) 689-8200
+
+\ \y Ke w Pace a
+
+contacto,
+
+333385
+INvorce 90220 97738
+
+LORILLARD COMPANY ses bare 10-03-85, os7
+
+666 FIFTH AVENUE TERMSNET: OVE 9-21-85
+
+NEw YORK New YORK 10019
+
+ATT MS GETTY EPPERSON SUNDAY SELECT 12 4 coLoR
+
+8OSTON HERALD 10708785
+
+cricaco-TALSURE pop PAGE fore OPEN tosoesas: ,
+DAYTON DAILY/ NEWS. “PAGE ‘OPEN 10706785 As171e67 |
+DETRONE NEMS : -errq|tovoeses |asreesese~|~taeaazes7 o]
+
+ST-LOUIS~-GLOgE- DEMOCRAT: Sr]20706285 |o-4 9367275 | ——-~3 4695959
+yA woRL pee OPEN ‘|rosasvas| “3361-95 27857266 |
+
+roraL 774980051 (oe
+CASH DISCOUNT NOY ABEL IGABLE PLEASE PAY Tha:
+
+S5~209243
+
+—HAs.S
+
+candidates:
+1) candidate_text=Metropolitan Sunday Newspapers, Inc. | source=early_org_line | line_idx=0
+
+================================================================================
+doc_id=doc_0341
+file_name=rvl_train_04533.png
+field=recipient_name
+
+raw_text_excerpt:
+‘ HEE say
+
+wes REG “V
+
+SLOUGH PROPERTIES NV.
+
+(er MMOBIJERB GAUNTLET NV. ~SA)
+
+“Toluin e : i
+ET Sh seas Wane
+Twopone ege
+a4 RC
+more <i. sid £2 CONTRACT RESEARCH CENTER BVBA
+BTW, same (XS TOLLAAN 10) "es
+Wi Bos 316867 : 3 . wo
+: Vie M12 1932 = SINT-STEVENS-WOLYWE Lo bd {
+Gebouw: : x
+PLANET’ T :
+TOULAAN 101A
+1932 - SINTCSTEVENS-WOLUME :
+Unit: TAO .
+
+B.1.W. BE 435.085.985, . ay as
+SUWO.;f Brussel, 01/12/1993
+
+“
+Onschrtjving Periode : :
+Huur 01/12/1993 tot_ 31/12/1993 157.500 _
+. * Totaal te betalen 157.500
+‘ . . 6
+‘Betal ing vie domtctIteringsopdratht,“Iisy%youext ritoimad 62 Lesatc
+hp Ps samSendadtobom ob “vob asabioe
+
+099248202
+
+candidates:
+1) candidate_text=more <i. sid £2 CONTRACT RESEARCH CENTER BVBA | source=early_org_line | line_idx=8
+
+================================================================================
+doc_id=doc_0258
+file_name=rvl_val_04091.png
+field=recipient_name
+
+raw_text_excerpt:
+BORRISTON
+
+LABORATORIES, INC.
+
+Boriston Laboratories, Inc
+5050 Beech Place
+Temple Hills, Maryland 20748
+
+Telephone. 301-899-3536
+Telex: 248838,
+
+March 21, 1984
+
+LORILLARD, INC.
+420 English Street
+Greensboro, NC 27405
+
+* INVOICE *
+
+Attention: Dr. Harry Minnemeyer
+REFERENCE: Purchase Order No. 354
+BLIREF.: 231558
+INVOICE NO.: 1558-1
+
+DESCRIPTION AMOUNT
+Induction of Hepatic Microsomal Enzymes with A-73, A-84 $ 7,650.00
+
+and A-94
+
+REMITTANCE ADDRESS:
+Borriston Laboratories, Inc.
+DYNAMAC BUILDING
+
+11140 Rockville Pike
+Rockville, MD 20852
+
+* INVOICE *
+
+‘A Subsidiary of Dynamac Intemational, Inc.
+
+99402600
+
+candidates:
+1) candidate_text=LABORATORIES, INC. | source=early_org_line | line_idx=1
+2) candidate_text=Boriston Laboratories, Inc | source=early_org_line | line_idx=2
+3) candidate_text=LORILLARD, INC. | source=early_org_line | line_idx=8
+4) candidate_text=Attention: Dr. Harry Minnemeyer | source=attention_line | line_idx=12
+5) candidate_text=BLIREF.: 231558 | source=after_label | line_idx=14
+6) candidate_text=Borriston Laboratories, Inc. | source=early_org_line | line_idx=20
+
+================================================================================
+doc_id=doc_0364
+file_name=rvl_test_22339.png
+field=recipient_name
+
+raw_text_excerpt:
+POLITICAL CAMPAIGN CONTRIBUTION REQUEST
+
+Date: 10/8/97 State: EX) Local: 1]
+RECIPIENT INFORMATON
+Name Toe Roberts
+(etna Candilatr Fin rg)
+‘Address PO Box 1362
+Bellmawr, NJ 08099
+‘Current Office and District | Representative, 5
+‘Aspired Office and District | same
+Party Democrat
+Leadership Position
+‘Committees “Assembly Appropriations, Joint Budget Oversight,
+Gite Chaimantir) Assembly Task Force on Education Funding
+CONTRIBUTION INFORMATION
+
+Amount [$500.00
+Account Code {1401-7710-NJ-01
+‘Check Payable to, [Friends of Joe Roberts
+Address |
+(Only if different from address above) |
+Notes next round
+(Date needed; fundraiser date: other info. J
+
+Approved by.
+
+Revised 2/95
+
+" 's signafufe)
+
+‘Senior Vice President's signature)
+
+11640-0077
+
+candidates:
+1) candidate_text=‘Check Payable to, [Friends of Joe Roberts | source=early_org_line | line_idx=16
+
+================================================================================
+doc_id=doc_0343
+file_name=rvl_train_02979.png
+field=recipient_name
+
+raw_text_excerpt:
+Statement of Ps
+Premiums THE HARTFORD | Office [Date
+
+sat $$
+Philip Morris Inc. j 25-218:
+Fillet Head] ettective Date Due Date [ Premium* | Nett
+wR | P 26101 ap/e hfe — | $76,514.00 $76,904.00
+
+Et
+
+Remarks: TGR" Indicates Credit
+Ninth Installment, Workers, Compens
+
+wooed LOTR, NaXe.
+
+7
+Ifyou have an escrow account with a mortgagee,
+Mr, Robert Hagendorf please forward ths ill the morigagee.
+Philip Morris Ine, Please ret ¢ this statement with
+lease return a copy of this statement with your
+LAZO Park, Aves 4 check made payable to The Hartford.
+Rew York, N-y, 10017
+Form ACC-453-3 Printed in US.A o)
+
+osorzees0z
+
+candidates:
+1) candidate_text=Philip Morris Inc. j 25-218: | source=early_org_line | line_idx=3
+2) candidate_text=LAZO Park, Aves 4 check made payable to The Hartford. | source=early_org_line | line_idx=15
+
+================================================================================
+doc_id=doc_0227
+file_name=rvl_train_00870.png
+field=recipient_name
+
+raw_text_excerpt:
+DEC-19-1994 10:33 22 213 4139
+
+Rent O ee SSUPIILASCHUG INC WRN TIMARN IUEPIIOEE I> PAANO.
+
+a
+4d
+
+Philip Morrie : 009969
+
+120 Park Avenue 12/02/94
+
+New York, NY 10017 Job No PM = 2128
+Terms : upon receipt
+
+ATTN: Mary Pottorff Page : 1
+
+Job title : Courtesy of Choice
+
+Description : Trip to gosta Rica (December 4 - 7, 1994)
+
+Initial planning and resegich up November 7:
+
+Dan Murphy 17 hors @ $175.00 per hour 2,975.00
+
+TP Lippincott 12 hours @ $160.00 per hour 1,920.00
+
+Translation and adagtation of questionnaire
+
+and presentation boards:
+
+8. Medina 5 hours @ $ 95.00 per hour 475.00
+
+Review of Courtesy of Choice material, creation
+
+of materials for visit, review Spanish text
+
+of all materials, preparation, planning and
+
+co-ordination including liaison with Carlos
+
+Manuel Echeverria (Costa Rica representative) :
+
+Chris Spring 4 hours @ $175.00 per hour 700.00
+
+TP Lippincott 14 hours @ $160.00 per hour 2,240.00
+
+Dan Murphy 4 hours @ $175.00 per hour 700.00
+
+Briefing, consulting, program management.
+
+meetings and interviews including on-site
+
+visit (December 4 - 7, 1994):
+
+Dan Murphy 29 hours @ $175.00 per hour 5,075.00
+
+TP Lippincott 33 hours @ $160.00 per hour 5,280.00
+
+2029376774
+
+candidates:
+1) candidate_text=Rent O ee SSUPIILASCHUG INC WRN TIMARN IUEPIIOEE I> PAANO. | source=early_org_line | line_idx=1
+2) candidate_text=ATTN: Mary Pottorff Page : 1 | source=attention_line | line_idx=8
+3) candidate_text=Job title : Courtesy of Choice | source=after_label | line_idx=9

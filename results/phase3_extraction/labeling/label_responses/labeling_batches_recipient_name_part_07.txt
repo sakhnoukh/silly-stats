@@ -1,0 +1,31 @@
+doc_id=doc_0333 | field=recipient_name | candidate_text=AYRETT, FREE. ,GINSBERG, INC. INVOICE DATE | label=0
+doc_id=doc_0333 | field=recipient_name | candidate_text=YEAR-TO-DATE BILLINGS? oniaINAL | label=0
+doc_id=doc_0226 | field=recipient_name | candidate_text=CENTURY PUBLISHING COMPANY | label=0
+doc_id=doc_0226 | field=recipient_name | candidate_text=LORILLARD MEDIA SERVICES | label=1
+doc_id=doc_0226 | field=recipient_name | candidate_text=i 666 STH AVENUE: | label=0
+doc_id=doc_0226 | field=recipient_name | candidate_text=ATTN: BETTY EPPERSON | label=0
+doc_id=doc_0305 | field=recipient_name | candidate_text=Ehrhart-Babic Associates, Inc. | label=0
+doc_id=doc_0305 | field=recipient_name | candidate_text=A Member of the Ehrhare-Bable Group | label=0
+doc_id=doc_0374 | field=recipient_name | candidate_text=SHOOSMITH BROS.,INC. | label=0
+doc_id=doc_0359 | field=recipient_name | candidate_text=MANAGEMENT CORPORATION | label=0
+doc_id=doc_0359 | field=recipient_name | candidate_text=RETURN TO: NAM: DEPAATHENT | BUILDING/FLOOR|PHONE EXT, | label=0
+doc_id=doc_0211 | field=recipient_name | candidate_text=- BROWN & WILLIAMSON TOBACCO CORPORATION | label=1
+doc_id=doc_0338 | field=recipient_name | candidate_text=Philip Morris, Inc. | label=1
+doc_id=doc_0338 | field=recipient_name | candidate_text=NIELSEN FOOD INDEX SERVICE ON CIGARETTES | label=0
+doc_id=doc_0338 | field=recipient_name | candidate_text=Credit due for monthly report | label=0
+doc_id=doc_0338 | field=recipient_name | candidate_text=Less 10% Simultaneous Service 0 3 | label=0
+doc_id=doc_0221 | field=recipient_name | candidate_text=RJ. Reynolds Tobacco Company | label=1
+doc_id=doc_0317 | field=recipient_name | candidate_text=THE TOBACCO INSTITUTE | label=0
+doc_id=doc_0317 | field=recipient_name | candidate_text=cost center | accouws | gop cost | label=0
+doc_id=doc_0317 | field=recipient_name | candidate_text=Mail check to vendor: Return check to:_A 4 | label=0
+doc_id=doc_0317 | field=recipient_name | candidate_text=Specify date the check is to be mailed: | label=0
+doc_id=doc_0398 | field=recipient_name | candidate_text=Client Re de | label=0
+doc_id=doc_0375 | field=recipient_name | candidate_text=) BE MADE PAYABLE TO “HNTVERSITY | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=Structural Display, Inc, esses wormeos wy sos | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=Sold to: | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=Philip Morris USA | label=1
+doc_id=doc_0315 | field=recipient_name | candidate_text=120 Park Avenue | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=New York, NY 10017 | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=Attn: Mr. Jose Fontanez | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=one Haulmark Vendor Trailer | label=0
+doc_id=doc_0315 | field=recipient_name | candidate_text=G.V.W.R. 7000 LBS | label=0

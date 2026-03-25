@@ -1,0 +1,151 @@
+doc_id,file_name,_split,recipient_name,invoice_number,total_amount
+doc_0200,rvl_train_20953.png,val,"SHOOK, HARDY & BACON and Ls, Inc.",,
+doc_0201,rvl_train_03649.png,train,,,1337.0
+doc_0202,rvl_train_00820.png,train,,,99418.15
+doc_0204,rvl_val_24300.png,train,,,
+doc_0205,rvl_train_09013.png,train,,,50.92
+doc_0206,rvl_train_08025.png,train,,,
+doc_0207,rvl_test_07315.png,train,,,
+doc_0209,rvl_train_03359.png,train,,,
+doc_0210,rvl_train_24133.png,val,,,
+doc_0211,rvl_train_24271.png,train,- BROWN & WILLIAMSON TOBACCO CORPORATION,,73.2
+doc_0212,rvl_train_22175.png,train,payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat,,7910.0
+doc_0213,rvl_train_17871.png,val,T torittard Research center 1,,2250.0
+doc_0215,rvl_train_19350.png,train,,,3000.0
+doc_0217,rvl_val_01042.png,train,LORILLARD INC.,1567-1,7500.0
+doc_0219,rvl_train_00977.png,train,,,
+doc_0220,rvl_train_03071.png,test,,,102.9
+doc_0221,rvl_val_07165.png,train,RJ. Reynolds Tobacco Company,,
+doc_0226,rvl_val_06516.png,train,LORILLARD MEDIA SERVICES,,
+doc_0227,rvl_train_00870.png,train,,,
+doc_0228,rvl_train_22982.png,train,To: LORILLARD,,599.9
+doc_0229,rvl_train_17857.png,train,"Operations Center,",,
+doc_0230,rvl_train_21296.png,val,,,
+doc_0231,rvl_train_07224.png,train,BROWN & WILLIAMSON TOBACCO CORP. ko,,
+doc_0232,rvl_test_14720.png,train,,,20.75
+doc_0233,rvl_train_13747.png,train,,,3500.0
+doc_0234,rvl_train_19310.png,val,,,4628.09
+doc_0235,rvl_train_09116.png,val,Lorillard Research Center,,
+doc_0237,rvl_train_24865.png,train,"yo__The Tobacco Institute, Inc.",,
+doc_0238,rvl_train_05232.png,train,,,200.0
+doc_0240,rvl_train_22877.png,test,,,203.04
+doc_0241,rvl_train_13849.png,train,,90220,
+doc_0242,rvl_val_05095.png,train,,,200.0
+doc_0244,rvl_train_09106.png,train,8| artwork Reproductions Inc. S| see attached,,4600.0
+doc_0245,rvl_train_03350.png,train,GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER,,
+doc_0246,rvl_train_11030.png,train,,,
+doc_0247,rvl_train_03040.png,train,,,69.19
+doc_0249,rvl_train_11271.png,val,,,
+doc_0250,rvl_test_03170.png,val,"YO: LEONARD ZAHN & ASSOCIATES, INC,",,540.06
+doc_0251,rvl_val_11764.png,train,,,
+doc_0252,rvl_train_19783.png,train,,,
+doc_0253,rvl_val_01424.png,train,,,
+doc_0254,rvl_val_08668.png,test,PHILIP MORRIS MANAGEMENT CORP.,,1203.35
+doc_0256,rvl_train_15055.png,train,"Anevican Tobacco Company January 27, 1986",807653,7791.12
+doc_0257,rvl_train_17572.png,val,,,
+doc_0258,rvl_val_04091.png,train,"LORILLARD, INC.",1558-1,7650.0
+doc_0260,rvl_train_02583.png,val,John Kreisher,,31401.8
+doc_0261,rvl_test_18090.png,train,"Brown & Williamson Tobacco Corporation,",,68543.58
+doc_0262,rvl_train_09607.png,train,CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS,,7498.08
+doc_0264,rvl_train_11851.png,val,LORILLARD MEDIA SERVICES,y40018,
+doc_0266,rvl_train_18919.png,train,LORILLARD RESEARCH CENTER,,2624.26
+doc_0267,rvl_train_06301.png,train,To: Lorillard Research Center,,2050.0
+doc_0268,rvl_train_02280.png,train,,,4850.0
+doc_0270,rvl_train_23088.png,train,,,
+doc_0271,rvl_train_21669.png,val,PHILIP MORRIS MANAGEMENT CORP.,,
+doc_0272,rvl_train_07468.png,train,Lorillard Research Center,,
+doc_0274,rvl_train_02615.png,train,LORILLARD MEDTA seRvIces Frorasres) | s003736,,
+doc_0275,rvl_train_09483.png,train,Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT,,77.53
+doc_0276,rvl_train_03310.png,train,Pp. LORILLARD COMPANY,,250.0
+doc_0277,rvl_train_14858.png,train,,,95951.25
+doc_0278,rvl_val_09109.png,val,ILIP MORRIS INC RICHMON,,
+doc_0279,rvl_train_20831.png,train,,,12.35
+doc_0280,rvl_val_12456.png,train,,,49200.6
+doc_0281,rvl_train_11955.png,train,"®| PHILLIP MORRIS USA, ‘Make checks payable to:",,137500.0
+doc_0282,rvl_train_05330.png,train,,,13500.0
+doc_0283,rvl_train_12131.png,train,,,
+doc_0285,rvl_train_06866.png,train,,,2706.25
+doc_0286,rvl_train_21961.png,train,,,200.89
+doc_0288,rvl_val_22998.png,val,,,
+doc_0289,rvl_train_21235.png,train,,,13799.0
+doc_0291,rvl_train_22399.png,test,‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.,,
+doc_0292,rvl_train_19961.png,test,R.J. Reynolds Tobacco Company,61967,29600.0
+doc_0293,rvl_train_17503.png,train,Customer John Vaughan 3==aaaaes,,1933.25
+doc_0294,rvl_train_20807.png,test,,,281.06
+doc_0297,rvl_train_08022.png,train,PAY TO:___Covington & Burling,,100000.0
+doc_0298,rvl_val_05355.png,test,,,50.0
+doc_0299,rvl_val_15148.png,train,,,35730.0
+doc_0301,rvl_val_12434.png,test,,,
+doc_0302,rvl_train_08846.png,val,,9109161,1405.61
+doc_0303,rvl_val_22550.png,val,Lorillard Research Center,,
+doc_0304,rvl_train_18251.png,train,,,695.0
+doc_0305,rvl_train_22434.png,train,,,16470.0
+doc_0306,rvl_train_10627.png,train,,,324.0
+doc_0307,rvl_train_07197.png,train,LORILLARD RESEARCH CENTER,906516,6800.0
+doc_0309,rvl_train_07506.png,train,,,
+doc_0310,rvl_train_01052.png,train,,,46400000.0
+doc_0311,rvl_train_10337.png,train,FLetsMeAN MILLARD Joenver nasezorr. se 2,,35.75
+doc_0312,rvl_train_13146.png,train,"The Council for Tobacco Research, U.S.A.",,19988.92
+doc_0314,rvl_train_08774.png,train,To: Lorillard,,1200.0
+doc_0315,rvl_train_06914.png,train,Philip Morris USA,,13000.0
+doc_0316,rvl_train_18586.png,test,,,9809.0
+doc_0317,rvl_train_23525.png,train,,,
+doc_0319,rvl_train_10312.png,test,,,3600.0
+doc_0322,rvl_train_16359.png,test,sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP,,195079.0
+doc_0323,rvl_train_21065.png,train,,,1350.0
+doc_0326,rvl_train_15036.png,test,,,6013.82
+doc_0327,rvl_train_04576.png,train,,,2286.08
+doc_0328,rvl_train_08082.png,val,,,
+doc_0329,rvl_train_24412.png,test,Lorillard Research Center,,2050.0
+doc_0332,rvl_train_17662.png,train,LORILLARD RESEARCH CENTER 3i7tore,,4400.0
+doc_0333,rvl_test_24479.png,train,,,1.25
+doc_0334,rvl_train_19156.png,train,,,8000.0
+doc_0335,rvl_val_19122.png,train,ALLY GARGANG INC.,,181359.0
+doc_0336,rvl_train_13088.png,train,,V-91-131,3693.64
+doc_0337,rvl_train_14039.png,train,PARENT LOEW'S CORPORATION emus 2% 1004s,371960-01,
+doc_0338,rvl_train_11862.png,train,"Philip Morris, Inc.",,74158.16
+doc_0339,rvl_train_07187.png,test,"Ally & Gargano, Inc.",,
+doc_0341,rvl_train_04533.png,train,more <i. sid £2 CONTRACT RESEARCH CENTER BVBA,,157.5
+doc_0343,rvl_train_02979.png,train,Philip Morris Inc. j 25-218:,,76904.0
+doc_0345,rvl_train_24766.png,train,LORILLARD MEDIA SERVICES 2,,95640.5
+doc_0346,rvl_train_01544.png,val,TAN ToBaceo coMPANY NTS INTL,,20000.0
+doc_0347,rvl_val_05009.png,test,To: Madison Square Garden,,68750.0
+doc_0348,rvl_train_05243.png,train,,30712,297.52
+doc_0349,rvl_train_20561.png,test,The American Tobacco Company,,
+doc_0352,rvl_train_02082.png,train,,,25000.0
+doc_0354,rvl_train_19544.png,train,,,2.7
+doc_0355,rvl_train_12609.png,test,Lorillard Research Center,,900.0
+doc_0356,rvl_train_19527.png,test,PHILIP MORRIS MANAGEMENT CORPORATION,,45000.0
+doc_0357,rvl_train_17339.png,train,"CLIENT: PHILIP MORRIS COMPANIES, INC.",67550435,123250.0
+doc_0358,rvl_train_08239.png,test,Lorillard Inc.,1496-4,10580.0
+doc_0359,rvl_train_15338.png,train,,,25000.0
+doc_0360,rvl_train_18129.png,test,,,295.53
+doc_0361,rvl_val_00377.png,train,,,100.0
+doc_0362,rvl_test_23617.png,train,LORTLLARD MEDIA SERVICES,1550850,69008.0
+doc_0364,rvl_test_22339.png,train,"‘Check Payable to, [Friends of Joe Roberts",,500.0
+doc_0365,rvl_train_03754.png,train,,,3000.0
+doc_0366,rvl_val_17596.png,train,,,
+doc_0367,rvl_train_21004.png,train,"‘The Council for Tobacco Research June 28, 1972",,1903.0
+doc_0368,rvl_train_24605.png,train,,,2010600.06
+doc_0369,rvl_train_08744.png,train,,,
+doc_0371,rvl_train_09618.png,train,,,2320.72
+doc_0372,rvl_test_14247.png,val,,,8517.26
+doc_0373,rvl_train_05183.png,train,,,2916.75
+doc_0374,rvl_train_03656.png,train,,,53400.0
+doc_0375,rvl_train_23662.png,train,,,
+doc_0378,rvl_train_23583.png,train,,,
+doc_0380,rvl_train_08631.png,val,,104264528,100058.0
+doc_0381,rvl_val_05855.png,train,"T vorittard, Inc.",,2250.0
+doc_0382,rvl_train_16404.png,test,To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A.,,22936.8
+doc_0383,rvl_train_16636.png,train,,,500.0
+doc_0384,rvl_train_09780.png,test,,,
+doc_0387,rvl_test_03487.png,train,Lorillard Média Service ‘reat,,43929.04
+doc_0388,rvl_train_19955.png,train,Philip Morris Inc.,,60.0
+doc_0390,rvl_train_06518.png,test,YO Lorillard Media Service sovrmeen Lorillard,,27599.6
+doc_0391,rvl_train_24986.png,train,Bill To: Philip Morris,,
+doc_0392,rvl_train_17675.png,train,,,
+doc_0393,rvl_train_05294.png,train,,,46300.0
+doc_0395,rvl_train_17379.png,train,To: Vlorittard Research Center 7,,2250.0
+doc_0398,rvl_train_16011.png,train,,,92458.16
+doc_0399,rvl_train_19627.png,train,IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP,,2529.0
+doc_0400,rvl_train_03666.png,train,,,1557.52

@@ -1,0 +1,20 @@
+Phase 3 — Template Extraction Coverage Report
+=======================================================
+
+  Field                 Found   Total   Coverage
+  --------------------------------------------------
+  invoice_number           18     198      9.1%
+  invoice_date             44     198     22.2%
+  due_date                  2     198      1.0%
+  issuer_name             181     198     91.4%
+  recipient_name           17     198      8.6%
+  total_amount             28     198     14.1%
+
+Template breakdown:
+  - generic_invoice: 178
+  - lab_invoice: 14
+  - tabular_invoice: 4
+  - law_firm_letterbill: 1
+  - remittance_advice: 1
+
+Generated: 2026-03-25 14:29:21

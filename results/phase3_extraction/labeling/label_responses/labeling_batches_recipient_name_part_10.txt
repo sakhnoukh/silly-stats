@@ -1,0 +1,45 @@
+doc_id=doc_0264 | field=recipient_name | candidate_text=LORILLARD MEDIA SERVICES | label=1
+doc_id=doc_0264 | field=recipient_name | candidate_text=CUSTOMER CODE go915 | label=0
+doc_id=doc_0264 | field=recipient_name | candidate_text=‘SERVICE FROM SERVICETO CUSTOMER PO STS ‘SALESPERSON | label=0
+doc_id=doc_0249 | field=recipient_name | candidate_text=ass anarene ne weapon Soe! to 0) 22 | label=0
+doc_id=doc_0260 | field=recipient_name | candidate_text=Shipre0 TO | label=0
+doc_id=doc_0260 | field=recipient_name | candidate_text=Sth Street | label=0
+doc_id=doc_0260 | field=recipient_name | candidate_text=New York 10022 | label=0
+doc_id=doc_0260 | field=recipient_name | candidate_text=John Kreisher | label=1
+doc_id=doc_0260 | field=recipient_name | candidate_text=PLEASE REFER TO OUR INVOICE NU | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=@ HAZLETON LABORATORIES AMERICA, INC | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=Lorillard Research Center | label=1
+doc_id=doc_0303 | field=recipient_name | candidate_text=Attn: Dr.'J. Datel Heck | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=ROKER Tae | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=> corre) | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=‘CLIENT COPY | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=jeo/ér {71308 | | label=0
+doc_id=doc_0303 | field=recipient_name | candidate_text=emer ro: | label=0
+doc_id=doc_0356 | field=recipient_name | candidate_text=PHILIP MORRIS MANAGEMENT CORPORATION | label=1
+doc_id=doc_0356 | field=recipient_name | candidate_text=To cover the statement of Healthy Buildings | label=0
+doc_id=doc_0356 | field=recipient_name | candidate_text=International relating to the initial | label=0
+doc_id=doc_0339 | field=recipient_name | candidate_text=“CP ARTS Inc | label=0
+doc_id=doc_0339 | field=recipient_name | candidate_text=Ally & Gargano, Inc. | label=1
+doc_id=doc_0339 | field=recipient_name | candidate_text=Client: Newport. | label=0
+doc_id=doc_0322 | field=recipient_name | candidate_text=sACCOUNT:: 274107 PAYEE: USA PETROLEUM CORP | label=1
+doc_id=doc_0322 | field=recipient_name | candidate_text=SEND CHECK TO: PAYEE DIV OFFICE * | label=0
+doc_id=doc_0322 | field=recipient_name | candidate_text=PRESS PF1 TO RETURN TO TEMPORARY PAYMENT SELECTION MENU | label=0
+doc_id=doc_0254 | field=recipient_name | candidate_text=PHILIP MORRIS MANAGEMENT CORP. | label=1
+doc_id=doc_0254 | field=recipient_name | candidate_text=Attention: Charles E. G. Glenn, Esquire | label=0
+doc_id=doc_0254 | field=recipient_name | candidate_text=November 29, 1994 | label=0
+doc_id=doc_0254 | field=recipient_name | candidate_text="ELECTRICAL SMOKING SYSTEM FOR DELIVERING FLAVORS | label=0
+doc_id=doc_0254 | field=recipient_name | candidate_text=AND METHOD FOR MAKING SAMS", Your Reference: PM 1697 | label=0
+doc_id=doc_0254 | field=recipient_name | candidate_text==- services, disbursenents and administrative | | label=0
+doc_id=doc_0254 | field=recipient_name | candidate_text=written report to Mr. Glenn; and transmittal of | label=0
+doc_id=doc_0382 | field=recipient_name | candidate_text=BIO-RESEARCH CONSULTANTS, inc. | label=0
+doc_id=doc_0382 | field=recipient_name | candidate_text=RESEARCH DEVELOPMENT | label=0
+doc_id=doc_0382 | field=recipient_name | candidate_text=To: THE COUNCIL FOR TOBACCO RESEARCH ~ U.S.A. | label=1
+doc_id=doc_0382 | field=recipient_name | candidate_text=Research Associates $ 2,008.52 | label=0
+doc_id=doc_0382 | field=recipient_name | candidate_text=Research Assistants and Technicians 2208.82 | label=0
+doc_id=doc_0382 | field=recipient_name | candidate_text=Blue Cross and Group Insurance 135.1 | label=0
+doc_id=doc_0390 | field=recipient_name | candidate_text=YO Lorillard Media Service sovrmeen Lorillard | label=1
+doc_id=doc_0298 | field=recipient_name | candidate_text=LEO BURNETT COMPANY + INC | label=0
+doc_id=doc_0298 | field=recipient_name | candidate_text=CLIENT DATE/NC. NOw DESCRIPTION INVOICE AMOUNT faa chSbs | label=0
+doc_id=doc_0347 | field=recipient_name | candidate_text=To: Madison Square Garden | label=1
+doc_id=doc_0347 | field=recipient_name | candidate_text=Please make check payable to: Philip Morris USA | label=0
+doc_id=doc_0347 | field=recipient_name | candidate_text=and remit to above address. | label=0

@@ -1,0 +1,13 @@
+Phase 2 — Final Test Evaluation
+==================================================
+
+Model: LogisticRegression (Baseline)
+Selection criterion: val_f1_macro
+Validation macro F1: 1.0000
+
+Test Results
+------------------------------
+Accuracy:        1.0000
+Macro Precision: 1.0000
+Macro Recall:    1.0000
+Macro F1:        1.0000

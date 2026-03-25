@@ -1,0 +1,71 @@
+{
+  "project": "Document Classification & Invoice Extraction",
+  "phase": "Phase 1 - Data Collection & Preprocessing",
+  "classes": ["email", "form", "invoice", "receipt"],
+  "samples_per_class": 200,
+  "total_documents": 796,
+  "datasets": {
+    "email": {
+      "source": "RVL-CDIP (aharley/rvl_cdip on HuggingFace)",
+      "label_id": 2,
+      "url": "https://huggingface.co/datasets/rvl_cdip",
+      "access": "public_huggingface",
+      "format": "image/png",
+      "raw_images": 25020,
+      "samples_used": 200,
+      "extraction_method": "tesseract_ocr",
+      "manifest": "data/raw/rvl_cdip_manifest.csv",
+      "notes": "Streamed from 38GB tar.gz, saved only email class. Scanned corporate emails from tobacco industry archives."
+    },
+    "form": {
+      "source": "RVL-CDIP (aharley/rvl_cdip on HuggingFace)",
+      "label_id": 1,
+      "url": "https://huggingface.co/datasets/rvl_cdip",
+      "access": "public_huggingface",
+      "format": "image/png",
+      "raw_images": 25000,
+      "samples_used": 200,
+      "extraction_method": "tesseract_ocr",
+      "manifest": "data/raw/rvl_forms_manifest.csv",
+      "notes": "Streamed from 38GB tar.gz, saved only form class. Replaces original contract class."
+    },
+    "invoice": {
+      "source": "RVL-CDIP (aharley/rvl_cdip on HuggingFace)",
+      "label_id": 11,
+      "url": "https://huggingface.co/datasets/rvl_cdip",
+      "access": "public_huggingface",
+      "format": "image/png",
+      "raw_images": 25020,
+      "samples_used": 200,
+      "extraction_method": "tesseract_ocr",
+      "manifest": "data/raw/rvl_cdip_manifest.csv",
+      "notes": "Streamed from 38GB tar.gz, saved only invoice class."
+    },
+    "receipt": {
+      "source": "SROIE (ICDAR 2019 Scanned Receipts OCR and Information Extraction)",
+      "url": "https://github.com/zzzDavid/ICDAR-2019-SROIE",
+      "access": "public_github",
+      "format": "image/jpg",
+      "raw_images": 626,
+      "samples_used": 200,
+      "extraction_method": "box_file",
+      "notes": "Text extracted directly from pre-annotated bounding box files, no OCR needed."
+    }
+  },
+  "splits": {
+    "train": {"ratio": 0.70, "count": 557},
+    "val":   {"ratio": 0.15, "count": 119},
+    "test":  {"ratio": 0.15, "count": 120}
+  },
+  "file_types_supported": [".png", ".jpg", ".jpeg"],
+  "metadata_columns": [
+    "doc_id", "file_name", "label", "source_dataset",
+    "file_type", "extraction_method", "raw_text", "clean_text"
+  ],
+  "tfidf_settings": {
+    "ngram_range": [1, 2],
+    "max_features": 5000,
+    "min_df": 2,
+    "max_df": 0.9
+  }
+}

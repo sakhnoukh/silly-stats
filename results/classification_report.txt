@@ -1,0 +1,13 @@
+Classification Report — LogisticRegression (Baseline) (Test Set)
+============================================================
+
+              precision    recall  f1-score   support
+
+       email       1.00      1.00      1.00        30
+        form       1.00      1.00      1.00        30
+     invoice       1.00      1.00      1.00        30
+     receipt       1.00      1.00      1.00        30
+
+    accuracy                           1.00       120
+   macro avg       1.00      1.00      1.00       120
+weighted avg       1.00      1.00      1.00       120

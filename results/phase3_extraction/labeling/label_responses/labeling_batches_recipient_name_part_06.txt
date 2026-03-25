@@ -1,0 +1,36 @@
+doc_id=doc_0281 | field=recipient_name | candidate_text=CUSTOMER NO: PO02AD | label=0
+doc_id=doc_0281 | field=recipient_name | candidate_text=®| PHILLIP MORRIS USA, ‘Make checks payable to: | label=1
+doc_id=doc_0281 | field=recipient_name | candidate_text=PAGE: 1 | label=0
+doc_id=doc_0337 | field=recipient_name | candidate_text=IAKE CHECKS PAYABLE TO: ‘SPORTS ILLUSTRATED AND MAIL TO: INDICATED. | label=0
+doc_id=doc_0337 | field=recipient_name | candidate_text=PARENT LOEW'S CORPORATION emus 2% 1004s | label=1
+doc_id=doc_0256 | field=recipient_name | candidate_text=If ROWLAND COMPANY, INC, | label=0
+doc_id=doc_0256 | field=recipient_name | candidate_text=Anevican Tobacco Company January 27, 1986 | label=1
+doc_id=doc_0256 | field=recipient_name | candidate_text=Attention: Mr. Willian Stevenson | label=0
+doc_id=doc_0256 | field=recipient_name | candidate_text=Marketing Controller | label=0
+doc_id=doc_0336 | field=recipient_name | candidate_text=HBI Healthy Buildings Intemational. inc. Faia, VA nao | label=0
+doc_id=doc_0336 | field=recipient_name | candidate_text=To the PR Agency fees (Video Ingenieria y Arquitectura - | label=0
+doc_id=doc_0231 | field=recipient_name | candidate_text=TOBACCO CORPORATION | label=0
+doc_id=doc_0231 | field=recipient_name | candidate_text=PEASE MAIL REMITTANCE TO: a ae se Kea gypeare | label=0
+doc_id=doc_0231 | field=recipient_name | candidate_text=BROWN & WILLIAMSON TOBACCO CORP. ko | label=1
+doc_id=doc_0332 | field=recipient_name | candidate_text=4 PLEASE REFER TO se | label=0
+doc_id=doc_0332 | field=recipient_name | candidate_text=ASSOCIATES ROCKVILLE, MD 20850 s 2 | label=0
+doc_id=doc_0332 | field=recipient_name | candidate_text=LORILLARD RESEARCH CENTER 3i7tore | label=1
+doc_id=doc_0332 | field=recipient_name | candidate_text=ATTN: OR. DAN HECK | label=0
+doc_id=doc_0332 | field=recipient_name | candidate_text=GREENSBORO, NC | label=0
+doc_id=doc_0332 | field=recipient_name | candidate_text=27420 | | label=0
+doc_id=doc_0253 | field=recipient_name | candidate_text=PLEASE REMIT TO: i | label=0
+doc_id=doc_0253 | field=recipient_name | candidate_text=CUSTOMER COPY AMOUNT DUE | label=0
+doc_id=doc_0229 | field=recipient_name | candidate_text=Operations Center, | label=1
+doc_id=doc_0299 | field=recipient_name | candidate_text=RESEARCH LABORATORIES, INC. | label=0
+doc_id=doc_0299 | field=recipient_name | candidate_text=Attn: Dt | label=0
+doc_id=doc_0299 | field=recipient_name | candidate_text=Referenc | label=0
+doc_id=doc_0299 | field=recipient_name | candidate_text=BRL Ref. | label=0
+doc_id=doc_0299 | field=recipient_name | candidate_text=Attn: B. Bellford | label=0
+doc_id=doc_0245 | field=recipient_name | candidate_text=WIT RESEARCH INSTITUTE | label=0
+doc_id=doc_0245 | field=recipient_name | candidate_text=GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER | label=1
+doc_id=doc_0354 | field=recipient_name | candidate_text=Attn. Dr. P. 8. Povers e222 ss | label=0
+doc_id=doc_0354 | field=recipient_name | candidate_text=_. Little Yeldham | label=0
+doc_id=doc_0354 | field=recipient_name | candidate_text=Halstead, Essex CO9 4 LQ | label=0
+doc_id=doc_0354 | field=recipient_name | candidate_text=Inezeleten = | label=0
+doc_id=doc_0354 | field=recipient_name | candidate_text=England IeSeneisen = | label=0
+doc_id=doc_0274 | field=recipient_name | candidate_text=LORILLARD MEDTA seRvIces Frorasres) | s003736 | label=1

@@ -1,0 +1,1261 @@
+================================================================================
+doc_id=doc_0285
+file_name=rvl_train_06866.png
+field=total_amount
+
+raw_text_excerpt:
+ESTIMATED
+BILLINGS AMOUNT
+
+301.50 24706625
+
+2706.25
+
+candidates:
+1) candidate_text=301.5 | source=money_anywhere | line_idx=2
+2) candidate_text=2706.25 | source=money_anywhere | line_idx=3
+
+================================================================================
+doc_id=doc_0275
+file_name=rvl_train_09483.png
+field=total_amount
+
+raw_text_excerpt:
+Aceh wlae/4o fe :
+
+Ree PHILIP MORRIS U.S.A. .
+. VOUCHER paTe:_§ / 14 1 90
+Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT
+Fair-Play Scoreboards Div. Clock Mechanism Repair Kit - Penn National '
+P.0. Box 534 Race Course
+Des Moines, Towa 50302
+
+PAYEE FEDERALTAXID = ORSSNUMBER =
+INVOICE AMOUNT: $_77.53 PROJECT CODE:
+ACCOUNTING
+RETURN TO NAME: __Liz Marx CODE:
+DATE DUE: ASAP_/ L EXTENSION: _3255 INVOICE APPRQYAL: Ele Bam
+FOR CASH CONTROL USE: 3
+BANK CODE:
+CHECK NUMBER: U L AMOUNT: §.
+
+FOR ACCOUNTING USE ONLY
+VOUCHER NUMBER: ACTION: __
+VENDOR NUMBER: VENDOR ZIP:
+INVOICE NUMBER: INVOICE DATE:
+INVOICE AMOUNT INVOICE TYPE:
+VOUCHER DUE: L L PO/EST NUMBER:
+BYPASS MATCH: CONTRACT PAYMENTSICYCLE:
+SEPARATE CHECK: __ SEPARATE HANDLING: _ HOLD: __
+CHECK CODE:_______ CHECK DESCRIPTION
+DISCAMTIPCT;___ TERMS CODE:
+USE/SALES TAX: _ ‘TAX AMOUNT/PRORAT!
+FREIGHT CODE/AMT: CASH ACCOUNT: __
+GL ACCOUNT cD PART/DESC UM ary AMOUNT
+
+Nv200
+
+sy200
+
+Nye00
+
+nv200
+
+L0veZ80v0e
+
+()ACCTG AUDIT______________(2) ACcTG APPROVAL (9) DATA ENTRY.
+
+candidates:
+1) candidate_text=77.53 | source=money_anywhere | line_idx=8
+
+================================================================================
+doc_id=doc_0242
+file_name=rvl_val_05095.png
+field=total_amount
+
+raw_text_excerpt:
+as6e0
+
+015688 — r0/26/04
+
+‘Two Hundred and no/i00 US Dollars
+
+cere To ELECT sDOKr BENEPIELD > WM
+
+wOLSEA OS4000030% LewOR2Rd7S2"
+
+11760 29/26/94 945688
+Rea
+
+To7is/9% Ga PC "5200-00, $200.00
+
+TI1631-0443
+
+candidates:
+1) candidate_text=200.0 | source=money_anywhere | line_idx=7
+
+================================================================================
+doc_id=doc_0281
+file_name=rvl_train_11955.png
+field=total_amount
+
+raw_text_excerpt:
+INVOICE
+DATE: 08/28/97,
+NO: 002185
+
+CUSTOMER NO: PO02AD
+‘TERMS: UPON RECEIPT
+
+ae fa tan eoing
+2289 NW 199th Street
+Miami, FL 33056
+®| PHILLIP MORRIS USA, ‘Make checks payable to:
+1] APTN:MR.GARY CAPREOL
+{| 120 PARK AVENUE Pro Player Stadium
+| NEW YORK, NY 10017-5592 Attn: David Nunes, Director of Finance
+3
+PAGE: 1
+DESCRIPTION ‘OUT
+units: 1.00 Rate: —-137500.000 137500.00
+
+ADVT
+
+PMT 2 OF 2 PER ADVERTISING AGREEMENT
+PERIOD COVERING-09/31/97-3/31/98
+FEDERAL IDi# 59-2450432
+
+4 0
+4
+d
+Trade Discount 0.00
+Tax Total 0.00
+‘Afinance charge of 1.5% per month wil be charged on all balances over thity days. TOTAL 137500.00
+REMITTANCE COPY
+8
+8
+g
+&
+2
+S
+8
+&
+
+candidates:
+1) candidate_text=137500.0 | source=money_anywhere | line_idx=15
+2) candidate_text=1.0 | source=money_totalish_line | line_idx=25
+3) candidate_text=5.0 | source=money_totalish_line | line_idx=25
+
+================================================================================
+doc_id=doc_0256
+file_name=rvl_train_15055.png
+field=total_amount
+
+raw_text_excerpt:
+If ROWLAND COMPANY, INC,
+415 Madison Avenue, New York, N.Y. 10017
+Tel, (212] 668-1200
+
+Anevican Tobacco Company January 27, 1986
+245 Park Avenue
+
+New York, New York 10017 Due Dat
+
+February 6, 1984
+
+Attention: Mr. Willian Stevenson
+Marketing Controller
+
+Authorization No. M-124 (1983)
+
+Invoice #807653
+REIMBURSABLE PRODUCTION EXPENSES
+
+out-of-pocket and mechanical expenses
+paid in Decenber, 1983 in connection with
+the Dallas-ft. Worth Iacky Strike Program:
+
+cost
+Ton
+conn isaionable Charge Total
+Product Sampling $6,652.98 $6,652.98
+Press Materials Tois.17 T6is.47
+Travel & out-of-pocket (296.00) (296.09)
+Miscellaneous 689.97 689.97
+Please pay this enount | $7,791.12
+
+candidates:
+1) candidate_text=6652.98 | source=money_anywhere | line_idx=18
+2) candidate_text=296.0 | source=money_anywhere | line_idx=20
+3) candidate_text=296.09 | source=money_anywhere | line_idx=20
+4) candidate_text=689.97 | source=money_anywhere | line_idx=21
+5) candidate_text=7791.12 | source=money_anywhere | line_idx=22
+
+================================================================================
+doc_id=doc_0336
+file_name=rvl_train_13088.png
+field=total_amount
+
+raw_text_excerpt:
+10378 Democracy Lane
+HBI Healthy Buildings Intemational. inc. Faia, VA nao
+To: Covington & Burling Telefax (703) 352.0151
+
+1201 Pennsylvania Avenue, N.W.
+Washington, D.C, 20044
+
+wvorce no CHOLSO
+
+pate Aug 8, 1991
+your're: Mr. John Rupp
+
+Venezuela
+Media/Seninar Tour
+
+To the PR Agency fees (Video Ingenieria y Arquitectura -
+VIA) as per the attached invoice for organization of the
+HBI Media/Seninar tour.
+
+VIA invoice #V-91-131 dated 6/13/91............, $ 3,693.64
+
+For HBI Ine.
+
+Gray Irtson
+ah
+
+Enclosures
+
+2029370439
+
+candidates:
+1) candidate_text=352.01 | source=money_anywhere | line_idx=2
+2) candidate_text=3693.64 | source=money_anywhere | line_idx=13
+
+================================================================================
+doc_id=doc_0332
+file_name=rvl_train_17662.png
+field=total_amount
+
+raw_text_excerpt:
+4 PLEASE REFER TO se
+ee [NUMBER ON ALL PAYMEN
+MICROBIOLOGICAL —_ 9200 BLACKWELL Ro. o™ CORRESPONDENCE
+ASSOCIATES ROCKVILLE, MD 20850 s 2
+
+TELEPHONE: (201) 738-1000
+TELEX 90.9793
+sou0 70 swiPPe0 70
+
+LORILLARD RESEARCH CENTER 3i7tore
+P.O. BOX 21688.
+
+420 ENGLISH. STREET
+ATTN: OR. DAN HECK
+GREENSBORO, NC
+27420 |
+
+PAYMENT TERMS NET 30 DAYS iwvoice pare 060487.
+[reusrowennoween SUSTONER P.O, NUMBER ust.P.0, DATE | OATESuIPPED | PAGKINGSLIPNO. | ORDEANO.
+I — or Oxy Wr | Me. Tost
+| 032 07 0c03 S430 it 1 B 3149
+fauantity [oir meas] PHObueT NO. | ‘DESCRIPTION uit pice | amount |
+
+1 €& 82-380 | UNSCHEDULED DNA SYNTHESIS 4400.00 £400 a4
+| stupy wo,. 75230.380 [420
+On
+| DUPLICATE
+. | REPROD 5
+| | |FACTORY
+Reod aD
+‘ | | BS
+| ry
+i , Boos
+, | [ON
+i | Bp
+| a
+i
+L l - _—
+Wer aNooNT FREIGHT CHARGE RATE Tax aNOUNT “TOTAL AMOUNT DUE
+| 4400 00 00 oo | oo 4400.00
+
+[REMIT IN U.S, CURRENCY ONLY)
+
+candidates:
+1) candidate_text=90.97 | source=money_anywhere | line_idx=5
+2) candidate_text=4400.0 | source=money_anywhere | line_idx=18
+3) candidate_text=75230.38 | source=money_anywhere | line_idx=19
+
+================================================================================
+doc_id=doc_0348
+file_name=rvl_train_05243.png
+field=total_amount
+
+raw_text_excerpt:
+TERMS: war
+CUSTOMER ORDER NO. a a38a8 ~ wezs INVOICE NO. 30712
+
+‘SaRLz0a Jo-wnrer PopreR,
+
+’ a
+‘TECK ~ pow waratyte aereched 297.52
+
+CASH ADVAN Bi
+
+VANE PORTATIONS > FOR
+Nt REOU
+
+MACUIATELY, PLEASE
+
+candidates:
+1) candidate_text=297.52 | source=money_anywhere | line_idx=4
+
+================================================================================
+doc_id=doc_0229
+file_name=rvl_train_17857.png
+field=total_amount
+
+raw_text_excerpt:
+DAVID T. WESTCOTT, Ph.D. 27 NORE ROAD
+Consultant Scientist PORTISHEAD
+BRISTOL
+Tel. No. (0272) 842728
+
+VAT REG NO 520 1597 77.
+
+Thonas 8, Osdene, Ts OSDENE
+
+Vice President Science and Technology,
+Operations Center,
+
+Philip Forris USA, FEB 5 99
+P.0,Box 26603,
+
+Richnond,
+
+Virginia, 23261.
+
+January 15th 1990.
+
+1989.
+
+21988
+
+Fees for pei
+
+CORESTA Tack force meeting- Bristol, Nov. 7th. 1 day.
+BST meeting London, Nov. 8th. 1 any.
+S.H.& B, meeting London, Nov.15th. 1 day.
+1.5.0, meeting and visit to Richmond, Now 22nd to 30th, 9 days.
+TAC meeting London, Dec 6th and 12th, 2 days,
+
+Office work and reports.
+
+Total 47 deys.
+
+noted of 17 days 0.400 $ por day
+
+ELOLESEZOS
+
+candidates:
+1) candidate_text=47.0 | source=money_totalish_line | line_idx=22
+
+================================================================================
+doc_id=doc_0299
+file_name=rvl_val_15148.png
+field=total_amount
+
+raw_text_excerpt:
+BORRISTON
+
+RESEARCH LABORATORIES, INC.
+
+*#** * INVOICE * * * #
+
+September 25, 1981
+
+LORILLARD INCORPORATED
+
+420 Eng]
+Greensbor
+
+Attn: Dt
+
+Referenc
+BRL Ref.
+
+Invoice
+
+ish Street
+ro, North Carolina 27420
+
+ir. Harry Minnemeyer
+
+Purchase Order No. 0978
+
+2-22-250-B
+No.: 2B
+DESCRIPTION
+
+2nd Installment of four
+“DOMINANT LETHAL EVALUATION.
+OF Di, D2» Ds, and Dy
+
+-—
+
+Award $35,730.00
+
+Invoice 1+28 (17,865.00)
+Bal. Remaining .
+
+REMITTANCE ADDRESS
+Enviro Control, Inc.
+11140 Rockville Pike
+Rockville, Md. 20852
+
+Attn: B. Bellford
+
+ee * INVOICE #
+
+5050 Beech Place © Temple Hills, Maryland 20031 © 301-899-3536,
+
+s
+So
+x
+S
+a
+iy
+
+candidates:
+1) candidate_text=35730.0 | source=money_anywhere | line_idx=22
+2) candidate_text=17865.0 | source=money_anywhere | line_idx=23
+
+================================================================================
+doc_id=doc_0354
+file_name=rvl_train_19544.png
+field=total_amount
+
+raw_text_excerpt:
+OO ETE
+
+'
+
+a, a i
+
+INBIFO Institut fur biologische Forschung GmbH
+\
+
+Kaufmannische Verwaitung \Vertragsforschung
+
+Toefon 02208) 303-1
+Teel (0203) 308-962
+foraersina
+
+‘Taro ra recs Foncng rae Poparae SHONEN TS Dress Bank AG Kin
+ere ore Reimann fo ass2zr4 09 (62 37080040)
+Perceptive Instruments Stactepariatse Koh
+
+Ria SBiaztge “teuzaroso19)
+Attn. Dr. P. 8. Povers e222 ss
+Orchard Lea, North End Ka faeeaessoe (6127010080)
+
+_. Little Yeldham
+Halstead, Essex CO9 4 LQ
+Inezeleten =
+
+England IeSeneisen =
+UncorZeichen AEB/IBM PF WI
+Fet.No,
+Kéin, 14 Jan.93 :
+- es
+PROFORMA~ INVOICE, * .
+RECHNUNG. Nez 02-93 Peis Fos
+z Bel Zalung bite angebon ow
+tae et 4
+We have consigned to you today free of VALUE FOR
+charge our following equipment by air- CUSTOMS ONLY
+
+freight via DANZAS, Cologne:
+
+1 Interface Symbol Link
+Model No. LL390-190 BA, Serial No. 4030
+oo acquired June 1989 500,-~
+
+4 \ 1 transformer MP, Model No. 50-04000-044
+Serial No. 20~03157-50
+acquired April 1989 200,-=
+
+1 Laserscanner TM, Model No. LS-6500-Z00A
+. Serial No. 012754
+
+2 acquired March 1991
+a8 item No, 6362 2.000,-~
+
+1 Set of cables -
+
+1 Set of manuals
+
+TOTAL 2.700,
+
+The shipment is covered by our general |
+
+: sR con
+Please confirm 
+
+candidates:
+1) candidate_text=2.7 | source=money_totalish_line | line_idx=42
+
+================================================================================
+doc_id=doc_0352
+file_name=rvl_train_02082.png
+field=total_amount
+
+raw_text_excerpt:
+VENDOR NO PHILIP MORRIS INCORPORATED cree no |
+
+1
+
+| [0235150000 oul ii jo3-ovR_ 140079.
+
+| VEROOR WANE “onre™ | pace |
+AMER HEALTH FOUNDATION l04/13/88 1
+
+04/05/33 JAPR/SEPT B88 0402127 25,000.00 200 254000.00
+* TOTAL = 25,000.00 200 254000.00
+
+'¥ DETACH HERE BEFORE OEPOSITING
+
+PHILIP MORRIS INCORPORATED 3 140070
+
+RICHMOND, VIRGINIA 23281
+oui 11 mes ATE 04/13/88 14007
+
+esconseneeeee
+
+seecsssaasssses | geeee25,000500
+
+sansssssssossaaeasacaseasasaneaess:
+DACTLY THENTY FIVE THOUSANDSS3ee3saeseese:
+00 CéNTS#esnescsaeneaseasesssasssT:
+
+ae
+
+THIS IS TOBACCO MONEY.
+
+WO, AMER HEALTH FOUNDATION
+concen" 320 E 43R0 ST
+oF NEW YORK NY LooLT7
+a mn oe
+eo
+4400 708 34400 209: 388 294560" aT
+
+Tssoegstzoe
+
+candidates:
+1) candidate_text=25000.0 | source=money_anywhere | line_idx=5
+2) candidate_text=254000.0 | source=money_anywhere | line_idx=5
+3) candidate_text=200.0 | source=money_totalish_line | line_idx=6
+
+================================================================================
+doc_id=doc_0333
+file_name=rvl_test_24479.png
+field=total_amount
+
+raw_text_excerpt:
+- ARG = a
+AYRETT, FREE. ,GINSBERG, INC. INVOICE DATE
+{ DUE DATE 5/03/93
+T LortiLarp ToRacco co. 7
+oe
+. L. HarLey navinson a] _
+CLASSIFICATION: CREATIVE DEVELOPMENT * FINAL BILLING * a
+i
+
+* " ,00% COMMISSION
+
+* TOTAL DUE Sa1.25)
+
+AECEIVED
+spr 2.3 1995
+AOVERTISING DEPT
+
+1SLbL9ZS
+
+ESTIMATED AMOUNT?
+YEAR-TO-DATE BILLINGS? oniaINAL
+BALANCE ON ESTIMATE?
+
+candidates:
+1) candidate_text=1.25 | source=money_totalish_line | line_idx=9
+
+================================================================================
+doc_id=doc_0247
+file_name=rvl_train_03040.png
+field=total_amount
+
+raw_text_excerpt:
+OTIS & MEEHAN
+
+Lorgslative and Governmental Relations \C~
+
+P.O. Box 1462 iy) ”
+Montpelier, Vermont 05601-1462
+
+Anthony Otis, Eng
+
+NVOICE
+
+August 1, 1997
+
+RJ Reynolds Tobacco Co
+Mr. Kent Wold, Regional Director
+State Governmental Relations
+
+401 North Main Street
+Winston-Salem NC 27102
+
+RE: O&M file # RIR-10
+
+Statement for July Expenses. $ 179.19
+3rd Installment for Legislative Services 9,500.00
+3rd Installment for Legislative Services Paid 9,500.00
+Credit for personal check received from Senator Ide for
+race tickets -110.00
+Total Due $ 69.19
+THANK YOU
+
+Enclosure: receipts
+
+wile
+
+Office at 89 Court Street
+
+(802) 229-5200
+Fax: (802) 229-5930
+
+E-mail: ofismech@plainfield.bypass.com
+
+8SLy szets
+
+candidates:
+1) candidate_text=179.19 | source=money_anywhere | line_idx=13
+2) candidate_text=9500.0 | source=money_anywhere | line_idx=14
+3) candidate_text=110.0 | source=money_anywhere | line_idx=17
+4) candidate_text=69.19 | source=money_totalish_line | line_idx=18
+
+================================================================================
+doc_id=doc_0226
+file_name=rvl_val_06516.png
+field=total_amount
+
+raw_text_excerpt:
+CENTURY PUBLISHING COMPANY
+1020 CHURCH STREET
+EVANSTON, IL 0292
+(312) 494-6440
+
+To
+
+LORILLARD MEDIA SERVICES
+i 666 STH AVENUE:
+ATTN: BETTY EPPERSON
+
+A
+
+INVOICE
+121- 3-10
+
+H NEW YORK Ny 10103
+FOR? LORILLARD
+a Tom a Or
+r2i- c_193 91 A986 49 3% AT 10 DAYS NET 30 DAYS | 01/16/87
+Dessrion =
+BASEBALL DIGEST cross | $16862.56
+SPACE AD IN ISSUE: MARCH 87
+
+12 TIME
+
+“|
+
+RATES
+
+4-cOLo
+s #11873
+
+[PLEASE RETURN ONE () COPY OF THE INVOICE WITH RE
+
+\J7l=3-76 =|!" AGENCY COMMISSI!
+
+PISE90LE
+
+$ 2529.38
+
+INVOICE AMOUNT $14333. 18
+
+candidates:
+1) candidate_text=16862.56 | source=money_anywhere | line_idx=16
+2) candidate_text=2529.38 | source=money_anywhere | line_idx=26
+
+================================================================================
+doc_id=doc_0282
+file_name=rvl_train_05330.png
+field=total_amount
+
+raw_text_excerpt:
+LATE: 10/01/81 VANGU MED
+
+AGENCY_NUM!
+
+INVOICE NUM
+
+INVOICE FOR ILLUMINATED
+
+ER? 003 LORILLARD OUT OF HOME MEDIA SV
+466 FIFTH AVE
+NEW YORK NY 10019
+ATN: Red. SMOLLIN
+
+Rr 000199
+
+CONTRACT NUMBER? 9 T-154
+
+ADVERTISER?
+BRAND CODE:
+
+DESIGN CAPTION: 016
+
+MARKET =
+
+NUMBER OF TAXICABS : 150
+NUMBER OF DISPLAYS : 300
+PERIOD COVERED: OCTOBER i9e1
+CONTRACT STARTING DATE : 01/01/80
+
+004 LORILLARD
+KEN KENT IIT
+BOSTON POPS OVER KENT III TASTE
+
+BQSTON
+
+GROSS AMOUNT: 13,500.00
+15% AGENCY com: 2,025.00 i
+SALES TAX: 0.00 v Y |
+
+A on 1.2198)
+pAYABLE UPON RECEIPT 147
+
+Cab
+
+€zeLoL08
+
+candidates:
+1) candidate_text=13500.0 | source=money_anywhere | line_idx=22
+2) candidate_text=2025.0 | source=money_anywhere | line_idx=23
+
+================================================================================
+doc_id=doc_0305
+file_name=rvl_train_22434.png
+field=total_amount
+
+raw_text_excerpt:
+Ehrhart-Babic Associates, Inc.
+
+A Member of the Ehrhare-Bable Group
+
+April 25, 1994
+Lorillard
+One Park Avenue
+New York, NY 10016-5895
+INV. # 1031
+NTION: MC FADDEN
+: SALES MEASURE! Y= DA’ ARE’
+SALES. #34 (BI-WEEKLY) - FINAJ
+NO. OF
+JOBNO. AREA HIELDDATE — STORES BILLING
+118-1031 Pittsburgh 3/28/94 70 $16,220.00
+‘Summary Tables 250.00
+TOTAL BILLING $16,470.00
+
+120 Route @W, Englewood Cuffe, New Jersey 07632 (201) 451-8700 * FAX: (201) 461-0495
+
+SeZT LETS
+
+candidates:
+1) candidate_text=16220.0 | source=money_anywhere | line_idx=12
+2) candidate_text=250.0 | source=money_anywhere | line_idx=13
+3) candidate_text=16470.0 | source=money_totalish_line | line_idx=14
+
+================================================================================
+doc_id=doc_0374
+file_name=rvl_train_03656.png
+field=total_amount
+
+raw_text_excerpt:
+INVOICE NUMBER,
+13344
+
+SHOOSMITH BROS.,INC.
+
+Contractors
+748-5823 11800 Lewis R., Chester, Virginia 20831
+
+PARK 'S00" sorte of “pate 40784792
+
+LOCATION-CHESTERFIELD ~ WASTE TREATMENT
+Estimate No.
+
+{Contract Amount
+
+106 WOT TV0R F/O? S740 Total Rate Amount
+
+7 6 z 6 45 150.00 6750.00
+150.00 7200.00
+
+«SLUDGE ee
+«stock BO 76
+
+ard
+_
+ES
+o
+2
+&
+
+TOTAL 43950.00
+
+8/17 Total Rate Amount
+
+<SLUDGE) 2 2 37 £50.00 5550.00
+<eTock BO! 77 7 7 ? ‘6 ? 48 450.00 7200.00
+
+TOTAL 42750.00
+
+Total Rate Amount
+
+42 150.00 6300.00
+4& 180.00 6900.00
+
+TOTAL 43200.00
+1/27 W/28 1/29 F/30 G/34 Total Rate Amount
+
+3? 180.00 5850.00
+4% 450.00 7350.00
+
+{oans taluncey ye
+
+[Loans «stock Bo
+
+ES
+o
+x
+rr
+any
+
+TOTAL 43200.00
+
+SUB TOTAL — 53400.00
+
+Pees Qube 1-8 49-
+
+EV RETURN TOT, MOORE - FINANCE
+
+£00.00
+
+‘TOTAL DUE THIS. sup E;
+
+[AFINANGE ORARGE o 1290 PER MONTH wa se onnass vag OOO
+2024411433
+
+1 BNNUAL PERCENTAGE RATE 1 10%
+
+candidates:
+1) candidate_text=106.0 | source=money_totalish_line | line_idx=9
+2) candidate_text=740.0 | source=money_totalish_line | line_idx=9
+3) candidate_text=150.0 | source=money_anywhere | line_idx=10
+4) candidate_text=6750.0 | source=money_anywhere | line_idx=10
+5) candidate_text=7200.0 | source=money_anywhere | line_idx=11
+6) candidate_text=43950.0 | source=money_totalish_line | line_idx=20
+7) candidate_text=8.0 | source=money_totalish_line | line_idx=21
+8) candidate_text=17.0 | source=money_totalish_line | line_idx=21
+9) candidate_text=50.0 | source=money_anywhere | line_idx=22
+10) candidate_text=5550.0 | source=money_anywhere | line_idx=22
+11) candidate_text=450.0 | source=money_anywhere | line_idx=23
+12) candidate_text=42750.0 | source=money_totalish_line | line_idx=24
+13) candidate_text=6300.0 | source=money_anywhere | line_idx=26
+14) candidate_text=180.0 | source=money_anywhere | line_idx=27
+15) candidate_text=6900.0 | source=money_anywhere | line_idx=27
+16) candidate_text=43200.0 | source=money_totalish_line | line_idx=28
+17) candidate_text=1.0 | source=money_totalish_line | line_idx=29
+18) candidate_text=27.0 | source=money_totalish_line | line_idx=29
+19) candidate_text=28.0 | source=money_totalish_line | line_idx=29
+20) candidate_text=29.0 | source=money_totalish_line | line_idx=29
+21) candidate_text=30.0 | source=money_totalish_line | line_idx=29
+22) candidate_text=34.0 | source=money_totalish_line | line_idx=29
+23) candidate_text=5850.0 | source=money_anywhere | line_idx=30
+24) candidate_text=7350.0 | source=money_anywhere | line_idx=31
+25) candidate_text=53400.0 | source=money_totalish_line | line_idx=40
+
+================================================================================
+doc_id=doc_0359
+file_name=rvl_train_15338.png
+field=total_amount
+
+raw_text_excerpt:
+Ocoupanies
+MANAGEMENT CORPORATION
+CINCORPORATED
+
+FOR ACCOUNTING USE ONLY
+VOUCHER NUMBER _
+
+PHILIP MORRIS
+
+DATE VOUCHER IS PREPARED
+
+VOUCHER
+
+(OWT IF NO SPECIFIC DATE REQUIRED)
+
+11/894 DATE DUE: j-f5.]qq- TIME:
+PAYEE ACCOUNTING CODE
+Mass-Fair 9-06 0-EFEEETOROO SA? $25,000.00
+‘9 Yankee Circle 4 = he 450 00 - 03 00 34
+Westfield, Massachusetts 01085
+501 CE) DB $25,000.00
+7 ‘OR PAYIENT | EXPLANATION FOR PAYHENT:
+DY eo | ean
+SECTION/IF RETURNED CHECK 1S REQUIRED
+RETURN TO: NAM: DEPAATHENT | BUILDING/FLOOR|PHONE EXT,
+Hartina Floumoy So. Corp. Aff. Admin | 120 Park/24 2240
+
+REASON FOR REQUES’
+‘Must be sent with transmittal lei
+
+ACCOUNTING USE ONLY
+
+VENDOR#_
+VOUCHER TY}
+
+LINE 001
+
+— AMTIPCT «>
+| DESC >
+
+CORPIACCT ot
+
+UNE 002
+
+| autiect. >
+DESC +>
+
+CORP/ACCT 01,
+
+LINE 003 cORP/acCT o1
+AMTIPCT - >
+— DESC >
+
+LINE 004
+AMTIPCT - >
+— DESC +>
+
+‘CORPIACCT Of
+
+ANITIPCT «>
+DESC +>
+
+‘COMPANY
+(1-Reg: 2F.P:3.0.M: 4D.Ms 6.0.7.6
+
+05-COMPANIES; 008.MANAGEMENT, 010INGORPORATED)
+-V.A) VOUCHERINVOICE DATE
+SEP CHK > 1088 0D->
+
+1089 AMT.»
+
+CASHIER DATE
+‘AUDIT
+APPROVAL
+
+DATE
+DATE
+
+A IDIBRCD
+
+AIDeRCD->
+
+‘A IDBRCD--> _
+
+se0ssliroe
+
+‘A IDIBRCD -
+
+FORK «388 WY PHL INGIUSAICO'S
+
+‘REY 096 COMP AZ
+
+candidates:
+1) candidate_text=25000.0 | source=money_anywhere | line_idx=11
+
+================================================================================
+doc_id=doc_0211
+file_name=rvl_train_24271.png
+field=total_amount
+
+raw_text_excerpt:
+> TedBates new york / advertising
+
+- BROWN & WILLIAMSON TOBACCO CORPORATION
+al PRINT PRODUCTION ESTIMATE
+
+sagust 25, 1975,
+nano 001, ta 22, 1573
+
+capron "OEY ANKY FON ROUGH TASTE 7 73.2081
+
+sussect IAGABA
+
+pworoGRAMMEnanisr —
+
+oer aay
+
+Few ROUGH 197
+nsre"™
+
+Sa sectn $ 680,00 +4
+Une Potogrphy
+Model Foe
+Model Agmey F
+Loation Scouting Fee
+Property eles Foe
+PropSatConarcton
+Worarbe Sti)
+Wirdeabe (tober cost
+Hale ev
+bye Tranter /PROBLEK AIT
+ReTouching
+“Troniprencinure CHROME
+Serres
+
+Prowoltring
+
+Maw fats Sorte. IF 1S, CUE 70 THe
+NOTES AT to
+
+candidates:
+1) candidate_text=73.2 | source=money_anywhere | line_idx=5
+
+================================================================================
+doc_id=doc_0338
+file_name=rvl_train_11862.png
+field=total_amount
+
+raw_text_excerpt:
+AC.Nielsen
+
+‘HeDlnoadaretcorporston
+Philip Morris, Inc.
+
+120 Park Avenue Bost Ofco Box 95228
+New York, NY 10017 hicago, 4
+Attention: Mr. Robert Toned 312-498-6300 ‘onzoir weMO NO.
+
+Apri] 6, 1989 3315214
+
+NIELSEN FOOD INDEX SERVICE ON CIGARETTES
+
+Credit due for monthly report
+
+Base Rate - Volume Class ABA § 13,095.00
+45.0 Additional Itens @ $630.00 each | 30,600.00
+
+33,695.00
+Less 10% Simultaneous Service 0 3
+
+Less 7.5% 8-Month Cont: iscount 21909. AL
+St fe 2rzee. “oF
+urcharge for sor 27,282.07
+65,058.16
+200 Supp. Stc 10,500.00
+74,158.16 =
+Credit for Jan! Zee)
+Cw |
+
+ua shiles
+
+3-O4S- S02 - 436 -GO- HERO
+
+a
+Z
+Ee
+
+a)
+
+-10-47220
+
+OSSE8Z090%
+
+candidates:
+1) candidate_text=13095.0 | source=money_anywhere | line_idx=9
+2) candidate_text=630.0 | source=money_anywhere | line_idx=10
+3) candidate_text=30600.0 | source=money_anywhere | line_idx=10
+4) candidate_text=33695.0 | source=money_anywhere | line_idx=11
+5) candidate_text=27282.07 | source=money_anywhere | line_idx=15
+6) candidate_text=65058.16 | source=money_anywhere | line_idx=16
+7) candidate_text=10500.0 | source=money_anywhere | line_idx=17
+8) candidate_text=74158.16 | source=money_anywhere | line_idx=18
+
+================================================================================
+doc_id=doc_0398
+file_name=rvl_train_16011.png
+field=total_amount
+
+raw_text_excerpt:
+WILLIAM ESTY COMPAN — IRC.
+ADVERTISING
+
+100 EAST 420d STREET © NEW YORK, N. ¥. 10017
+
+EYNOLLS TORAGGO PHP Invoteo sp 6-345
+
+Client Re de
+
+Dato 6/25/70
+Payablo Det 7/20/20
+
+Estimato #
+
+Product MISCELLANEOUS
+
+VAMSEYIG BOSEARCH
+Bay do=29),
+
+Gost of conducting Serap Chawing
+Tobacco Product Test
+
+Supervisory expense
+Shipping
+
+Telephone charge
+
+1235.00
+105425
+16D
+22
+92,458.16
+
+656m £z005
+
+candidates:
+1) candidate_text=1235.0 | source=money_anywhere | line_idx=16
+2) candidate_text=92458.16 | source=money_anywhere | line_idx=20
+
+================================================================================
+doc_id=doc_0315
+file_name=rvl_train_06914.png
+field=total_amount
+
+raw_text_excerpt:
+ree
+
+Structural Display, Inc, esses wormeos wy sos
+
+Bill of sale
+Date: 9/24/91
+
+Sold to:
+Philip Morris USA
+120 Park Avenue
+
+New York, NY 10017
+
+Attn: Mr. Jose Fontanez
+
+one Haulmark Vendor Trailer
+VIN # 16HGB1227NP001939
+G.V.W.R. 7000 LBS
+
+For the amount of $13,000.00
+
+Authorized Signature
+
+A eZ gh
+
+Date
+
+tLezssozoz
+
+candidates:
+1) candidate_text=13000.0 | source=money_anywhere | line_idx=12
+
+================================================================================
+doc_id=doc_0207
+file_name=rvl_test_07315.png
+field=total_amount
+
+raw_text_excerpt:
+“CRC. cowtancr, RESEARCH CENTER (BVBA/SP.AL>
+
+a ccaseiseuse a . _B-1962 Zavantom
+° Met &. 1% ce 51 8iti6Stevens-Woluwe)
+INBIFO. ' - ‘ Toliaan / Avenue du Péage 101c
+
+‘ZH. Herfn A. Eberhard, . .
+
+. ey * Teletoon's ‘Telephone : 02/717.50.47
+.Fuggerstrase 3 a * Teletax / Teietax : 02/725.12.09
+. 10-5000 Koi”
+2 gst DEN21967484 ‘ JGB/MJV f
+TON
+. ¢ ae
+° Zaventem, den 8.Jun.93
+
+.
+
+LFD.NR. .° ANZAHL ARTIKEL | .
+
+98 =], Glasgeiase pit Fitecin
+*\¢ Spichlormethan *. >
+
+2 1 Feuchtemessgerat > 4
+: Ahibomn 882376/846. - :» THWST
+
+MATERIAL NUR FOR UNTERSUCHUNGSZWEGKE BI BESTIMM oe
+- (MATERIAAL ENKEL VOOR ONDERZOEK BESTEMD () JZ chesTaesr0
+
+candidates:
+1) candidate_text=717.5 | source=money_anywhere | line_idx=5
+2) candidate_text=725.12 | source=money_anywhere | line_idx=6
+
+================================================================================
+doc_id=doc_0345
+file_name=rvl_train_24766.png
+field=total_amount
+
+raw_text_excerpt:
+manene pt Menem ° .
+
+. TRIANGLE PUBLICATIONS, INC. TEAMS.
+TV Po woxssaeis4 arte d08 DATE
+GUIDE PHLADELPHIGPA 19171
+AovenTisine SrACe INVOICE Fo a
+i
+aovennisen |
+TRUE-2 PAGE 1 |
+LORILLARD MEDIA SERVICES 2
+sssue 666 FIFTH AVE ti
+97 ares NEW YORK ny 10103 i
+ores |? fen-as [ aatrowt eorronsat seerron-se | a42,sie,c0 | 95,640.50 |
+rv guiod Tseetton oven wunsEn(s) essed AGH] Lorn|Lako #e (
+| | BRAND.
+| wssue__| Yo ] #/ \
+| lo sexton! Jp Ir,
+ESTIAMATE
+| / THY NO ) ae
+| 4il anv pate | | Go V4 ff
+
+| | a
+agez9ate | lest
+
+1
+
+candidates:
+1) candidate_text=95640.5 | source=money_anywhere | line_idx=11

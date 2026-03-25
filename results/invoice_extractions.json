@@ -1,0 +1,3368 @@
+[
+  {
+    "doc_id": "doc_0239",
+    "file_name": "rvl_train_11150.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.5,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0323",
+    "file_name": "rvl_train_21065.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "HAZLETON casonatonies AMERICA. INC",
+      "recipient_name": null,
+      "total_amount": "1350.00",
+      "payment_terms": "Net 30 days",
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0255",
+    "file_name": "rvl_train_23912.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "HENNOISIG HSV)",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0297",
+    "file_name": "rvl_train_08022.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "THE TOBACCO INSTITUTE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0244",
+    "file_name": "rvl_train_09106.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "REQUISITIONER'S",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Cash 10 Days",
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0263",
+    "file_name": "rvl_train_20600.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "RINT oi",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0205",
+    "file_name": "rvl_train_09013.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Cc CG CONTRACT RESEARCH CENTER | avaase.at.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0238",
+    "file_name": "rvl_train_05232.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "POR SENATE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.75,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0267",
+    "file_name": "rvl_train_06301.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1984-10-23",
+      "due_date": null,
+      "issuer_name": "LABORATORIES AMERICA, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0357",
+    "file_name": "rvl_train_17339.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1998-06-24",
+      "due_date": null,
+      "issuer_name": "A PROFESSIONAL CORPORATION",
+      "recipient_name": null,
+      "total_amount": "123250.00",
+      "payment_terms": null,
+      "invoice_like_score": 4,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0241",
+    "file_name": "rvl_train_13849.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "90220",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Metropolitan Sunday Newspapers, Inc.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0389",
+    "file_name": "rvl_train_12253.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "pue oata",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0341",
+    "file_name": "rvl_train_04533.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "SLOUGH PROPERTIES NV.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0371",
+    "file_name": "rvl_train_09618.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "LICH KOENIG ADVER'",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0258",
+    "file_name": "rvl_val_04091.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "1558-1",
+      "invoice_date": "1984-03-21",
+      "due_date": null,
+      "issuer_name": "LABORATORIES, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0364",
+    "file_name": "rvl_test_22339.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1997-10-08",
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0321",
+    "file_name": "rvl_train_12965.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0343",
+    "file_name": "rvl_train_02979.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Philip Morris Inc. j 25-218:",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0334",
+    "file_name": "rvl_train_19156.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1990-09-30",
+      "due_date": null,
+      "issuer_name": "Sonar set Tems ans Condon acepl",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0351",
+    "file_name": "rvl_train_13834.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Nate 193-Vo",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0227",
+    "file_name": "rvl_train_00870.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Rent O ee SSUPIILASCHUG INC WRN TIMARN IUEPIIOEE I> PAANO.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0228",
+    "file_name": "rvl_train_22982.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CENTRAC",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "NeT 10",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0312",
+    "file_name": "rvl_train_13146.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Bt Mason RESEARCH INSTITUTE",
+      "recipient_name": null,
+      "total_amount": "19988.92",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0202",
+    "file_name": "rvl_train_00820.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "EM &Company, Inc.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0266",
+    "file_name": "rvl_train_18919.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "LORILLARD RESEARCH CENTER",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "DUE UPON RECEIPT",
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0232",
+    "file_name": "rvl_test_14720.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "casa come PHILIP",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0268",
+    "file_name": "rvl_train_02280.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "NUMBER ON ALL PAYMENTS AND.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "NET 30",
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0366",
+    "file_name": "rvl_val_17596.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1982-03-16",
+      "due_date": null,
+      "issuer_name": "MANAGEMENT CORP.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0286",
+    "file_name": "rvl_train_21961.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "a LO BURNETT USA:",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0277",
+    "file_name": "rvl_train_14858.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1997-08-15",
+      "due_date": null,
+      "issuer_name": "PLEASE READ INSTRUCTIONS",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0318",
+    "file_name": "rvl_train_06968.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "eek von Peta Buz",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0283",
+    "file_name": "rvl_train_12131.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "JELIVERED, INSIDE TO RECEI",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0381",
+    "file_name": "rvl_val_05855.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1986-02-04",
+      "due_date": null,
+      "issuer_name": "LABORATORIES AMERICA, INC",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Net 30 days",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0385",
+    "file_name": "rvl_train_20490.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "MZOSHSSTO OLO WBEOGLITZC wt ISEOOM",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0273",
+    "file_name": "rvl_train_07629.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "acaron SUMMARY",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0310",
+    "file_name": "rvl_train_01052.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "DANIEL J. EDELMAN, INC.",
+      "recipient_name": null,
+      "total_amount": "46400000.00",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0386",
+    "file_name": "rvl_val_20938.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.6,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0252",
+    "file_name": "rvl_train_19783.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Ay JPEG C",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0388",
+    "file_name": "rvl_train_19955.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Zunbs, Harvey J-",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0261",
+    "file_name": "rvl_test_18090.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "BRITISH-AMERICAN TOBACCO COMPANY LTD",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0279",
+    "file_name": "rvl_train_20831.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "INBIFO Institut fur biologische Forschun",
+      "recipient_name": null,
+      "total_amount": "12.35",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0206",
+    "file_name": "rvl_train_08025.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "228 : ONINSIZU3H . .",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0361",
+    "file_name": "rvl_val_00377.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Research and Developnent",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0233",
+    "file_name": "rvl_train_13747.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "QcoMPANIES FOR ACCOUNTING USE ONLY",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0259",
+    "file_name": "rvl_train_12404.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "1 = aNnOWY Lan 0g\" = INMUMY ssuND",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0307",
+    "file_name": "rvl_train_07197.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1989-05-28",
+      "due_date": null,
+      "issuer_name": "LABORATORIES AMERICA, INC’",
+      "recipient_name": null,
+      "total_amount": "6800.00",
+      "payment_terms": "DUE UPON RECEIPT",
+      "invoice_like_score": 4,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0400",
+    "file_name": "rvl_train_03666.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1992-03-26",
+      "due_date": "1992-03-26",
+      "issuer_name": "Account Number",
+      "recipient_name": null,
+      "total_amount": "1557.52",
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0327",
+    "file_name": "rvl_train_04576.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "TO COVER COSTE ABBOCIATED WI",
+      "recipient_name": null,
+      "total_amount": "2286.08",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0276",
+    "file_name": "rvl_train_03310.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Pp. LORILLARD COMPANY",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0289",
+    "file_name": "rvl_train_21235.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "PHILIP MORRIS",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0311",
+    "file_name": "rvl_train_10337.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "EXPRESS. MarricHy Were",
+      "recipient_name": "SCALE",
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0325",
+    "file_name": "rvl_train_08680.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "eerour®",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.75,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0290",
+    "file_name": "rvl_train_02340.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "OPEEGOOOOO TON INNGIOY BGA",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0237",
+    "file_name": "rvl_train_24865.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1971-11-19",
+      "due_date": null,
+      "issuer_name": "yo__The Tobacco Institute, Inc.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0248",
+    "file_name": "rvl_train_12450.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "HENNOODSIG HSY)]",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0399",
+    "file_name": "rvl_train_19627.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0262",
+    "file_name": "rvl_train_09607.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "LEO BURNETT U.S.A,",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0383",
+    "file_name": "rvl_train_16636.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Piva Hundred and no/100 US Dollars",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0204",
+    "file_name": "rvl_val_24300.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CONTRACT RESEARCH CENTER ‘sveas 2",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0304",
+    "file_name": "rvl_train_18251.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "5959",
+      "invoice_date": "1968-05-05",
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0251",
+    "file_name": "rvl_val_11764.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CRC CONTRACT RESEARCH CENTER avaassp.at,",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0219",
+    "file_name": "rvl_train_00977.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "oar,",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0293",
+    "file_name": "rvl_train_17503.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Moore Sign Corp. wen",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "DUE UPON RECEIPT",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0270",
+    "file_name": "rvl_train_23088.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0362",
+    "file_name": "rvl_test_23617.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "o3e06",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "TRIANGLE PUBLICATIONS, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0377",
+    "file_name": "rvl_train_14868.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "oorizott = ANMOMY 45H gotzOeT = ANnOMY sso¥D",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0379",
+    "file_name": "rvl_train_24968.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Lo EST",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0373",
+    "file_name": "rvl_train_05183.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Miller Brewing Company",
+      "recipient_name": null,
+      "total_amount": "86.00",
+      "payment_terms": null,
+      "invoice_like_score": 3,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0393",
+    "file_name": "rvl_train_05294.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1999-12-20",
+      "due_date": null,
+      "issuer_name": "Lorillard Tobacco Co.",
+      "recipient_name": null,
+      "total_amount": "46300.00",
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0344",
+    "file_name": "rvl_train_03593.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.15,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0309",
+    "file_name": "rvl_train_07506.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "THE GREAT ATLANTIC & PACIFIC TEA COMPANY, ING: .",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0225",
+    "file_name": "rvl_train_23463.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.65,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0217",
+    "file_name": "rvl_val_01042.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "1567-1",
+      "invoice_date": "1984-02-14",
+      "due_date": null,
+      "issuer_name": "LABORATORIES, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0246",
+    "file_name": "rvl_train_11030.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1997-02-20",
+      "due_date": null,
+      "issuer_name": "Tobacco Company",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0313",
+    "file_name": "rvl_test_02169.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "oe aaah a I",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.65,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0314",
+    "file_name": "rvl_train_08774.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Research Center",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Net 20 Days",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0368",
+    "file_name": "rvl_train_24605.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "ORDERBEVESTIGING",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0392",
+    "file_name": "rvl_train_17675.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Consultant services~-Synthetic Aza-compounés--",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0340",
+    "file_name": "rvl_train_16697.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "wee OG ee GS AU OW",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0201",
+    "file_name": "rvl_train_03649.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "FE. wosesoepmronnoeene — DEBIT EMD ove sanme",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0209",
+    "file_name": "rvl_train_03359.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "ROUTING LIST",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0215",
+    "file_name": "rvl_train_19350.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "PHILIP MORRIS INCORPORATED NEW YoRK,xY",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0335",
+    "file_name": "rvl_val_19122.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "on",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0378",
+    "file_name": "rvl_train_23583.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CANDY COMPANY wioesse",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0306",
+    "file_name": "rvl_train_10627.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "toe HILLER TRAVEL SERVICE, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0285",
+    "file_name": "rvl_train_06866.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "ESTIMATED",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.75,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0275",
+    "file_name": "rvl_train_09483.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0369",
+    "file_name": "rvl_train_08744.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CRC contaract RESEARCH CENT fo suhag G2a4",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0242",
+    "file_name": "rvl_val_05095.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Two Hundred and no/i00 US Dollars",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.75,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0281",
+    "file_name": "rvl_train_11955.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1997-08-28",
+      "due_date": null,
+      "issuer_name": "CUSTOMER NO: PO02AD",
+      "recipient_name": null,
+      "total_amount": "137500.00",
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0337",
+    "file_name": "rvl_train_14039.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Timelnc Magazines No, «3asias0",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0256",
+    "file_name": "rvl_train_15055.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "807653",
+      "invoice_date": "1986-01-27",
+      "due_date": null,
+      "issuer_name": "If ROWLAND COMPANY, INC,",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0336",
+    "file_name": "rvl_train_13088.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1991-08-08",
+      "due_date": null,
+      "issuer_name": "HBI Healthy Buildings Intemational. inc. Faia, VA nao",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0231",
+    "file_name": "rvl_train_07224.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "TOBACCO CORPORATION",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0332",
+    "file_name": "rvl_train_17662.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "LORILLARD RESEARCH CENTER 3i7tore",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "NET 30 DAYS",
+      "invoice_like_score": 3,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0253",
+    "file_name": "rvl_val_01424.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "PLEASE REMIT TO: i",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 3,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0353",
+    "file_name": "rvl_val_12505.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "JON C. WINGER",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0348",
+    "file_name": "rvl_train_05243.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "30712",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "SaRLz0a Jo-wnrer PopreR,",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0229",
+    "file_name": "rvl_train_17857.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Consultant Scientist PORTISHEAD",
+      "recipient_name": null,
+      "total_amount": "47.00",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0299",
+    "file_name": "rvl_val_15148.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1981-09-25",
+      "due_date": null,
+      "issuer_name": "RESEARCH LABORATORIES, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0245",
+    "file_name": "rvl_train_03350.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "WIT RESEARCH INSTITUTE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0354",
+    "file_name": "rvl_train_19544.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "OO ETE",
+      "recipient_name": "Dr. P.",
+      "total_amount": "2.70",
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0350",
+    "file_name": "rvl_train_22299.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "ozreonte s ANNOY 13N —GzteoH4e = anny ssu¥a",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0274",
+    "file_name": "rvl_train_02615.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CHURCH STREET STATION",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0214",
+    "file_name": "rvl_train_02849.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "A REGISTER",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0352",
+    "file_name": "rvl_train_02082.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "VENDOR NO PHILIP MORRIS INCORPORATED cree no |",
+      "recipient_name": null,
+      "total_amount": "254000.00",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0333",
+    "file_name": "rvl_test_24479.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1993-05-03",
+      "due_date": "1993-05-03",
+      "issuer_name": "T LortiLarp ToRacco co. 7",
+      "recipient_name": null,
+      "total_amount": "1.25",
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0247",
+    "file_name": "rvl_train_03040.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1997-08-01",
+      "due_date": null,
+      "issuer_name": "RJ Reynolds Tobacco Co",
+      "recipient_name": null,
+      "total_amount": "69.19",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0226",
+    "file_name": "rvl_val_06516.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "121-",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CENTURY PUBLISHING COMPANY",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "NET 30 DAYS",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0282",
+    "file_name": "rvl_train_05330.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1980-01-01",
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0305",
+    "file_name": "rvl_train_22434.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1994-04-25",
+      "due_date": null,
+      "issuer_name": "Ehrhart-Babic Associates, Inc.",
+      "recipient_name": null,
+      "total_amount": "16470.00",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0374",
+    "file_name": "rvl_train_03656.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "SHOOSMITH BROS.,INC.",
+      "recipient_name": null,
+      "total_amount": "53400.00",
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0300",
+    "file_name": "rvl_test_20972.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "4531",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "MIs. Mary Pottorft :",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0284",
+    "file_name": "rvl_train_11642.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "PHILIP MORRIS",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0330",
+    "file_name": "rvl_train_18395.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "INOWY LN",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0359",
+    "file_name": "rvl_train_15338.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "MANAGEMENT CORPORATION",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0211",
+    "file_name": "rvl_train_24271.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "BROWN & WILLIAMSON TOBACCO CORPORATION",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0338",
+    "file_name": "rvl_train_11862.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Philip Morris, Inc.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0397",
+    "file_name": "rvl_train_00639.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "a Perera",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0221",
+    "file_name": "rvl_val_07165.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "RJ. Reynolds Tobacco Company",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0208",
+    "file_name": "rvl_train_04573.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "RIJKSDIENST VOOR SOCIALE ZEKERHEID",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0317",
+    "file_name": "rvl_train_23525.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "THE TOBACCO INSTITUTE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0398",
+    "file_name": "rvl_train_16011.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0394",
+    "file_name": "rvl_train_00019.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0375",
+    "file_name": "rvl_train_23662.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "UNIVERSITY OF CAMBRIDGE SCHOOL OF CLINICAL MEDICINE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0269",
+    "file_name": "rvl_train_01502.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "eg*eze'T STVLOL",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0315",
+    "file_name": "rvl_train_06914.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1991-09-24",
+      "due_date": null,
+      "issuer_name": "Structural Display, Inc, esses wormeos wy sos",
+      "recipient_name": "Philip Morris USA",
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0207",
+    "file_name": "rvl_test_07315.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CRC. cowtancr, RESEARCH CENTER (BVBA/SP.AL>",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0391",
+    "file_name": "rvl_train_24986.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": "3021-2136",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": "120 Park Avenue",
+      "total_amount": null,
+      "payment_terms": "NET 30 days",
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0345",
+    "file_name": "rvl_train_24766.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "TRIANGLE PUBLICATIONS, INC. TEAMS.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0367",
+    "file_name": "rvl_train_21004.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1972-06-28",
+      "due_date": null,
+      "issuer_name": "R.J.Reynolds Tobacco Company",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0222",
+    "file_name": "rvl_train_19727.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "EWS, To0 ~ LOEWS HOTELS 700 = LORILLARD",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0395",
+    "file_name": "rvl_train_17379.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1985-06-12",
+      "due_date": null,
+      "issuer_name": "To: Vlorittard Research Center 7",
+      "recipient_name": null,
+      "total_amount": "2250.00",
+      "payment_terms": "Net 30 days",
+      "invoice_like_score": 3,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0272",
+    "file_name": "rvl_train_07468.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "DAWSON RESEARCH CORPORATION",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Net 30",
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0387",
+    "file_name": "rvl_test_03487.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Lorillard Média Service ‘reat",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0280",
+    "file_name": "rvl_val_12456.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Laurence, Craelegs. Feces M2) » Inc. |",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0365",
+    "file_name": "rvl_train_03754.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0212",
+    "file_name": "rvl_train_22175.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0236",
+    "file_name": "rvl_train_00213.png",
+    "_split": "train",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "SEAS ASTRA",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.5,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0234",
+    "file_name": "rvl_train_19310.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0257",
+    "file_name": "rvl_train_17572.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CRC Contract F Research Center wisnsry SPRL",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0200",
+    "file_name": "rvl_train_20953.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1989-10-15",
+      "due_date": null,
+      "issuer_name": "aan 800 SECOND AVENUE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0346",
+    "file_name": "rvl_train_01544.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "TAN ToBaceo coMPANY NTS INTL",
+      "recipient_name": "TAN ToBaceo coMPANY NTS INTL",
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0271",
+    "file_name": "rvl_train_21669.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1996-02-01",
+      "due_date": null,
+      "issuer_name": "Brian R. Meara Public Relations Inc.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0216",
+    "file_name": "rvl_train_13826.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Aangavraage gob",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0302",
+    "file_name": "rvl_train_08846.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": "9109161",
+      "invoice_date": "1991-10-31",
+      "due_date": null,
+      "issuer_name": "ns Tre",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0278",
+    "file_name": "rvl_val_09109.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Danzas AE GmbH",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0370",
+    "file_name": "rvl_train_11147.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "ies sts BOS Ean 1.532 co",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0324",
+    "file_name": "rvl_train_04682.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "3 10T ee7OL",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0210",
+    "file_name": "rvl_train_24133.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CRC CONTRACT RESEARCH CENTER BV.BASP.R.L:",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0213",
+    "file_name": "rvl_train_17871.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1986-01-28",
+      "due_date": null,
+      "issuer_name": "T torittard Research center 1",
+      "recipient_name": null,
+      "total_amount": "2250.00",
+      "payment_terms": "Net 90 days",
+      "invoice_like_score": 3,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0230",
+    "file_name": "rvl_train_21296.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "eveusra : oo",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0235",
+    "file_name": "rvl_train_09116.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "HAZLETON Lsonatonies AMERICA. INC",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Net 30 days",
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0396",
+    "file_name": "rvl_train_10622.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "RICHMOND. VIRGINIA ”",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0372",
+    "file_name": "rvl_test_14247.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Associates For Research On Indoor Air",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0328",
+    "file_name": "rvl_train_08082.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "yancorwa PHILIP MORRIS INCORPORATED an",
+      "recipient_name": null,
+      "total_amount": "439723675.00",
+      "payment_terms": null,
+      "invoice_like_score": -1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0250",
+    "file_name": "rvl_test_03170.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1973-03-12",
+      "due_date": null,
+      "issuer_name": "Adams Letter Co., Inc.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0288",
+    "file_name": "rvl_val_22998.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "RECEIVED OF PETTY CASH)",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0308",
+    "file_name": "rvl_train_01833.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "245 PARK AVE., NEW YORK, NY.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0380",
+    "file_name": "rvl_train_08631.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": "104264528",
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "PROF SERVICES-OVERTIME",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0264",
+    "file_name": "rvl_train_11851.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "LORILLARD MEDIA SERVICES",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 5,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0249",
+    "file_name": "rvl_train_11271.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1990-11-04",
+      "due_date": null,
+      "issuer_name": "Ally & Garganoine. May 1992",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0260",
+    "file_name": "rvl_train_02583.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "New York,",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "NET 30 DAYS",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0303",
+    "file_name": "rvl_val_22550.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "HAZLETON LABORATORIES AMERICA, INC",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0287",
+    "file_name": "rvl_train_08749.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "nigreag mer",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0331",
+    "file_name": "rvl_train_08610.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1977-11-10",
+      "due_date": null,
+      "issuer_name": "D OnTACH HERE @arone OEPosiTiNG",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0224",
+    "file_name": "rvl_train_16560.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Pegs —ae",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0342",
+    "file_name": "rvl_train_16172.png",
+    "_split": "val",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "es) 7° Jnr",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0326",
+    "file_name": "rvl_train_15036.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Mew imes Mirror",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0356",
+    "file_name": "rvl_train_19527.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "120 PENNSYLVANIA AVENUE, N. W.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0296",
+    "file_name": "rvl_train_05608.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "des| sive",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0339",
+    "file_name": "rvl_train_07187.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": "2054",
+      "invoice_date": "1995-01-24",
+      "due_date": null,
+      "issuer_name": "CP ARTS Inc",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0320",
+    "file_name": "rvl_train_21478.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Pot J",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.5,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0322",
+    "file_name": "rvl_train_16359.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": "195079.00",
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0254",
+    "file_name": "rvl_val_08668.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1994-11-29",
+      "due_date": null,
+      "issuer_name": "PHILIP MORRIS MANAGEMENT CORP.",
+      "recipient_name": null,
+      "total_amount": "1203.35",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0301",
+    "file_name": "rvl_val_12434.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "mo! ANSE]",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0382",
+    "file_name": "rvl_train_16404.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1972-06-01",
+      "due_date": null,
+      "issuer_name": "RESEARCH DEVELOPMENT",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0390",
+    "file_name": "rvl_train_06518.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "YO Lorillard Media Service sovrmeen Lorillard",
+      "recipient_name": null,
+      "total_amount": "27599.60",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0295",
+    "file_name": "rvl_test_23893.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "vinuoanys ‘oosionvus wus",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0298",
+    "file_name": "rvl_val_05355.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1978-08-23",
+      "due_date": null,
+      "issuer_name": "LEO BURNETT COMPANY + INC",
+      "recipient_name": null,
+      "total_amount": "50.00",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0347",
+    "file_name": "rvl_val_05009.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1993-06-30",
+      "due_date": null,
+      "issuer_name": "To: Madison Square Garden",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0384",
+    "file_name": "rvl_train_09780.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "CLASSIFIED MATERIAL RECEIPT",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0360",
+    "file_name": "rvl_train_18129.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Ted Bat a. company, inc /adverrising",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0294",
+    "file_name": "rvl_train_20807.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1988-03-25",
+      "due_date": null,
+      "issuer_name": "COMPANY",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0240",
+    "file_name": "rvl_train_22877.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": null,
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0358",
+    "file_name": "rvl_train_08239.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": "1496-4",
+      "invoice_date": "1983-11-29",
+      "due_date": null,
+      "issuer_name": "LABORATORIES, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0349",
+    "file_name": "rvl_train_20561.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1967-08-03",
+      "due_date": null,
+      "issuer_name": "WOODARD RESEARCH CORPORATION",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0376",
+    "file_name": "rvl_val_00107.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "Be IMI CRANE",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0319",
+    "file_name": "rvl_train_10312.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "EMPLOVER IDENTIFICATION NO",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0265",
+    "file_name": "rvl_val_20268.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "ZOIOANI ONISLLSAQY annowy ‘sania | sanonn",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0220",
+    "file_name": "rvl_train_03071.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "FOR PROFESSIONAL SERVICES RENDERED",
+      "recipient_name": null,
+      "total_amount": "10250.00",
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0292",
+    "file_name": "rvl_train_19961.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": "61967",
+      "invoice_date": "1989-06-01",
+      "due_date": null,
+      "issuer_name": "PROMOTIONAL MARKETING,INC.",
+      "recipient_name": null,
+      "total_amount": "29600.00",
+      "payment_terms": null,
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0363",
+    "file_name": "rvl_train_22292.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "oz | °",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0355",
+    "file_name": "rvl_train_12609.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "N2 4885",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Cod",
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0316",
+    "file_name": "rvl_train_18586.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "BIO-RESEARCH CONSULTANTS, INC.",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 1,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "medium"
+    }
+  },
+  {
+    "doc_id": "doc_0329",
+    "file_name": "rvl_train_24412.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1984-10-23",
+      "due_date": null,
+      "issuer_name": "Lorillard Research Center",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": "Net 30 Days",
+      "invoice_like_score": 2,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "high"
+    }
+  },
+  {
+    "doc_id": "doc_0223",
+    "file_name": "rvl_train_18391.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": null,
+      "due_date": null,
+      "issuer_name": "EXECUTI",
+      "recipient_name": null,
+      "total_amount": null,
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 0.85,
+      "document_confidence": "low"
+    }
+  },
+  {
+    "doc_id": "doc_0291",
+    "file_name": "rvl_train_22399.png",
+    "_split": "test",
+    "fields": {
+      "invoice_number": null,
+      "invoice_date": "1973-03-01",
+      "due_date": null,
+      "issuer_name": "BIO-RESEARCH CONSULTANTS, Inc.",
+      "recipient_name": null,
+      "total_amount": "12.34",
+      "payment_terms": null,
+      "invoice_like_score": 0,
+      "ocr_quality_score": 1.0,
+      "document_confidence": "low"
+    }
+  }
+]

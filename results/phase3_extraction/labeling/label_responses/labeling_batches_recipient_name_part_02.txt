@@ -1,0 +1,25 @@
+doc_id=doc_0228 | field=recipient_name | candidate_text=Telemarketing Services voice Numaer; 116936 | label=0
+doc_id=doc_0228 | field=recipient_name | candidate_text=To: LORILLARD | label=1
+doc_id=doc_0312 | field=recipient_name | candidate_text=Bt Mason RESEARCH INSTITUTE | label=0
+doc_id=doc_0312 | field=recipient_name | candidate_text=The Council for Tobacco Research, U.S.A. | label=1
+doc_id=doc_0202 | field=recipient_name | candidate_text=EM &Company, Inc. | label=0
+doc_id=doc_0202 | field=recipient_name | candidate_text=Labor, equipment, and miscellaneous material to | label=0
+doc_id=doc_0202 | field=recipient_name | candidate_text=and to repair Yankee thermocompressor. | label=0
+doc_id=doc_0266 | field=recipient_name | candidate_text=LORILLARD RESEARCH CENTER | label=1
+doc_id=doc_0232 | field=recipient_name | candidate_text=TC [RTOS PRET TT TO | label=0
+doc_id=doc_0232 | field=recipient_name | candidate_text=RETURN TO: KANE (01 Jocranrier uLOMGRLGOR | label=0
+doc_id=doc_0268 | field=recipient_name | candidate_text=PLEASE REFER TO OUR INVOICE | label=0
+doc_id=doc_0268 | field=recipient_name | candidate_text=so.o70 suipreo To | label=0
+doc_id=doc_0366 | field=recipient_name | candidate_text=MANAGEMENT CORP. | label=0
+doc_id=doc_0366 | field=recipient_name | candidate_text=Services Rendered: L9%e | label=0
+doc_id=doc_0277 | field=recipient_name | candidate_text=SPECIAL INSTRUCTIONS: Please return check to | label=0
+doc_id=doc_0277 | field=recipient_name | candidate_text=COST CENTER | label=0
+doc_id=doc_0283 | field=recipient_name | candidate_text=ait lt ENTS To! 3 FOB instifiTion | label=0
+doc_id=doc_0283 | field=recipient_name | candidate_text=JELIVERED, INSIDE TO RECEI | label=0
+doc_id=doc_0381 | field=recipient_name | candidate_text=LABORATORIES AMERICA, INC | label=0
+doc_id=doc_0381 | field=recipient_name | candidate_text=T vorittard, Inc. | label=1
+doc_id=doc_0381 | field=recipient_name | candidate_text=To: P.O. Box 21688 | label=0
+doc_id=doc_0381 | field=recipient_name | candidate_text=Attn: Dr. Danfel J. Heck | label=0
+doc_id=doc_0310 | field=recipient_name | candidate_text=. DANIEL J. EDELMAN, INC. | label=0
+doc_id=doc_0310 | field=recipient_name | candidate_text=PROFESSIONAL SERVICES | label=0
+doc_id=doc_0252 | field=recipient_name | candidate_text=RETURN TO: NAME SEPARTHENT | BULONGILGOR PRONE | label=0
