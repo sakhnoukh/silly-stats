@@ -4,6 +4,48 @@ Traditional AI/ML pipeline for classifying documents into 4 categories (**email*
 
 ---
 
+## Status & Completion
+
+| Phase | Task | Status | Details |
+|-------|------|--------|---------|
+| **Phase 1** | Data download, OCR, feature extraction | 🟡 In Progress | RVL-CDIP download ongoing (~7% complete, 1,679/25K form images). Run `run_phase1_complete.sh` once download finishes. |
+| **Phase 2** | Train classical classifiers (SVM, LogReg, RF, NB) with PCA/SVD | ✅ **COMPLETE** | 10 models trained. Best: LogisticRegression. Saved to `models/best_model.pkl`. See `results/model_comparison.csv`. |
+| **Phase 3** | Extract invoice fields (regex-based) | ✅ **COMPLETE** | All 6 fields working: invoice_number, invoice_date, due_date, issuer_name, recipient_name, total_amount. Use `scripts/extract_invoice_fields.py`. |
+| **Phase 4** | Combine Phase 2 + Phase 3 into unified pipeline | ⬜ TODO | Create `run.py` entry point: classify document → if invoice, extract fields → output JSON. |
+| **Phase 5** | Documentation & presentation | ⬜ TODO | Technical writeup, live demo, 15-minute slides. |
+
+---
+
+## What's Been Done
+
+### Phase 2 ✅ Classification Models
+- **10 models trained** on TF-IDF features (5K vocab, 1-2 grams):
+  - Baselines: Logistic Regression, Random Forest, LinearSVM, Multinomial NB
+  - PCA variants: Same 3 models with PCA(n_components=150)
+  - SVD variants: Same 3 models with TruncatedSVD(n_components=150)
+- **5-fold cross-validation**, confusion matrices, per-class metrics (precision/recall/F1)
+- **Best model selected**: LogisticRegression (Baseline) with F1=1.0 on synthetic data
+- **Output files**: 
+  - `models/best_model.pkl` — serialized best model
+  - `models/best_model_meta.json` — metadata
+  - `results/model_comparison.csv` — all 10 models' metrics
+  - `results/test_metrics.txt` — test set evaluation
+  - `results/confusion_matrix.png` — visualization
+
+### Phase 3 ✅ Invoice Field Extraction
+- **Regex-based field extractor** (no ML models) for invoices
+- **All 6 fields** extract correctly:
+  - `invoice_number` — handles "INV-2024-00123", "inv-123", etc.
+  - `invoice_date` — parses "January 15, 2024" → "2024-01-15" (ISO format)
+  - `due_date` — same as invoice_date
+  - `issuer_name` — vendor/company name
+  - `recipient_name` — customer/bill-to name
+  - `total_amount` — robust to currencies: $500.00, €1,234.56, £250, 1500 USD, etc.
+- **CLI interface**: `python3 scripts/extract_invoice_fields.py <invoice_text_or_file>`
+- **Output**: JSON with all 6 fields
+
+---
+
 ## Project Structure
 
 ```
@@ -112,7 +154,63 @@ python3 scripts/make_features.py      # TF-IDF features
 - [x] Train/val/test splits (stratified 70/15/15)
 - [x] TF-IDF feature generation (5K vocab)
 
-**Next:** Phase 2 — Train classification models (SVM, Logistic Regression, Random Forest)
+---
+
+## For Groupmates: Continuing from Here
+
+### Ready to Use (for Phase 4 & 5)
+
+**Phase 2 Classifier:**
+```python
+from joblib import load
+model = load("models/best_model.pkl")
+vectorizer = load("data/features/tfidf_vectorizer.pkl")
+encoder = load("data/features/label_encoder.pkl")
+
+# Classify a document
+text = "..."  # extracted document text
+features = vectorizer.transform([text])
+pred = model.predict(features)[0]
+class_name = encoder.inverse_transform([pred])[0]
+```
+
+**Phase 3 Invoice Extractor:**
+```python
+from scripts.extract_invoice_fields import InvoiceExtractor
+
+extractor = InvoiceExtractor()
+result = extractor.extract(invoice_text)
+# Returns: {invoice_number, invoice_date, due_date, issuer_name, recipient_name, total_amount}
+```
+
+### TODO: Phase 4 — Unified Pipeline
+
+**Goal:** Create `run.py` that combines Phase 2 + Phase 3
+
+**Pseudocode:**
+```python
+# Accept input document (text or image)
+# 1. Preprocess text (if image, OCR first)
+# 2. Classify using Phase 2 model
+# 3. If class == "invoice", run Phase 3 extractor
+# 4. Output JSON with class + extracted fields (if invoice)
+
+# Should support:
+# python3 run.py document.txt --output result.json
+# python3 run.py document.png --output result.json
+```
+
+Files to modify/create:
+- [ ] `run.py` — main entry point (200-300 lines)
+- [ ] Optional: `pipeline.py` — shared utilities
+
+### TODO: Phase 5 — Presentation & Documentation
+
+**Deliverables:**
+- [ ] Update `docs/` with technical writeup
+- [ ] Create demo script showing end-to-end example
+- [ ] Prepare 15-minute presentation (slides + talking points)
+- [ ] Live demo test cases (sample documents of each class)
 
 ---
 

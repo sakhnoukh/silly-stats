@@ -51,8 +51,11 @@ def load_best_model():
 
     model_path = os.path.join(MODELS_DIR, "best_model.pkl")
     model = joblib.load(model_path)
+    
+    # Handle both old and new key names
+    val_f1 = meta.get('val_f1_macro') or meta.get('validation_macro_f1', 0)
     print(f"Loaded best model: {meta['selected_model']} "
-          f"(val macro F1 = {meta['validation_macro_f1']:.4f})")
+          f"(val macro F1 = {val_f1:.4f})")
     return model, meta
 
 
@@ -83,7 +86,8 @@ def evaluate(model, X_test, y_test, class_names, meta):
         f.write("=" * 50 + "\n\n")
         f.write(f"Model: {meta['selected_model']}\n")
         f.write(f"Selection criterion: {meta['selection_criterion']}\n")
-        f.write(f"Validation macro F1: {meta['validation_macro_f1']:.4f}\n\n")
+        val_f1 = meta.get('val_f1_macro') or meta.get('validation_macro_f1', 0)
+        f.write(f"Validation macro F1: {val_f1:.4f}\n\n")
         f.write("Test Results\n")
         f.write("-" * 30 + "\n")
         f.write(f"Accuracy:        {acc:.4f}\n")

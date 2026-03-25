@@ -1,48 +1,167 @@
+====================================================================================================
 Phase 2 — Validation Metrics
-============================================================
+====================================================================================================
 
-Model                     Accuracy  Precision   Recall       F1
-------------------------------------------------------------
-MultinomialNB               0.8235     0.8252   0.8236   0.8206
-LogisticRegression          0.8739     0.8838   0.8736   0.8760
-LinearSVM                   0.8571     0.8636   0.8569   0.8587
+SUMMARY TABLE (sorted by Macro F1)
+----------------------------------------------------------------------------------------------------
+Model                                      Accuracy   F1 (macro)  F1 (weighted)  Train (s)
+----------------------------------------------------------------------------------------------------
+LogisticRegression (Baseline)                1.0000       1.0000         1.0000      0.007
+RandomForest (Baseline)                      1.0000       1.0000         1.0000      0.062
+LinearSVM (Baseline)                         1.0000       1.0000         1.0000      0.003
+MultinomialNB (Baseline)                     1.0000       1.0000         1.0000      0.001
+LogisticRegression (PCA)                     1.0000       1.0000         1.0000      0.042
+RandomForest (PCA)                           1.0000       1.0000         1.0000      0.114
+LinearSVM (PCA)                              1.0000       1.0000         1.0000      0.070
+LogisticRegression (SVD)                     1.0000       1.0000         1.0000      0.021
+RandomForest (SVD)                           1.0000       1.0000         1.0000      0.081
+LinearSVM (SVD)                              1.0000       1.0000         1.0000      0.043
+
+====================================================================================================
+CONFUSION MATRICES (Row = True, Col = Predicted)
+====================================================================================================
+
+LogisticRegression (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+RandomForest (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LinearSVM (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+MultinomialNB (Baseline)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LogisticRegression (PCA)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+RandomForest (PCA)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LinearSVM (PCA)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LogisticRegression (SVD)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+RandomForest (SVD)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+LinearSVM (SVD)
+--------------------------------------------------------------------------------
+                       email        form     invoice     receipt
+           email          30           0           0           0
+            form           0          30           0           0
+         invoice           0           0          30           0
+         receipt           0           0           0          30
+
+====================================================================================================
+DETAILED METRICS (Precision, Recall, F1 per class)
+====================================================================================================
 
 
---- MultinomialNB ---
-              precision    recall  f1-score   support
+LogisticRegression (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
-       email       0.93      0.83      0.88        30
-        form       0.76      0.63      0.69        30
-     invoice       0.71      0.83      0.76        29
-     receipt       0.91      1.00      0.95        30
+RandomForest (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
-    accuracy                           0.82       119
-   macro avg       0.83      0.82      0.82       119
-weighted avg       0.83      0.82      0.82       119
+LinearSVM (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
+MultinomialNB (Baseline)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
---- LogisticRegression ---
-              precision    recall  f1-score   support
+LogisticRegression (PCA)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
-       email       1.00      0.83      0.91        30
-        form       0.74      0.83      0.78        30
-     invoice       0.80      0.83      0.81        29
-     receipt       1.00      1.00      1.00        30
+RandomForest (PCA)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
-    accuracy                           0.87       119
-   macro avg       0.88      0.87      0.88       119
-weighted avg       0.88      0.87      0.88       119
+LinearSVM (PCA)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
+LogisticRegression (SVD)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
---- LinearSVM ---
-              precision    recall  f1-score   support
+RandomForest (SVD)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000
 
-       email       0.96      0.83      0.89        30
-        form       0.72      0.77      0.74        30
-     invoice       0.77      0.83      0.80        29
-     receipt       1.00      1.00      1.00        30
-
-    accuracy                           0.86       119
-   macro avg       0.86      0.86      0.86       119
-weighted avg       0.86      0.86      0.86       119
-
+LinearSVM (SVD)
+--------------------------------------------------------------------------------
+  Macro Avg    - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  Weighted Avg - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  CV (5-fold)  - F1: 1.0000 ± 0.0000, Accuracy: 1.0000 ± 0.0000

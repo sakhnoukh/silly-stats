@@ -1,4 +1,11 @@
-model,accuracy,macro_precision,macro_recall,macro_f1,train_time_s
-MultinomialNB,0.8235,0.8252,0.8236,0.8206,0.007
-LogisticRegression,0.8739,0.8838,0.8736,0.876,0.063
-LinearSVM,0.8571,0.8636,0.8569,0.8587,0.018
+model,val_accuracy,val_precision_macro,val_recall_macro,val_f1_macro,val_precision_weighted,val_recall_weighted,val_f1_weighted,train_time_s,cv_accuracy_mean,cv_accuracy_std,cv_f1_mean,cv_f1_std
+LogisticRegression (Baseline),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.007,1.0,0.0,1.0,0.0
+RandomForest (Baseline),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.062,1.0,0.0,1.0,0.0
+LinearSVM (Baseline),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.003,1.0,0.0,1.0,0.0
+MultinomialNB (Baseline),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.001,1.0,0.0,1.0,0.0
+LogisticRegression (PCA),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.042,1.0,0.0,1.0,0.0
+RandomForest (PCA),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.114,1.0,0.0,1.0,0.0
+LinearSVM (PCA),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.07,1.0,0.0,1.0,0.0
+LogisticRegression (SVD),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.021,1.0,0.0,1.0,0.0
+RandomForest (SVD),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.081,1.0,0.0,1.0,0.0
+LinearSVM (SVD),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.043,1.0,0.0,1.0,0.0
