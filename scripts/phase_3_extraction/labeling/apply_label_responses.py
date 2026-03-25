@@ -1,7 +1,7 @@
+import os
 from pathlib import Path
 import re
 import pandas as pd
-import os
 
 PROJ_ROOT = Path(__file__).resolve().parents[3]
 CANDIDATES_DIR = PROJ_ROOT / "results" / "phase3_extraction" / "candidates"
@@ -20,6 +20,12 @@ LINE_RE = re.compile(
 )
 
 
+def norm_text(x):
+    if pd.isna(x):
+        return ""
+    return str(x).strip()
+
+
 def load_responses():
     rows = []
     if not RESPONSES_DIR.is_dir():
@@ -28,16 +34,16 @@ def load_responses():
     for fname in os.listdir(RESPONSES_DIR):
         if not fname.endswith(".txt"):
             continue
-        path = os.path.join(RESPONSES_DIR, fname)
+        path = RESPONSES_DIR / fname
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 m = LINE_RE.match(line)
                 if m:
                     rows.append({
-                        "doc_id": m.group(1).strip(),
-                        "field": m.group(2).strip(),
-                        "candidate_text": m.group(3).strip(),
+                        "doc_id": norm_text(m.group(1)),
+                        "field": norm_text(m.group(2)),
+                        "candidate_text": norm_text(m.group(3)),
                         "label": int(m.group(4)),
                     })
     return rows
@@ -60,16 +66,21 @@ def main():
             continue
 
         df = pd.read_csv(csv_path)
+
         if "label" not in df.columns:
-            df["label"] = ""
+            df["label"] = pd.NA
+
+        # normalize merge keys to strings
+        df["doc_id"] = df["doc_id"].map(norm_text)
+        df["field"] = df["field"].map(norm_text)
+        df["candidate_text"] = df["candidate_text"].map(norm_text)
 
         field_resp = resp_df[resp_df["field"] == field].copy()
         if field_resp.empty:
+            print(f"No parsed responses found for field: {field}")
             continue
 
         merge_cols = ["doc_id", "field", "candidate_text"]
-        df["doc_id"] = df["doc_id"].astype(str)
-        field_resp["doc_id"] = field_resp["doc_id"].astype(str)
 
         merged = df.merge(
             field_resp[merge_cols + ["label"]],
@@ -78,7 +89,11 @@ def main():
             suffixes=("", "_new")
         )
 
-        merged["label"] = merged["label_new"].combine_first(merged["label"])
+        # overwrite only where a new parsed label exists
+        merged["label"] = merged["label_new"].where(
+            merged["label_new"].notna(),
+            merged["label"]
+        )
         merged = merged.drop(columns=["label_new"])
 
         merged.to_csv(csv_path, index=False, encoding="utf-8")

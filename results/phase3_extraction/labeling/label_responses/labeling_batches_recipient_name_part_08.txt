@@ -1,0 +1,31 @@
+doc_id=doc_0207 | field=recipient_name | candidate_text=“CRC. cowtancr, RESEARCH CENTER (BVBA/SP.AL> | label=0
+doc_id=doc_0391 | field=recipient_name | candidate_text=Applied Graphics Technologies, Inc. 06/25/99 | label=0
+doc_id=doc_0391 | field=recipient_name | candidate_text=Bill To: Philip Morris | label=1
+doc_id=doc_0391 | field=recipient_name | candidate_text=120 Park Avenue | label=0
+doc_id=doc_0391 | field=recipient_name | candidate_text=‘Attn: Maria Bonaventura | label=0
+doc_id=doc_0391 | field=recipient_name | candidate_text=Description: Digital imaging Services | label=0
+doc_id=doc_0345 | field=recipient_name | candidate_text=. TRIANGLE PUBLICATIONS, INC. TEAMS. | label=0
+doc_id=doc_0345 | field=recipient_name | candidate_text=LORILLARD MEDIA SERVICES 2 | label=1
+doc_id=doc_0367 | field=recipient_name | candidate_text=R.J.Reynolds Tobacco Company | label=0
+doc_id=doc_0367 | field=recipient_name | candidate_text=SOLD TO | label=0
+doc_id=doc_0367 | field=recipient_name | candidate_text=‘The Council for Tobacco Research June 28, 1972 | label=1
+doc_id=doc_0367 | field=recipient_name | candidate_text=110 East 59th Street | label=0
+doc_id=doc_0395 | field=recipient_name | candidate_text=To: Vlorittard Research Center 7 | label=1
+doc_id=doc_0395 | field=recipient_name | candidate_text=Attn: Dn, Connie Stone | label=0
+doc_id=doc_0395 | field=recipient_name | candidate_text=— L 4 | label=0
+doc_id=doc_0272 | field=recipient_name | candidate_text=DAWSON RESEARCH CORPORATION | label=0
+doc_id=doc_0272 | field=recipient_name | candidate_text=Lorillard Research Center | label=1
+doc_id=doc_0387 | field=recipient_name | candidate_text=Lorillard Média Service ‘reat | label=1
+doc_id=doc_0387 | field=recipient_name | candidate_text=Attn.: Mr. Steve Molloy | label=0
+doc_id=doc_0387 | field=recipient_name | candidate_text=hocld be 350 "rode | label=0
+doc_id=doc_0387 | field=recipient_name | candidate_text=Lorillard,,.....52620. | label=0
+doc_id=doc_0387 | field=recipient_name | candidate_text=Newport. 27 31°! | label=0
+doc_id=doc_0387 | field=recipient_name | candidate_text=12/6.| City & Sub. . 7 | label=0
+doc_id=doc_0387 | field=recipient_name | candidate_text=CMT FV SF | label=0
+doc_id=doc_0387 | field=recipient_name | candidate_text=sresoste | label=0
+doc_id=doc_0280 | field=recipient_name | candidate_text=Laurence, Craelegs. Feces M2) » Inc. | | label=0
+doc_id=doc_0365 | field=recipient_name | candidate_text=ALL WAYS ADVERTISING COMPANY | label=0
+doc_id=doc_0212 | field=recipient_name | candidate_text=payee; Management Science Assoc. Inc. EXPLANATIONOF PAYMENT. Sales & Informat | label=1
+doc_id=doc_0212 | field=recipient_name | candidate_text=BANK CODE: _ ‘COMPANY: | label=0
+doc_id=doc_0234 | field=recipient_name | candidate_text=“Ted Bates a company. inc /advertising _ | label=0
+doc_id=doc_0257 | field=recipient_name | candidate_text=-CRC Contract F Research Center wisnsry SPRL | label=0

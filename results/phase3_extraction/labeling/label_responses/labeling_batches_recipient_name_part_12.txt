@@ -1,0 +1,4 @@
+doc_id=doc_0291 | field=recipient_name | candidate_text=BIO-RESEARCH CONSULTANTS, Inc. | label=0
+doc_id=doc_0291 | field=recipient_name | candidate_text=‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A. | label=1
+doc_id=doc_0291 | field=recipient_name | candidate_text=Research Assistants and Technicians $2,333.96 | label=0
+doc_id=doc_0291 | field=recipient_name | candidate_text=Blue Cross, Group Insurance, etc. 105.62 | label=0

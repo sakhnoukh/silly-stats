@@ -1,0 +1,29 @@
+doc_id=doc_0200 | field=recipient_name | candidate_text=SHOOK, HARDY & BACON and Ls, Inc. | label=1
+doc_id=doc_0346 | field=recipient_name | candidate_text=TAN ToBaceo coMPANY NTS INTL | label=1
+doc_id=doc_0346 | field=recipient_name | candidate_text=30rd 3288 TEVIEY SLAZA | label=0
+doc_id=doc_0346 | field=recipient_name | candidate_text=aRavUST vawk suite 1300 | label=0
+doc_id=doc_0346 | field=recipient_name | candidate_text=Bas PAK AyeWUE CLEVELAND, C4E9  gaata | label=0
+doc_id=doc_0346 | field=recipient_name | candidate_text=YORK, YEN YORE 10467 | label=0
+doc_id=doc_0271 | field=recipient_name | candidate_text=Brian R. Meara Public Relations Inc. | label=0
+doc_id=doc_0271 | field=recipient_name | candidate_text=PHILIP MORRIS MANAGEMENT CORP. | label=1
+doc_id=doc_0271 | field=recipient_name | candidate_text=FEES FOR SERVICES RENDERED: | label=0
+doc_id=doc_0302 | field=recipient_name | candidate_text=1) | To the services of Fleishuan Hillerd (France) in | label=0
+doc_id=doc_0278 | field=recipient_name | candidate_text=ILIP MORRIS INC RICHMON | label=1
+doc_id=doc_0210 | field=recipient_name | candidate_text=CRC CONTRACT RESEARCH CENTER BV.BASP.R.L: | label=0
+doc_id=doc_0213 | field=recipient_name | candidate_text=T torittard Research center 1 | label=1
+doc_id=doc_0213 | field=recipient_name | candidate_text=Attn: Dr. Daniel J. Heck | label=0
+doc_id=doc_0235 | field=recipient_name | candidate_text=@ HAZLETON Lsonatonies AMERICA. INC | label=0
+doc_id=doc_0235 | field=recipient_name | candidate_text=Lorillard Research Center | label=1
+doc_id=doc_0235 | field=recipient_name | candidate_text=Attn: Or. 'J. Daniel Heck | label=0
+doc_id=doc_0235 | field=recipient_name | candidate_text=CLIENT 297 | label=0
+doc_id=doc_0235 | field=recipient_name | candidate_text=PROEETNOMOER Tee | label=0
+doc_id=doc_0372 | field=recipient_name | candidate_text=Associates For Research On Indoor Air | label=0
+doc_id=doc_0372 | field=recipient_name | candidate_text=Paxments to Consultants | label=0
+doc_id=doc_0250 | field=recipient_name | candidate_text=Adams Letter Co., Inc. | label=0
+doc_id=doc_0250 | field=recipient_name | candidate_text=YO: LEONARD ZAHN & ASSOCIATES, INC, | label=1
+doc_id=doc_0250 | field=recipient_name | candidate_text=800K ONLY TO CTRe2, | label=0
+doc_id=doc_0288 | field=recipient_name | candidate_text=DESCRIPTION OF ITEM / SERVICE PURCHASED. vl AMOUNT | label=0
+doc_id=doc_0288 | field=recipient_name | candidate_text=‘uAAGE To AccoUNT sorat | 2 | label=0
+doc_id=doc_0380 | field=recipient_name | candidate_text=CRSS) Cas SIAINE ENGINEERS, NC PLEASE REMIT TO: | label=0
+doc_id=doc_0380 | field=recipient_name | candidate_text=GREENVILLE, SC 29607 CRS SIRRINE ENGINEERS, INC. | label=0
+doc_id=doc_0380 | field=recipient_name | candidate_text=PROF SERVICES-OVERTIME | label=0

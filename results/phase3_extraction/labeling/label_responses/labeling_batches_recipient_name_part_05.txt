@@ -1,0 +1,29 @@
+doc_id=doc_0217 | field=recipient_name | candidate_text=LABORATORIES, INC. | label=0
+doc_id=doc_0217 | field=recipient_name | candidate_text=Borriston Laboratories, Ine | label=0
+doc_id=doc_0217 | field=recipient_name | candidate_text=LORILLARD INC. | label=1
+doc_id=doc_0217 | field=recipient_name | candidate_text=. - Attention: Dr. Harry Minnemeyer | label=0
+doc_id=doc_0217 | field=recipient_name | candidate_text=5, Ot | label=0
+doc_id=doc_0217 | field=recipient_name | candidate_text=Borriston Laboratories, Inc. | label=0
+doc_id=doc_0246 | field=recipient_name | candidate_text="Tobacco Company | label=0
+doc_id=doc_0246 | field=recipient_name | candidate_text=to working with you in the coming year. | label=0
+doc_id=doc_0314 | field=recipient_name | candidate_text=To: Lorillard | label=1
+doc_id=doc_0314 | field=recipient_name | candidate_text=Research Center | label=0
+doc_id=doc_0314 | field=recipient_name | candidate_text=L_ Attn: Dr. Connie Stone 4 j | label=0
+doc_id=doc_0392 | field=recipient_name | candidate_text=Consultant services~-Synthetic Aza-compounés-- | label=0
+doc_id=doc_0392 | field=recipient_name | candidate_text=PLEASE RETURN CHECK To RGD NOV. 23, 1983 To NANCY | label=0
+doc_id=doc_0201 | field=recipient_name | candidate_text=PRODUCT RETURNED TO mo | label=0
+doc_id=doc_0209 | field=recipient_name | candidate_text=Return to N. Peters © | label=0
+doc_id=doc_0209 | field=recipient_name | candidate_text=Return to T. S. Osdene | label=0
+doc_id=doc_0335 | field=recipient_name | candidate_text=cusToMeR No. DAWOI0 | label=0
+doc_id=doc_0335 | field=recipient_name | candidate_text=ALLY GARGANG INC. | label=1
+doc_id=doc_0335 | field=recipient_name | candidate_text=ATTN: MAUREEN CLEMENS, | label=0
+doc_id=doc_0335 | field=recipient_name | candidate_text=805 THIRD AVENUE 5 | label=0
+doc_id=doc_0335 | field=recipient_name | candidate_text=NEW YORK» NY 10022 ° | label=0
+doc_id=doc_0335 | field=recipient_name | candidate_text=pt sD | label=0
+doc_id=doc_0335 | field=recipient_name | candidate_text="PAGE 4/C APRIL ISSUE . | label=0
+doc_id=doc_0378 | field=recipient_name | candidate_text=CANDY COMPANY  wioesse | label=0
+doc_id=doc_0306 | field=recipient_name | candidate_text=toe HILLER TRAVEL SERVICE, INC. | label=0
+doc_id=doc_0275 | field=recipient_name | candidate_text=Payee:__Tairtron Corporation EXPLANATIONOF PAYMENT | label=1
+doc_id=doc_0275 | field=recipient_name | candidate_text=RETURN TO NAME: __Liz Marx CODE: | label=0
+doc_id=doc_0369 | field=recipient_name | candidate_text=CRC contaract RESEARCH CENT fo suhag G2a4 | label=0
+doc_id=doc_0242 | field=recipient_name | candidate_text=cere To ELECT sDOKr BENEPIELD > WM | label=0
