@@ -1,0 +1,600 @@
+================================================================================
+doc_id=doc_0281
+file_name=rvl_train_11955.png
+field=recipient_name
+
+raw_text_excerpt:
+INVOICE
+DATE: 08/28/97,
+NO: 002185
+
+CUSTOMER NO: PO02AD
+‘TERMS: UPON RECEIPT
+
+ae fa tan eoing
+2289 NW 199th Street
+Miami, FL 33056
+®| PHILLIP MORRIS USA, ‘Make checks payable to:
+1] APTN:MR.GARY CAPREOL
+{| 120 PARK AVENUE Pro Player Stadium
+| NEW YORK, NY 10017-5592 Attn: David Nunes, Director of Finance
+3
+PAGE: 1
+DESCRIPTION ‘OUT
+units: 1.00 Rate: —-137500.000 137500.00
+
+ADVT
+
+PMT 2 OF 2 PER ADVERTISING AGREEMENT
+PERIOD COVERING-09/31/97-3/31/98
+FEDERAL IDi# 59-2450432
+
+4 0
+4
+d
+Trade Discount 0.00
+Tax Total 0.00
+‘Afinance charge of 1.5% per month wil be charged on all balances over thity days. TOTAL 137500.00
+REMITTANCE COPY
+8
+8
+g
+&
+2
+S
+8
+&
+
+candidates:
+1) candidate_text=CUSTOMER NO: PO02AD | source=early_org_line | line_idx=3
+2) candidate_text=®| PHILLIP MORRIS USA, ‘Make checks payable to: | source=early_org_line | line_idx=8
+3) candidate_text=PAGE: 1 | source=after_label | line_idx=13
+
+================================================================================
+doc_id=doc_0337
+file_name=rvl_train_14039.png
+field=recipient_name
+
+raw_text_excerpt:
+‘Timelnc Magazines No, «3asias0
+
+utr mao cour DATE 1asierce
+[Me Ure BULOWNG » ROCKEFELLER CENTER + NEW YORK,NY 10020 voice PAGE
+IAKE CHECKS PAYABLE TO: ‘SPORTS ILLUSTRATED AND MAIL TO: INDICATED.
+—
+i LORILLARO MEDIA SeavIcES
+ATIN: MS EILEEN ANTONIELLO Peo. 00k 19851
+| ONE PARK AVENUE = 1 7FL NEWARKe NJ 07193-0451
+New YORK nY  10016-S802 oa
+i} PeQ. GOX 93503
+| AOVERTISER HARLEY CIGARETTES EHICAGOs TL 60673-3503
+
+BRANDIDV LORILLAKD DIVISION
+
+PARENT LOEW'S CORPORATION emus 2% 1004s
+
+rou] sox [eoron] cose Te oeeoRrTon carom nerauownt
+t
+EW CROSS AMOUNT 74602652
+PAKCR GROSS AMOUNT 160562230
+21 farsoorse face Lace sc) MLO Ax os00
+Aogust Invoice #2 #371960-01
+orscounT CHance
+: Discount £03 34989478-
+AGENCY COMM, ADS. 1e3a3.97
+facotquae Peoteeste
+' . :
+is 4
+i2 x
+JALL ADVERTISEMENTS ARE GOVERNAO BY THE TERMS
+| ANG CONOITEONS UF THE APOLICALE RATE CARD.
+Won conan CacorT WALANG? DO NOT &-MPay This Amount =>
+
+PLEASE RETURN THIS COPY WITH PAYMENT
+
+candidates:
+1) candidate_text=IAKE CHECKS PAYABLE TO: ‘SPORTS ILLUSTRATED AND MAIL TO: INDICATED. | source=early_org_line | line_idx=3
+2) candidate_text=PARENT LOEW'S CORPORATION emus 2% 1004s | source=early_org_line | line_idx=12
+
+================================================================================
+doc_id=doc_0256
+file_name=rvl_train_15055.png
+field=recipient_name
+
+raw_text_excerpt:
+If ROWLAND COMPANY, INC,
+415 Madison Avenue, New York, N.Y. 10017
+Tel, (212] 668-1200
+
+Anevican Tobacco Company January 27, 1986
+245 Park Avenue
+
+New York, New York 10017 Due Dat
+
+February 6, 1984
+
+Attention: Mr. Willian Stevenson
+Marketing Controller
+
+Authorization No. M-124 (1983)
+
+Invoice #807653
+REIMBURSABLE PRODUCTION EXPENSES
+
+out-of-pocket and mechanical expenses
+paid in Decenber, 1983 in connection with
+the Dallas-ft. Worth Iacky Strike Program:
+
+cost
+Ton
+conn isaionable Charge Total
+Product Sampling $6,652.98 $6,652.98
+Press Materials Tois.17 T6is.47
+Travel & out-of-pocket (296.00) (296.09)
+Miscellaneous 689.97 689.97
+Please pay this enount | $7,791.12
+
+candidates:
+1) candidate_text=If ROWLAND COMPANY, INC, | source=early_org_line | line_idx=0
+2) candidate_text=Anevican Tobacco Company January 27, 1986 | source=early_org_line | line_idx=3
+3) candidate_text=Attention: Mr. Willian Stevenson | source=attention_line | line_idx=7
+4) candidate_text=Marketing Controller | source=after_label | line_idx=8
+
+================================================================================
+doc_id=doc_0336
+file_name=rvl_train_13088.png
+field=recipient_name
+
+raw_text_excerpt:
+10378 Democracy Lane
+HBI Healthy Buildings Intemational. inc. Faia, VA nao
+To: Covington & Burling Telefax (703) 352.0151
+
+1201 Pennsylvania Avenue, N.W.
+Washington, D.C, 20044
+
+wvorce no CHOLSO
+
+pate Aug 8, 1991
+your're: Mr. John Rupp
+
+Venezuela
+Media/Seninar Tour
+
+To the PR Agency fees (Video Ingenieria y Arquitectura -
+VIA) as per the attached invoice for organization of the
+HBI Media/Seninar tour.
+
+VIA invoice #V-91-131 dated 6/13/91............, $ 3,693.64
+
+For HBI Ine.
+
+Gray Irtson
+ah
+
+Enclosures
+
+2029370439
+
+candidates:
+1) candidate_text=HBI Healthy Buildings Intemational. inc. Faia, VA nao | source=early_org_line | line_idx=1
+2) candidate_text=To the PR Agency fees (Video Ingenieria y Arquitectura - | source=early_org_line | line_idx=10
+
+================================================================================
+doc_id=doc_0231
+file_name=rvl_train_07224.png
+field=recipient_name
+
+raw_text_excerpt:
+BROWN & WILLIAMSOD
+
+10 West Hill Sereet + Louisville, Kentucky
+
+TOBACCO CORPORATION
+
+Ki ALESIS
+
+PEASE MAIL REMITTANCE TO: a ae se Kea gypeare
+BROWN & WILLIAMSON TOBACCO CORP. ko
+ADVERTISING Vian AY wf le dais,
+
+WORGAN AhivitAT LAN
+
+ply wesT cLST street
+
+deh FEAR, WY LeOLh
+
+PeCPSvieus xy yo tare oe
+o@8y [pau FM ORERTO'S#iivs|  e4sau0 |
+240 [PKS 1995 3? |103| 04,000 |
+0480 [PKG LO SP LS 641900 |
+6400 [PKL SLVOSP LIS 4,000 j
+6480 [PKL LT Selva) 644300 |
+6400 [PKG LTLovsP 1s3 04 yc09| |
+Tad ocPT Te PAY TAxLS KUCL | |
+GALL stu YERK AREA 4ohemsesLS
+Fen ae |
+|
+| i
+|
+H |
+| : |
+
+670150023
+
+Saar
+
+candidates:
+1) candidate_text=TOBACCO CORPORATION | source=early_org_line | line_idx=2
+2) candidate_text=PEASE MAIL REMITTANCE TO: a ae se Kea gypeare | source=early_org_line | line_idx=4
+3) candidate_text=BROWN & WILLIAMSON TOBACCO CORP. ko | source=early_org_line | line_idx=5
+
+================================================================================
+doc_id=doc_0332
+file_name=rvl_train_17662.png
+field=recipient_name
+
+raw_text_excerpt:
+4 PLEASE REFER TO se
+ee [NUMBER ON ALL PAYMEN
+MICROBIOLOGICAL —_ 9200 BLACKWELL Ro. o™ CORRESPONDENCE
+ASSOCIATES ROCKVILLE, MD 20850 s 2
+
+TELEPHONE: (201) 738-1000
+TELEX 90.9793
+sou0 70 swiPPe0 70
+
+LORILLARD RESEARCH CENTER 3i7tore
+P.O. BOX 21688.
+
+420 ENGLISH. STREET
+ATTN: OR. DAN HECK
+GREENSBORO, NC
+27420 |
+
+PAYMENT TERMS NET 30 DAYS iwvoice pare 060487.
+[reusrowennoween SUSTONER P.O, NUMBER ust.P.0, DATE | OATESuIPPED | PAGKINGSLIPNO. | ORDEANO.
+I — or Oxy Wr | Me. Tost
+| 032 07 0c03 S430 it 1 B 3149
+fauantity [oir meas] PHObueT NO. | ‘DESCRIPTION uit pice | amount |
+
+1 €& 82-380 | UNSCHEDULED DNA SYNTHESIS 4400.00 £400 a4
+| stupy wo,. 75230.380 [420
+On
+| DUPLICATE
+. | REPROD 5
+| | |FACTORY
+Reod aD
+‘ | | BS
+| ry
+i , Boos
+, | [ON
+i | Bp
+| a
+i
+L l - _—
+Wer aNooNT FREIGHT CHARGE RATE Tax aNOUNT “TOTAL AMOUNT DUE
+| 4400 00 00 oo | oo 4400.00
+
+[REMIT IN U.S, CURRENCY ONLY)
+
+candidates:
+1) candidate_text=4 PLEASE REFER TO se | source=early_org_line | line_idx=0
+2) candidate_text=ASSOCIATES ROCKVILLE, MD 20850 s 2 | source=early_org_line | line_idx=3
+3) candidate_text=LORILLARD RESEARCH CENTER 3i7tore | source=early_org_line | line_idx=7
+4) candidate_text=ATTN: OR. DAN HECK | source=attention_line | line_idx=10
+5) candidate_text=GREENSBORO, NC | source=after_label | line_idx=11
+6) candidate_text=27420 | | source=after_label | line_idx=12
+
+================================================================================
+doc_id=doc_0253
+file_name=rvl_val_01424.png
+field=recipient_name
+
+raw_text_excerpt:
+PLEASE REMIT TO: i
+
+voice No
+cusToMen no
+0 INVOICE DATE
+70 aoe
+EXQuisite (? ‘OUR ORDER NO.
+Seu Z
+TON Brcedvay = Bldg ASE «Dene, oozes A“ You\
+(028 a Fax 00) 501595
+$00 ou
+70 70
+7.0. NUMBER SHPPED VA
+UE DATE are suiPeeo
+TERMS SALESPERSON
+THEM NUMBER & DESCRIPTION lonoenED] 6.0. | supreo| unpmce | EXTENSION
+
+9600 ezeTs
+
+SALE TOTAL
+INVOICE DISCOUNT
+SALES TAK
+
+FREIGHT / HANDLING
+
+Pise wile your CUSTOMER NUMBER and INVOICE NUMBERS belng pald on your check!
+
+CUSTOMER COPY AMOUNT DUE
+
+candidates:
+1) candidate_text=PLEASE REMIT TO: i | source=early_org_line | line_idx=0
+2) candidate_text=CUSTOMER COPY AMOUNT DUE | source=early_org_line | line_idx=21
+
+================================================================================
+doc_id=doc_0229
+file_name=rvl_train_17857.png
+field=recipient_name
+
+raw_text_excerpt:
+DAVID T. WESTCOTT, Ph.D. 27 NORE ROAD
+Consultant Scientist PORTISHEAD
+BRISTOL
+Tel. No. (0272) 842728
+
+VAT REG NO 520 1597 77.
+
+Thonas 8, Osdene, Ts OSDENE
+
+Vice President Science and Technology,
+Operations Center,
+
+Philip Forris USA, FEB 5 99
+P.0,Box 26603,
+
+Richnond,
+
+Virginia, 23261.
+
+January 15th 1990.
+
+1989.
+
+21988
+
+Fees for pei
+
+CORESTA Tack force meeting- Bristol, Nov. 7th. 1 day.
+BST meeting London, Nov. 8th. 1 any.
+S.H.& B, meeting London, Nov.15th. 1 day.
+1.5.0, meeting and visit to Richmond, Now 22nd to 30th, 9 days.
+TAC meeting London, Dec 6th and 12th, 2 days,
+
+Office work and reports.
+
+Total 47 deys.
+
+noted of 17 days 0.400 $ por day
+
+ELOLESEZOS
+
+candidates:
+1) candidate_text=Operations Center, | source=early_org_line | line_idx=7
+
+================================================================================
+doc_id=doc_0299
+file_name=rvl_val_15148.png
+field=recipient_name
+
+raw_text_excerpt:
+BORRISTON
+
+RESEARCH LABORATORIES, INC.
+
+*#** * INVOICE * * * #
+
+September 25, 1981
+
+LORILLARD INCORPORATED
+
+420 Eng]
+Greensbor
+
+Attn: Dt
+
+Referenc
+BRL Ref.
+
+Invoice
+
+ish Street
+ro, North Carolina 27420
+
+ir. Harry Minnemeyer
+
+Purchase Order No. 0978
+
+2-22-250-B
+No.: 2B
+DESCRIPTION
+
+2nd Installment of four
+“DOMINANT LETHAL EVALUATION.
+OF Di, D2» Ds, and Dy
+
+-—
+
+Award $35,730.00
+
+Invoice 1+28 (17,865.00)
+Bal. Remaining .
+
+REMITTANCE ADDRESS
+Enviro Control, Inc.
+11140 Rockville Pike
+Rockville, Md. 20852
+
+Attn: B. Bellford
+
+ee * INVOICE #
+
+5050 Beech Place © Temple Hills, Maryland 20031 © 301-899-3536,
+
+s
+So
+x
+S
+a
+iy
+
+candidates:
+1) candidate_text=RESEARCH LABORATORIES, INC. | source=early_org_line | line_idx=1
+2) candidate_text=Attn: Dt | source=attention_line | line_idx=7
+3) candidate_text=Referenc | source=after_label | line_idx=8
+4) candidate_text=BRL Ref. | source=after_label | line_idx=9
+5) candidate_text=Attn: B. Bellford | source=attention_line | line_idx=29
+
+================================================================================
+doc_id=doc_0245
+file_name=rvl_train_03350.png
+field=recipient_name
+
+raw_text_excerpt:
+jee 570006 © Oe
+
+fila
+
+WIT RESEARCH INSTITUTE
+
+\] 53535
+_
+Lostutany roanceo co ossss
+GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER
+arren: og T votuMuTH ong won o2
+. 1, couched, ESS coors
+wnat waste Smee [nee prom
+costs RECORDED THROUGH; G8/31/90 824.
+re rertop
+
+TOTAL
+
+0.89
+
+Mb Wurrn one
+OK Hep Monroy
+Bept$i00
+Dlel. 4111
+
+candidates:
+1) candidate_text=WIT RESEARCH INSTITUTE | source=early_org_line | line_idx=2
+2) candidate_text=GREENSEORO ne 27405 PLEASE REFER TO OUR INVOICE NUMBER | source=early_org_line | line_idx=6
+
+================================================================================
+doc_id=doc_0354
+file_name=rvl_train_19544.png
+field=recipient_name
+
+raw_text_excerpt:
+OO ETE
+
+'
+
+a, a i
+
+INBIFO Institut fur biologische Forschung GmbH
+\
+
+Kaufmannische Verwaitung \Vertragsforschung
+
+Toefon 02208) 303-1
+Teel (0203) 308-962
+foraersina
+
+‘Taro ra recs Foncng rae Poparae SHONEN TS Dress Bank AG Kin
+ere ore Reimann fo ass2zr4 09 (62 37080040)
+Perceptive Instruments Stactepariatse Koh
+
+Ria SBiaztge “teuzaroso19)
+Attn. Dr. P. 8. Povers e222 ss
+Orchard Lea, North End Ka faeeaessoe (6127010080)
+
+_. Little Yeldham
+Halstead, Essex CO9 4 LQ
+Inezeleten =
+
+England IeSeneisen =
+UncorZeichen AEB/IBM PF WI
+Fet.No,
+Kéin, 14 Jan.93 :
+- es
+PROFORMA~ INVOICE, * .
+RECHNUNG. Nez 02-93 Peis Fos
+z Bel Zalung bite angebon ow
+tae et 4
+We have consigned to you today free of VALUE FOR
+charge our following equipment by air- CUSTOMS ONLY
+
+freight via DANZAS, Cologne:
+
+1 Interface Symbol Link
+Model No. LL390-190 BA, Serial No. 4030
+oo acquired June 1989 500,-~
+
+4 \ 1 transformer MP, Model No. 50-04000-044
+Serial No. 20~03157-50
+acquired April 1989 200,-=
+
+1 Laserscanner TM, Model No. LS-6500-Z00A
+. Serial No. 012754
+
+2 acquired March 1991
+a8 item No, 6362 2.000,-~
+
+1 Set of cables -
+
+1 Set of manuals
+
+TOTAL 2.700,
+
+The shipment is covered by our general |
+
+: sR con
+Please confirm 
+
+candidates:
+1) candidate_text=Attn. Dr. P. 8. Povers e222 ss | source=attention_line | line_idx=13
+2) candidate_text=_. Little Yeldham | source=after_label | line_idx=15
+3) candidate_text=Halstead, Essex CO9 4 LQ | source=after_label | line_idx=16
+4) candidate_text=Inezeleten = | source=after_label | line_idx=17
+5) candidate_text=England IeSeneisen = | source=after_label | line_idx=18
+
+================================================================================
+doc_id=doc_0274
+file_name=rvl_train_02615.png
+field=recipient_name
+
+raw_text_excerpt:
+MEDIA CODE 8 572 0500
+
+BBB Ctorkstonruano—mve
+
+CHURCH STREET STATION
+NEW YORK, NY 10249
+
+[voice ome |
+
+LORILLARD MEDTA seRvIces Frorasres) | s003736
+- =e ‘NEW YORK NY 10103 TERMS-2% TEN DAYS:
+pica
+ee : He anos” | ocitSon |= ste]
+ee Potion i Laat | OMRON ater
+— | | | T 7 |
+ATZONAL, | | | | |
+freon |) i eta og thal m| sts af
+sass 23
+
+|
+
+aec099ts
+
+|
+i so ab
+
+95135225
+
+candidates:
+1) candidate_text=LORILLARD MEDTA seRvIces Frorasres) | s003736 | source=early_org_line | line_idx=5

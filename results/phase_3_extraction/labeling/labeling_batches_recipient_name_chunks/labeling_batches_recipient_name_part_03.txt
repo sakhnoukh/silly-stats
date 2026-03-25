@@ -1,0 +1,547 @@
+================================================================================
+doc_id=doc_0388
+file_name=rvl_train_19955.png
+field=recipient_name
+
+raw_text_excerpt:
+jissue —[FwNGoaTe SERALNO, | PATENTNO. DATE OF PATENT
+FEE
+RECEIPT|04/23/84 403254 4607118 __|08/19/86
+
+Zunbs, Harvey J-
+
+Hechanicsville; and
+Houriner, Yoram; Richmond, Va.
+
+wwvenTor
+“See PRLITp WOLEIS Incorporated
+FIavorsrelease B= bydECxy-eSter Couposs tions
+INVENTION
+-SHEETSOF DRAWINGS [BSEFEEPA —[DATEREEPAID_[CLASSSUB
+000 | $560 09/22/86 _540/060.000
+|——Fatent
+Philip Morris Inc.
+issue B.C, Box 26583
+cONTROL Richmond, VA 23261
+ro sa OEE
+
+Bh
+Fav an
+
+Gs UY, RATS Sh
+
+stand Trademark
+
+PLZOIEIZO®
+
+candidates:
+1) candidate_text=Philip Morris Inc. | source=early_org_line | line_idx=13
+
+================================================================================
+doc_id=doc_0261
+file_name=rvl_test_18090.png
+field=recipient_name
+
+raw_text_excerpt:
+BRITISH-AMERICAN TOBACCO COMPANY LTD
+
+Brown & Williamson Tobacco Corporation,
+
+LovIsvILLE.
+
+CREDIT NOTE
+
+PO Rox482 Westminster House
+7 Milbank London SW:? 3JE
+
+‘Telephone: or-222 1222 Telex:27384'5
+‘Telegrams: Vehiealar Landon SW
+VAT Reg. No. 239 1369 50
+
+INVOICE No.
+
+DATE(TaxPeint) 345e Auguat 1984
+
+By amount received for your account ex B.A.T.
+Gigaretten Fabrieken being royalties for
+
+the month of August 1984
+
+Exch. @ 1.3065
+
+DL Bar Louden 34¢
+ce: Ak Reisery G22.
+
+Octobe Aecouss—
+
+corny
+
+£52,540.05
+
+S8 68,543.58
+
+C8etB Se
+oss SB
+
+candidates:
+1) candidate_text=BRITISH-AMERICAN TOBACCO COMPANY LTD | source=early_org_line | line_idx=0
+2) candidate_text=Brown & Williamson Tobacco Corporation, | source=early_org_line | line_idx=1
+
+================================================================================
+doc_id=doc_0206
+file_name=rvl_train_08025.png
+field=recipient_name
+
+raw_text_excerpt:
+(e9) aie
+
+dures Ala ¥30NOZ 9¥8038 2028744173
+228 : ONINSIZU3H . .
+oos*9s ovuaaa = sIsve *
+: '
+"96/9/08
+. ral “*LOL-EO/L/E NVA BGOIY3d 30 YDOA C6/S/L2 .
+} NWA 3183449 379 SV3DT9A SITLVAITVISAT
+
+3OVSWY3AYIIOH YOOA LXVYLNONSONIHYIOVO
+S3ILYIIVISNI QVAH = 4434139
+
+(60°H6SL 10L LO°E66L NVA)
+
+. ase tanvinva 3461732733039 6Se2b  f YN UNA NYE
+7 SBOS8OSE 38 aM 18
+£82210 INyax
+N 90SEb2 = 9NIII31S30
+434 tO
+botgay cn
+NBANBAYT 2e6t :
+DLOL 39¥3d NOTAV/NYVITOL torso" 929/20)
+
+66b Tint o¢
+Petseeearny 5
+* unninys
+L SERRE EE REE
+
+$id3938
+NWA LNO
+
+candidates:
+1) candidate_text=434 tO | source=early_org_line | line_idx=15
+
+================================================================================
+doc_id=doc_0361
+file_name=rvl_val_00377.png
+field=recipient_name
+
+raw_text_excerpt:
+puaea um voucnes
+
+oe _ 1/28) 9.86
+
+PHIL P MORRIS
+
+To 229) uD,
+
+Research and Developnent
+
+7
+————
+
+Advance for The CORESTA "AS Symasinn to by 20. 00
+hold at the Congrese Conter of the Naxos
+Beach. Hotel, Giardini Naxos - Taromina, fr i
+
+October 26-30, 1985, (see attachment)
+
+in, ($100.00 check attached for 3%
+‘oc _050-1R1-412
+
+| primase: RETURN citgcK TO:
+
+S8E809T F002
+
+aot S2ae33bes90" 4364 “a
+
+/S6809TT00%
+
+candidates:
+1) candidate_text=To 229) uD, | source=early_org_line | line_idx=3
+2) candidate_text=Research and Developnent | source=early_org_line | line_idx=4
+3) candidate_text=Advance for The CORESTA "AS Symasinn to by 20. 00 | source=early_org_line | line_idx=7
+4) candidate_text=| primase: RETURN citgcK TO: | source=early_org_line | line_idx=13
+
+================================================================================
+doc_id=doc_0233
+file_name=rvl_train_13747.png
+field=recipient_name
+
+raw_text_excerpt:
+QcoMPANIES FOR ACCOUNTING USE ONLY
+Buanaceuent conroraiox = PHILIP, MORRIS | youcnica wumeen
+ZINCORPORATED VOUCHER ----
+DATE VOUCHER IS PREPARED | (OMIT IF NO SPECIFIC DATE REQUIRED)
+1028/04 DATE DUE: TINE:
+PAYEE ACCOUNTING CODE i
+‘The Campbell Legacy ieee SETH $3,500.00!
+PO Box 21765, 264 - bo 4 Shee - 03 00340
+‘Columbia, SC_29221 7
+
+orat| . -_ $3,500.00
+
+EXPLANATION FOR PAYMENT: T
+Sponsor of "The Campbell Legacy: The Passing of the Torch” Diner
+
+zal
+
+i i
+[COMPLETE THIS SECTIONJE RETURNED CHECK |S REQUIRED —
+RETURN T DEPARTMENT | BUILDING/FLOOR] PHONE EXT,
+
+farting Floumoy ie tee Comp. As. Admin | 120Park/24 | 2444
+aeason ron aeovEsr. |
+Must be sen with ransmital letter
+ACCOUNTING USE ONLY
+(G0 COMPANIES; 008MANAGEMENT, 10.NCORPORATED)
+
+[Venoon#_ COMPANY
+A TYPE_ (1-Reg;2°.P;3.0M;4DM;5-0.7:6V.0:7V.A) VOUCHERINVOICE DATE ___
+SEPOHK-> _ 10980D->
+
+1099 48
+
+| voues
+
+OUEDATE
+
+SEPHND--> _ ATIIN«>
+
+TAP =A PREPOVOID--> ee
+DIST AP» A PREPONOD > — — CASHIER DATE)
+CONTRACT -»__ FREQUENCY |
+‘avoir DATE
+ALTPAYBE---> 01 000 _ - |
+[APPROVAL DATE
+LINE 001 cORP/ACCTOL ~_ 1 ao --H-e
+— aumppct «> AWwBACO->
+DESC >
+LINE 002 coRP/ACCTOL. ~__ ___-_-__ ~~-----
+ANTIPCT - > A WDBRCD->
+Ese >
+
+Une 008 cORPACCT
+
+candidates:
+1) candidate_text=(G0 COMPANIES; 008MANAGEMENT, 10.NCORPORATED) | source=early_org_line | line_idx=20
+2) candidate_text=[Venoon#_ COMPANY | source=early_org_line | line_idx=21
+
+================================================================================
+doc_id=doc_0307
+file_name=rvl_train_07197.png
+field=recipient_name
+
+raw_text_excerpt:
+HAZLETON
+
+LABORATORIES AMERICA, INC’
+
+une eNOLAEN CaM UE 400 KEMERIOTON, MARYLAND BOB - INVOICE
+PLEASE SEND PAYMENT TO: : ~ - INVOICE NO.1 906516
+HAZLETON LABORATORIES AMERICA, INC. USE THIS NUMBER
+
+PO BOX 25065 FOR CHECK REMITTANCE
+RICHMOND, VA 23260 USA AND CORRESPONDENCE
+
+BILLED DATE: 05-28-89
+
+DR. J. D. HECK
+
+LORILLARD RESEARCH CENTER
+420 ENGLISH STREET
+
+P.O. BOX 21688
+GREENSBORO, NC 27405
+
+SPONSOR REFERENCE:
+
+HLA REFERENCE:
+
+PROJECT AUTHORIZATION NO.: 1629
+COST CENTE 6130
+PROJECT NUMBER: 20989
+
+SERVICES RENDERED:
+LS178Y TK+/- MOUSE LYMPHOMA FORWARD MUTATION ASSAY
+
+HLA REFERENCE FINAL REPORT
+NUMBER TEST MATERIAL MAILED VALUE
+
+10606 0 431 A35 OR184-85A,B OR190-29 05-12-89 6,800.00
+
+TOTAL AMOUNT DUE UPON RECEIPT: $6,800.00
+
+er
+
+~.
+
+8
+699E0TL8
+
+GENETICS AND IN VITRO TOXICOLOGY DEPARTMENT @00 290-0001
+
+candidates:
+1) candidate_text=LABORATORIES AMERICA, INC’ | source=early_org_line | line_idx=1
+2) candidate_text=HAZLETON LABORATORIES AMERICA, INC. USE THIS NUMBER | source=early_org_line | line_idx=4
+3) candidate_text=LORILLARD RESEARCH CENTER | source=early_org_line | line_idx=9
+4) candidate_text=SERVICES RENDERED: | source=early_org_line | line_idx=18
+
+================================================================================
+doc_id=doc_0400
+file_name=rvl_train_03666.png
+field=recipient_name
+
+raw_text_excerpt:
+‘Account Number
+New York Telephone 212 286-9607 699 722
+March 1, 1992
+
+ANYNEX
+
+jompany
+
+Total amount due $1,557.52
+
+Previous charges
+
+‘Amount of fast Bil $1,243.61
+Payments through March 4
+Balance
+
+PHILUP MORRIS Usa
+arty Renee SEnolls
+——— §
+Current charges ‘120 PARK AV, LOC FLR 7
+
+Due date March 26, 1992 Yoon e* NY
+Late payment charge #14.21
+
+> Keow York Telephone 29970
+‘Total current charges potas
+
+Detach and return this section with your payment. Make check paysbie
+
+to New York Telephone.
+paying in person,
+
+bring this entire page with you. See your phone book for payment locations,
+Total amount due $1,557.52
+
+x
+81
+
+g
+
+PHILLP HoRRIS USA Ny
+
+SALES. HeaDQUARTERS 3
+
+ARTTW RENEE SIMON Halk =
+
+120 Park av, CoC FUR 7 g
+
+ten YORE av NEW YORK TELEPHONE 8
+
+10017 BOX 559001 o
+
+BROOKLYN NY 11255-9001
+212 286-9607 699 722-B3 17 9203
+
+ME sort payment application do not wei
+
+staple, or include correspondence with this section.
+
+202606 9607659507220000000000000000001243L100015575200012031
+
+ase
+
+candidates:
+1) candidate_text=to New York Telephone. | source=early_org_line | line_idx=19
+
+================================================================================
+doc_id=doc_0327
+file_name=rvl_train_04576.png
+field=recipient_name
+
+raw_text_excerpt:
+TO COVER COSTE ABBOCIATED WI
+Y FLIGHT IT PRESENTED.
+TRE .
+
+a
+ae
+
+ck 7 7B 7
+@ND "IMPORTANTS"
+
+AMOUNT
+
+> \ 645,28 777400.
+940.80. 390
+700.00 \ 200.
+
+* gor TOTAL 2,286.08 THF HBO
+wee cox COMMISSION :
+
+* COLOR PRINTS
+@ GILK SCREEN/TRANGFER MATERIAL
+# OTHER (SPECIFY?
+
+* TOTAL DUE
+
+RECEIVED
+pee 2 8 1993
+
+ares ret
+
+8
+3
+8
+e
+
+ESTIMATED AMOUNT?
+YEAR-TO-DATE BILLINGS!
+BALANLE ON ESTIMATE:
+
+candidates:
+1) candidate_text=TO COVER COSTE ABBOCIATED WI | source=early_org_line | line_idx=0
+
+================================================================================
+doc_id=doc_0276
+file_name=rvl_train_03310.png
+field=recipient_name
+
+raw_text_excerpt:
+NEW YORK 18,___December_ 7,19 53.
+
+Pp. LORILLARD COMPANY
+
+INCORPORATED
+119 WEST doch STREET
+
+BRUMBAUGH, FREE & GRAVES.
+
+90 Broad St., New York, N. ¥
+
+Experimental research on KENT Cigarettes
+|quring October, 1953 (For details, see
+
+gile in Secretary's office),
+
+$250.00
+
+02272016
+
+candidates:
+1) candidate_text=Pp. LORILLARD COMPANY | source=early_org_line | line_idx=1
+2) candidate_text=Experimental research on KENT Cigarettes | source=early_org_line | line_idx=6
+
+================================================================================
+doc_id=doc_0289
+file_name=rvl_train_21235.png
+field=recipient_name
+
+raw_text_excerpt:
+retin 177 voucner
+: Decenber 29 198719
+
+PHILIP MORRIS
+
+Tertragsforschang und Beratung
+2000 Hanburg 86 Federal Republic of Gorman
+
+To,
+
+Fourth quarter, 1987 $13,799.00
+
+PLEASE RETURN CHECK TO NANCY PETERS OC/AQW GAN. 5,
+
+[1988 FoR TRANSMITTAL.
+
+;
+ina vial
+
+520-010-000
+
+Tosetetooz
+
+candidates:
+1) candidate_text=PLEASE RETURN CHECK TO NANCY PETERS OC/AQW GAN. 5, | source=early_org_line | line_idx=7
+
+================================================================================
+doc_id=doc_0311
+file_name=rvl_train_10337.png
+field=recipient_name
+
+raw_text_excerpt:
+EXPRESS. MarricHy Were
+TTNVOTCE DATE _[cUSTONER MONBER] sonree wrmer [ramet ove aE] |
+
+3/16/92 25583573
+suc ro, FLEISHMAN HILLARD RDM
+7TH FL
+1301 CONNECTICUT AVE NW
+WASHINGTON De 20036
+“ATROTLL WONDER ] CUSTOMER HUMBER ‘CUSTONER MOMER Rec aT [ene  cuances || TOTAL anourr
+‘Onrcin / Dest. | SENDER RECEIVER arcs | Tre
+‘SHIP DATE WEIGHT
+YOU OWE AS SENT BY che wer
+DESCRIPTION | REFERENCE NUMBER ATTENTION SCALE #
+25503573 ROH so [exp 35.75
+FLetsMeAN MILLARD Joenver nasezorr. se 2
+eH Fu foses.€ MANPDEW AV. Fy
+Hisor comecrrcur ave wt [DENVER
+WASHINGTON anes]
+oc 20036
+
+1S sure 330
+
+2029370774
+
+coe Tres Exmeratioe CURE, DLUIDELIMY, PRUNPICRUY, NETMGUMNCE, DEVEBCELANED VALUE, DP4COD FEE, SATHHATURDAY BELIVERY AR PRE
+Si come, Stowenctou sete sree (34
+"THANK YOU FOR SHIPPING WITH AIRBORNE EX!
+
+candidates:
+1) candidate_text=DESCRIPTION | REFERENCE NUMBER ATTENTION SCALE # | source=attention_line | line_idx=11
+2) candidate_text=FLetsMeAN MILLARD Joenver nasezorr. se 2 | source=after_label | line_idx=13
+3) candidate_text=eH Fu foses.€ MANPDEW AV. Fy | source=after_label | line_idx=14
+4) candidate_text=Hisor comecrrcur ave wt [DENVER | source=after_label | line_idx=15
+5) candidate_text=WASHINGTON anes] | source=after_label | line_idx=16
+
+================================================================================
+doc_id=doc_0237
+file_name=rvl_train_24865.png
+field=recipient_name
+
+raw_text_excerpt:
+rome. Fis Aol AQ sbaly
+: NEW YORK 10017,.. Navember 29° 19 71
+LORILLARD
+
+200 EAST 42nd STREET
+yo__The Tobacco Institute, Inc.
+
+1776
+Washington, D. C. 20006
+
+Assessment of 69% of annual dues (1971)
+
+as per Tobacco Institute letter of
+November 19, 1971
+
+$17,223 68| 17,223 | 68
+
+S699T9TS
+
+candidates:
+1) candidate_text=yo__The Tobacco Institute, Inc. | source=early_org_line | line_idx=4
+2) candidate_text=as per Tobacco Institute letter of | source=early_org_line | line_idx=8
