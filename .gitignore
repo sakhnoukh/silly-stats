@@ -7,3 +7,6 @@ data/processed/
 data/features/
 data/downloads/
 .DS_Store
+data/data - receipts
+data/exploration/
+data/ocr_boxes/
