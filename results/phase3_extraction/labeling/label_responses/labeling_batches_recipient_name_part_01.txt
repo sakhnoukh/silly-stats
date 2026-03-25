@@ -1,0 +1,39 @@
+doc_id=doc_0323 | field=recipient_name | candidate_text=@ HAZLETON casonatonies AMERICA. INC | label=0
+doc_id=doc_0323 | field=recipient_name | candidate_text=Attn: Dr. J. Daniel Heck | label=0
+doc_id=doc_0323 | field=recipient_name | candidate_text=FRORET NOOR TENS | label=0
+doc_id=doc_0323 | field=recipient_name | candidate_text=DER NUMER | label=0
+doc_id=doc_0323 | field=recipient_name | candidate_text=DeSCRETON | label=0
+doc_id=doc_0297 | field=recipient_name | candidate_text=‘THE TOBACCO INSTITUTE | label=0
+doc_id=doc_0297 | field=recipient_name | candidate_text=PAY TO:___Covington & Burling | label=1
+doc_id=doc_0297 | field=recipient_name | candidate_text=John P. Rupp, Esquire | label=0
+doc_id=doc_0297 | field=recipient_name | candidate_text=Support of international ETS symposium at McGill University | | label=0
+doc_id=doc_0297 | field=recipient_name | candidate_text=in Montreal, Quebec. | label=0
+doc_id=doc_0244 | field=recipient_name | candidate_text=MAL IVOGES TO OF ADMRUSTRATWE CENTER | label=0
+doc_id=doc_0244 | field=recipient_name | candidate_text=8| artwork Reproductions Inc. S| see attached | label=1
+doc_id=doc_0244 | field=recipient_name | candidate_text=Pp Attn: Mr. A. Workstel " | label=0
+doc_id=doc_0244 | field=recipient_name | candidate_text=Pp 111 Bighth Avene P | label=0
+doc_id=doc_0244 | field=recipient_name | candidate_text=v New York, BY 20011 | label=0
+doc_id=doc_0244 | field=recipient_name | candidate_text=SRST OT SLT FEBE OBEY ZI | label=0
+doc_id=doc_0244 | field=recipient_name | candidate_text=To Greensboro: Week of February 29 See Attached | label=0
+doc_id=doc_0205 | field=recipient_name | candidate_text=Cc CG CONTRACT RESEARCH CENTER | avaase.at. | label=0
+doc_id=doc_0267 | field=recipient_name | candidate_text=LABORATORIES AMERICA, INC. | label=0
+doc_id=doc_0267 | field=recipient_name | candidate_text=To: Lorillard Research Center | label=1
+doc_id=doc_0267 | field=recipient_name | candidate_text=[Attention: Melanee B, Bennett | label=0
+doc_id=doc_0357 | field=recipient_name | candidate_text="A PROFESSIONAL CORPORATION | label=0
+doc_id=doc_0357 | field=recipient_name | candidate_text=CLIENT: PHILIP MORRIS COMPANIES, INC. | label=1
+doc_id=doc_0357 | field=recipient_name | candidate_text=OK TO PAY. | label=0
+doc_id=doc_0357 | field=recipient_name | candidate_text=REMITTANCE TO INSURE ACCURATE CREDIT | label=0
+doc_id=doc_0241 | field=recipient_name | candidate_text=Metropolitan Sunday Newspapers, Inc. | label=0
+doc_id=doc_0341 | field=recipient_name | candidate_text=more <i. sid £2 CONTRACT RESEARCH CENTER BVBA | label=1
+doc_id=doc_0258 | field=recipient_name | candidate_text=LABORATORIES, INC. | label=0
+doc_id=doc_0258 | field=recipient_name | candidate_text=Boriston Laboratories, Inc | label=0
+doc_id=doc_0258 | field=recipient_name | candidate_text=LORILLARD, INC. | label=1
+doc_id=doc_0258 | field=recipient_name | candidate_text=Attention: Dr. Harry Minnemeyer | label=0
+doc_id=doc_0258 | field=recipient_name | candidate_text=BLIREF.: 231558 | label=0
+doc_id=doc_0258 | field=recipient_name | candidate_text=Borriston Laboratories, Inc. | label=0
+doc_id=doc_0364 | field=recipient_name | candidate_text=‘Check Payable to, [Friends of Joe Roberts | label=1
+doc_id=doc_0343 | field=recipient_name | candidate_text=Philip Morris Inc. j 25-218: | label=1
+doc_id=doc_0343 | field=recipient_name | candidate_text=LAZO Park, Aves 4 check made payable to The Hartford. | label=0
+doc_id=doc_0227 | field=recipient_name | candidate_text=Rent O ee SSUPIILASCHUG INC WRN TIMARN IUEPIIOEE I> PAANO. | label=0
+doc_id=doc_0227 | field=recipient_name | candidate_text=ATTN: Mary Pottorff Page : 1 | label=0
+doc_id=doc_0227 | field=recipient_name | candidate_text=Job title : Courtesy of Choice | label=0

@@ -1,0 +1,44 @@
+doc_id=doc_0384 | field=recipient_name | candidate_text=Deliver to Nees fhe | label=0
+doc_id=doc_0360 | field=recipient_name | candidate_text=Ted Bat a. company, inc /adverrising | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=e@ ‘MAIL INVOICES TO OUR ADMMISTRATIVE CENTER, | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=Attn? Br. 4. Gilion | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=GO Bant 42nd Street | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=Rew York, SY 10017 | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=Attached, | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=o4 v-ro | label=0
+doc_id=doc_0294 | field=recipient_name | candidate_text=Fer Shipping Instractiens| | label=0
+doc_id=doc_0240 | field=recipient_name | candidate_text=WST TRT LAB/BOILR HSE LAB | label=0
+doc_id=doc_0358 | field=recipient_name | candidate_text=° LABORATORIES, INC. | label=0
+doc_id=doc_0358 | field=recipient_name | candidate_text=Lorillard Inc. | label=1
+doc_id=doc_0358 | field=recipient_name | candidate_text=Attn: Dr. ‘Harry Minnemeyer | label=0
+doc_id=doc_0358 | field=recipient_name | candidate_text=BLI REF: 251496 | label=0
+doc_id=doc_0358 | field=recipient_name | candidate_text=Borriston Laboratories, Inc. | label=0
+doc_id=doc_0358 | field=recipient_name | candidate_text=‘A Subsidiary of Dynamac Intemational, Inc. | label=0
+doc_id=doc_0349 | field=recipient_name | candidate_text=WOODARD RESEARCH CORPORATION | label=0
+doc_id=doc_0349 | field=recipient_name | candidate_text=(ABORATORY AND CONSULTING SERVICE | label=0
+doc_id=doc_0349 | field=recipient_name | candidate_text=The American Tobacco Company | label=1
+doc_id=doc_0349 | field=recipient_name | candidate_text=Assistant Managing Director ~ Research | label=0
+doc_id=doc_0349 | field=recipient_name | candidate_text=91 wR 633 | Professional Services: | label=0
+doc_id=doc_0349 | field=recipient_name | candidate_text=SERVICES PERFORMED, | label=0
+doc_id=doc_0319 | field=recipient_name | candidate_text=To cover the statement of Healthy Buildings | label=0
+doc_id=doc_0319 | field=recipient_name | candidate_text=International, Inc., in connection with | label=0
+doc_id=doc_0220 | field=recipient_name | candidate_text=FOR PROFESSIONAL SERVICES RENDERED | label=0
+doc_id=doc_0292 | field=recipient_name | candidate_text=PROMOTIONAL MARKETING,INC. | label=0
+doc_id=doc_0292 | field=recipient_name | candidate_text=To: Ms. Louise A. Norman | label=0
+doc_id=doc_0292 | field=recipient_name | candidate_text=R.J. Reynolds Tobacco Company | label=1
+doc_id=doc_0292 | field=recipient_name | candidate_text=staff to implement and supervise events in | label=0
+doc_id=doc_0355 | field=recipient_name | candidate_text=Billed To: | label=0
+doc_id=doc_0355 | field=recipient_name | candidate_text=Lorillard Research Center | label=1
+doc_id=doc_0355 | field=recipient_name | candidate_text=ATTN: Harry Minneneyer | label=0
+doc_id=doc_0355 | field=recipient_name | candidate_text=Payment Address: LITTON BIONETICS, INC. - (103) | label=0
+doc_id=doc_0355 | field=recipient_name | candidate_text=Service Rendered: anes Salmonella Plate Test on the compound A-70. | label=0
+doc_id=doc_0316 | field=recipient_name | candidate_text=BIO-RESEARCH CONSULTANTS, INC. | label=0
+doc_id=doc_0316 | field=recipient_name | candidate_text=Please refer to invoice | label=0
+doc_id=doc_0316 | field=recipient_name | candidate_text=Attn: Hes Re Dy Campents | label=0
+doc_id=doc_0316 | field=recipient_name | candidate_text=wae PERIOD COMERED [roun ioeni wo [—conimar [remus | label=0
+doc_id=doc_0316 | field=recipient_name | candidate_text=Petar Seats "muon | label=0
+doc_id=doc_0316 | field=recipient_name | candidate_text=Fer studies conducted on: Aguto inhalation atudies in mics | label=0
+doc_id=doc_0329 | field=recipient_name | candidate_text=Lorillard Research Center | label=1
+doc_id=doc_0329 | field=recipient_name | candidate_text=L_ Attention: Melanee B. Bennett J | label=0
+doc_id=doc_0329 | field=recipient_name | candidate_text=mens | label=0
+doc_id=doc_0329 | field=recipient_name | candidate_text=Charges | label=0

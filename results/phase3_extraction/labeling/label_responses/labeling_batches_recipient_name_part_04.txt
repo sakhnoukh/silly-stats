@@ -1,0 +1,22 @@
+doc_id=doc_0399 | field=recipient_name | candidate_text=‘a. company, inc /advertising | label=0
+doc_id=doc_0399 | field=recipient_name | candidate_text=IeLLENT BW GROWN & WELLTAMSOH FosACCO CORP | label=1
+doc_id=doc_0399 | field=recipient_name | candidate_text=ESTIMATE WUNDERS KMGHISC=TO-IRL | label=0
+doc_id=doc_0262 | field=recipient_name | candidate_text=or/or/ee TO 12/s1/as PAGE Hi | label=0
+doc_id=doc_0262 | field=recipient_name | candidate_text=CLIENT: P.M. INC. OFFICE: 10 DESC: 703A MILITARY NEWSPAPERS | label=1
+doc_id=doc_0204 | field=recipient_name | candidate_text=CONTRACT RESEARCH CENTER ‘sveas 2 | label=0
+doc_id=doc_0304 | field=recipient_name | candidate_text=ADVERTISING CORPORATION P.0.8OX L860 | label=0
+doc_id=doc_0304 | field=recipient_name | candidate_text=5 ots INVOICE T customer | label=0
+doc_id=doc_0251 | field=recipient_name | candidate_text=CRC CONTRACT RESEARCH CENTER avaassp.at, | label=0
+doc_id=doc_0219 | field=recipient_name | candidate_text=CHECK TO: a | label=0
+doc_id=doc_0293 | field=recipient_name | candidate_text=Moore Sign Corp. wen | label=0
+doc_id=doc_0293 | field=recipient_name | candidate_text=Customer John Vaughan 3==aaaaes | label=1
+doc_id=doc_0270 | field=recipient_name | candidate_text=T to aNay | label=0
+doc_id=doc_0362 | field=recipient_name | candidate_text=TRIANGLE PUBLICATIONS, INC. | label=0
+doc_id=doc_0362 | field=recipient_name | candidate_text=LORTLLARD MEDIA SERVICES | label=1
+doc_id=doc_0373 | field=recipient_name | candidate_text=Miller Brewing Company | label=0
+doc_id=doc_0373 | field=recipient_name | candidate_text=Loss Control Services | label=0
+doc_id=doc_0373 | field=recipient_name | candidate_text=Details for Environmental Services | label=0
+doc_id=doc_0393 | field=recipient_name | candidate_text=FOR: | label=0
+doc_id=doc_0393 | field=recipient_name | candidate_text=‘A&G Research ... committed to achieving shared visions | label=0
+doc_id=doc_0309 | field=recipient_name | candidate_text=THE GREAT ATLANTIC & PACIFIC TEA COMPANY, ING: . | label=0
+doc_id=doc_0309 | field=recipient_name | candidate_text=soi To | label=0

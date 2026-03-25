@@ -1,0 +1,26 @@
+doc_id=doc_0388 | field=recipient_name | candidate_text=Philip Morris Inc. | label=1
+doc_id=doc_0261 | field=recipient_name | candidate_text=BRITISH-AMERICAN TOBACCO COMPANY LTD | label=0
+doc_id=doc_0261 | field=recipient_name | candidate_text=Brown & Williamson Tobacco Corporation, | label=1
+doc_id=doc_0206 | field=recipient_name | candidate_text=434 tO | label=0
+doc_id=doc_0361 | field=recipient_name | candidate_text=To 229) uD, | label=0
+doc_id=doc_0361 | field=recipient_name | candidate_text=Research and Developnent | label=0
+doc_id=doc_0361 | field=recipient_name | candidate_text=Advance for The CORESTA "AS Symasinn to by 20. 00 | label=0
+doc_id=doc_0361 | field=recipient_name | candidate_text=| primase: RETURN citgcK TO: | label=0
+doc_id=doc_0233 | field=recipient_name | candidate_text=(G0 COMPANIES; 008MANAGEMENT, 10.NCORPORATED) | label=0
+doc_id=doc_0233 | field=recipient_name | candidate_text=[Venoon#_ COMPANY | label=0
+doc_id=doc_0307 | field=recipient_name | candidate_text=LABORATORIES AMERICA, INC’ | label=0
+doc_id=doc_0307 | field=recipient_name | candidate_text=HAZLETON LABORATORIES AMERICA, INC. USE THIS NUMBER | label=0
+doc_id=doc_0307 | field=recipient_name | candidate_text=LORILLARD RESEARCH CENTER | label=1
+doc_id=doc_0307 | field=recipient_name | candidate_text=SERVICES RENDERED: | label=0
+doc_id=doc_0400 | field=recipient_name | candidate_text=to New York Telephone. | label=0
+doc_id=doc_0327 | field=recipient_name | candidate_text=TO COVER COSTE ABBOCIATED WI | label=0
+doc_id=doc_0276 | field=recipient_name | candidate_text=Pp. LORILLARD COMPANY | label=1
+doc_id=doc_0276 | field=recipient_name | candidate_text=Experimental research on KENT Cigarettes | label=0
+doc_id=doc_0289 | field=recipient_name | candidate_text=PLEASE RETURN CHECK TO NANCY PETERS OC/AQW GAN. 5, | label=0
+doc_id=doc_0311 | field=recipient_name | candidate_text=DESCRIPTION | REFERENCE NUMBER ATTENTION SCALE # | label=0
+doc_id=doc_0311 | field=recipient_name | candidate_text=FLetsMeAN MILLARD Joenver nasezorr. se 2 | label=1
+doc_id=doc_0311 | field=recipient_name | candidate_text=eH Fu foses.€ MANPDEW AV. Fy | label=0
+doc_id=doc_0311 | field=recipient_name | candidate_text=Hisor comecrrcur ave wt [DENVER | label=0
+doc_id=doc_0311 | field=recipient_name | candidate_text=WASHINGTON anes] | label=0
+doc_id=doc_0237 | field=recipient_name | candidate_text=yo__The Tobacco Institute, Inc. | label=1
+doc_id=doc_0237 | field=recipient_name | candidate_text=as per Tobacco Institute letter of | label=0
