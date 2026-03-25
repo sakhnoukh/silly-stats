@@ -29,10 +29,12 @@ from PIL import Image
 
 PROJ_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(PROJ_ROOT, "data", "raw")
-MANIFEST_PATH = os.path.join(RAW_DIR, "rvl_forms_manifest.csv")
+MANIFEST_PATH = os.path.join(RAW_DIR, "rvl_cdip_manifest.csv")
 
 LABEL_MAP = {
     1: "form",
+    2: "email",
+    11: "invoice",
 }
 
 _BASE = "https://huggingface.co/datasets/rvl_cdip/resolve/main/data"
@@ -93,7 +95,7 @@ def stream_and_extract(path_to_meta):
     The full archive is never stored on disk.
     """
     manifest_rows = []
-    counts = {"form": 0}
+    counts = {"form": 0, "email": 0, "invoice": 0}
     remaining = len(path_to_meta)
 
     print(f"\n  Opening archive stream ({ARCHIVE_URL}) …")
@@ -188,7 +190,7 @@ def stream_and_extract(path_to_meta):
 
     elapsed = time.time() - t0
     print(f"\n  Streaming complete: scanned {scanned} files in {elapsed:.0f}s")
-    print(f"  Saved: form={counts['form']}, total={saved}")
+    print(f"  Saved: form={counts['form']}, email={counts['email']}, invoice={counts['invoice']}, total={saved}")
 
     return manifest_rows, counts
 

@@ -1,0 +1,737 @@
+================================================================================
+doc_id=doc_0298
+file_name=rvl_val_05355.png
+field=total_amount
+
+raw_text_excerpt:
+REMITTANCE ADVICE
+
+LEO BURNETT COMPANY + INC
+
+ADVERTISING
+EITh LUMPKIN
+REFERENCE NGe PO234E0014 VENOCR CODE £4426 DATE 08/23/78 PAGE 1
+INVCICE DCCUMENT AMOUNT iS
+CLIENT DATE/NC. NOw DESCRIPTION INVOICE AMOUNT faa chSbs
+P.M. INC. 25782 X25782 50.00 50.00
+cuient roTAL 28:88 38:89
+REMITTANCE TOTAL 50.00
+5 ° 2
+
+LLZEEY ObOT
+
+candidates:
+1) candidate_text=50.0 | source=money_anywhere | line_idx=7
+
+================================================================================
+doc_id=doc_0347
+file_name=rvl_val_05009.png
+field=total_amount
+
+raw_text_excerpt:
+SECOND INVOICE
+
+To: Madison Square Garden
+2 Penn Plaza
+
+Date: June 30, 1993
+New York, NY 10021
+
+From: Virginia Slims Tennis
+120 Park Avenue
+New York, NY 10017
+
+Championships Fee.
+Ist Payment 1993
+
+$68,750.00
+Due: June 20, 1993
+
+PAST DUE
+
+Please make check payable to: Philip Morris USA
+and remit to above address.
+
+1443 Vagene Slims Ah-pashe>
+
+pegzt woe
+
+candidates:
+1) candidate_text=68750.0 | source=money_anywhere | line_idx=10
+
+================================================================================
+doc_id=doc_0360
+file_name=rvl_train_18129.png
+field=total_amount
+
+raw_text_excerpt:
+Ted Bat a. company, inc /adverrising
+
+eRINT PROCUCTION Inverce
+Te eFoHN © WALL TAngon
+prceuct Koch,
+
+acre
+
+Nee > 3929
+
+anvelue oar > 03/22/74
+
+care
+1AveICE
+
+Pace
+
+TAR G NIC CATA FOR KINGS AND LONGS EST NE KI-PR-T4~G
+
+We = O47 10
+Kee 203909
+
+wa
+sureurer COMRISSLONAULE |CONKISSTONABLE
+
+rerar
+
+cask eTscoONT
+ernce Ie Pate
+Suk Cate
+
+aeTINTYPE —TWPST peonte
+rorms 2e6.ne
+
+Tora conn, | TOTAL GUL
+
+295.53
+
+RODUCTION
+
+Pee | 7709548 1
+
+candidates:
+1) candidate_text=295.53 | source=money_anywhere | line_idx=22
+
+================================================================================
+doc_id=doc_0294
+file_name=rvl_train_20807.png
+field=total_amount
+
+raw_text_excerpt:
+Bites
+
+‘COMPANY
+e@ ‘MAIL INVOICES TO OUR ADMMISTRATIVE CENTER,
+(GENERAL ACCOUNTING OFFICE:
+Pele 0.
+
+pea no, 20th. §H-)
+
+50
+
+foamion tL t
+an a com V, Paleo
+
+purchase onver no. MI 10507
+EFeEiex Vana 2109 owe March 25, 1988
+re sites stow
+
+s [io
+
+Kubin Nicholson
+
+Attn? Br. 4. Gilion
+GO Bant 42nd Street
+Rew York, SY 10017
+
+Attached,
+
+o4 v-ro
+
+Fer Shipping Instractiens|
+
+See Below Best Way ~ Lowest Cost Method
+| Attached __Bet 30 pays _
+Guwnry | o008 na DESoRIPTION Pee
+105 MALI@U King Size Bulletins, 14" x 49' $281.06
+Bach
+
+chef
+
+4
+
+Bulletins lithograghed five colors {4-color
+process plus one PMS yellow) on 70¢ outdoor
+poster paper. Caption fer identifications
+MALIBU RIEGS 63.00 Off A Carton.”
+
+15 Blank
+
+Posters to ba printed with the following
+/, |Fasing statennntsr
+
+65 Warning *c*
+iy 25° Warning “D*
+
+Qverruna or underrons not to exceed $8.
+Overrans beyond St will aot be paid for.
+
+~-Continued next pag:
+
+ACCOUNTING CHARGE NO. Marketing
+TD Earion CONE TN wun FES
+SITE SALES TAX NOT TO BE CHARGED SEE OUR __E] BrapeT nvENT PENT Darncseo
+6 ‘Ve Puleo
+Prease contact
+fn any quostions regarding this Purchase Order. By
+
+candidates:
+1) candidate_text=281.06 | source=money_anywhere | line_idx=23
+2) candidate_text=63.0 | source=money_anywhere | line_idx=30
+
+================================================================================
+doc_id=doc_0240
+file_name=rvl_train_22877.png
+field=total_amount
+
+raw_text_excerpt:
+TO:
+
+Fs#
+
+LN
+
+oot
+002
+003
+004
+005
+
+006
+007
+
+008
+
+PHILIP MORRIS USA
+
+PARK 500 - DOOR 77/78
+4100 BERMUDA HUNDRED RD
+WST TRT LAB/BOILR HSE LAB
+
+CHESTER
+
+CHANDRA PATEL
+
+FROM: FISHER SCIENTIFIC
+3315 ATLANTIC AVENUE
+RALEIGH NC 27629
+
+VA 23831
+
+A31462255 DATED 05/26/93 03:23PM PO SPO2875
+
+QTY SHP UM CATALOG #
+
+2 PK 022024
+1 PK 022028
+12 BA 036214
+2 PK 140701
+
+2 cS 21371
+
+1 cs 42008212
+
+P © APPROVED BY
+
+Fae
+
+Sow
+
+CRIPTION
+
+REL!
+
+WEIGH BOATS SMALL 500/PK
+WEIGH BOATS MEDIUM 500/PK
+BRUSH CYLINDER 12 IN
+SPEED NUMBER /026
+
+PIPET FILLER 3/PK
+
+SPEED NUMBER /563
+
+TIPS YELLOW 1-100UL 1000/
+SPEED NUMBER /110
+
+GLV PLAYTEX HD LRG 1PR/PK
+HYDROCHL AC SAFCOT 6X21/2
+SPEED NUMBER /501
+
+NITRIC ACID R ACS 6X21/2L
+SPEED NUMBER /502
+
+CALLER: NANCY HAMILTON
+
+UNIT PR
+
+3.73
+7.28
+0.76
+
+21.85
+
+28.45
+
+3.33
+32.79
+
+42.46
+
+TOTAL:
+
+PAGE 1
+
+EXT PR
+
+7.46
+7.28
+9.12
+
+43.70
+
+56.90
+
+3.33,
+32.79
+
+42.46
+
+203.04
+
+Bee Ek Cees ISN IY
+§4.70
+
+AS mmk lomm calle
+
+BY
+
+2030138143
+
+candidates:
+1) candidate_text=21.85 | source=money_anywhere | line_idx=52
+2) candidate_text=28.45 | source=money_anywhere | line_idx=53
+3) candidate_text=32.79 | source=money_anywhere | line_idx=55
+4) candidate_text=42.46 | source=money_anywhere | line_idx=56
+5) candidate_text=43.7 | source=money_anywhere | line_idx=63
+6) candidate_text=56.9 | source=money_anywhere | line_idx=64
+7) candidate_text=203.04 | source=money_anywhere | line_idx=68
+
+================================================================================
+doc_id=doc_0358
+file_name=rvl_train_08239.png
+field=total_amount
+
+raw_text_excerpt:
+“ BORRISTON ~ .
+
+° LABORATORIES, INC.
+
+Temple Hills, Maryland 20748
+Hetmz™ + amorce +
+
+November 29, 1983
+
+Lorillard Inc.
+420 English Street
+Greensboro, NC 27405
+Attn: Dr. ‘Harry Minnemeyer
+
+REFERENCE: Purchase Order No. 1228
+BLI REF: 251496
+Invoice #: 1496-4
+
+DESCRIPTION AMOUNT
+
+‘Smoke Condensate Collection for Project
+No. 1500 during August and September $ 10,580.00
+
+FINAL INVOICE
+
+. REMITTANCE ADDRESS:
+Borriston Laboratories, Inc.
+DYNAMAC BUILDING
+11140 Rockville Pike
+Rockville, MD 20852
+
+* INVOICE *
+
+ZLOSLSTO
+
+‘A Subsidiary of Dynamac Intemational, Inc.
+
+candidates:
+1) candidate_text=10580.0 | source=money_anywhere | line_idx=14
+
+================================================================================
+doc_id=doc_0319
+file_name=rvl_train_10312.png
+field=total_amount
+
+raw_text_excerpt:
+"
+
+Nov-27-1998 15:03. FROM
+
+EMPLOVER IDENTIFICATION NO
+53-0168.
+
+COB UEGH Te 20S+8e2:
+
+10
+
+COVINGTON & BURLING
+1201 PENNSYLVANIA AVENUE. N. W.
+P.O. BOx 7566
+WASHINGTON. D.C, 20084
+
+(202 662-6000
+
+P.o4
+
+ee
+
+accountno, 2975)
+
+STATEMENT
+DATE Nov. 27, 1990
+Ae
+oo
+PHILIP MORRIS INTERNATIONAL
+To cover the statement of Healthy Buildings
+International, Inc., in connection with
+HBI-Australia's administrative costs in
+distributing HBI Magazine, list acquisition 4
+and mailing and labeling and Asian dis-
+tribution. oe ee ee eee eee eS 3,600.00 7
+/
+opR/ceb
+
+PLEASE RETURN ONE COPY WITH PAYMENT
+
+NOT PREVIOUSLY PAID
+REPORTS CHiZCKED
+masteR £7
+Wa y
+
+HISTORY
+
+2029370466
+
+candidates:
+1) candidate_text=3600.0 | source=money_anywhere | line_idx=24
+
+================================================================================
+doc_id=doc_0220
+file_name=rvl_train_03071.png
+field=total_amount
+
+raw_text_excerpt:
+Dyer Dela 2Q0\
+
+CITIBANK, NA. ‘April 16,2001. ofuu. 56
+"789103 0000167685139
+
+BARTON, BEVERLY KAY
+
+FOR PROFESSIONAL SERVICES RENDERED
+
+ITEMIZED FEES **
+
+DESCRIPTION DATE mNITIALS HOURS
+CORRESPONDENCE FROM LINDA ALPERT REORDER 03/19/01 spc 40
+DISMISSING CASE IN KANSAS ON ELEVENTH
+AMENDMENT IMMUNITY GROUNDS; RECEIVED AND
+REVIEWED MEMORANDUM AND ORDER
+‘CORRESPONDENCE FROM LINDA ALPERT RE 0373001 spc 10
+DISMISSAL OF BALTIMORE CASE
+
+‘TOTAL FOR FEES s 10250
+
+FEE RECAP CURRENT INVOICE
+IIT NAME, Lass RATE HOURS AMOUNT.
+SHRHOLDERS 205.00 0 102.50
+
+spc SDCAREY
+
+TOTALS:
+
+Pg Awhoug Tnvoice &
+
+eluded wr 280) 0 (equat &e
+peT wcluded vn tomat
+
+nut, rhe $102.90 was
+ne able. Tho mvoice shstd be
+PV agol Cekueot fer posy wen
+
+candidates:
+1) candidate_text=10250.0 | source=money_totalish_line | line_idx=13
+2) candidate_text=102.5 | source=money_anywhere | line_idx=16
+3) candidate_text=205.0 | source=money_anywhere | line_idx=16
+4) candidate_text=102.9 | source=money_anywhere | line_idx=22
+
+================================================================================
+doc_id=doc_0292
+file_name=rvl_train_19961.png
+field=total_amount
+
+raw_text_excerpt:
+PROMOTIONAL MARKETING,INC.
+
+WEST HURON STREET, CHICAGO,ILLINOIS 60610,312/943-0900
+
+Invoice
+To: Ms. Louise A. Norman
+R.J. Reynolds Tobacco Company
+401 North Main Street
+Winston-Salem, NC 27102
+
+DATE: 6/1/89 | NO.: 07407/07411-D INVOICE NO.: 61967
+
+Camel Hispanic Program
+Reference Contract No.?
+Addendum No.: 9166-01-00
+
+9166-00-00
+
+Additional management costs associated
+with execution and coordination of
+
+committed Cinco de Mayo events, requiring
+additional managers and program management
+staff to implement and supervise events in
+
+9 cities - Houston, Galveston, Dallas,
+Denver, Corpus Christi, Pasadena, Albuquerque
+and San Antonio.
+
+TOTAL © ee ee ee ee ee + + $29,600.00
+
+APPROVAL
+
+conmact lcd!
+ar aaa
+YE
+= Rpg 08
+
+Terms: Upon Receipt
+
+Thank You!
+
+RECEWED Im 54999
+
+TX #9200 00.03 os
+
+TIE g6zts
+
+candidates:
+1) candidate_text=29600.0 | source=money_totalish_line | line_idx=20
+
+================================================================================
+doc_id=doc_0355
+file_name=rvl_train_12609.png
+field=total_amount
+
+raw_text_excerpt:
+uw
+
+Lp-o4es 1/82
+
+N2 4885
+[A BIONETICS USE THIS NUMBER
+Litton INVOICE FOR CHECK REMITTANCE
+AND CORRESPONDENCE
+
+5516 Nicholson Lane
+Kensington, MD 20795
+901-881-5600
+
+Billed To:
+
+Date: 20 August, 1984
+Lorillard Research Center
+
+420 English Street
+
+Greensboro, N.C.. 27420
+
+ATTN: Harry Minneneyer
+
+Amount $ (900.00 -
+
+Terms: Due on Submission / United States Dollars Only.
+
+Payment Address: LITTON BIONETICS, INC. - (103)
+Box 2087
+Washington, D.C. 20013
+
+Date Delivered: July, 1984
+Authorization:
+Service Rendered: anes Salmonella Plate Test on the compound A-70.
+
+Final report was submitted in July, 1984.
+
+TéLbezog
+
+a Tc a Project Code: -20988-899
+
+Submitted Bi
+Name: Corinne Reichelt Billing No.: a1
+Title: Supervisor, Cost Accounting Customer Cod
+
+Account Code: 119
+
+White & Goldenrod, Customer; Green, Contract; Canary, Project; Pink, Chronological
+
+candidates:
+1) candidate_text=900.0 | source=money_anywhere | line_idx=15
+
+================================================================================
+doc_id=doc_0316
+file_name=rvl_train_18586.png
+field=total_amount
+
+raw_text_excerpt:
+BIO-RESEARCH CONSULTANTS, INC.
+‘9'Commercial Avenue
+Cambridge, Mass, 02141
+
+INVOICE Ne 134
+
+Please refer to invoice
+rhumber onal inquiries
+
+nd remitances
+Pailip Yorris .
+——Rasmarch_Gentar Spec natuctions
+Ps Os Bax 26583,
+Richmond, VA 23261
+Attn: Hes Re Dy Campents
+wae PERIOD COMERED [roun ioeni wo [—conimar [remus
+oye22/60 c-187at2 WET
+Petar Seats "muon
+Fer studies conducted on: Aguto inhalation atudies in mics
+‘Ton substances at $980.00 each, $9,809.00
+
+ok Mngt voce
+
+289EZ2TEO0OT
+
+candidates:
+1) candidate_text=980.0 | source=money_anywhere | line_idx=16
+2) candidate_text=9809.0 | source=money_anywhere | line_idx=16
+
+================================================================================
+doc_id=doc_0329
+file_name=rvl_train_24412.png
+field=total_amount
+
+raw_text_excerpt:
+5ULOSE
+
+@HAZLETON raurnon
+
+INVOICE
+r
+
+Lorillard Research Center
+420 English Street
+P.0. Box 21688
+Greensboro, NC 27420
+L_ Attention: Melanee B. Bennett J
+
+mens
+Charges
+
+October 23, 1984 Payment Terms. Net 30 Days Charges
+
+boice Oat
+642-185 ers 354 R a _— Ending
+
+Project
+
+‘Charges
+
+Description This Period
+
+14-Day Subacute Toxicity Study in Rats with
+B172 §
+
+Final report mailed: 10/22/1984
+
+$ 2,050.00
+
+3:P.0. Box 25065, Richmond,Va. 23260
+
+s90bezog
+
+Ais
+
+candidates:
+1) candidate_text=2050.0 | source=money_anywhere | line_idx=20
+
+================================================================================
+doc_id=doc_0291
+file_name=rvl_train_22399.png
+field=total_amount
+
+raw_text_excerpt:
+BIO-RESEARCH CONSULTANTS, Inc.
+
+‘To: THE COUNCIL FOR TOBACCO RESEARCH - Us S.A.
+‘10 East 59th Street
+New York, New York 10022
+
+EINANGIAL STATEMENT
+
+For the Period: March 1, 1973 to May 31, 1973
+
+Project Title: Determination of Usefulness of the Golden Syrian
+Hamster as a Model Animal for Inhalation Studies
+
+Amount
+
+A, Salarie:
+Research Assistants and Technicians $2,333.96
+4ninal Technicians and Caretakers 583.82
+P.O. A. Be 170.69
+Blue Cross, Group Insurance, etc. 105.62
+sens
+B. Consunable Supplies 686.10
+©. Other Expense Mise. $103.12 sé
+
+Travel 462.50
+
+GaES 516-00
+Overhead (100% of D. Labor) 3,391.29
+8,020.29
+Fee - 20% 2,602.05,
+Total $12.34
+
+6/22/13 Signature,
+quthorized official
+
+paacy
+
+CTR CONTRACTS 005956
+
+candidates:
+1) candidate_text=2333.96 | source=money_anywhere | line_idx=10
+2) candidate_text=583.82 | source=money_anywhere | line_idx=11
+3) candidate_text=170.69 | source=money_anywhere | line_idx=12
+4) candidate_text=105.62 | source=money_anywhere | line_idx=13
+5) candidate_text=686.1 | source=money_anywhere | line_idx=15
+6) candidate_text=103.12 | source=money_anywhere | line_idx=16
+7) candidate_text=462.5 | source=money_anywhere | line_idx=17
+8) candidate_text=3391.29 | source=money_anywhere | line_idx=19
+9) candidate_text=8020.29 | source=money_anywhere | line_idx=20
+10) candidate_text=2602.05 | source=money_anywhere | line_idx=21
+11) candidate_text=12.34 | source=money_totalish_line | line_idx=22
