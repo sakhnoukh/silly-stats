@@ -1,0 +1,11 @@
+Phase 3 — ML Extraction Coverage Report
+==================================================
+
+Documents in output: 198
+
+  invoice_number      :  15/198 (  7.6%) (ML)
+  invoice_date        :  44/198 ( 22.2%) (baseline)
+  due_date            :   2/198 (  1.0%) (baseline)
+  issuer_name         : 181/198 ( 91.4%) (baseline)
+  recipient_name      : 111/198 ( 56.1%) (ML)
+  total_amount        : 106/198 ( 53.5%) (ML)

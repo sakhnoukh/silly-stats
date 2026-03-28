@@ -192,7 +192,7 @@ def train_one_field(field_name: str, csv_path: str, model_path: str):
         "recall": float(round(r, 4)),
         "f1": float(round(f1, 4)),
         "report": report,
-        "model_path": model_path,
+        "model_path": str(model_path),
     }
 
 
