@@ -9,12 +9,13 @@ This document details the contributions of each team member across the five phas
 ### Phase 1: Data Collection & Preprocessing
 **Owner:** Sami
 
-**Responsibilities:**
-- Download and process large-scale document datasets (RVL-CDIP, SROIE)
-- Implement OCR pipeline (Pytesseract) for document text extraction
-- Text cleaning: lowercasing, stopword removal, tokenization
-- Create train/val/test splits (stratified 70/15/15)
-- Generate TF-IDF feature vectors (5K vocabulary, 1-2 grams)
+**Work (from scripts & outputs):**
+- Downloaded and processed RVL-CDIP and SROIE datasets (~800 documents total)
+- Implemented OCR pipeline with Pytesseract for text extraction
+- Built text cleaning pipeline: lowercasing, stopword removal, tokenization
+- Created train/val/test splits (stratified 70/15/15)
+- Generated TF-IDF feature vectors (5K vocabulary, 1-2 grams)
+- Saved vectorizers and encoders for downstream phases
 
 **Deliverables:**
 - `scripts/download_rvl_forms.py` — RVL-CDIP downloader
@@ -36,15 +37,16 @@ This document details the contributions of each team member across the five phas
 ---
 
 ### Phase 2: Document Classification Model
-**Owner:** Sofia
+**Owner:** Sofia (sofiasanjose)
 
-**Responsibilities:**
-- Train classical ML classifiers on TF-IDF features
-- Implement and compare multiple model architectures
-- Apply dimensionality reduction (PCA, SVD)
-- Perform 5-fold cross-validation and hyperparameter tuning
-- Generate evaluation metrics (accuracy, F1, confusion matrices)
-- Select and save the best-performing model
+**Work (from commit: "Phase 2 and 3 Complete: Classification + Invoice Extraction"):**
+- Trained 10 classical ML classifiers on TF-IDF features
+- Implemented model variants: Logistic Regression, Random Forest, SVM, Naive Bayes
+- Applied dimensionality reduction: PCA and Truncated SVD (150 components)
+- Performed 5-fold cross-validation and hyperparameter tuning
+- Generated evaluation metrics: accuracy, F1-scores, confusion matrices
+- Selected Logistic Regression as best-performing model
+- Saved trained models and metadata for pipeline integration
 
 **Deliverables:**
 - `scripts/train_models.py` — Model training pipeline
@@ -73,7 +75,7 @@ This document details the contributions of each team member across the five phas
 ### Phase 3: Invoice Information Extraction
 **Owners:** Bea (beamartin27) & Salmane (salmanemhb)
 
-**Bea's Work (from commits):**
+**Bea:**
 - "phase 3: add exploration script and extraction skeleton" — Initial setup & exploration
 - "Add working Phase 3 invoice extraction baseline" — Baseline regex-based extraction
 - "Template results" — Template-based extraction method
@@ -81,7 +83,7 @@ This document details the contributions of each team member across the five phas
 - "Automated labeling implementation and results" — Candidate labeling pipeline
 - Handled diverse invoice formats and layouts
 
-**Salmane's Work (from commits):**
+**Salmane:**
 - "Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline, method evaluation" — Built gold dataset for evaluation, trained ML-based rankers, evaluated all extraction methods
 - Integrated baseline + template + feature-based methods
 - Comprehensive method comparison & evaluation
@@ -116,13 +118,15 @@ This document details the contributions of each team member across the five phas
 ### Phase 4: Pipeline Integration & Backend
 **Owner:** Matthew
 
-**Responsibilities:**
-- Integrate Phase 1-3 into unified end-to-end pipeline
-- Build `run.py` as main entry point
-- Implement CLI interface with flexible input handling
-- Create edge case handling (corrupted files, ambiguous classifications)
-- Develop Streamlit web UI for demo (`app.py`)
-- Ensure pipeline works with both text and image inputs
+**Work (from commits):**
+- "Add run.py - Phase 4 pipeline integration" — Built unified pipeline entry point
+- "Update run.py - clean demo output formatting" — Improved output formatting & UX
+- "Update run.py - minor fix" — Bug fixes and refinements
+- "Added app.py - Simple FrontEnd UI for demo" — Created Streamlit web interface
+- Integrated Phase 2 classifier with Phase 3 extractor
+- Built CLI interface for batch/single document processing
+- Implemented JSON output format for results
+- Created interactive web UI for easy demonstration
 
 **Deliverables:**
 - `run.py` — Main unified pipeline script
@@ -249,12 +253,14 @@ Master branch (main)
 Recent commits showing team contributions:
 
 ```
-45cda01 Added app.py - Simple FrontEnd UI for demo [Matthew]
-7e9319d Update run.py - clean demo output formatting [Matthew]
-877b3eb Add run.py - Phase 4 pipeline integration [Matthew]
-41633e9 Phase 2 and 3 Complete: Classification + Invoice Extraction [Sofia, Bea, Salmane]
-3915a0e Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline [Salmane]
-729be8b Add working Phase 3 invoice extraction baseline [Bea]
+45cda01 Added app.py - Simple FrontEnd UI for demo [Matthew - Phase 4]
+e2f740d Update run.py - minor fix [Matthew - Phase 4]
+7e9319d Update run.py - clean demo output formatting [Matthew - Phase 4]
+877b3eb Add run.py - Phase 4 pipeline integration [Matthew - Phase 4]
+41633e9 Phase 2 and 3 Complete: Classification + Invoice Extraction [Sofia - Phase 2, Bea & Salmane - Phase 3]
+3915a0e Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline [Salmane - Phase 3]
+729be8b Add working Phase 3 invoice extraction baseline [Bea - Phase 3]
+356b3ed phase 3: add exploration script and extraction skeleton [Bea - Phase 3]
 ... (and many more from Phases 1-3)
 ```
 
