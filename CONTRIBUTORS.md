@@ -71,7 +71,7 @@ This document details the contributions of each team member across the five phas
 ---
 
 ### Phase 3: Invoice Information Extraction
-**Owner:** Salmane
+**Owner:** Bea (beamartin27)
 
 **Responsibilities:**
 - Design regex patterns and rule-based extractors for 6 invoice fields
@@ -171,7 +171,7 @@ streamlit run app.py
 |-------|-------|--------|-----------|
 | 1 | Sami | ✅ Complete | `extract_real_data.py`, `clean_text.py`, `make_features.py` |
 | 2 | Sofia | ✅ Complete | `train_models.py`, `evaluate_model.py` |
-| 3 | Salmane | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
+| 3 | Bea | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
 | 4 | Matthew | ✅ Complete | `run.py`, `app.py` |
 | 5 | Niko | ✅ Complete | `docs/`, `README.md`, presentation |
 
@@ -212,7 +212,7 @@ Master branch (main)
 - Cross-validation and performance evaluation
 - Dimensionality reduction techniques
 
-### Phase 3 (Salmane)
+### Phase 3 (Bea)
 - Regex and pattern matching
 - Rule-based systems for structured extraction
 - Handling OCR noise and document variation
