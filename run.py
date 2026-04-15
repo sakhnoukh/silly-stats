@@ -212,31 +212,20 @@ def clean_text(raw: str) -> str:
 def load_classifier():
     """
     Load the trained model and TF-IDF vectorizer.
-    Returns (model, vectorizer) or exits with a clear error.
+    Returns (model, vectorizer) or (None, None) if files are missing.
     """
+    if not BEST_MODEL_PATH.exists() or not VECTORIZER_PATH.exists():
+        return None, None
+
     import joblib
-
-    # Check model file
-    if not BEST_MODEL_PATH.exists():
-        print(f"ERROR: Classification model not found at {BEST_MODEL_PATH}")
-        print("  Run Phase 2 first: python3 scripts/train_models.py")
-        sys.exit(1)
-
-    # Check vectorizer file
-    if not VECTORIZER_PATH.exists():
-        print(f"ERROR: TF-IDF vectorizer not found at {VECTORIZER_PATH}")
-        print("  Run Phase 1 features first: python3 scripts/make_features.py")
-        sys.exit(1)
-
     model = joblib.load(BEST_MODEL_PATH)
     vectorizer = joblib.load(VECTORIZER_PATH)
-
     return model, vectorizer
 
 
-def classify_document(cleaned_text: str, model, vectorizer) -> dict:
+def classify_with_model(cleaned_text: str, model, vectorizer) -> dict:
     """
-    Classify a document and return the predicted label with confidence scores.
+    Classify using the trained ML model + TF-IDF vectorizer.
     """
     features = vectorizer.transform([cleaned_text])
     prediction = model.predict(features)[0]
@@ -249,13 +238,108 @@ def classify_document(cleaned_text: str, model, vectorizer) -> dict:
         for idx, prob in enumerate(probas):
             confidence[LABEL_MAP[idx]] = round(float(prob), 4)
     except AttributeError:
-        # Model doesn't support predict_proba (e.g. LinearSVC)
         confidence = {label: 1.0}
 
     return {
         "predicted_class": label,
         "confidence": confidence,
+        "method": "ml_model",
     }
+
+
+def classify_with_keywords(raw_text: str) -> dict:
+    """
+    Fallback keyword-based classifier when the ML model/vectorizer is unavailable.
+    Uses simple heuristics based on document structure and vocabulary.
+    """
+    text_lower = raw_text.lower()
+
+    # Score each category based on keyword presence
+    scores = {"email": 0.0, "form": 0.0, "invoice": 0.0, "receipt": 0.0}
+
+    # --- Email signals ---
+    email_keywords = [
+        (r"\b(from|to|cc|bcc)\s*:", 3),
+        (r"\bsubject\s*:", 4),
+        (r"\b(dear|hi|hello|regards|sincerely)\b", 2),
+        (r"\b(re:|fw:|fwd:)", 3),
+        (r"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}", 4),
+        (r"\b(meeting|schedule|discuss|attached|please)\b", 1),
+    ]
+
+    # --- Invoice signals ---
+    invoice_keywords = [
+        (r"\binvoice\b", 5),
+        (r"\binvoice\s*(no|number|#|id)\b", 5),
+        (r"\b(bill\s*to|sold\s*to|ship\s*to)\b", 4),
+        (r"\b(due\s*date|payment\s*terms|net\s*\d+)\b", 3),
+        (r"\b(subtotal|total\s*amount|amount\s*due|balance\s*due)\b", 4),
+        (r"\b(remit|payable)\b", 3),
+        (r"\bpurchase\s*order\b", 2),
+    ]
+
+    # --- Receipt signals ---
+    receipt_keywords = [
+        (r"\b(receipt|cashier|store\s*#|transaction)\b", 4),
+        (r"\b(subtotal|tax|total)\b", 2),
+        (r"\b(visa|mastercard|cash|change|approved)\b", 4),
+        (r"\b(thank\s*you\s*for\s*(shopping|your\s*purchase))\b", 5),
+        (r"\b(qty|quantity)\b", 2),
+        (r"\d{2}[:/]\d{2}[:/]\d{2,4}\s+\d{2}:\d{2}", 3),  # date + time pattern
+    ]
+
+    # --- Form signals ---
+    form_keywords = [
+        (r"\b(form|application|registration|enrollment)\b", 3),
+        (r"\b(please\s*(fill|complete|check|sign))\b", 4),
+        (r"\b(signature|date\s*of\s*birth|social\s*security)\b", 3),
+        (r"\b(checkbox|check\s*one|mark\s*one)\b", 4),
+        (r"\b(section\s*[a-z0-9]|part\s*[a-z0-9])\b", 2),
+        (r"_{3,}|\[[\s]*\]", 3),  # blank lines or checkboxes
+    ]
+
+    keyword_sets = {
+        "email": email_keywords,
+        "invoice": invoice_keywords,
+        "receipt": receipt_keywords,
+        "form": form_keywords,
+    }
+
+    for category, keywords in keyword_sets.items():
+        for pattern, weight in keywords:
+            matches = len(re.findall(pattern, text_lower))
+            scores[category] += matches * weight
+
+    # Normalize to rough confidence
+    total = sum(scores.values())
+    if total == 0:
+        # No signals found — default to form (generic document)
+        return {
+            "predicted_class": "form",
+            "confidence": {"email": 0.25, "form": 0.25, "invoice": 0.25, "receipt": 0.25},
+            "method": "keyword_fallback",
+        }
+
+    confidence = {k: round(v / total, 4) for k, v in scores.items()}
+    predicted = max(scores, key=scores.get)
+
+    return {
+        "predicted_class": predicted,
+        "confidence": confidence,
+        "method": "keyword_fallback",
+    }
+
+
+def classify_document(raw_text: str, cleaned_text: str) -> dict:
+    """
+    Classify a document. Uses ML model if available, falls back to keywords.
+    """
+    model, vectorizer = load_classifier()
+
+    if model is not None and vectorizer is not None:
+        return classify_with_model(cleaned_text, model, vectorizer)
+    else:
+        return classify_with_keywords(raw_text)
 
 
 # ---------------------------------------------------------------------------
@@ -317,14 +401,27 @@ def run_pipeline(file_path: str, verbose: bool = False) -> dict:
         sys.exit(1)
 
     if verbose:
-        print(f"Processing: {file_path}")
-        print(f"  File type: {Path(file_path).suffix.lower()}")
+        print()
+        print("=" * 60)
+        print("  Document Classification & Invoice Extraction Pipeline")
+        print("=" * 60)
+        print()
+        print(f"  Input file:  {os.path.basename(file_path)}")
+        print(f"  File type:   {Path(file_path).suffix.lower()}")
+        print()
 
     # --- Step 1: Extract text ---
+    if verbose:
+        print("-" * 60)
+        print("  STEP 1: Text Extraction")
+        print("-" * 60)
+
     raw_text = extract_text(file_path)
 
     if not raw_text or not raw_text.strip():
-        print(f"WARNING: No text could be extracted from {file_path}")
+        if verbose:
+            print("  Result:      No text could be extracted")
+            print()
         return {
             "file": os.path.basename(file_path),
             "classification": "unknown",
@@ -334,13 +431,24 @@ def run_pipeline(file_path: str, verbose: bool = False) -> dict:
 
     if verbose:
         word_count = len(raw_text.split())
-        print(f"  Extracted text: {word_count} words")
+        print(f"  Words extracted:  {word_count}")
+        # Show a short preview of the text
+        preview = raw_text.replace('\n', ' ').strip()[:100]
+        print(f"  Preview:          {preview}...")
+        print()
 
     # --- Step 2: Clean text for classification ---
+    if verbose:
+        print("-" * 60)
+        print("  STEP 2: Text Cleaning")
+        print("-" * 60)
+
     cleaned = clean_text(raw_text)
 
     if not cleaned.strip():
-        print(f"WARNING: Text was empty after cleaning for {file_path}")
+        if verbose:
+            print("  Result:      Text was empty after cleaning")
+            print()
         return {
             "file": os.path.basename(file_path),
             "classification": "unknown",
@@ -349,27 +457,58 @@ def run_pipeline(file_path: str, verbose: bool = False) -> dict:
         }
 
     if verbose:
-        print(f"  Cleaned text: {len(cleaned.split())} words")
+        print(f"  Words after cleaning:  {len(cleaned.split())}")
+        print()
 
     # --- Step 3: Classify ---
-    model, vectorizer = load_classifier()
-    classification = classify_document(cleaned, model, vectorizer)
+    if verbose:
+        print("-" * 60)
+        print("  STEP 3: Document Classification")
+        print("-" * 60)
+
+    classification = classify_document(raw_text, cleaned)
 
     if verbose:
         label = classification["predicted_class"]
         conf = classification["confidence"].get(label, 0)
-        print(f"  Classification: {label} (confidence: {conf:.1%})")
+        method = classification.get("method", "unknown")
+        method_label = "ML Model (TF-IDF + Logistic Regression)" if method == "ml_model" else "Keyword-based Fallback"
+        print(f"  Predicted class:  {label.upper()}")
+        print(f"  Confidence:       {conf:.1%}")
+        print(f"  Method:           {method_label}")
+        print()
+        print("  All scores:")
+        for cls in ["email", "form", "invoice", "receipt"]:
+            score = classification["confidence"].get(cls, 0)
+            bar = "#" * int(score * 30)
+            marker = " <--" if cls == label else ""
+            print(f"    {cls:10s}  [{bar:<30s}] {score:.1%}{marker}")
+        print()
 
     # --- Step 4: Extract fields if invoice ---
     result = build_result(file_path, classification, raw_text)
 
     if verbose and classification["predicted_class"] == "invoice":
+        print("-" * 60)
+        print("  STEP 4: Invoice Field Extraction")
+        print("-" * 60)
         fields = result.get("extracted_fields", {})
         found = sum(1 for v in fields.values() if v is not None)
-        print(f"  Invoice fields extracted: {found}/{len(fields)}")
+        print(f"  Fields found: {found}/{len(fields)}")
+        print()
         for field, value in fields.items():
-            status = value if value else "(not found)"
-            print(f"    {field}: {status}")
+            label = field.replace("_", " ").title()
+            if value:
+                print(f"    {label:20s}  {value}")
+            else:
+                print(f"    {label:20s}  -- not found --")
+        print()
+
+    if verbose:
+        print("=" * 60)
+        print("  RESULT")
+        print("=" * 60)
+        print()
 
     return result
 
