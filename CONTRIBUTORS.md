@@ -36,7 +36,7 @@ This document details the contributions of each team member across the five phas
 ---
 
 ### Phase 2: Document Classification Model
-**Owner:** Sofia Bonoan (You)
+**Owner:** Sofia
 
 **Responsibilities:**
 - Train classical ML classifiers on TF-IDF features
@@ -167,15 +167,13 @@ streamlit run app.py
 
 ## 📊 Summary Statistics
 
-| Phase | Owner | Status | Key Files | Lines of Code |
-|-------|-------|--------|-----------|---------------|
-| 1 | Sami | ✅ Complete | `extract_real_data.py`, `clean_text.py`, `make_features.py` | ~800 |
-| 2 | Sofia | ✅ Complete | `train_models.py`, `evaluate_model.py` | ~600 |
-| 3 | Salmane | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` | ~1200 |
-| 4 | Matthew | ✅ Complete | `run.py`, `app.py` | ~500 |
-| 5 | Niko | ✅ Complete | `docs/`, `README.md`, presentation | ~300 |
-
-**Total Project Effort:** ~3400 lines of code + documentation
+| Phase | Owner | Status | Key Files |
+|-------|-------|--------|-----------|
+| 1 | Sami | ✅ Complete | `extract_real_data.py`, `clean_text.py`, `make_features.py` |
+| 2 | Sofia | ✅ Complete | `train_models.py`, `evaluate_model.py` |
+| 3 | Salmane | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
+| 4 | Matthew | ✅ Complete | `run.py`, `app.py` |
+| 5 | Niko | ✅ Complete | `docs/`, `README.md`, presentation |
 
 ---
 
