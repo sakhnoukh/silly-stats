@@ -71,15 +71,21 @@ This document details the contributions of each team member across the five phas
 ---
 
 ### Phase 3: Invoice Information Extraction
-**Owner:** Bea (beamartin27)
+**Owners:** Bea (beamartin27) & Salmane (salmanemhb)
 
-**Responsibilities:**
-- Design regex patterns and rule-based extractors for 6 invoice fields
+**Bea's Responsibilities:**
+- Design regex patterns and rule-based extractors for invoice fields
+- Implement baseline extraction methods
+- Develop template-based extraction approach
+- Create automated candidate labeling pipeline
 - Handle diverse invoice formats and layouts
-- Implement robust date parsing (multiple date formats)
-- Develop currency-agnostic amount extraction
-- Test extraction on challenging OCR'd documents
-- Compare extraction methods (regex, template, layout-aware, ML-based)
+
+**Salmane's Responsibilities:**
+- Build gold dataset for evaluation
+- Train ML-based candidate rankers
+- Implement advanced extraction pipeline
+- Compare and evaluate multiple extraction methods
+- Extract structured fields with high accuracy
 
 **Deliverables:**
 - `scripts/extract_invoice_fields.py` — Field extraction module
@@ -171,7 +177,7 @@ streamlit run app.py
 |-------|-------|--------|-----------|
 | 1 | Sami | ✅ Complete | `extract_real_data.py`, `clean_text.py`, `make_features.py` |
 | 2 | Sofia | ✅ Complete | `train_models.py`, `evaluate_model.py` |
-| 3 | Bea | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
+| 3 | Bea & Salmane | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
 | 4 | Matthew | ✅ Complete | `run.py`, `app.py` |
 | 5 | Niko | ✅ Complete | `docs/`, `README.md`, presentation |
 
@@ -212,11 +218,18 @@ Master branch (main)
 - Cross-validation and performance evaluation
 - Dimensionality reduction techniques
 
-### Phase 3 (Bea)
+### Phase 3 (Bea & Salmane)
+**Bea's Learning Outcomes:**
 - Regex and pattern matching
 - Rule-based systems for structured extraction
 - Handling OCR noise and document variation
-- Multiple extraction approach comparison
+- Template-based extraction design
+
+**Salmane's Learning Outcomes:**
+- Gold dataset creation and validation
+- ML model training and evaluation
+- Cross-method comparison and analysis
+- Pipeline integration and optimization
 
 ### Phase 4 (Matthew)
 - Software engineering (pipeline integration)
@@ -240,7 +253,9 @@ Recent commits showing team contributions:
 45cda01 Added app.py - Simple FrontEnd UI for demo [Matthew]
 7e9319d Update run.py - clean demo output formatting [Matthew]
 877b3eb Add run.py - Phase 4 pipeline integration [Matthew]
-41633e9 Phase 2 and 3 Complete: Classification + Invoice Extraction [Sofia, Salmane]
+41633e9 Phase 2 and 3 Complete: Classification + Invoice Extraction [Sofia, Bea, Salmane]
+3915a0e Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline [Salmane]
+729be8b Add working Phase 3 invoice extraction baseline [Bea]
 ... (and many more from Phases 1-3)
 ```
 
