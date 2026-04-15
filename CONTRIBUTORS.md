@@ -9,12 +9,13 @@ This document details the contributions of each team member across the five phas
 ### Phase 1: Data Collection & Preprocessing
 **Owner:** Sami
 
-**Responsibilities:**
-- Download and process large-scale document datasets (RVL-CDIP, SROIE)
-- Implement OCR pipeline (Pytesseract) for document text extraction
-- Text cleaning: lowercasing, stopword removal, tokenization
-- Create train/val/test splits (stratified 70/15/15)
-- Generate TF-IDF feature vectors (5K vocabulary, 1-2 grams)
+**Work (from scripts & outputs):**
+- Downloaded and processed RVL-CDIP and SROIE datasets (~800 documents total)
+- Implemented OCR pipeline with Pytesseract for text extraction
+- Built text cleaning pipeline: lowercasing, stopword removal, tokenization
+- Created train/val/test splits (stratified 70/15/15)
+- Generated TF-IDF feature vectors (5K vocabulary, 1-2 grams)
+- Saved vectorizers and encoders for downstream phases
 
 **Deliverables:**
 - `scripts/download_rvl_forms.py` — RVL-CDIP downloader
@@ -36,15 +37,16 @@ This document details the contributions of each team member across the five phas
 ---
 
 ### Phase 2: Document Classification Model
-**Owner:** Sofia
+**Owner:** Sofia (sofiasanjose)
 
-**Responsibilities:**
-- Train classical ML classifiers on TF-IDF features
-- Implement and compare multiple model architectures
-- Apply dimensionality reduction (PCA, SVD)
-- Perform 5-fold cross-validation and hyperparameter tuning
-- Generate evaluation metrics (accuracy, F1, confusion matrices)
-- Select and save the best-performing model
+**Work (from commit: "Phase 2 and 3 Complete: Classification + Invoice Extraction"):**
+- Trained 10 classical ML classifiers on TF-IDF features
+- Implemented model variants: Logistic Regression, Random Forest, SVM, Naive Bayes
+- Applied dimensionality reduction: PCA and Truncated SVD (150 components)
+- Performed 5-fold cross-validation and hyperparameter tuning
+- Generated evaluation metrics: accuracy, F1-scores, confusion matrices
+- Selected Logistic Regression as best-performing model
+- Saved trained models and metadata for pipeline integration
 
 **Deliverables:**
 - `scripts/train_models.py` — Model training pipeline
@@ -71,15 +73,20 @@ This document details the contributions of each team member across the five phas
 ---
 
 ### Phase 3: Invoice Information Extraction
-**Owner:** Salmane
+**Owners:** Bea (beamartin27) & Salmane (salmanemhb)
 
-**Responsibilities:**
-- Design regex patterns and rule-based extractors for 6 invoice fields
-- Handle diverse invoice formats and layouts
-- Implement robust date parsing (multiple date formats)
-- Develop currency-agnostic amount extraction
-- Test extraction on challenging OCR'd documents
-- Compare extraction methods (regex, template, layout-aware, ML-based)
+**Bea:**
+- "phase 3: add exploration script and extraction skeleton" — Initial setup & exploration
+- "Add working Phase 3 invoice extraction baseline" — Baseline regex-based extraction
+- "Template results" — Template-based extraction method
+- "Invoice feature extraction 4 models + results" — Feature extraction & 4 model variants
+- "Automated labeling implementation and results" — Candidate labeling pipeline
+- Handled diverse invoice formats and layouts
+
+**Salmane:**
+- "Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline, method evaluation" — Built gold dataset for evaluation, trained ML-based rankers, evaluated all extraction methods
+- Integrated baseline + template + feature-based methods
+- Comprehensive method comparison & evaluation
 
 **Deliverables:**
 - `scripts/extract_invoice_fields.py` — Field extraction module
@@ -111,13 +118,15 @@ This document details the contributions of each team member across the five phas
 ### Phase 4: Pipeline Integration & Backend
 **Owner:** Matthew
 
-**Responsibilities:**
-- Integrate Phase 1-3 into unified end-to-end pipeline
-- Build `run.py` as main entry point
-- Implement CLI interface with flexible input handling
-- Create edge case handling (corrupted files, ambiguous classifications)
-- Develop Streamlit web UI for demo (`app.py`)
-- Ensure pipeline works with both text and image inputs
+**Work (from commits):**
+- "Add run.py - Phase 4 pipeline integration" — Built unified pipeline entry point
+- "Update run.py - clean demo output formatting" — Improved output formatting & UX
+- "Update run.py - minor fix" — Bug fixes and refinements
+- "Added app.py - Simple FrontEnd UI for demo" — Created Streamlit web interface
+- Integrated Phase 2 classifier with Phase 3 extractor
+- Built CLI interface for batch/single document processing
+- Implemented JSON output format for results
+- Created interactive web UI for easy demonstration
 
 **Deliverables:**
 - `run.py` — Main unified pipeline script
@@ -171,7 +180,7 @@ streamlit run app.py
 |-------|-------|--------|-----------|
 | 1 | Sami | ✅ Complete | `extract_real_data.py`, `clean_text.py`, `make_features.py` |
 | 2 | Sofia | ✅ Complete | `train_models.py`, `evaluate_model.py` |
-| 3 | Salmane | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
+| 3 | Bea & Salmane | ✅ Complete | `extract_invoice_fields.py`, `*_extraction/` |
 | 4 | Matthew | ✅ Complete | `run.py`, `app.py` |
 | 5 | Niko | ✅ Complete | `docs/`, `README.md`, presentation |
 
@@ -212,11 +221,18 @@ Master branch (main)
 - Cross-validation and performance evaluation
 - Dimensionality reduction techniques
 
-### Phase 3 (Salmane)
+### Phase 3 (Bea & Salmane)
+**Bea's Learning Outcomes:**
 - Regex and pattern matching
 - Rule-based systems for structured extraction
 - Handling OCR noise and document variation
-- Multiple extraction approach comparison
+- Template-based extraction design
+
+**Salmane's Learning Outcomes:**
+- Gold dataset creation and validation
+- ML model training and evaluation
+- Cross-method comparison and analysis
+- Pipeline integration and optimization
 
 ### Phase 4 (Matthew)
 - Software engineering (pipeline integration)
@@ -237,10 +253,14 @@ Master branch (main)
 Recent commits showing team contributions:
 
 ```
-45cda01 Added app.py - Simple FrontEnd UI for demo [Matthew]
-7e9319d Update run.py - clean demo output formatting [Matthew]
-877b3eb Add run.py - Phase 4 pipeline integration [Matthew]
-41633e9 Phase 2 and 3 Complete: Classification + Invoice Extraction [Sofia, Salmane]
+45cda01 Added app.py - Simple FrontEnd UI for demo [Matthew - Phase 4]
+e2f740d Update run.py - minor fix [Matthew - Phase 4]
+7e9319d Update run.py - clean demo output formatting [Matthew - Phase 4]
+877b3eb Add run.py - Phase 4 pipeline integration [Matthew - Phase 4]
+41633e9 Phase 2 and 3 Complete: Classification + Invoice Extraction [Sofia - Phase 2, Bea & Salmane - Phase 3]
+3915a0e Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline [Salmane - Phase 3]
+729be8b Add working Phase 3 invoice extraction baseline [Bea - Phase 3]
+356b3ed phase 3: add exploration script and extraction skeleton [Bea - Phase 3]
 ... (and many more from Phases 1-3)
 ```
 
