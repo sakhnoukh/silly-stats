@@ -25,7 +25,7 @@ Build an end-to-end system that:
 |-------|-------------|----------|--------|
 | **Phase 1** | Data Collection & Preprocessing | Sami | ✅ **COMPLETE** |
 | **Phase 2** | Classification Models | Sofia | ✅ **COMPLETE** |
-| **Phase 3** | Invoice Field Extraction | Salmane | ✅ **COMPLETE** |
+| **Phase 3** | Invoice Field Extraction + Labeling | Bea & Salmane | ✅ **COMPLETE** |
 | **Phase 4** | Pipeline Integration & Demo | Matthew | ✅ **COMPLETE** |
 | **Phase 5** | Documentation & Presentation | Niko | ✅ **COMPLETE** |
 
