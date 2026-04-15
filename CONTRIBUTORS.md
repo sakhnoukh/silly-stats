@@ -73,19 +73,18 @@ This document details the contributions of each team member across the five phas
 ### Phase 3: Invoice Information Extraction
 **Owners:** Bea (beamartin27) & Salmane (salmanemhb)
 
-**Bea's Responsibilities:**
-- Design regex patterns and rule-based extractors for invoice fields
-- Implement baseline extraction methods
-- Develop template-based extraction approach
-- Create automated candidate labeling pipeline
-- Handle diverse invoice formats and layouts
+**Bea's Work (from commits):**
+- "phase 3: add exploration script and extraction skeleton" — Initial setup & exploration
+- "Add working Phase 3 invoice extraction baseline" — Baseline regex-based extraction
+- "Template results" — Template-based extraction method
+- "Invoice feature extraction 4 models + results" — Feature extraction & 4 model variants
+- "Automated labeling implementation and results" — Candidate labeling pipeline
+- Handled diverse invoice formats and layouts
 
-**Salmane's Responsibilities:**
-- Build gold dataset for evaluation
-- Train ML-based candidate rankers
-- Implement advanced extraction pipeline
-- Compare and evaluate multiple extraction methods
-- Extract structured fields with high accuracy
+**Salmane's Work (from commits):**
+- "Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline, method evaluation" — Built gold dataset for evaluation, trained ML-based rankers, evaluated all extraction methods
+- Integrated baseline + template + feature-based methods
+- Comprehensive method comparison & evaluation
 
 **Deliverables:**
 - `scripts/extract_invoice_fields.py` — Field extraction module
