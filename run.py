@@ -24,6 +24,8 @@ import os
 import re
 import sys
 from pathlib import Path
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 
 # ---------------------------------------------------------------------------
 # Project paths
