@@ -1,0 +1,260 @@
+{
+  "per_file": {
+    "ocr_invoice_1_clean.png": {
+      "invoice_number": {
+        "gold": "SC-2024-112",
+        "predicted": "SC-2024-112",
+        "correct": true
+      },
+      "invoice_date": {
+        "gold": "2024-10-08",
+        "predicted": "2024-10-08",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-11-07",
+        "predicted": "2024-11-07",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Sarah Chen Consulting",
+        "predicted": "Sarah Chen Consulting",
+        "correct": true
+      },
+      "recipient_name": {
+        "gold": "Greenfield Media Group",
+        "predicted": "Greenfield Media Group",
+        "correct": true
+      },
+      "total_amount": {
+        "gold": "8550.00",
+        "predicted": "8550.00",
+        "correct": true
+      }
+    },
+    "ocr_invoice_2_construction.png": {
+      "invoice_number": {
+        "gold": "RSC-2024-0089",
+        "predicted": "RSC-2024-0089",
+        "correct": true
+      },
+      "invoice_date": {
+        "gold": "2024-03-14",
+        "predicted": "2024-03-14",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-04-13",
+        "predicted": "2024-04-13",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Ridge & Stone Construction LLC",
+        "predicted": "7120 Industrial Blvd, Denver, CO 80216 | (303) 555-0147 | billing@ridgestone.build",
+        "correct": false
+      },
+      "recipient_name": {
+        "gold": "Cascade Property Holdings",
+        "predicted": "Cascade Property Holdings",
+        "correct": true
+      },
+      "total_amount": {
+        "gold": "70300.00",
+        "predicted": "70300.00",
+        "correct": true
+      }
+    },
+    "ocr_invoice_3_uk.png": {
+      "invoice_number": {
+        "gold": "BWA-2024-1142",
+        "predicted": "BWA-2024-1142",
+        "correct": true
+      },
+      "invoice_date": {
+        "gold": "2024-11-08",
+        "predicted": "2024-08-11",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-12-08",
+        "predicted": "2024-08-12",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Blackwood Advisory Services Ltd",
+        "predicted": "BLACKWOOD ADVISORY SERVICES LTD",
+        "correct": true
+      },
+      "recipient_name": {
+        "gold": "Thornton Capital Partners",
+        "predicted": "Thornton Capital Partners",
+        "correct": true
+      },
+      "total_amount": {
+        "gold": "26582.40",
+        "predicted": "26582.40",
+        "correct": true
+      }
+    },
+    "ocr_invoice_4_rental.png": {
+      "invoice_number": {
+        "gold": "RPM-2024-0345",
+        "predicted": "RPM-2024-0345",
+        "correct": true
+      },
+      "invoice_date": {
+        "gold": "2024-02-01",
+        "predicted": "2024-02-01",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-02-10",
+        "predicted": "2024-02-10",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Redwood Property Management",
+        "predicted": "REDWOOD PROPERTY MANAGEMENT",
+        "correct": true
+      },
+      "recipient_name": {
+        "gold": "Pacific Rim Logistics Inc.",
+        "predicted": "Pacific Rim Logistics Inc.",
+        "correct": true
+      },
+      "total_amount": {
+        "gold": "9554.50",
+        "predicted": "9554.50",
+        "correct": true
+      }
+    },
+    "ocr_invoice_5_typewriter.png": {
+      "invoice_number": {
+        "gold": "IGW-2024-0033",
+        "predicted": null,
+        "correct": false
+      },
+      "invoice_date": {
+        "gold": "2024-06-28",
+        "predicted": "2024-06-28",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-07-28",
+        "predicted": "2024-07-28",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Iron Gate Welding & Fabrication",
+        "predicted": "INVOICE",
+        "correct": false
+      },
+      "recipient_name": {
+        "gold": "Capital Industrial Partners",
+        "predicted": "Frank Russo",
+        "correct": false
+      },
+      "total_amount": {
+        "gold": "6310.00",
+        "predicted": "6310.00",
+        "correct": true
+      }
+    },
+    "ocr_invoice_6_degraded.png": {
+      "invoice_number": {
+        "gold": "OP-2024-037",
+        "predicted": "OP-2024-037",
+        "correct": true
+      },
+      "invoice_date": {
+        "gold": "2024-07-05",
+        "predicted": "2024-07-05",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-08-04",
+        "predicted": "2024-08-04",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Olivia Park",
+        "predicted": "Commercial & Editorial Photography | olivia@oliviaparkphoto.com | (212) 555-0183",
+        "correct": false
+      },
+      "recipient_name": {
+        "gold": "Whitmore & Cole Publishing",
+        "predicted": "Whitmore & Cole Publishing",
+        "correct": true
+      },
+      "total_amount": {
+        "gold": "7830.00",
+        "predicted": "7830.00",
+        "correct": true
+      }
+    },
+    "ocr_invoice_7_degraded.png": {
+      "invoice_number": {
+        "gold": "BCC-2024-0178",
+        "predicted": "BCC-2024-0178",
+        "correct": true
+      },
+      "invoice_date": {
+        "gold": "2024-05-18",
+        "predicted": "2024-05-18",
+        "correct": true
+      },
+      "due_date": {
+        "gold": "2024-06-17",
+        "predicted": "2024-06-17",
+        "correct": true
+      },
+      "issuer_name": {
+        "gold": "Bella Cucina Catering",
+        "predicted": "CLIENT Hartley & Fox Events LLC GUESTS 120",
+        "correct": false
+      },
+      "recipient_name": {
+        "gold": "Hartley & Fox Events LLC",
+        "predicted": "Hartley & Fox Events LLC",
+        "correct": true
+      },
+      "total_amount": {
+        "gold": "23710.92",
+        "predicted": "23710.92",
+        "correct": true
+      }
+    }
+  },
+  "field_summary": {
+    "invoice_number": {
+      "correct": 6,
+      "total": 7,
+      "accuracy": 0.857
+    },
+    "invoice_date": {
+      "correct": 7,
+      "total": 7,
+      "accuracy": 1.0
+    },
+    "due_date": {
+      "correct": 7,
+      "total": 7,
+      "accuracy": 1.0
+    },
+    "issuer_name": {
+      "correct": 3,
+      "total": 7,
+      "accuracy": 0.429
+    },
+    "recipient_name": {
+      "correct": 6,
+      "total": 7,
+      "accuracy": 0.857
+    },
+    "total_amount": {
+      "correct": 7,
+      "total": 7,
+      "accuracy": 1.0
+    }
+  }
+}

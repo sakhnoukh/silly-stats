@@ -1,0 +1,218 @@
+{
+  "test_invoice.pdf": {
+    "invoice_number": "INV-2024-00847",
+    "invoice_date":   "2024-11-12",
+    "due_date":       "2024-12-12",
+    "issuer_name":    "Meridian Solutions Ltd.",
+    "recipient_name": "Apex Technologies Inc.",
+    "total_amount":   "17458.02"
+  },
+  "invoice_2_freelancer.pdf": {
+    "invoice_number": "SC-2024-112",
+    "invoice_date":   "2024-10-08",
+    "due_date":       "2024-11-07",
+    "issuer_name":    "Sarah Chen Consulting",
+    "recipient_name": "Greenfield Media Group",
+    "total_amount":   "8550.00"
+  },
+  "invoice_3_lawfirm.pdf": {
+    "invoice_number": "HC-2024-3847",
+    "invoice_date":   "2024-09-30",
+    "due_date":       "2024-10-30",
+    "issuer_name":    "Harrington & Cross LLP",
+    "recipient_name": "Pinnacle Pharmaceuticals Corp.",
+    "total_amount":   "19390.00"
+  },
+  "invoice_4_saas.pdf": {
+    "invoice_number": "STK-INV-7741",
+    "invoice_date":   "2024-11-01",
+    "due_date":       "2024-11-15",
+    "issuer_name":    "Stackly Inc.",
+    "recipient_name": "NovaBridge Systems",
+    "total_amount":   "1498.00"
+  },
+  "invoice_5_euro.pdf": {
+    "invoice_number": "VS-2024-0291",
+    "invoice_date":   "2024-10-15",
+    "due_date":       "2024-11-14",
+    "issuer_name":    "Vantage Creative Studio GmbH",
+    "recipient_name": "Luminar Digital AG",
+    "total_amount":   "12316.50"
+  },
+  "invoice_6_construction.pdf": {
+    "invoice_number": "RSC-2024-0089",
+    "invoice_date":   "2024-03-14",
+    "due_date":       "2024-04-13",
+    "issuer_name":    "Ridge & Stone Construction LLC",
+    "recipient_name": "Cascade Property Holdings",
+    "total_amount":   "70300.00"
+  },
+  "invoice_7_photographer.pdf": {
+    "invoice_number": "OP-2024-037",
+    "invoice_date":   "2024-07-05",
+    "due_date":       "2024-08-04",
+    "issuer_name":    "Olivia Park",
+    "recipient_name": "Whitmore & Cole Publishing",
+    "total_amount":   "7830.00"
+  },
+  "invoice_8_uk.pdf": {
+    "invoice_number": "BWA-2024-1142",
+    "invoice_date":   "2024-11-08",
+    "due_date":       "2024-12-08",
+    "issuer_name":    "Blackwood Advisory Services Ltd",
+    "recipient_name": "Thornton Capital Partners",
+    "total_amount":   "26582.40"
+  },
+  "invoice_9_medical.pdf": {
+    "invoice_number": "NVM-2024-8834",
+    "invoice_date":   "2024-09-03",
+    "due_date":       "2024-10-03",
+    "issuer_name":    "Northview Medical Group",
+    "recipient_name": "BlueCross BlueShield of Minnesota",
+    "total_amount":   "598.00"
+  },
+  "invoice_10_it.pdf": {
+    "invoice_number": "NXC-INV-2024-5502",
+    "invoice_date":   "2024-12-01",
+    "due_date":       "2024-12-31",
+    "issuer_name":    "Nexacore IT Solutions",
+    "recipient_name": "DataBridge Analytics Corp.",
+    "total_amount":   "27960.00"
+  },
+  "invoice_11_rental.pdf": {
+    "invoice_number": "RPM-2024-0345",
+    "invoice_date":   "2024-02-01",
+    "due_date":       "2024-02-10",
+    "issuer_name":    "Redwood Property Management",
+    "recipient_name": "Pacific Rim Logistics Inc.",
+    "total_amount":   "9554.50"
+  },
+  "invoice_12_catering.pdf": {
+    "invoice_number": "BCC-2024-0178",
+    "invoice_date":   "2024-05-18",
+    "due_date":       "2024-06-17",
+    "issuer_name":    "Bella Cucina Catering",
+    "recipient_name": "Hartley & Fox Events LLC",
+    "total_amount":   "23710.92"
+  },
+  "invoice_13_academic.pdf": {
+    "invoice_number": "WFU-2024-RSCH-0072",
+    "invoice_date":   "2024-10-31",
+    "due_date":       "2024-11-30",
+    "issuer_name":    "Westfield University",
+    "recipient_name": "National Science Foundation",
+    "total_amount":   "52944.00"
+  },
+  "invoice_14_agency.pdf": {
+    "invoice_number": "ACA-2024-Q3-0041",
+    "invoice_date":   "2024-08-30",
+    "due_date":       "2024-09-29",
+    "issuer_name":    "Amplitude Creative Agency",
+    "recipient_name": "Clearwater Consumer Brands",
+    "total_amount":   "38095.00"
+  },
+  "invoice_15_typewriter.pdf": {
+    "invoice_number": "IGW-2024-0033",
+    "invoice_date":   "2024-06-28",
+    "due_date":       "2024-07-28",
+    "issuer_name":    "Iron Gate Welding & Fabrication",
+    "recipient_name": "Capital Industrial Partners",
+    "total_amount":   "6310.00"
+  },
+  "invoice_16_unusual_labels.pdf": {
+    "invoice_number": "TLE-2024-AU-0553",
+    "invoice_date":   "2024-10-22",
+    "due_date":       "2024-11-21",
+    "issuer_name":    "Torchlight Engineering Pty Ltd",
+    "recipient_name": "Suncoast Mining Operations",
+    "total_amount":   "13915.00"
+  },
+  "invoice_17_spanish_mixed.pdf": {
+    "invoice_number": "ITS-2024-MAD-0312",
+    "invoice_date":   "2024-09-15",
+    "due_date":       "2024-10-15",
+    "issuer_name":    "Iberian Trade Solutions S.L.",
+    "recipient_name": "Eurobridge Freight GmbH",
+    "total_amount":   "12475.10"
+  },
+  "invoice_18_degraded.pdf": {
+    "invoice_number": "KSC-2024-1847",
+    "invoice_date":   "2024-07-19",
+    "due_date":       "2024-08-18",
+    "issuer_name":    "Kellerman Supply Co.",
+    "recipient_name": "Harmon Industrial Supply",
+    "total_amount":   "3608.04"
+  },
+  "invoice_19_proforma.pdf": {
+    "invoice_number": "AGT-PF-2024-0089",
+    "invoice_date":   "2024-11-20",
+    "due_date":       "2024-12-20",
+    "issuer_name":    "Atlas Global Trading",
+    "recipient_name": "Meridian Import Group",
+    "total_amount":   "70750.00"
+  },
+  "invoice_20_no_labels.pdf": {
+    "invoice_number": "TSS-2024-0412",
+    "invoice_date":   "2024-04-03",
+    "due_date":       "2024-05-03",
+    "issuer_name":    "Tessera Design Studio",
+    "recipient_name": "Orion Ventures Inc.",
+    "total_amount":   "30485.00"
+  },
+  "ocr_invoice_1_clean.png": {
+    "invoice_number": "SC-2024-112",
+    "invoice_date":   "2024-10-08",
+    "due_date":       "2024-11-07",
+    "issuer_name":    "Sarah Chen Consulting",
+    "recipient_name": "Greenfield Media Group",
+    "total_amount":   "8550.00"
+  },
+  "ocr_invoice_2_construction.png": {
+    "invoice_number": "RSC-2024-0089",
+    "invoice_date":   "2024-03-14",
+    "due_date":       "2024-04-13",
+    "issuer_name":    "Ridge & Stone Construction LLC",
+    "recipient_name": "Cascade Property Holdings",
+    "total_amount":   "70300.00"
+  },
+  "ocr_invoice_3_uk.png": {
+    "invoice_number": "BWA-2024-1142",
+    "invoice_date":   "2024-11-08",
+    "due_date":       "2024-12-08",
+    "issuer_name":    "Blackwood Advisory Services Ltd",
+    "recipient_name": "Thornton Capital Partners",
+    "total_amount":   "26582.40"
+  },
+  "ocr_invoice_4_rental.png": {
+    "invoice_number": "RPM-2024-0345",
+    "invoice_date":   "2024-02-01",
+    "due_date":       "2024-02-10",
+    "issuer_name":    "Redwood Property Management",
+    "recipient_name": "Pacific Rim Logistics Inc.",
+    "total_amount":   "9554.50"
+  },
+  "ocr_invoice_5_typewriter.png": {
+    "invoice_number": "IGW-2024-0033",
+    "invoice_date":   "2024-06-28",
+    "due_date":       "2024-07-28",
+    "issuer_name":    "Iron Gate Welding & Fabrication",
+    "recipient_name": "Capital Industrial Partners",
+    "total_amount":   "6310.00"
+  },
+  "ocr_invoice_6_degraded.png": {
+    "invoice_number": "OP-2024-037",
+    "invoice_date":   "2024-07-05",
+    "due_date":       "2024-08-04",
+    "issuer_name":    "Olivia Park",
+    "recipient_name": "Whitmore & Cole Publishing",
+    "total_amount":   "7830.00"
+  },
+  "ocr_invoice_7_degraded.png": {
+    "invoice_number": "BCC-2024-0178",
+    "invoice_date":   "2024-05-18",
+    "due_date":       "2024-06-17",
+    "issuer_name":    "Bella Cucina Catering",
+    "recipient_name": "Hartley & Fox Events LLC",
+    "total_amount":   "23710.92"
+  }
+}
