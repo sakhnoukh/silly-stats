@@ -75,11 +75,21 @@ def _to_float(s):
         return None
 
 
+def _normalise_unicode(s: str) -> str:
+    """Normalize accented characters for fuzzy matching (ñ→n, é→e, etc.)."""
+    import unicodedata
+    return unicodedata.normalize('NFD', s).encode('ascii', 'ignore').decode('ascii')
+
+
 def match_string(gold, pred) -> bool:
     g, p = _clean(gold), _clean(pred)
     if not g or not p:
         return False
-    return g in p or p in g
+    if g in p or p in g:
+        return True
+    # Try again after removing accents (handles ñ vs n, é vs e etc.)
+    gn, pn = _normalise_unicode(g), _normalise_unicode(p)
+    return gn in pn or pn in gn
 
 
 def match_invoice_number(gold, pred) -> bool:

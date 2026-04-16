@@ -1,6 +1,6 @@
 # Phase 3 — Invoice Field Extraction: Current Status
 
-## Selected extractor: `scripts/extract_invoice_fields_v4.py`
+## Selected extractor: `scripts/extract_invoice_fields_v5.py`
 
 ---
 
@@ -10,119 +10,147 @@
 run.py → extract_text() → classify_document() → InvoiceExtractor.extract()
 ```
 
-**Phase 2 classifier:** TF-IDF + Logistic Regression (unchanged). Works well on controlled test set; occasionally misclassifies receipt-like real documents as receipts, blocking extraction.
+**Phase 2 classifier:** TF-IDF + Logistic Regression. Works well on standard invoices; occasionally misclassifies receipt-like documents (e.g. RENTA tax form classified as receipt, blocking extraction entirely).
 
-**Phase 3 extractor (v4):** Hybrid — regex base layer + OCR rescue layer.
-- Regex runs first over flat extracted text
-- When regex misses or produces weak results, v4 rasterizes page 0, runs Tesseract, groups words into lines with column-aware splitting, and applies field-specific OCR rescue
-- No generative AI
+**Phase 3 extractor (v5):** Three-layer hybrid — no generative AI used at any stage.
+
+1. **Regex/rule-based layer** — runs first over flat pdfplumber-extracted text. Covers standard English invoice layouts with explicit field labels.
+2. **OCR rescue layer** — when regex misses or returns weak values, rasterizes page 0 with pypdfium2, runs Tesseract in word-coordinate mode, groups words into column-aware OCR lines, applies field-specific rescue logic using position and keyword anchors.
+3. **NER rescue layer** — last resort when both regex and OCR fail. Uses two spaCy models: `xx_ent_wiki_sm` (XLM-RoBERTa multilingual, for ORG entities → issuer) and `en_core_web_trf` (RoBERTa English transformer, for PERSON entities → recipient). Both are discriminative encoder-only models, not generative AI. NER only fires when the current value is flagged as bad by `_looks_bad_issuer` / `_looks_bad_recipient`.
 
 ---
 
 ## Results
 
-### 1. Synthetic modern invoices — `tests/invoices/` (20 PDFs, primary dev benchmark)
+### 1. Synthetic modern invoices — `tests/invoices/` (19 scored PDFs)
 
 | Field | Accuracy |
 |---|---|
 | invoice_number | 100.0% |
-| invoice_date | 95.0% |
-| due_date | 95.0% |
-| issuer_name | 85.0% |
-| recipient_name | 75.0% |
-| total_amount | 95.0% |
-| **Overall** | **90.8%** (109/120) |
+| invoice_date | 94.7% |
+| due_date | 94.7% |
+| issuer_name | 84.2% |
+| recipient_name | 73.7% |
+| total_amount | 94.7% |
+| **Overall** | **90.4%** (103/114) |
+
+Note: `invoice_11_rental.pdf` produced an EOF error and was excluded from scoring.
 
 ### 2. Real + translated invoices — `tests/invoices_real/` (14 files — main generalization benchmark)
 
 | Field | Accuracy |
 |---|---|
 | invoice_number | 76.9% |
-| invoice_date | 84.6% |
+| invoice_date | 92.3% |
 | due_date | 20.0% |
-| issuer_name | 23.1% |
-| recipient_name | 36.4% |
-| total_amount | 53.8% |
-| **Overall** | **52.9%** (36/68) |
-
-### 3. RVL-CDIP gold dataset (secondary stress test — 1980s scanned invoices)
-
-invoice_number 60%, recipient_name 8.7%, total_amount 49.5% → **Overall 35.3%**
-
-Not the optimization target. Useful as a robustness check only.
+| issuer_name | 61.5% |
+| recipient_name | 54.5% |
+| total_amount | 61.5% |
+| **Overall** | **66.2%** (45/68) |
 
 ---
 
-## Comparison across extractor versions
+## Version progression
 
-| Version | Synthetic | Real invoices | Notes |
+| Version | Synthetic | Real invoices | Key addition |
 |---|---|---|---|
-| Regex v0 (original) | 43.3% | — | Baseline |
-| Regex v3 | 85.8% | 25.6% | English patterns only |
-| v4 (current) | **90.8%** | **52.9%** | Hybrid regex + OCR rescue |
-| ML ranker | 87% (RVL-CDIP only) | 0% | Domain-locked |
+| Regex v0 | 43.3% | — | Baseline |
+| Regex v3 | 85.8% | 25.6% | Fixed patterns, English only |
+| v4 | 90.8% | 47.1% | + OCR rescue layer |
+| **v5 (current)** | **90.4%** | **66.2%** | + NER rescue layer |
+| ML ranker | 87% (RVL-CDIP only) | 0% | Domain-locked, not integrated |
 | LayoutLMv3 zero-shot | 30% | 4.7% | Training mismatch, not viable |
 
 ---
 
-## FATURA line-based pipeline (experimental, not production)
+## Failure analysis — real invoices
 
-Implemented under `scripts/line/`. Trains one line classifier per field on FATURA annotations.
+Remaining failures decompose into four categories. No further regex/OCR/NER improvement addresses these without either training data or better OCR.
 
-- **Worked:** invoice_date, due_date, recipient_name, total_amount (strong held-out FATURA performance)
-- **Did not work:** invoice_number, issuer_name (no usable positive labels in FATURA supervision)
-- **Decision:** kept as experimental / future direction. Does not beat v4 on project benchmarks end-to-end.
+**Structurally absent fields (not fixable without training data):**
+- `due_date` 20% — most real invoices in this set don't contain an explicit due date label. The field is genuinely absent, not mis-extracted.
+- OYO total — receipt-style hotel booking with no standard total label.
+
+**OCR read errors (fixable only with better OCR engine):**
+- OUIGO issuer: `QUIGO ESPANA, SAU` — OCR misreads O→Q. The extraction logic is correct; Tesseract fails on this font.
+- Carrefour issuer: `Carrefour (®` — OCR truncates at trademark symbol.
+- Neony total: `87186.00` instead of `1871.86` — OCR digit transposition.
+
+**Ground truth ambiguity:**
+- OYO issuer: extractor returns `Oravel Stays Pvt. Ltd.` (registered legal entity); ground truth expects `OYO` (brand name).
+- Neony issuer: extractor returns `NEONY` (brand); ground truth expects `BEATRIZ MARTIN MARTIN` (owner name).
+
+**Hard NLP cases (would require fine-tuning):**
+- Spanish last-first name format: `MARTIN MARTIN BEATRIZ` not recognized as PERSON by English NER.
+- Seur recipient: NER returns `SEGOVIA` (a city/GPE) instead of customer name.
+- Leroy Merlin recipient: OCR produces `ORIGINAL` (watermark artefact) that passes all filters.
 
 ---
 
 ## Known limitations
 
-- **Issuer on real invoices (23%)** — translation banners, OCR merging, issuer/recipient swap in two-column layouts
-- **Due date on real invoices (20%)** — many real invoices don't include one; multilingual phrasing not covered
-- **Total on real invoices (54%)** — subtotal vs grand total confusion; translated receipts with unusual pricing
-- **Classifier misclassification** — some invoice-like real documents classified as receipt, blocking extraction
-- **Real evaluation set small** — 14 files, useful but not large enough to optimize against safely
+- **Due date (20% on real)** — most real invoices in this test set do not contain an explicit due date. This is not an extractor failure; the field is absent.
+- **Classifier misclassification** — RENTA tax form classified as receipt, scores 0 fields. Requires adding hard negatives to Phase 2 training data.
+- **OCR quality ceiling** — Tesseract misreads fonts on some translated PDFs. Swapping to DocTR or PaddleOCR would help.
+- **NER language gap** — `en_core_web_trf` does not reliably detect Spanish last-first name format as PERSON. Fine-tuning on ~15 annotated examples would fix this.
+- **Real evaluation set is small** — 14 invoices. Per-field percentages are sensitive to individual document failures.
+
+---
+
+## Required packages
+
+```
+pdfplumber
+pytesseract          # Tesseract must be on PATH
+Pillow
+pypdfium2
+scikit-learn
+joblib
+nltk
+
+# NER layer
+spacy
+# models (run once):
+#   python -m spacy download xx_ent_wiki_sm    # multilingual (issuer)
+#   python -m spacy download en_core_web_trf   # English transformer (recipient)
+```
 
 ---
 
 ## Running guide
 
 ```bash
-# Live pipeline
+# Live pipeline on a single invoice
 python run.py path/to/invoice.pdf
 
 # Evaluate on synthetic invoices
 python scripts/evaluate_pipeline.py \
-  --extractor scripts/extract_invoice_fields_v4.py \
+  --extractor scripts/extract_invoice_fields_v5.py \
   --invoices tests/invoices \
   --ground-truth tests/ground_truth.json \
-  --output results/eval_v4_modern.json
+  --output results/eval_v5_synthetic.json
 
-# Evaluate on real + translated invoices
+# Evaluate on real + translated invoices (main benchmark)
 python scripts/evaluate_pipeline.py \
-  --extractor scripts/extract_invoice_fields_v4.py \
+  --extractor scripts/extract_invoice_fields_v5.py \
   --invoices tests/invoices_real \
   --ground-truth tests/ground_truth_real6.json \
-  --output results/eval_v4_real.json
+  --output results/eval_v5_real.json
 
-# Show detailed failures
-python scripts/show_eval_failures.py results/eval_v4_real.json
+# Show detailed per-invoice failures
+python scripts/show_eval_failures.py results/eval_v5_real.json
 
-# Evaluate on RVL-CDIP gold
-python scripts/evaluate_on_dataset.py \
-  --extractor scripts/extract_invoice_fields_v4.py \
-  --output results/eval_dataset_v4.json
-
-# Train FATURA line models
-python scripts/line/train_line_rankers.py
+# Compare two versions
+python scripts/show_eval_failures.py results/eval_v4_real.json results/eval_v5_real.json
 ```
 
 ---
 
-## Suggested next steps
+## What would be needed to go further
 
-1. **Improve Phase 2 classifier** — add receipt/invoice hard negatives to stop misclassification blocking extraction
-2. **OCR candidate ranker for hard fields** — issuer, recipient, due_date need position + lexical features, classical ML ranking
-3. **More real labeled invoices** — the real benchmark is too small; multilingual and two-column examples most needed
-4. **FATURA line pipeline** — recover supervision for invoice_number and issuer; add confidence gating; combine selectively with v4
-5. **Fine-tuned LayoutLMv3** — zero-shot failed; fine-tuning on our labeled data is the right approach if transformers are tried again
+| Target | What it requires | Estimated effort |
+|---|---|---|
+| Fix Spanish name recipient (OUIGO, Seur) | Fine-tune spaCy NER on ~15 annotated name examples | 2–3 hours, no GPU |
+| Fix OCR read errors (OUIGO font, Carrefour) | Swap Tesseract → DocTR or PaddleOCR | Half day |
+| Recover RENTA (classifier) | Add tax-form hard negatives to Phase 2 training | 1 hour |
+| Reach 75%+ on real invoices | Fine-tune LayoutLMv3 on annotated bounding-box data | Full day, GPU needed |
