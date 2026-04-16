@@ -30,7 +30,11 @@ import json
 import re
 import sys
 from datetime import datetime
+from pathlib import Path
 from typing import Dict, Optional, List, Tuple
+
+import pytesseract
+from PIL import Image
 
 
 # ============================================================================
@@ -121,23 +125,23 @@ class InvoiceExtractor:
         # All require an explicit label before the number.
         labeled_patterns = [
             # "Invoice No: INV-2024-00847"  "Invoice Number: 12345"
-            r'invoice\s+(?:no|number|num|id|#)\.?\s*[:\-#]?\s*([A-Z0-9][\w\-/]{2,25})',
+            r'invoice\s+(?:no|number|num|id|#)\.?\s*[:\-#]?\s*([A-Z0-9][\w\-/\.]{2,30})',
             # "Inv. No: 30712"  "Inv #4531"
-            r'inv\.?\s*(?:no|number|#)\.?\s*[:\-]?\s*([A-Z0-9][\w\-/]{2,25})',
-            # "Invoice: INV-001" — colon immediately after invoice
-            r'invoice\s*[:#]\s*([A-Z0-9][\w\-/]{2,25})',
+            r'inv\.?\s*(?:no|number|#)\.?\s*[:\-]?\s*([A-Z0-9][\w\-/\.]{2,30})',
+            # "Invoice: INV-001" or "Invoice: INV/2023/03/0008"
+            r'invoice\s*[:#]\s*([A-Z0-9][\w\-/\.]{2,30})',
             # "Proforma No: AGT-PF-2024-0089"  "Proforma Invoice No."
-            r'proforma\s*(?:invoice)?\s*(?:no|number|num|#)\.?\s*[:\-]?\s*([A-Z0-9][\w\-/]{2,25})',
+            r'proforma\s*(?:invoice)?\s*(?:no|number|num|#)\.?\s*[:\-]?\s*([A-Z0-9][\w\-/\.]{2,30})',
             # "Our Ref: TLE-2024-AU-0553"  "Ref. No: HC-2024"
-            r'(?:our\s+ref|reference|ref)\.?\s*(?:no\.?|number|#)?\s*[:\-]\s*([A-Z0-9][\w\-]{2,25})',
+            r'(?:our\s+ref|reference|ref)\.?\s*(?:no\.?|number|#)?\s*[:\-]\s*([A-Z0-9][\w\-/\.]{2,30})',
             # "Tax Invoice No." / "Tax Invoice:"
-            r'tax\s+invoice\s*(?:no\.?|number|#)?\s*[:\-]?\s*([A-Z0-9][\w\-/]{2,25})',
+            r'tax\s+invoice\s*(?:no\.?|number|#)?\s*[:\-]?\s*([A-Z0-9][\w\-/\.]{2,30})',
             # P.O. Number
-            r'p\.?o\.?\s*(?:no\.?|number|#)\s*[:\-]?\s*([A-Z0-9][\w\-]{2,25})',
-            # "#TSS-2024-0412" — hash prefix with no label (when near top of doc)
-            r'(?<!\w)#([A-Z0-9][\w\-]{3,20})',
+            r'p\.?o\.?\s*(?:no\.?|number|#)\s*[:\-]?\s*([A-Z0-9][\w\-/\.]{2,30})',
+            # "#TSS-2024-0412" or "#BLR_WFLD20151000982590" — hash prefix with no label
+            r'(?<!\w)#([A-Z0-9][\w\-/]{3,30})',
             # "I N V O I C E   N o .  :" spaced-out typewriter style
-            r'I\s+N\s+V\s+O\s+I\s+C\s+E\s+N\s*o\.?\s*[:\-]?\s*([A-Z0-9][\w\-/]{2,25})',
+            r'I\s+N\s+V\s+O\s+I\s+C\s+E\s+N\s*o\.?\s*[:\-]?\s*([A-Z0-9][\w\-/]{2,30})',
         ]
 
         for pattern in labeled_patterns:
@@ -330,27 +334,47 @@ class InvoiceExtractor:
     # -------------------------------------------------------------------------
 
     def extract_amount(self, text: str) -> Optional[str]:
-        """Extract total invoice amount. Returns last/largest labeled match."""
-        amounts = []
+        """
+        Extract total invoice amount.
+        Strategy: labeled matches win over bare currency; prefer largest value
+        among labeled matches (avoids picking up $0.01 line items).
+        """
+        labeled_amounts  = []   # from specific total-label patterns
+        fallback_amounts = []   # from bare currency symbol patterns
 
-        for pattern in self.amount_patterns:
+        # Patterns 0-2 and 5 require a total/amount keyword → labeled
+        # Patterns 3-4 are bare currency/code → fallback
+        # We track this by checking if the pattern text contains a label word
+        LABELED_PATTERNS = {0, 1, 2, 5}
+
+        for idx, pattern in enumerate(self.amount_patterns):
             for match in re.finditer(pattern, text, re.IGNORECASE):
-                # Take the first group that looks like a number
                 for group in match.groups():
                     if group and re.search(r'\d', str(group)):
                         normalised = _normalise_amount(group)
                         if normalised:
-                            amounts.append((match.start(), float(normalised), normalised))
+                            val = float(normalised)
+                            # Minimum plausible invoice total: $0.50
+                            if val < 0.50:
+                                continue
+                            bucket = labeled_amounts if idx in LABELED_PATTERNS else fallback_amounts
+                            bucket.append((match.start(), val, normalised))
                             break
 
-        if not amounts:
-            return None
+        # Prefer labeled matches (require total/amount keyword).
+        # Among labeled matches take the LAST occurrence — totals appear at
+        # the bottom of the document AFTER subtotals, so last = final total.
+        # "Largest" was tried but picked subtotals on invoices with discounts.
+        if labeled_amounts:
+            labeled_amounts.sort(key=lambda x: x[0])
+            return labeled_amounts[-1][2]
 
-        # Among all labeled matches, prefer:
-        # 1. The last occurrence (totals appear at end of doc)
-        # 2. Tie-break: largest value
-        amounts.sort(key=lambda x: (x[0], x[1]))
-        return amounts[-1][2]
+        # Fallback: last bare currency match
+        if fallback_amounts:
+            fallback_amounts.sort(key=lambda x: x[0])
+            return fallback_amounts[-1][2]
+
+        return None
 
     # -------------------------------------------------------------------------
     # 4. Issuer Name
@@ -408,8 +432,11 @@ class InvoiceExtractor:
         # Words that are document-type labels, never issuer names
         _DOC_TYPE_WORDS = {
             'invoice', 'tax invoice', 'proforma invoice', 'proforma',
-            'receipt', 'quotation', 'statement', 'purchase order',
-            'credit note', 'debit note', 'remittance',
+            'receipt', 'payment receipt', 'sales receipt',
+            'quotation', 'quote', 'estimate', 'statement',
+            'purchase order', 'delivery note', 'credit note',
+            'debit note', 'remittance', 'bill', 'billing statement',
+            'retail invoices/bill', 'retail invoices',
         }
 
         lines = [l.strip() for l in text.splitlines() if l.strip()]
@@ -444,47 +471,360 @@ class InvoiceExtractor:
     def extract_recipient_name(self, text: str) -> Optional[str]:
         """
         Extract recipient (customer) name.
-        Anchors on 'Bill To' / 'Sold To' / 'Attention' labels.
-        Takes the value on the same line or the next non-empty line.
+
+        More robust than the original version:
+        - supports more labels: buyer / recipient / guest / customer name / client name
+        - supports same-line and next-line values
+        - scans a short recipient block after an anchor
+        - allows email recipients when that's what the invoice uses
         """
-        # ── Same-line patterns ────────────────────────────────────────────────
-        same_line = [
-            r'(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to'
-            r'|billed\s*to)\s*[:\-]?\s*([^\n]{3,80})',
-            r'(?:pay(?:able)?\s*to|remit\s*to)\s*[:\-]?\s*([^\n]{3,80})',
-            r'(?:customer|client)\s*[:\-]\s*([^\n]{3,80})',
-            r'attn(?:ention)?\s*[:\-.]?\s*(?:mr\.?\s+|ms\.?\s+|dr\.?\s+)?([A-Za-z][^\n]{2,60})',
+        lines = [re.sub(r"\s+", " ", ln).strip() for ln in text.splitlines() if ln.strip()]
+        if not lines:
+            return None
+
+        label_re = re.compile(
+            r'^(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
+            r'pay(?:able)?\s*to|remit\s*to|customer(?:\s*name)?|client(?:\s*name)?|'
+            r'buyer(?:\s*name)?|recipient(?:\s*name)?|guest(?:\s*name)?|'
+            r'attn(?:ention)?)\b',
+            re.IGNORECASE,
+        )
+
+        strip_label_re = re.compile(
+            r'^(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
+            r'pay(?:able)?\s*to|remit\s*to|customer(?:\s*name)?|client(?:\s*name)?|'
+            r'buyer(?:\s*name)?|recipient(?:\s*name)?|guest(?:\s*name)?|'
+            r'attn(?:ention)?)\s*[:\-]?\s*',
+            re.IGNORECASE,
+        )
+
+        bad_re = re.compile(
+            r'\b(invoice|tax invoice|date|due|subtotal|total|amount|balance|vat|tax|'
+            r'bank|branch|swift|iban|gst|nif|cif|po number|order number|'
+            r'email|site|website|www\.|http|tel|phone|mobile|fax|'
+            r'supplier code|badge|hotel details|check in|check out|room)\b',
+            re.IGNORECASE,
+        )
+
+        def clean_candidate(val: str) -> Optional[str]:
+            if not val:
+                return None
+
+            s = strip_label_re.sub("", str(val)).strip()
+            s = re.sub(r"\s+", " ", s).strip(" -:|,;")
+
+            if not s:
+                return None
+
+            email_match = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', s)
+            if email_match:
+                return email_match.group(0)
+
+            if bad_re.search(s):
+                return None
+
+            if re.search(r'\d', s):
+                return None
+
+            if len(s) < 2 or len(s) > 80:
+                return None
+
+            if re.match(
+                r'^(name|customer|client|buyer|recipient|guest|attention|attn|bill to|ship to|sold to)$',
+                s,
+                re.IGNORECASE,
+            ):
+                return None
+
+            return s
+
+        # 1) same-line extraction
+        same_line_patterns = [
+            r'(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
+            r'pay(?:able)?\s*to|remit\s*to)\s*[:\-]?\s*([^\n]{2,120})',
+            r'(?:customer|client|buyer|recipient|guest)(?:\s*name)?\s*[:\-]?\s*([^\n]{2,120})',
+            r'attn(?:ention)?\s*[:\-.]?\s*([^\n]{2,120})',
         ]
-        for pattern in same_line:
+
+        for pattern in same_line_patterns:
             m = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
             if m:
-                val = m.group(1).strip().splitlines()[0].strip()
-                # Trim trailing OCR garbage (long runs of digits after a gap)
-                val = re.split(r'\s{2,}|\s+\d{5,}', val)[0].strip()
-                val = re.sub(r'\s+', ' ', val)
-                if 3 < len(val) < 100:
+                val = clean_candidate(m.group(1))
+                if val:
                     return val
 
-        # ── Next-line pattern: label on one line, value on next ───────────────
-        next_line = re.search(
-            r'(?:bill(?:ed)?\s*to|sold\s*to)\s*[:\-]?\s*\n\s*([^\n]{3,80})',
-            text, re.IGNORECASE
+        # 2) anchor block extraction
+        for i, line in enumerate(lines):
+            if not label_re.search(line):
+                continue
+
+            tail = clean_candidate(line)
+            if tail and tail.lower() != line.lower():
+                return tail
+
+            for nxt in lines[i + 1:i + 4]:
+                val = clean_candidate(nxt)
+                if val:
+                    return val
+
+        # 3) email fallback near recipient-ish labels
+        email_block = re.search(
+            r'(?:customer|client|buyer|recipient|guest)[^\n]{0,60}\n?([^\n]*@[\w\.-]+\.\w+)',
+            text,
+            re.IGNORECASE | re.MULTILINE,
         )
-        if next_line:
-            val = next_line.group(1).strip()
-            if 3 < len(val) < 100:
-                return re.sub(r'\s+', ' ', val).strip()
+        if email_block:
+            email_match = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', email_block.group(1))
+            if email_match:
+                return email_match.group(0)
 
         return None
+
+    # -------------------------------------------------------------------------
+    # OCR helpers for real/translated invoice rescue
+    # -------------------------------------------------------------------------
+
+    def _file_to_image(self, file_path: str) -> Optional[Image.Image]:
+        ext = Path(file_path).suffix.lower()
+
+        if ext == ".pdf":
+            try:
+                import pypdfium2 as pdfium
+                doc = pdfium.PdfDocument(file_path)
+                page = doc[0]
+                bm = page.render(scale=2.0)
+                return bm.to_pil().convert("RGB")
+            except Exception:
+                return None
+
+        if ext in {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp"}:
+            try:
+                return Image.open(file_path).convert("RGB")
+            except Exception:
+                return None
+
+        return None
+
+    def _ocr_grouped_lines(self, file_path: Optional[str]) -> List[str]:
+        if not file_path:
+            return []
+
+        img = self._file_to_image(file_path)
+        if img is None:
+            return []
+
+        try:
+            data = pytesseract.image_to_data(img, output_type=pytesseract.Output.DICT)
+        except Exception:
+            return []
+
+        groups = {}
+        n = len(data.get("text", []))
+
+        for i in range(n):
+            text = str(data["text"][i]).strip()
+            if not text:
+                continue
+
+            key = (
+                int(data["block_num"][i]),
+                int(data["par_num"][i]),
+                int(data["line_num"][i]),
+            )
+            left = int(data["left"][i])
+            top = int(data["top"][i])
+
+            if key not in groups:
+                groups[key] = {"items": [], "top": top, "left": left}
+            groups[key]["items"].append((left, text))
+            groups[key]["top"] = min(groups[key]["top"], top)
+            groups[key]["left"] = min(groups[key]["left"], left)
+
+        ordered = sorted(groups.values(), key=lambda g: (g["top"], g["left"]))
+
+        lines = []
+        for g in ordered:
+            line = " ".join(t for _, t in sorted(g["items"], key=lambda x: x[0])).strip()
+            line = re.sub(r"\s+", " ", line).strip()
+            if line:
+                lines.append(line)
+
+        return lines
+
+    def _looks_bad_recipient(self, val: Optional[str]) -> bool:
+        if not val:
+            return True
+
+        s = str(val).strip()
+        if len(s) < 2:
+            return True
+
+        if re.fullmatch(r'(bill to|ship to|sold to|customer|client|buyer|recipient|guest|attn|attention)', s, re.I):
+            return True
+
+        if re.search(
+            r'\b(invoice|date|due|subtotal|total|amount|balance|vat|tax|'
+            r'supplier code|badge|hotel details|check in|check out|room|data)\b',
+            s,
+            re.I,
+        ):
+            return True
+
+        return False
+
+    def _looks_bad_issuer(self, val: Optional[str]) -> bool:
+        if not val:
+            return True
+
+        s = str(val).strip()
+        if len(s) < 2:
+            return True
+
+        if re.search(r'(spanish to english|onlinedoc|onlinedoctranslator|^original$|^copy$)', s, re.I):
+            return True
+
+        if re.search(r'(www\.|http|@)', s, re.I):
+            return True
+
+        if re.fullmatch(r'(united states|spain|españa|france|ecuador|ireland|germany|netherlands)', s, re.I):
+            return True
+
+        return False
+
+    def _extract_recipient_name_ocr(self, file_path: Optional[str]) -> Optional[str]:
+        lines = self._ocr_grouped_lines(file_path)
+        if not lines:
+            return None
+
+        label_re = re.compile(
+            r'(bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
+            r'customer(?:\s*name)?|client(?:\s*name)?|buyer(?:\s*name)?|'
+            r'recipient(?:\s*name)?|guest(?:\s*name)?|attn(?:ention)?)',
+            re.IGNORECASE,
+        )
+
+        strip_label_re = re.compile(
+            r'^(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
+            r'customer(?:\s*name)?|client(?:\s*name)?|buyer(?:\s*name)?|'
+            r'recipient(?:\s*name)?|guest(?:\s*name)?|attn(?:ention)?)\s*[:\-]?\s*',
+            re.IGNORECASE,
+        )
+
+        bad_re = re.compile(
+            r'\b(invoice|date|due|subtotal|total|amount|balance|vat|tax|'
+            r'supplier code|badge|hotel details|check in|check out|room|'
+            r'bank|swift|iban|gst|nif|cif|data|phone|tel|fax|www\.|http)\b',
+            re.IGNORECASE,
+        )
+
+        def clean(s: str) -> Optional[str]:
+            s = strip_label_re.sub("", s).strip()
+            s = re.sub(r"\s+", " ", s).strip(" -:|,;")
+            if not s:
+                return None
+
+            email_match = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', s)
+            if email_match:
+                return email_match.group(0)
+
+            if bad_re.search(s):
+                return None
+
+            if re.search(r'\d', s):
+                return None
+
+            if len(s) < 2 or len(s) > 80:
+                return None
+
+            return s
+
+        for i, line in enumerate(lines):
+            if not label_re.search(line):
+                continue
+
+            same = clean(line)
+            if same and same.lower() != line.lower():
+                return same
+
+            for nxt in lines[i + 1:i + 4]:
+                cand = clean(nxt)
+                if cand:
+                    return cand
+
+        return None
+
+    def _extract_company_name_ocr(self, file_path: Optional[str]) -> Optional[str]:
+        lines = self._ocr_grouped_lines(file_path)
+        if not lines:
+            return None
+
+        recipient_anchor_re = re.compile(
+            r'(bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
+            r'customer|client|buyer|recipient|guest|attn(?:ention)?)',
+            re.IGNORECASE,
+        )
+
+        bad_re = re.compile(
+            r'(spanish to english|onlinedoc|onlinedoctranslator|^original$|^copy$|'
+            r'www\.|http|@|supplier code|badge|data|date|due|total|subtotal|'
+            r'amount|balance|vat|tax|phone|tel|fax|bank|swift|iban)',
+            re.IGNORECASE,
+        )
+
+        search_lines = lines
+        for i, line in enumerate(lines):
+            if recipient_anchor_re.search(line):
+                search_lines = lines[:max(i, 1)]
+                break
+
+        candidates = []
+        for raw in search_lines[:12]:
+            s = re.sub(
+                r'^\s*(?:tax\s+invoice|commercial\s+invoice|invoice|original)\s*[:\-]?\s*',
+                '',
+                raw,
+                flags=re.IGNORECASE,
+            ).strip()
+            s = re.sub(r"\s+", " ", s).strip(" -:|,;")
+
+            if not s:
+                continue
+            if bad_re.search(s):
+                continue
+            if re.fullmatch(r'(united states|spain|españa|france|ecuador|ireland|germany|netherlands)', s, re.I):
+                continue
+            if re.search(r'\d', s):
+                continue
+
+            words = s.split()
+            alpha_ratio = sum(c.isalpha() for c in s) / max(len(s), 1)
+            has_company = bool(self._company_re.search(s))
+            is_name_like = (
+                1 <= len(words) <= 5
+                and alpha_ratio >= 0.60
+                and (s.isupper() or s.istitle())
+            )
+
+            if has_company or is_name_like:
+                candidates.append(s)
+
+        if not candidates:
+            return None
+
+        candidates.sort(key=lambda s: (0 if self._company_re.search(s) else 1, len(s)))
+        return candidates[0]
 
     # -------------------------------------------------------------------------
     # 6. Main extract() entry point
     # -------------------------------------------------------------------------
 
-    def extract(self, invoice_text: str) -> Dict:
-        """Extract all six fields from invoice text."""
+    def extract(self, invoice_text: str, file_path: Optional[str] = None, **kwargs) -> Dict:
+        """
+        Regex-first extractor with OCR-line rescue for issuer/recipient.
+        """
         inv_date, due_date = self.extract_dates(invoice_text)
-        return {
+
+        result = {
             "invoice_number": self.extract_invoice_number(invoice_text),
             "invoice_date":   inv_date,
             "due_date":       due_date,
@@ -492,6 +832,21 @@ class InvoiceExtractor:
             "recipient_name": self.extract_recipient_name(invoice_text),
             "total_amount":   self.extract_amount(invoice_text),
         }
+
+        # OCR rescue only when a real file is available and the regex result
+        # is missing or obviously polluted.
+        if file_path:
+            if self._looks_bad_recipient(result["recipient_name"]):
+                cand = self._extract_recipient_name_ocr(file_path)
+                if cand:
+                    result["recipient_name"] = cand
+
+            if self._looks_bad_issuer(result["issuer_name"]):
+                cand = self._extract_company_name_ocr(file_path)
+                if cand:
+                    result["issuer_name"] = cand
+
+        return result
 
 
 # ============================================================================

@@ -144,7 +144,9 @@ def run_one(file_path: Path, InvoiceExtractor) -> dict:
         return {"_classification": classification["predicted_class"]}
 
     extractor = InvoiceExtractor()
-    return extractor.extract(raw_text)
+    # Pass file_path as optional kwarg — regex extractor ignores it,
+    # image-based extractors (LayoutLMv3) use it to access the document image
+    return extractor.extract(raw_text, file_path=str(file_path))
 
 
 # ---------------------------------------------------------------------------
