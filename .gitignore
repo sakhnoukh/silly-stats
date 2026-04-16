@@ -10,3 +10,7 @@ data/downloads/
 data/data - receipts
 data/exploration/
 data/ocr_boxes/
+results/
+models/line/
+data/fatura/
+*.pkl

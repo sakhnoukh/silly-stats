@@ -355,7 +355,7 @@ def extract_invoice_fields(raw_text: str) -> dict:
     'Invoice Date:', 'Bill To:', etc. that the extractor relies on.
     """
     sys.path.insert(0, str(PROJ_ROOT))
-    from scripts.extract_invoice_fields_v3 import InvoiceExtractor
+    from scripts.extract_invoice_fields_v4 import InvoiceExtractor
 
     extractor = InvoiceExtractor()
     fields = extractor.extract(raw_text)
