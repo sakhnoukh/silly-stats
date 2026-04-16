@@ -9,7 +9,7 @@
   },
   "AzureInterior.pdf": {
     "invoice_number": "INV/2023/03/0008",
-    "invoice_date": "2023-03-20",
+    "invoice_date": "2023-20-03",
     "due_date": "2023-04-04",
     "issuer_name": "Azure Interior",
     "recipient_name": null,
@@ -19,7 +19,7 @@
     "invoice_number": "IBZY2087",
     "invoice_date": "2017-12-31",
     "due_date": "2018-01-01",
-    "issuer_name": "OYO",
+    "issuer_name": "Oravel Stays Pvt. Ltd.",
     "recipient_name": "Sanjay",
     "total_amount": "1939.00"
   },
@@ -75,7 +75,7 @@
     "invoice_number": "F2025-338",
     "invoice_date": "2025-19-09",
     "due_date": null,
-    "issuer_name": "BEATRIZ MARTIN MARTIN",
+    "issuer_name": "NEONY",
     "recipient_name": "Adrián Jiménez García",
     "total_amount": "1871.86"
   },
