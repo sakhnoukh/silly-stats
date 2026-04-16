@@ -504,6 +504,34 @@ def validate_extractions(fields):
 
     return fields
 
+def validate_extractions(fields):
+    # invoice number
+    if fields.get("invoice_number") and not _valid_invoice_number(fields["invoice_number"]):
+        fields["invoice_number"] = None
+
+    # names
+    for key in ["issuer_name", "recipient_name"]:
+        val = fields.get(key)
+        if val:
+            if sum(ch.isdigit() for ch in val) > 5:
+                fields[key] = None
+            elif re.search(
+                r"\b(amount|total|invoice|date|terms|advertising|request|requisition|copy|client)\b",
+                val,
+                re.IGNORECASE,
+            ):
+                fields[key] = None
+
+    # due date should be ISO date only
+    if fields.get("due_date") and not re.match(r"\d{4}-\d{2}-\d{2}$", str(fields["due_date"])):
+        fields["due_date"] = None
+
+    # total amount should look numeric
+    if fields.get("total_amount") and not re.match(r"^\d+(?:\.\d{2})$", str(fields["total_amount"])):
+        fields["total_amount"] = None
+
+    return fields
+
 def extract_all_fields(text):
     """Run all extractors. Returns dict with required + auxiliary fields."""
     invoice_like_score = compute_invoice_like_score(text)

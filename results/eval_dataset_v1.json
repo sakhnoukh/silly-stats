@@ -1,0 +1,21 @@
+{
+  "extractor": "extract_invoice_fields_v1.py",
+  "dataset": "RVL-CDIP gold",
+  "field_summary": {
+    "invoice_number": {
+      "correct": 8,
+      "total": 15,
+      "accuracy": 0.533
+    },
+    "recipient_name": {
+      "correct": 9,
+      "total": 69,
+      "accuracy": 0.13
+    },
+    "total_amount": {
+      "correct": 6,
+      "total": 103,
+      "accuracy": 0.058
+    }
+  }
+}

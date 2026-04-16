@@ -1,0 +1,421 @@
+{
+  "field_summary": {
+    "recipient_name": {
+      "correct": 0,
+      "total": 20,
+      "accuracy": 0.0
+    },
+    "invoice_number": {
+      "correct": 0,
+      "total": 20,
+      "accuracy": 0.0
+    },
+    "total_amount": {
+      "correct": 0,
+      "total": 20,
+      "accuracy": 0.0
+    }
+  },
+  "per_file": {
+    "invoice_10_it.pdf": {
+      "recipient_name": {
+        "gold": "DataBridge Analytics Corp.",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 6
+      },
+      "invoice_number": {
+        "gold": "NXC-INV-2024-5502",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 3
+      },
+      "total_amount": {
+        "gold": "27960.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 14
+      }
+    },
+    "invoice_11_rental.pdf": {
+      "recipient_name": {
+        "gold": "Pacific Rim Logistics Inc.",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      },
+      "invoice_number": {
+        "gold": "RPM-2024-0345",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "9554.50",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 6
+      }
+    },
+    "invoice_12_catering.pdf": {
+      "recipient_name": {
+        "gold": "Hartley & Fox Events LLC",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      },
+      "invoice_number": {
+        "gold": "BCC-2024-0178",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "23710.92",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 13
+      }
+    },
+    "invoice_13_academic.pdf": {
+      "recipient_name": {
+        "gold": "National Science Foundation",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 9
+      },
+      "invoice_number": {
+        "gold": "WFU-2024-RSCH-0072",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 2
+      },
+      "total_amount": {
+        "gold": "52944.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 8
+      }
+    },
+    "invoice_14_agency.pdf": {
+      "recipient_name": {
+        "gold": "Clearwater Consumer Brands",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 5
+      },
+      "invoice_number": {
+        "gold": "ACA-2024-Q3-0041",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "38095.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 19
+      }
+    },
+    "invoice_15_typewriter.pdf": {
+      "recipient_name": {
+        "gold": "Capital Industrial Partners",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 5
+      },
+      "invoice_number": {
+        "gold": "IGW-2024-0033",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "6310.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 5
+      }
+    },
+    "invoice_16_unusual_labels.pdf": {
+      "recipient_name": {
+        "gold": "Suncoast Mining Operations",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      },
+      "invoice_number": {
+        "gold": "TLE-2024-AU-0553",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "13915.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 10
+      }
+    },
+    "invoice_17_spanish_mixed.pdf": {
+      "recipient_name": {
+        "gold": "Eurobridge Freight GmbH",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 8
+      },
+      "invoice_number": {
+        "gold": "ITS-2024-MAD-0312",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 2
+      },
+      "total_amount": {
+        "gold": "12475.10",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 9
+      }
+    },
+    "invoice_18_degraded.pdf": {
+      "recipient_name": {
+        "gold": "Harmon Industrial Supply",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 5
+      },
+      "invoice_number": {
+        "gold": "KSC-2024-1847",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "3608.04",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      }
+    },
+    "invoice_19_proforma.pdf": {
+      "recipient_name": {
+        "gold": "Meridian Import Group",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 4
+      },
+      "invoice_number": {
+        "gold": "AGT-PF-2024-0089",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 2
+      },
+      "total_amount": {
+        "gold": "70750.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 12
+      }
+    },
+    "invoice_20_no_labels.pdf": {
+      "recipient_name": {
+        "gold": "Orion Ventures Inc.",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 4
+      },
+      "invoice_number": {
+        "gold": "TSS-2024-0412",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "30485.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 9
+      }
+    },
+    "invoice_2_freelancer.pdf": {
+      "recipient_name": {
+        "gold": "Greenfield Media Group",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 10
+      },
+      "invoice_number": {
+        "gold": "SC-2024-112",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "8550.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 9
+      }
+    },
+    "invoice_3_lawfirm.pdf": {
+      "recipient_name": {
+        "gold": "Pinnacle Pharmaceuticals Corp.",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 10
+      },
+      "invoice_number": {
+        "gold": "HC-2024-3847",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 3
+      },
+      "total_amount": {
+        "gold": "19390.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 12
+      }
+    },
+    "invoice_4_saas.pdf": {
+      "recipient_name": {
+        "gold": "NovaBridge Systems",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      },
+      "invoice_number": {
+        "gold": "STK-INV-7741",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "1498.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 10
+      }
+    },
+    "invoice_5_euro.pdf": {
+      "recipient_name": {
+        "gold": "Luminar Digital AG",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 8
+      },
+      "invoice_number": {
+        "gold": "VS-2024-0291",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 3
+      },
+      "total_amount": {
+        "gold": "12316.50",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 14
+      }
+    },
+    "invoice_6_construction.pdf": {
+      "recipient_name": {
+        "gold": "Cascade Property Holdings",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 8
+      },
+      "invoice_number": {
+        "gold": "RSC-2024-0089",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "70300.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 12
+      }
+    },
+    "invoice_7_photographer.pdf": {
+      "recipient_name": {
+        "gold": "Whitmore & Cole Publishing",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      },
+      "invoice_number": {
+        "gold": "OP-2024-037",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "7830.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      }
+    },
+    "invoice_8_uk.pdf": {
+      "recipient_name": {
+        "gold": "Thornton Capital Partners",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 6
+      },
+      "invoice_number": {
+        "gold": "BWA-2024-1142",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 2
+      },
+      "total_amount": {
+        "gold": "26582.40",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 10
+      }
+    },
+    "invoice_9_medical.pdf": {
+      "recipient_name": {
+        "gold": "BlueCross BlueShield of Minnesota",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 7
+      },
+      "invoice_number": {
+        "gold": "NVM-2024-8834",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "598.00",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 12
+      }
+    },
+    "test_invoice_1.pdf": {
+      "recipient_name": {
+        "gold": "Apex Technologies Inc.",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 9
+      },
+      "invoice_number": {
+        "gold": "INV-2024-00847",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 1
+      },
+      "total_amount": {
+        "gold": "17458.02",
+        "predicted": null,
+        "correct": false,
+        "n_candidates": 14
+      }
+    }
+  }
+}

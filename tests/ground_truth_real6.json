@@ -1,0 +1,114 @@
+{
+  "AmazonWebServices.pdf": {
+    "invoice_number": "42183017",
+    "invoice_date": "2014-08-03",
+    "due_date": "2014-08-03",
+    "issuer_name": "Amazon Web Services",
+    "recipient_name": null,
+    "total_amount": "4.11"
+  },
+  "AzureInterior.pdf": {
+    "invoice_number": "INV/2023/03/0008",
+    "invoice_date": "2023-03-20",
+    "due_date": "2023-04-04",
+    "issuer_name": "Azure Interior",
+    "recipient_name": null,
+    "total_amount": "279.84"
+  },
+  "oyo.pdf": {
+    "invoice_number": "IBZY2087",
+    "invoice_date": "2017-12-31",
+    "due_date": "2018-01-01",
+    "issuer_name": "OYO",
+    "recipient_name": "Sanjay",
+    "total_amount": "1939.00"
+  },
+  "SammyMaystoneLinesTest.pdf": {
+    "invoice_number": "invoice_number_1",
+    "invoice_date": "2022-01-01",
+    "due_date": "2022-31-01",
+    "issuer_name": "Sammy Maystone",
+    "recipient_name": "Taylor Riddel",
+    "total_amount": "127.50"
+  },
+  "Software.pdf": {
+    "invoice_number": "E77148D3 0001",
+    "invoice_date": "2025-25-07",
+    "due_date": "2025-25-07",
+    "issuer_name": "TRANRILOCAR CIA LTDA.",
+    "recipient_name": "contabilidad@transporte.ec",
+    "total_amount": "350.00"
+  },
+  "SeurTranslated.pdf": {
+    "invoice_number": "0289992025D0044049",
+    "invoice_date": "2025-28-02",
+    "due_date": null,
+    "issuer_name": "SEUR",
+    "recipient_name": "BEATRIZ MARTIN MARTIN",
+    "total_amount": "40.44"
+  },
+  "GasolineraCarrefourTranslated.pdf": {
+    "invoice_number": "2025FBFN00188074",
+    "invoice_date": "2025-26-01",
+    "due_date": null,
+    "issuer_name": " CARREFOUR SHOPPING CENTRES SA",
+    "recipient_name": "BEATRIZ MARTIN MARTIN",
+    "total_amount": "71.06"
+  },
+  "LeroyMerlinTranslated.pdf": {
+    "invoice_number": "039-0002-486391",
+    "invoice_date": "2025-20-02",
+    "due_date": null,
+    "issuer_name": "LEROY MERLIN ESPAÑA, S.L.U",
+    "recipient_name": "MS BEATRIZ MARTIN MARTIN",
+    "total_amount": "31.71"
+  },
+  "AdobeTranslated.pdf": {
+    "invoice_number": "IEE2025001848721",
+    "invoice_date": "2025-14-02",
+    "due_date": null,
+    "issuer_name": "Adobe Systems Software Ireland Ltd",
+    "recipient_name": "BEATRIZ MARTIN MARTIN",
+    "total_amount": "21.84"
+  },
+  "NeonyInvoice.pdf": {
+    "invoice_number": "F2025-338",
+    "invoice_date": "2025-19-09",
+    "due_date": null,
+    "issuer_name": "BEATRIZ MARTIN MARTIN",
+    "recipient_name": "Adrián Jiménez García",
+    "total_amount": "1871.86"
+  },
+  "OUIGOTranslated.pdf": {
+    "invoice_number": "LN202500023841",
+    "invoice_date": "2025-20-03",
+    "due_date": null,
+    "issuer_name": "OUIGO ESPAÑA, SAU",
+    "recipient_name": "MARTIN MARTIN BEATRIZ",
+    "total_amount": "42.00"
+  },
+  "MetacrilatoMadridTranslated.pdf": {
+    "invoice_number": "FV25/00117",
+    "invoice_date": "2025-31-03",
+    "due_date": null,
+    "issuer_name": "Sergio Martinez Lopez",
+    "recipient_name": "Beatriz Martín Martín",
+    "total_amount": "74.25"
+  },
+    "RENTATranslated.pdf": {
+    "invoice_number": "2505193",
+    "invoice_date": "2025-01-07",
+    "due_date": null,
+    "issuer_name": "Renta 92, SA",
+    "recipient_name": "Beatriz Martín Martín",
+    "total_amount": "467.14"
+  },
+    "AMAZONTranslated.pdf": {
+    "invoice_number": "DS-AEU-INV-ES-2025-64533346",
+    "invoice_date": "2025-09-07",
+    "due_date": null,
+    "issuer_name": "Amazon EU SarL",
+    "recipient_name": "BEATRIZ MARTIN MARTIN",
+    "total_amount": "20.99"
+  }
+}
