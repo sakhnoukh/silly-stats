@@ -27,6 +27,16 @@ from pathlib import Path
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
+# Windows: ensure Tesseract is findable
+if os.name == "nt":
+    try:
+        import pytesseract as _pt
+        _tess = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        if os.path.isfile(_tess):
+            _pt.pytesseract.tesseract_cmd = _tess
+    except ImportError:
+        pass
+
 # ---------------------------------------------------------------------------
 # Project paths
 # ---------------------------------------------------------------------------
@@ -87,19 +97,33 @@ def extract_text_from_pdf(file_path: str) -> str:
 
     # If pdfplumber got nothing (scanned PDF), try OCR
     if not text.strip():
+        # Try pypdfium2 + pytesseract first (no Poppler needed)
         try:
-            from pdf2image import convert_from_path
+            import pypdfium2 as pdfium
             import pytesseract
+            from PIL import Image as _PIL_Image
 
-            images = convert_from_path(file_path)
+            doc = pdfium.PdfDocument(file_path)
             ocr_parts = []
-            for img in images:
-                ocr_parts.append(pytesseract.image_to_string(img))
+            for page in doc:
+                bm = page.render(scale=3.0)
+                img = bm.to_pil().convert("RGB")
+                ocr_parts.append(pytesseract.image_to_string(img, config='--psm 6'))
             text = "\n".join(ocr_parts)
-        except ImportError:
-            print("WARNING: PDF has no extractable text and pdf2image/pytesseract")
-            print("  are not installed for OCR fallback.")
-            print("  Install: pip install pdf2image pytesseract")
+        except Exception:
+            # Fall back to pdf2image (requires Poppler)
+            try:
+                from pdf2image import convert_from_path
+                import pytesseract
+
+                images = convert_from_path(file_path)
+                ocr_parts = []
+                for img in images:
+                    ocr_parts.append(pytesseract.image_to_string(img))
+                text = "\n".join(ocr_parts)
+            except Exception:
+                print("WARNING: PDF has no extractable text and OCR fallback failed.")
+                print("  Install: pip install pypdfium2 pytesseract")
 
     return text
 
@@ -344,11 +368,102 @@ def classify_document(raw_text: str, cleaned_text: str) -> dict:
         return classify_with_keywords(raw_text)
 
 
+
+def detect_invoice_signals(raw_text: str) -> dict:
+    text = (raw_text or "").lower()
+    signal_patterns = [
+        ("invoice_word", r"\binvoice\b", 3),
+        ("invoice_number", r"\binvoice\s*(no|number|#|id)\b", 4),
+        ("bill_to", r"\b(bill\s*to|billed\s*to)\b", 4),
+        ("ship_to", r"\b(ship\s*to|sold\s*to)\b", 3),
+        ("due_date", r"\b(due\s*date|payment\s*due)\b", 4),
+        ("payment_terms", r"\b(payment\s*terms|net\s*\d+)\b", 3),
+        ("amount_due", r"\b(amount\s*due|balance\s*due|total\s*due)\b", 4),
+        ("purchase_order", r"\b(purchase\s*order|po\s*#|po\s*number)\b", 2),
+        ("remit_to", r"\b(remit\s*to|make\s*payment)\b", 3),
+        ("subtotal_total", r"\b(subtotal|tax|total)\b", 1),
+    ]
+
+    matches = []
+    score = 0
+
+    for label, pattern, weight in signal_patterns :
+        found = re.findall(pattern, text)
+        if found :
+            count = len(found)
+            matches.append({
+                "signal": label,
+                "count": count,
+                "weight": weight,
+            })
+            score += count * weight
+
+    strong_anchor_count = sum(
+        1 for item in matches
+        if item["signal"] in {
+            "invoice_word",
+            "invoice_number",
+            "bill_to",
+            "due_date",
+            "amount_due",
+
+        }
+    )
+
+    should_override = (
+               score >= 6 and strong_anchor_count >= 2
+         ) or (
+               score >= 10
+    )
+
+
+    return {
+
+        "score": score,
+        "matches": matches,
+        "strong_anchor_count": strong_anchor_count,
+        "should_override": should_override,
+    }
+
+#Salmane Changes
+
+# decision helper for the func above
+
+def should_run_invoice_extraction(raw_text: str, classification: dict) -> dict:
+    predicted_class = classification.get("predicted_class")
+    confidence = classification.get("confidence", {})
+    invoice_conf = confidence.get("invoice", 0.0)
+
+    if predicted_class == "invoice":
+        return {
+            "run_extraction": True,
+            "reason": "predicted_invoice",
+            "invoice_confidence": invoice_conf,
+            "override_details": None,
+        }
+
+    override = detect_invoice_signals(raw_text)
+
+    if override["should_override"]:
+        return {
+            "run_extraction": True,
+            "reason": "invoice_override",
+            "invoice_confidence": invoice_conf,
+            "override_details": override,
+        }
+
+    return {
+        "run_extraction": False,
+        "reason": "not_invoice",
+        "invoice_confidence": invoice_conf,
+        "override_details": override,
+    }
+
 # ---------------------------------------------------------------------------
 # Step 4 — Invoice Field Extraction
 # ---------------------------------------------------------------------------
 
-def extract_invoice_fields(raw_text: str) -> dict:
+def extract_invoice_fields(raw_text: str, file_path: str = None) -> dict:
     """
     Extract structured fields from an invoice using the Phase 3 extractor.
     Uses raw_text (not cleaned) because cleaning strips keywords like
@@ -358,7 +473,7 @@ def extract_invoice_fields(raw_text: str) -> dict:
     from scripts.extract_invoice_fields_v5 import InvoiceExtractor
 
     extractor = InvoiceExtractor()
-    fields = extractor.extract(raw_text)
+    fields = extractor.extract(raw_text, file_path=file_path)
 
     return fields
 
@@ -371,22 +486,29 @@ def build_result(file_path: str, classification: dict, raw_text: str) -> dict:
     """
     Build the final output JSON combining classification and extraction.
     """
+    extraction_decision = should_run_invoice_extraction(raw_text, classification)
+
     result = {
         "file": os.path.basename(file_path),
         "classification": classification["predicted_class"],
         "confidence": classification["confidence"],
+        "extraction_decision": extraction_decision["reason"],
     }
 
-    # Only extract fields if classified as invoice
-    if classification["predicted_class"] == "invoice":
-        fields = extract_invoice_fields(raw_text)
+    if extraction_decision["override_details"] is not None:
+        result["invoice_override"] = extraction_decision["override_details"]
+
+    if extraction_decision["run_extraction"]:
+        fields = extract_invoice_fields(raw_text, file_path=file_path)
         result["extracted_fields"] = fields
 
-        # Count how many fields were successfully extracted
         found = sum(1 for v in fields.values() if v is not None)
         result["fields_extracted"] = f"{found}/{len(fields)}"
 
     return result
+
+
+
 
 
 # ---------------------------------------------------------------------------
@@ -489,10 +611,30 @@ def run_pipeline(file_path: str, verbose: bool = False) -> dict:
 
     # --- Step 4: Extract fields if invoice ---
     result = build_result(file_path, classification, raw_text)
+    extraction_decision = should_run_invoice_extraction(raw_text, classification)
 
-    if verbose and classification["predicted_class"] == "invoice":
+    if verbose:
         print("-" * 60)
-        print("  STEP 4: Invoice Field Extraction")
+        print("  STEP 4: Extraction Decision")
+        print("-" * 60)
+        print(f"  Decision:         {extraction_decision['reason']}")
+        print(f"  Run extraction:   {extraction_decision['run_extraction']}")
+        print(f"  Invoice score:    {extraction_decision['invoice_confidence']:.1%}")
+
+        override_details = extraction_decision.get("override_details")
+        if override_details and override_details.get("matches"):
+            print(f"  Override score:   {override_details['score']}")
+            print(f"  Strong anchors:   {override_details['strong_anchor_count']}")
+            print("  Signals found:")
+            for item in override_details["matches"]:
+                print(
+                    f"    - {item['signal']}: "
+                    f"{item['count']} match(es), weight={item['weight']}"
+                )
+        print()
+    if verbose and result.get("extracted_fields"):
+        print("-" * 60)
+        print("  STEP 5: Invoice Field Extraction")
         print("-" * 60)
         fields = result.get("extracted_fields", {})
         found = sum(1 for v in fields.values() if v is not None)

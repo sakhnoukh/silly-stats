@@ -113,6 +113,62 @@ This document details the contributions of each team member across the five phas
   - baseline/, candidates/, layout/, template/
 ```
 
+#### Phase 3.5 — Extractor v5 robustness pass (Salmane)
+
+Follow-up hardening pass on the invoice extractor to handle real-world
+(non-synthetic) documents — OCR noise, Spanish/multilingual layouts, and
+receipt variants. Target: **≥70%** on the real-world test set
+(`tests/invoices_real/`, 14 PDFs, 73 scoreable fields).
+
+**Trajectory (real-world set):**
+
+| Stage | Accuracy | Δ fields |
+|---|---|---|
+| v5 baseline (Phases A–E done) | 64.4% | — |
+| Phase F: Spanish all-caps recipient heuristic | 67.1% | +2 |
+| Phase G: NER ORG rescue + stricter `_looks_bad_issuer` | 68.5% | +1 |
+| Phase H: invoice-number trailing numeric token | 69.9% | +1 |
+| Phase H+: email-domain issuer fallback | **71.2%** | +1 |
+
+**Final results across all 3 test sets:**
+
+| Test set | Files | Score | Accuracy |
+|---|---|---|---|
+| `tests/invoices/` (synthetic) | 19 | 101/114 | 88.6% |
+| `tests/invoices_ocr/` (degraded PNG) | 7 | 38/42 | 90.5% |
+| `tests/invoices_real/` (real-world) | 14 | 52/73 | 71.2% |
+
+Unit tests: **77/77 passing** (`tests/test_phase3.py`).
+
+**Key changes in `scripts/extract_invoice_fields_v5.py`:**
+
+- **Phase A–E** — `_post_ocr_cleanup()`, Tesseract `--psm 6`, 3× render
+  scale, European-format amount parser (`1.871,86` → `1871.86`), multiline
+  total pattern, hotel/booking invoice-number anchors, stricter bad-value
+  filters.
+- **Phase F** — Spanish all-caps recipient heuristic in both
+  `_extract_recipient_name_ocr` and `extract_recipient_name`; requires
+  ≥4 chars per word; blacklists tax IDs (GSTIN, CIN, PAN, NIF, CIF, …).
+- **Phase G** — New `rank_org()` in `_ner_rescue` with 2-pass scan
+  (`text[:2500]` → `text[:6000]`); `_looks_bad_issuer` now rejects
+  address/facility fragments (`business campus`, `wholesaler`,
+  `shopping centre`) and Spanish 2–3-word all-caps personal-name shape.
+- **Phase H** — Invoice-number capture now extends with one trailing 3–6
+  digit token when the primary value contains letters and the token is
+  not a year (handles `E77148D3 0001`).
+- **Phase H+** — Email-domain issuer fallback: if all other rescues fail,
+  extract the second-level domain from the first non-recipient-line email,
+  filter generic providers, uppercase it (`info@neony.es` → `NEONY`).
+
+**New eval helpers:**
+- `scripts/quick_eval.py` — fast real-world AFTER-only eval.
+- `scripts/quick_eval_synthetic.py` — per-field breakdown on synthetic set.
+
+**Documentation:**
+- `docs/v5_improvements.md` — full change log, results tables, remaining
+  failure catalogue (21/73 — mostly OCR-quality and non-standard date
+  formats), reproduction commands.
+
 ---
 
 ### Phase 4: Pipeline Integration & Backend

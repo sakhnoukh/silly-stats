@@ -1,5 +1,5 @@
 """
-Phase 3 — Invoice Information Extraction
+Phase 3 ÔÇö Invoice Information Extraction
 
 Extracts structured fields from documents classified as invoices:
   - Invoice number
@@ -36,12 +36,19 @@ from typing import Dict, Optional, List, Tuple
 import pytesseract
 from PIL import Image
 
+# Windows: set Tesseract path if not already on PATH
+import os as _os
+if _os.name == "nt":
+    _tess = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    if _os.path.isfile(_tess):
+        pytesseract.pytesseract.tesseract_cmd = _tess
+
 # Lazy-loaded spaCy model (loaded once on first use)
 _NLP_MULTI = None
 _NLP_EN    = None
 
-_NLP_MULTI = None   # xx_ent_wiki_sm  — better for Spanish/French ORG names
-_NLP_EN    = None   # en_core_web_trf — better for English PERSON names
+_NLP_MULTI = None   # xx_ent_wiki_sm  ÔÇö better for Spanish/French ORG names
+_NLP_EN    = None   # en_core_web_trf ÔÇö better for English PERSON names
 
 def _get_nlp_multi():
     global _NLP_MULTI
@@ -90,9 +97,21 @@ def _normalise_amount(amount_str: str) -> Optional[str]:
     """Strip currency symbols, return plain decimal string. Excludes year-like values."""
     if not amount_str:
         return None
-    cleaned = re.sub(r'[£€$¥₹\u20ac\s]', '', str(amount_str)).replace(',', '').strip()
+    cleaned = re.sub(r'[┬úÔé¼$┬ÑÔé╣\u20ac\s]', '', str(amount_str)).strip()
     if not cleaned:
         return None
+
+    # Detect European format: dot as thousands separator, comma as decimal
+    # e.g. "1.871,86" or "871,86"
+    eu_match = re.fullmatch(r'(\d{1,3}(?:\.\d{3})*),(\d{1,2})', cleaned)
+    if eu_match:
+        integer_part = eu_match.group(1).replace('.', '')
+        decimal_part = eu_match.group(2)
+        cleaned = f"{integer_part}.{decimal_part}"
+    else:
+        # Standard: strip commas as thousands separators
+        cleaned = cleaned.replace(',', '')
+
     try:
         val = float(cleaned)
         if val <= 0:
@@ -118,7 +137,7 @@ class InvoiceExtractor:
             r'\b(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{4})\b',
         ]
 
-        # Amount patterns — ordered most specific → most general
+        # Amount patterns ÔÇö ordered most specific ÔåÆ most general
         # Covers: standard labels, non-standard labels, currency after value,
         # spaced-out labels (typewriter), bare totals with no label
         self.amount_patterns = [
@@ -126,20 +145,22 @@ class InvoiceExtractor:
             r'(?:total\s+amount\s+due|amount\s+due|balance\s+due|total\s+due|'
             r'total\s+invoice\s+value|grand\s+total|amount\s+payable|'
             r'please\s+pay|net\s+amount\s+due)\s*[:\-]?\s*'
-            r'(?:[£$€¥₹\u20ac]|[A-Z]{3})?\s*([\d,\.]+)',
+            r'(?:[┬ú$Ôé¼┬ÑÔé╣\u20ac]|[A-Z]{3})?\s*([\d,\.]+)',
             # "T O T A L :" spaced typewriter style
-            r'T\s+O\s+T\s+A\s+L\s*[:\-]?\s*[£$€¥₹\u20ac]?\s*([\d,\.]+)',
+            r'T\s+O\s+T\s+A\s+L\s*[:\-]?\s*[┬ú$Ôé¼┬ÑÔé╣\u20ac]?\s*([\d,\.]+)',
             # Generic total/amount with currency symbol before value
-            r'(?:total|amount|balance)\s*[:]?\s*[£$€¥₹\u20ac]\s*([\d,\.]+)',
-            # Currency symbol then number (e.g. "€ 12,475.10" standalone)
-            r'[£$€¥₹\u20ac]\s*([\d,]+\.?\d{0,2})',
+            r'(?:total|amount|balance)\s*[:]?\s*[┬ú$Ôé¼┬ÑÔé╣\u20ac]\s*([\d,\.]+)',
+            # Currency symbol then number (e.g. "Ôé¼ 12,475.10" standalone)
+            r'[┬ú$Ôé¼┬ÑÔé╣\u20ac]\s*([\d,]+\.?\d{0,2})',
             # Number then currency code
             r'([\d,]+\.?\d*)\s*(?:usd|eur|gbp|aud|inr|chf)\b',
             # Bare decimal on a "total" line as last resort
             r'(?:total|amount|balance)\s*[:\-]?\s*([\d,]+\.\d{2})',
+            # Total label on one line, value on the next (multiline)
+            r'(?:total\s+invoice|total|importe\s+total|montant\s+total)\s*\n\s*(?:[┬ú$Ôé¼┬ÑÔé╣\u20ac]\s*)?([\d,\.]+)',
         ]
 
-        # ── Company indicators used by the issuer heuristic ─────────────────
+        # ÔöÇÔöÇ Company indicators used by the issuer heuristic ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         self._company_re = re.compile(
             r'\b(inc\.?|corp\.?|ltd\.?|llc\.?|llp\.?|pty\.?|co\.?|company|companies|'
             r'gmbh|ag|s\.l\.?|s\.a\.?|b\.v\.?|n\.v\.?|plc\.?|'
@@ -153,7 +174,7 @@ class InvoiceExtractor:
             re.IGNORECASE,
         )
 
-        # ── "Bill To" anchor: marks where recipient block starts ─────────────
+        # ÔöÇÔöÇ "Bill To" anchor: marks where recipient block starts ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         self._bill_to_re = re.compile(
             r'(?:bill(?:ed)?\s*(?:to|from)|sold\s*to|ship\s*to|billed\s*to'
             r'|invoice\s*to|pay(?:able)?\s*to|remit\s*to)',
@@ -187,10 +208,12 @@ class InvoiceExtractor:
             r'tax\s+invoice\s*(?:no\.?|number|#)?\s*[:\-]?\s*([A-Z0-9][\w\-/\.]{2,30})',
             # P.O. Number
             r'p\.?o\.?\s*(?:no\.?|number|#)\s*[:\-]?\s*([A-Z0-9][\w\-/\.]{2,30})',
-            # "#TSS-2024-0412" or "#BLR_WFLD20151000982590" — hash prefix with no label
+            # "#TSS-2024-0412" or "#BLR_WFLD20151000982590" ÔÇö hash prefix with no label
             r'(?<!\w)#([A-Z0-9][\w\-/]{3,30})',
             # "I N V O I C E   N o .  :" spaced-out typewriter style
             r'I\s+N\s+V\s+O\s+I\s+C\s+E\s+N\s*o\.?\s*[:\-]?\s*([A-Z0-9][\w\-/]{2,30})',
+            # "Booking ID: IBZY2087" "Confirmation No: 123456" "Folio: 12345"
+            r'(?:booking\s*(?:id|no|number|#)|confirmation\s*(?:no|number|#)?|folio)\s*[:\-#]?\s*([A-Z0-9][\w\-/\.]{2,30})',
         ]
 
         for pattern in labeled_patterns:
@@ -209,6 +232,23 @@ class InvoiceExtractor:
                     r'subtotal|please|invoice|reference|page|sheet|period|no|number)$',
                     val, re.IGNORECASE
                 ):
+                    continue
+                # Extend with one trailing space-separated numeric token if present
+                # (handles "E77148D3 0001" where the number has two parts)
+                # Only extend when primary has letters (alphanumeric code) AND
+                # the trailing token is NOT a 4-digit year and NOT a date component
+                tail_match = re.match(
+                    r'\s+(\d{3,6})(?:\s|$)',
+                    text[match.end():match.end() + 20],
+                )
+                if tail_match and re.search(r'[A-Za-z]', val):
+                    tail_val = tail_match.group(1)
+                    # Skip 4-digit years
+                    if not (len(tail_val) == 4 and 1900 <= int(tail_val) <= 2099):
+                        val = f"{val} {tail_val}"
+                # Strip trailing pure-alpha words (e.g. "039-0002-486391 Leganes" ÔåÆ "039-0002-486391")
+                val = re.sub(r'\s+[A-Za-z]+$', '', val).strip()
+                if len(val) < 3:
                     continue
                 return val.upper()
 
@@ -229,15 +269,15 @@ class InvoiceExtractor:
         inv_date = None
         due_date = None
 
-        # ── Invoice date ─────────────────────────────────────────────────────
+        # ÔöÇÔöÇ Invoice date ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         # Try labeled patterns first
         inv_labeled = [
             r'invoice\s+date\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
             r'issue\s+date\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
             r'billing\s+date\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
-            # dated? — but NOT when preceded by "due " (which would be "due date")
+            # dated? ÔÇö but NOT when preceded by "due " (which would be "due date")
             r'(?<![Dd][Uu][Ee] )dated?\s*[:\-]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
-            # Bare "Date:" label — but only if it's not inside a "Due Date:" context.
+            # Bare "Date:" label ÔÇö but only if it's not inside a "Due Date:" context.
             # We match it with a colon required so "Due Date: ..." doesn't match
             # this pattern (because "due date" gets matched by 'dated?' above... no).
             # Simpler fix: require NOT preceded by "due" using a word boundary check.
@@ -251,7 +291,7 @@ class InvoiceExtractor:
                     inv_date = candidate
                     break
 
-        # ── Fallback: standalone written date BEFORE any due-date label ──────
+        # ÔöÇÔöÇ Fallback: standalone written date BEFORE any due-date label ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         # Handles law-firm style: date appears in header with no label,
         # e.g. "September 30, 2024" at the top before "Due Date: October 30"
         if not inv_date:
@@ -266,14 +306,14 @@ class InvoiceExtractor:
             if month_m:
                 inv_date = self._parse_named_date(month_m.group(1))
 
-        # ── Due date ──────────────────────────────────────────────────────────
+        # ÔöÇÔöÇ Due date ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         # FIX: added (?:date)? to handle "Due Date:" as well as bare "Due:"
         # Added written-month alternative branch
         due_labeled = [
             r'due\s*(?:date|by|on)?\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
             r'payment\s*(?:due|by|date)\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
             r'pay(?:ment)?\s*by\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
-            # "Valid Until: December 20, 2024" — proforma invoices
+            # "Valid Until: December 20, 2024" ÔÇö proforma invoices
             r'valid\s*(?:until|through|to)\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
             r'expir(?:es|y)\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
             r'payment\s+by\s*[:\-=]?\s*([A-Za-z\d][A-Za-z\d\s,/\-\.]{3,30})',
@@ -288,16 +328,25 @@ class InvoiceExtractor:
                     due_date = candidate
                     break
 
-        # ── Fallback: payment terms string ──────────────────────────────────
+        # ÔöÇÔöÇ Fallback: payment terms string ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         # If no explicit due date found, return payment terms as a string
+        # For immediate-payment terms, copy invoice_date instead
         if not due_date:
             terms = re.search(
                 r'\b(net\s*\d{2,3}(?:\s*days?)?|due\s+on\s+receipt'
+                r'|payable\s+immediately|upon\s+receipt'
                 r'|cash\s+\d+\s*days?|COD)\b',
                 text, re.IGNORECASE
             )
             if terms:
-                due_date = terms.group(1).strip()
+                term_text = terms.group(1).strip().lower()
+                if any(kw in term_text for kw in ('receipt', 'immediately')):
+                    if inv_date:
+                        due_date = inv_date
+                    else:
+                        due_date = terms.group(1).strip()
+                else:
+                    due_date = terms.group(1).strip()
 
         return inv_date, due_date
 
@@ -366,10 +415,10 @@ class InvoiceExtractor:
                 # YYYY-MM-DD format
                 if p1 > 1900:
                     return f"{p1:04d}-{p2:02d}-{p3:02d}"
-                # Two-digit year — expand
+                # Two-digit year ÔÇö expand
                 if p3 < 100:
                     p3 = 2000 + p3 if p3 < 50 else 1900 + p3
-                # DD/MM/YYYY vs MM/DD/YYYY — prefer DD/MM if day > 12
+                # DD/MM/YYYY vs MM/DD/YYYY ÔÇö prefer DD/MM if day > 12
                 if p1 > 12:
                     return f"{p3:04d}-{p2:02d}-{p1:02d}"
                 else:
@@ -391,10 +440,10 @@ class InvoiceExtractor:
         labeled_amounts  = []   # from specific total-label patterns
         fallback_amounts = []   # from bare currency symbol patterns
 
-        # Patterns 0-2 and 5 require a total/amount keyword → labeled
-        # Patterns 3-4 are bare currency/code → fallback
+        # Patterns 0-2 and 5 require a total/amount keyword ÔåÆ labeled
+        # Patterns 3-4 are bare currency/code ÔåÆ fallback
         # We track this by checking if the pattern text contains a label word
-        LABELED_PATTERNS = {0, 1, 2, 5}
+        LABELED_PATTERNS = {0, 1, 2, 5, 6}
 
         for idx, pattern in enumerate(self.amount_patterns):
             for match in re.finditer(pattern, text, re.IGNORECASE):
@@ -411,7 +460,7 @@ class InvoiceExtractor:
                             break
 
         # Prefer labeled matches (require total/amount keyword).
-        # Among labeled matches take the LAST occurrence — totals appear at
+        # Among labeled matches take the LAST occurrence ÔÇö totals appear at
         # the bottom of the document AFTER subtotals, so last = final total.
         # "Largest" was tried but picked subtotals on invoices with discounts.
         if labeled_amounts:
@@ -439,12 +488,12 @@ class InvoiceExtractor:
 
         Strategy (in order):
         1. Explicit label: "From:", "Vendor:", "Issued by:"
-        2. Text appearing BEFORE the first 'Bill To' block — company name
+        2. Text appearing BEFORE the first 'Bill To' block ÔÇö company name
            is typically in the header above the billing section.
         3. First substantive header line with company indicators.
         """
 
-        # ── Strategy 1: explicit label ────────────────────────────────────────
+        # ÔöÇÔöÇ Strategy 1: explicit label ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         labeled = [
             r'(?:from|vendor|issued\s+by|billed\s+from|seller)\s*[:\-]?\s*([^\n]{4,80})',
         ]
@@ -456,7 +505,7 @@ class InvoiceExtractor:
                 if 4 < len(name) < 100:
                     return name
 
-        # ── Strategy 2: text above the first "Bill To" anchor ─────────────────
+        # ÔöÇÔöÇ Strategy 2: text above the first "Bill To" anchor ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         bill_match = self._bill_to_re.search(text)
         if bill_match:
             above = text[:bill_match.start()]
@@ -474,7 +523,7 @@ class InvoiceExtractor:
                 if alpha_ratio >= 0.5 and len(line.split()) >= 2:
                     return re.sub(r'\s+', ' ', line).strip()
 
-        # ── Strategy 3: first header lines — company indicator OR person name ──
+        # ÔöÇÔöÇ Strategy 3: first header lines ÔÇö company indicator OR person name ÔöÇÔöÇ
         # Collect all plausible candidates, then pick the shortest.
         # Short all-caps / title-case names win over longer taglines.
 
@@ -499,7 +548,7 @@ class InvoiceExtractor:
                 continue
             words = line.split()
             has_company  = bool(self._company_re.search(line))
-            # Person/freelancer: short (≤3 words), high alpha, all-caps or title-case, no digits
+            # Person/freelancer: short (Ôëñ3 words), high alpha, all-caps or title-case, no digits
             is_name_line = (1 <= len(words) <= 3 and alpha_ratio >= 0.7
                             and not re.search(r'\d', line)
                             and (line.isupper() or line.istitle()))
@@ -507,7 +556,7 @@ class InvoiceExtractor:
                 candidates.append(line)
 
         if candidates:
-            # Shortest wins — proper names beat taglines
+            # Shortest wins ÔÇö proper names beat taglines
             best = min(candidates, key=len)
             return re.sub(r'\s+', ' ', best).strip()
 
@@ -535,7 +584,7 @@ class InvoiceExtractor:
             r'^(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
             r'pay(?:able)?\s*to|remit\s*to|customer(?:\s*name)?|client(?:\s*name)?|'
             r'buyer(?:\s*name)?|recipient(?:\s*name)?|guest(?:\s*name)?|'
-            r'attn(?:ention)?)\b',
+            r'attn(?:ention)?|cliente|comprador|destinatario|acheteur)\b',
             re.IGNORECASE,
         )
 
@@ -543,7 +592,7 @@ class InvoiceExtractor:
             r'^(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
             r'pay(?:able)?\s*to|remit\s*to|customer(?:\s*name)?|client(?:\s*name)?|'
             r'buyer(?:\s*name)?|recipient(?:\s*name)?|guest(?:\s*name)?|'
-            r'attn(?:ention)?)\s*[:\-]?\s*',
+            r'attn(?:ention)?|cliente|comprador|destinatario|acheteur)\s*[:\-]?\s*',
             re.IGNORECASE,
         )
 
@@ -551,6 +600,7 @@ class InvoiceExtractor:
             r'\b(invoice|tax invoice|date|due|subtotal|total|amount|balance|vat|tax|'
             r'bank|branch|swift|iban|gst|nif|cif|po number|order number|'
             r'email|site|website|www\.|http|tel|phone|mobile|fax|'
+            r'method of payment|payment method|'
             r'supplier code|badge|hotel details|check in|check out|room)\b',
             re.IGNORECASE,
         )
@@ -579,7 +629,8 @@ class InvoiceExtractor:
                 return None
 
             if re.match(
-                r'^(name|customer|client|buyer|recipient|guest|attention|attn|bill to|ship to|sold to)$',
+                r'^(name|customer|client|buyer|recipient|guest|attention|attn|bill to|ship to|sold to|'
+                r'bill|sold|code|from|data|details|ship|remit)$',
                 s,
                 re.IGNORECASE,
             ):
@@ -593,6 +644,8 @@ class InvoiceExtractor:
             r'pay(?:able)?\s*to|remit\s*to)\s*[:\-]?\s*([^\n]{2,120})',
             r'(?:customer|client|buyer|recipient|guest)(?:\s*name)?\s*[:\-]?\s*([^\n]{2,120})',
             r'attn(?:ention)?\s*[:\-.]?\s*([^\n]{2,120})',
+            # Spanish/French labels
+            r'(?:cliente|comprador|destinatario|acheteur|facturer\s*[├áa])\s*[:\-]?\s*([^\n]{2,120})',
         ]
 
         for pattern in same_line_patterns:
@@ -627,11 +680,40 @@ class InvoiceExtractor:
             if email_match:
                 return email_match.group(0)
 
+        # 4) Spanish/European all-caps personal name fallback
+        # e.g. "BEATRIZ MARTIN MARTIN" or "MARTIN MARTIN BEATRIZ"
+        for ln in lines[:60]:
+            stripped = re.sub(r'\s*\([A-Z ]+\)\s*$', '', ln).strip()
+            if not re.fullmatch(r'(?:[A-Z├ü├ë├ì├ô├Ü├æ├£]{4,15})(?:\s+[A-Z├ü├ë├ì├ô├Ü├æ├£]{4,15}){1,3}', stripped):
+                continue
+            if bad_re.search(stripped):
+                continue
+            if re.search(
+                r'\b(?:TOTAL|INVOICE|FACTURA|TICKET|RECEIPT|CUSTOMER|DATA|CLIENT|BILL|'
+                r'PAYMENT|AMOUNT|DATE|NUMBER|ADDRESS|COUNTRY|CITY|PHONE|EMAIL|TAX|VAT|'
+                r'GSTIN|GST|CIN|PAN|IBAN|SWIFT|SRN|HSN|SAC|SUBTOTAL|DISCOUNT|SHIPPING|'
+                r'ORIGINAL|COPY|BALANCE|DUE|PAID|REF|QTY|DESCRIPTION)\b',
+                stripped, re.I,
+            ):
+                continue
+            return stripped
+
         return None
 
     # -------------------------------------------------------------------------
     # OCR helpers for real/translated invoice rescue
     # -------------------------------------------------------------------------
+
+    @staticmethod
+    def _post_ocr_cleanup(text: str) -> str:
+        """Clean common OCR artefacts from extracted text."""
+        # Strip trademark/copyright symbols that break name matching
+        text = re.sub(r'[┬«┬®Ôäó]+', '', text)
+        # Collapse stray single characters between words (OCR noise)
+        text = re.sub(r'(?<=\w) ([A-Za-z]) (?=\w)', r'\1', text)
+        # Common OCR confusions in name contexts (pipe ÔåÆ l)
+        text = re.sub(r'(?<=[A-Za-z])\|(?=[A-Za-z])', 'l', text)
+        return text
 
     def _file_to_image(self, file_path: str) -> Optional[Image.Image]:
         ext = Path(file_path).suffix.lower()
@@ -641,7 +723,7 @@ class InvoiceExtractor:
                 import pypdfium2 as pdfium
                 doc = pdfium.PdfDocument(file_path)
                 page = doc[0]
-                bm = page.render(scale=2.0)
+                bm = page.render(scale=3.0)
                 return bm.to_pil().convert("RGB")
             except Exception:
                 return None
@@ -667,7 +749,10 @@ class InvoiceExtractor:
             return []
 
         try:
-            data = pytesseract.image_to_data(img, output_type=pytesseract.Output.DICT)
+            data = pytesseract.image_to_data(
+                img, output_type=pytesseract.Output.DICT,
+                config='--psm 6',
+            )
         except Exception:
             return []
 
@@ -730,6 +815,9 @@ class InvoiceExtractor:
                 if not line:
                     continue
 
+                # Post-OCR cleanup
+                line = self._post_ocr_cleanup(line)
+
                 # Drop translation-banner noise
                 if re.search(
                     r'(translated from .* to .*|onlinedoc|onlinedoctranslator|translator)',
@@ -777,7 +865,7 @@ class InvoiceExtractor:
         ):
             return True
 
-        if re.fullmatch(r'[A-ZÁÉÍÓÚÜÑ ]+\((?:SPAIN|FRANCE|IRELAND|ECUADOR|GERMANY|NETHERLANDS)\)', s, re.I):
+        if re.fullmatch(r'[A-Z├ü├ë├ì├ô├Ü├£├æ ]+\((?:SPAIN|FRANCE|IRELAND|ECUADOR|GERMANY|NETHERLANDS)\)', s, re.I):
             return True
 
         return False
@@ -788,17 +876,36 @@ class InvoiceExtractor:
         s = str(val).strip()
         if len(s) < 2:
             return True
-        if re.fullmatch(r'(bill|from|vendor|seller|supplier|invoice|neon\s+sign|no\.?)', s, re.I):
+        if re.fullmatch(r'(bill|from|vendor|seller|supplier|invoice|neon\s+sign|no\.?|'
+                        r'customer|customer\s+data|data|details|code|payment\s+receipt)', s, re.I):
             return True
+        # Reject obvious address/facility fragments that aren't companies
+        if re.search(
+            r'\b(?:business\s+campus|business\s+park|industrial\s+park|shopping\s+centre|'
+            r'shopping\s+center|wholesaler|warehouse|logistics\s+centre|logistics\s+center)\b',
+            s, re.I,
+        ):
+            return True
+        # Reject 2-3 all-caps words matching the Spanish personal-name shape
+        # (these belong to recipient, not issuer)
+        if re.fullmatch(
+            r'(?:[A-Z├ü├ë├ì├ô├Ü├æ├£]{4,15})(?:\s+[A-Z├ü├ë├ì├ô├Ü├æ├£]{4,15}){1,2}',
+            s,
+        ):
+            # Only reject if no company indicator present
+            if not self._company_re.search(s):
+                return True
         if re.search(
             r'(spanish to english|english to spanish|onlinedoc|onlinedoctranslator|'
-            r'translation|translated by|^original$|^copy$|www\.|http|@)',
+            r'translation|translated by|^original$|^copy$|www\.|http|@|'
+            r'payment\s+receipt)',
             s, re.I,
         ):
             return True
         if re.fullmatch(
-            r'(united states|spain|españa|france|ecuador|ireland|germany|netherlands|'
-            r'united kingdom|uk|usa|eu|europe)',
+            r'(united states|spain|espa├▒a|france|ecuador|ireland|germany|netherlands|'
+            r'united kingdom|uk|usa|eu|europe|'
+            r'madrid|barcelona|paris|london|dublin|berlin|amsterdam|quito)',
             s, re.I,
         ):
             return True
@@ -841,7 +948,7 @@ class InvoiceExtractor:
         if s.lower() in {"bill", "paid", "code", "no"}:
             return None
 
-        if re.fullmatch(r'(united states|spain|españa|france|ecuador|ireland|germany|netherlands)', s, re.I):
+        if re.fullmatch(r'(united states|spain|espa├▒a|france|ecuador|ireland|germany|netherlands)', s, re.I):
             return None
 
         digit_ratio = sum(ch.isdigit() for ch in s) / max(len(s), 1)
@@ -914,7 +1021,7 @@ class InvoiceExtractor:
             return None
 
         anchor_re = re.compile(
-            r'(invoice|inv|factura|facture|reference|ref)\s*(?:no|number|num|n[oº°]?|#)?',
+            r'(invoice|inv|factura|facture|reference|ref|booking|confirmation|folio)\s*(?:no|number|num|n[o┬║┬░]?|id|#)?',
             re.I,
         )
 
@@ -935,6 +1042,10 @@ class InvoiceExtractor:
                 return None
             if len(s) < 3 or len(s) > 40:
                 return None
+            # Strip trailing pure-alpha words (e.g. "039-0002-486391 Leganes")
+            s = re.sub(r'\s+[A-Za-z]+$', '', s).strip()
+            if len(s) < 3:
+                return None
             return s
 
         candidates = []
@@ -944,7 +1055,7 @@ class InvoiceExtractor:
 
             # same-line anchored extraction
             m = re.search(
-                r'(?:invoice|inv|factura|facture|reference|ref)\s*(?:no|number|num|n[oº°]?|#)?\s*[:#\-]?\s*([A-Z0-9][A-Z0-9/_\-. ]{2,40})',
+                r'(?:invoice|inv|factura|facture|reference|ref|booking|confirmation|folio)\s*(?:no|number|num|n[o┬║┬░]?|id|#)?\s*[:#\-]?\s*([A-Z0-9][A-Z0-9/_\-. ]{2,40})',
                 text,
                 re.I,
             )
@@ -990,7 +1101,7 @@ class InvoiceExtractor:
 
         anchor_re = re.compile(
             r'(invoice\s*date|issue\s*date|billing\s*date|document\s*issue\s*date|'
-            r'date\s*of\s*issue|fecha|fecha\s*de\s*emisi[oó]n)',
+            r'date\s*of\s*issue|fecha|fecha\s*de\s*emisi[o├│]n)',
             re.I,
         )
 
@@ -1017,8 +1128,8 @@ class InvoiceExtractor:
 
         anchor_re = re.compile(
             r'(due\s*date|payment\s*due|pay(?:ment)?\s*by|valid\s*until|expiry|'
-            r'maturity|vencimiento|fecha\s*l[ií]mite|fecha\s*de\s*vencimiento|'
-            r'ech[eé]ance|date\s*d[\' ]ech[eé]ance)',
+            r'maturity|vencimiento|fecha\s*l[i├¡]mite|fecha\s*de\s*vencimiento|'
+            r'ech[e├®]ance|date\s*d[\' ]ech[e├®]ance)',
             re.I,
         )
 
@@ -1064,7 +1175,7 @@ class InvoiceExtractor:
         )
 
         def extract_amounts(s: str) -> List[float]:
-            vals = re.findall(r'(?:[$€£¥]\s*)?\d[\d.,]{0,20}\d', s, flags=re.I)
+            vals = re.findall(r'(?:[$Ôé¼┬ú┬Ñ]\s*)?\d[\d.,]{0,20}\d', s, flags=re.I)
             out = []
             for v in vals:
                 n = _normalise_amount(v)
@@ -1121,7 +1232,7 @@ class InvoiceExtractor:
                     continue
                 # Only match numbers that look like money: digits.2digits
                 # \b on left prevents matching tail of longer reference numbers
-                for raw in re.findall(r'(?<!\d)(?:[$€£¥]\s*)?\d{1,6}[.,]\d{2}(?!\d)', text):
+                for raw in re.findall(r'(?<!\d)(?:[$Ôé¼┬ú┬Ñ]\s*)?\d{1,6}[.,]\d{2}(?!\d)', text):
                     n = _normalise_amount(raw)
                     if n:
                         try:
@@ -1146,7 +1257,7 @@ class InvoiceExtractor:
             r'(bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
             r'customer(?:\s*name)?|customer\s*data|client(?:\s*name)?|buyer(?:\s*name)?|'
             r'recipient(?:\s*name)?|guest(?:\s*name)?|invoice\s*recipient|attn(?:ention)?|'
-            r'cliente|comprador|destinatario|facturer\s*[àa]|acheteur|guest\s*name)',
+            r'cliente|comprador|destinatario|facturer\s*[├áa]|acheteur|guest\s*name)',
             re.IGNORECASE,
         )
 
@@ -1154,7 +1265,7 @@ class InvoiceExtractor:
             r'^(?:bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|billed\s*to|'
             r'customer(?:\s*name)?|customer\s*data|client(?:\s*name)?|buyer(?:\s*name)?|'
             r'recipient(?:\s*name)?|guest(?:\s*name)?|invoice\s*recipient|attn(?:ention)?|'
-            r'cliente|comprador|destinatario|facturer\s*[àa]|acheteur|guest\s*name)\s*[:\-]?\s*',
+            r'cliente|comprador|destinatario|facturer\s*[├áa]|acheteur|guest\s*name)\s*[:\-]?\s*',
             re.IGNORECASE,
         )
 
@@ -1162,6 +1273,7 @@ class InvoiceExtractor:
             r'\b(invoice|date|due|subtotal|total|amount|balance|vat|tax|'
             r'supplier code|badge|hotel details|check in|check out|room|'
             r'bank|swift|iban|gst|nif|cif|data|details|phone|telephone|tel|fax|www\.|http|'
+            r'method of payment|payment method|'
             r'customer service)\b',
             re.IGNORECASE,
         )
@@ -1182,9 +1294,11 @@ class InvoiceExtractor:
                 return None
             if re.search(r'\bcustomer\b$', s, re.I):
                 return None
+            if re.fullmatch(r'(bill|code|sold|from|ship|remit|name)', s, re.I):
+                return None
             if len(s) < 2 or len(s) > 80:
                 return None
-            if re.fullmatch(r'[A-ZÁÉÍÓÚÜÑ ]+\((?:SPAIN|FRANCE|IRELAND|ECUADOR|GERMANY|NETHERLANDS)\)', s, re.I):
+            if re.fullmatch(r'[A-Z├ü├ë├ì├ô├Ü├£├æ ]+\((?:SPAIN|FRANCE|IRELAND|ECUADOR|GERMANY|NETHERLANDS)\)', s, re.I):
                 return None
 
             return s
@@ -1203,6 +1317,34 @@ class InvoiceExtractor:
                 cand = clean(str(nxt["text"]))
                 if cand:
                     return cand
+
+        # 1b) Spanish/European all-caps personal name pattern
+        # Matches lines like "BEATRIZ MARTIN MARTIN" or "MARTIN MARTIN BEATRIZ"
+        # across top 60% of the page, without needing an anchor label.
+        max_top_f = max(int(r["top"]) for r in rows) if rows else 0
+        for row in rows[:40]:
+            top = int(row["top"])
+            if top > max_top_f * 0.60:
+                continue
+            text = str(row["text"]).strip()
+            # Strip trailing parenthetical like "(SPAIN)"
+            stripped = re.sub(r'\s*\([A-Z ]+\)\s*$', '', text).strip()
+            # Must be 2-4 all-caps words, each 4-15 chars, no digits, ASCII+Spanish
+            if not re.fullmatch(r'(?:[A-Z├ü├ë├ì├ô├Ü├æ├£]{4,15})(?:\s+[A-Z├ü├ë├ì├ô├Ü├æ├£]{4,15}){1,3}', stripped):
+                continue
+            if bad_re.search(stripped):
+                continue
+            if self._is_strong_company_candidate(stripped):
+                continue
+            if re.search(
+                r'\b(?:TOTAL|INVOICE|FACTURA|TICKET|RECEIPT|CUSTOMER|DATA|CLIENT|BILL|'
+                r'PAYMENT|AMOUNT|DATE|NUMBER|ADDRESS|COUNTRY|CITY|PHONE|EMAIL|TAX|VAT|'
+                r'GSTIN|GST|CIN|PAN|IBAN|SWIFT|SRN|HSN|SAC|SUBTOTAL|DISCOUNT|SHIPPING|'
+                r'ORIGINAL|COPY|TOTAL|BALANCE|DUE|PAID|REF|QTY|DESCRIPTION)\b',
+                stripped, re.I,
+            ):
+                continue
+            return stripped
 
         # 2) unlabeled fallback, but only for name-like lines in upper half,
         # and avoid obvious company/header lines
@@ -1412,7 +1554,7 @@ class InvoiceExtractor:
         # recipient rescue
         if self._looks_bad_recipient(result["recipient_name"]):
             cand = self._extract_recipient_name_ocr(file_path)
-            if cand:
+            if cand and not self._looks_bad_recipient(cand):
                 result["recipient_name"] = cand
 
         # issuer rescue: only replace when regex issuer is bad OR OCR candidate is clearly stronger
@@ -1423,28 +1565,62 @@ class InvoiceExtractor:
             elif self._is_strong_company_candidate(cand) and not self._is_strong_company_candidate(result["issuer_name"]):
                 result["issuer_name"] = cand
 
-        # Clean leading single-char junk from issuer (e.g. "F LEROY MERLIN" → "LEROY MERLIN")
+        # Clean leading single-char junk from issuer (e.g. "F LEROY MERLIN" ÔåÆ "LEROY MERLIN")
         if result["issuer_name"]:
             result["issuer_name"] = self._strip_issuer_prefix_junk(result["issuer_name"])
 
-        # ── NER rescue (last resort) ─────────────────────────────────────────
+        # ÔöÇÔöÇ NER rescue (last resort) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
         # Use spaCy transformer NER to recover issuer and recipient when
         # OCR+regex still have bad values. Only fires when needed.
         if self._looks_bad_issuer(result["issuer_name"]) or \
            self._looks_bad_recipient(result["recipient_name"]):
             result = self._ner_rescue(invoice_text, result)
 
+        # ÔöÇÔöÇ Email-domain fallback for issuer (last resort) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+        # If issuer is still missing/bad and a non-generic email is present,
+        # use the second-level domain as the company name (uppercased).
+        # Skips generic providers (gmail, hotmail, etc.) and skips emails
+        # on lines containing recipient anchors (Bill to:, Ship to:, etc.).
+        if self._looks_bad_issuer(result["issuer_name"]):
+            recipient_anchor_re = re.compile(
+                r'\b(bill(?:ed)?\s*to|sold\s*to|ship\s*to|invoice\s*to|'
+                r'customer|client|recipient|attn|delivery\s*address)\b',
+                re.IGNORECASE,
+            )
+            generic = {
+                'gmail', 'hotmail', 'yahoo', 'outlook', 'icloud',
+                'live', 'aol', 'mail', 'protonmail', 'msn', 'me',
+                'gmx', 'inbox', 'fastmail', 'zoho',
+            }
+            for line in invoice_text.splitlines()[:25]:
+                if recipient_anchor_re.search(line):
+                    continue
+                email_m = re.search(r'[\w\.-]+@([\w-]+)\.[\w\.-]+', line)
+                if not email_m:
+                    continue
+                domain = email_m.group(1).lower()
+                if domain in generic or len(domain) < 3:
+                    continue
+                result["issuer_name"] = domain.upper()
+                break
+
+        # Final cleanup: null out values that are still bad after all rescues
+        if self._looks_bad_issuer(result["issuer_name"]):
+            result["issuer_name"] = None
+        if self._looks_bad_recipient(result["recipient_name"]):
+            result["recipient_name"] = None
+
         return result
 
     def _strip_issuer_prefix_junk(self, s: str) -> str:
-        """Remove leading single-char OCR artefacts: 'F LEROY MERLIN' → 'LEROY MERLIN'."""
+        """Remove leading single-char OCR artefacts: 'F LEROY MERLIN' ÔåÆ 'LEROY MERLIN'."""
         if not s:
             return s
         # Leading single letter followed by space + capitalised word
         cleaned = re.sub(r"^[A-Za-z]\s+(?=[A-Z])", "", s).strip()
         # Leading punctuation artefacts like "'Adobe..."
         cleaned = re.sub(r"^['\"`]+", "", cleaned).strip()
-        # "Invoice TRANRILOCAR CIA" → "TRANRILOCAR CIA"
+        # "Invoice TRANRILOCAR CIA" ÔåÆ "TRANRILOCAR CIA"
         cleaned = re.sub(
             r'^(?:invoice|tax\s+invoice|bill|receipt)\s+',
             '', cleaned, flags=re.IGNORECASE
@@ -1454,10 +1630,10 @@ class InvoiceExtractor:
     def _ner_rescue(self, text: str, result: Dict) -> Dict:
         """
         Use spaCy NER to recover issuer and recipient from the document text.
-        - Multilingual model (xx_ent_wiki_sm) for ORG → issuer (handles Spanish company names)
-        - English transformer (en_core_web_trf) for PERSON → recipient (better for English names)
+        - Multilingual model (xx_ent_wiki_sm) for ORG ÔåÆ issuer (handles Spanish company names)
+        - English transformer (en_core_web_trf) for PERSON ÔåÆ recipient (better for English names)
         """
-        snippet = text[:1500]
+        snippet = text[:2500]
 
         # Find where recipient block starts
         bill_pos = len(snippet)
@@ -1467,6 +1643,19 @@ class InvoiceExtractor:
         )
         if anchor_m:
             bill_pos = anchor_m.start()
+
+        def rank_org(pos: int, val: str) -> int:
+            """Higher = better issuer candidate."""
+            score = 0
+            if self._company_re.search(val):
+                score += 10
+            if 4 <= len(val) <= 60:
+                score += 2
+            if len(val.split()) <= 5:
+                score += 1
+            # Prefer earlier position (up to 20 points for position 0)
+            score += max(0, 20 - int(pos / 50))
+            return score
 
         # --- Issuer rescue with multilingual model ---
         if self._looks_bad_issuer(result["issuer_name"]):
@@ -1482,7 +1671,29 @@ class InvoiceExtractor:
                 ]
                 pre_bill_orgs = [(p, v) for p, v in orgs if p < bill_pos]
                 if pre_bill_orgs:
+                    pre_bill_orgs.sort(key=lambda x: -rank_org(x[0], x[1]))
                     result["issuer_name"] = pre_bill_orgs[0][1]
+                elif orgs:
+                    # Fall back to any ORG ranked by suffix match
+                    orgs.sort(key=lambda x: -rank_org(x[0], x[1]))
+                    result["issuer_name"] = orgs[0][1]
+
+        # --- Second-pass issuer rescue: scan larger window + OCR text ---
+        if self._looks_bad_issuer(result["issuer_name"]):
+            nlp_multi = _get_nlp_multi()
+            if nlp_multi:
+                big_snippet = text[:6000]
+                doc = nlp_multi(big_snippet)
+                orgs2 = [
+                    (e.start_char, e.text.strip())
+                    for e in doc.ents
+                    if e.label_ == "ORG"
+                    and not self._looks_bad_issuer(e.text.strip())
+                    and self._company_re.search(e.text.strip())
+                ]
+                if orgs2:
+                    orgs2.sort(key=lambda x: -rank_org(x[0], x[1]))
+                    result["issuer_name"] = orgs2[0][1]
 
         # --- Recipient rescue with English model ---
         if self._looks_bad_recipient(result["recipient_name"]):
@@ -1544,7 +1755,7 @@ def main():
     if output_file:
         with open(output_file, "w") as f:
             f.write(output)
-        print(f"\n✓ Saved to {output_file}", file=sys.stderr)
+        print(f"\nÔ£ô Saved to {output_file}", file=sys.stderr)
 
 
 if __name__ == "__main__":
