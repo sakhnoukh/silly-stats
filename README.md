@@ -336,10 +336,8 @@ Remaining weak spots in real-world invoices:
 - **Due date (20%)** — field is genuinely absent in most real invoices in this set
 - **Issuer on noisy/translated documents** — OCR font misreads (OUIGO O→Q, Carrefour truncation)
 - **Subtotal vs final total confusion** on some receipts and unlabeled layouts
-- **Upstream misclassification** — some invoice-like documents classified as receipt by Phase 2, blocking extraction entirely
+- **Upstream misclassification** — one invoice-like documents classified as receipt by Phase 2s
 - **Spanish last-first name format** — not reliably recognized as PERSON by English NER model
-
-Full failure analysis in `CURRENT_STATUS.md`.
 
 ---
 
