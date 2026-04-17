@@ -93,9 +93,9 @@ Input Document (PDF/Image)
 
 | Test set | Files | Score | Accuracy |
 |---|---|---|---|
-| `tests/invoices/` (synthetic) | 19 | 103/114 | 90.4% |
+| `tests/invoices/` (synthetic) | 19 | 101/114 | 88.6% |
 | `tests/invoices_ocr/` (degraded PNG) | 7 | 38/42 | 90.5% |
-| `tests/invoices_real/` (real-world) | 14 | 45/68 | 66.2% |
+| `tests/invoices_real/` (real-world) | 14 | 52/73 | 71.2% |
 
 Unit tests: 77/77 passing
 
@@ -340,17 +340,6 @@ Remaining weak spots in real-world invoices:
 - **Spanish last-first name format** — not reliably recognized as PERSON by English NER model
 
 Full failure analysis in `CURRENT_STATUS.md`.
-
----
-
-## Future Improvement Directions
-
-| Target | Approach | Effort |
-|---|---|---|
-| Fix Spanish name recipient | Fine-tune spaCy NER on ~15 annotated examples | 2–3 hrs, no GPU |
-| Fix OCR font misreads | Swap Tesseract → DocTR or PaddleOCR | Half day |
-| Recover misclassified invoices | Add hard negatives to Phase 2 training | 1 hr |
-| Push beyond 75% on real invoices | Fine-tune LayoutLMv3 on annotated bounding-box data | Full day, GPU |
 
 ---
 
