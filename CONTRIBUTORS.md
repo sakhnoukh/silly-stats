@@ -76,12 +76,15 @@ This document details the contributions of each team member across the five phas
 **Owners:** Bea (beamartin27) & Salmane (salmanemhb)
 
 **Bea:**
-- "phase 3: add exploration script and extraction skeleton" — Initial setup & exploration
-- "Add working Phase 3 invoice extraction baseline" — Baseline regex-based extraction
-- "Template results" — Template-based extraction method
-- "Invoice feature extraction 4 models + results" — Feature extraction & 4 model variants
-- "Automated labeling implementation and results" — Candidate labeling pipeline
-- Handled diverse invoice formats and layouts
+- Built the Phase 3 extraction baseline and evolved it into stronger extractor versions (up to `extract_invoice_fields_v5.py`)
+- Improved regex/rule-based extraction for the 6 target invoice fields
+- Added OCR-based rescue for difficult real invoices
+- Built and evaluated a real-world benchmark set using manually labeled real + translated invoices:
+  - `tests/invoices_real/`
+  - `tests/ground_truth_real6.json`
+- Ran detailed extractor comparisons across multiple test regimes
+- Implemented and tested the FATURA line-based extraction pipeline
+- Compared regex, OCR-rescue, and line-classification approaches and selected the strongest practical extractor version for integration into the pipeline
 
 **Salmane:**
 - "Phase 3 complete: gold dataset, ML rankers trained, extraction pipeline, method evaluation" — Built gold dataset for evaluation, trained ML-based rankers, evaluated all extraction methods
@@ -353,7 +356,7 @@ git log --grep="Phase [1-5]"
 - ✅ 6 invoice fields extracted reliably
 - ✅ End-to-end working system with web UI
 - ✅ Comprehensive documentation
-- ✅ No generative AI (pure classical ML)
+- ✅ No generative AI (rule-based extraction, OCR, and discriminative ML only)
 - ✅ Ready for production use or academic presentation
 
 ---
