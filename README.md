@@ -51,6 +51,8 @@ Phase 3 is a **hybrid extractor**, not just regex:
 
 Historical extractor versions (`v0`–`v4`) are kept in the repo as baselines / checkpoints. The FATURA line-classification pipeline is also kept as an experimental track, but is **not** the selected production extractor.
 
+> To check **extraction evaluation comparison accross versions** refer to results/`extraction_comparison_summary.csv`
+
 ---
 
 ## Architecture
