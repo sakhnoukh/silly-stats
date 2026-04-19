@@ -1,0 +1,58 @@
+{
+  "ocr_invoice_1_clean.png": {
+    "invoice_number": "SC-2024-112",
+    "invoice_date": "2024-10-08",
+    "due_date": "2024-11-07",
+    "issuer_name": "Sarah Chen Consulting",
+    "recipient_name": "Greenfield Media Group",
+    "total_amount": "8550.00"
+  },
+  "ocr_invoice_2_construction.png": {
+    "invoice_number": "RSC-2024-0089",
+    "invoice_date": "2024-03-14",
+    "due_date": "2024-04-13",
+    "issuer_name": "Ridge & Stone Construction LLC",
+    "recipient_name": "Cascade Property Holdings",
+    "total_amount": "70300.00"
+  },
+  "ocr_invoice_3_uk.png": {
+    "invoice_number": "BWA-2024-1142",
+    "invoice_date": "2024-11-08",
+    "due_date": "2024-12-08",
+    "issuer_name": "Blackwood Advisory Services Ltd",
+    "recipient_name": "Thornton Capital Partners",
+    "total_amount": "26582.40"
+  },
+  "ocr_invoice_4_rental.png": {
+    "invoice_number": "RPM-2024-0345",
+    "invoice_date": "2024-02-01",
+    "due_date": "2024-02-10",
+    "issuer_name": "Redwood Property Management",
+    "recipient_name": "Pacific Rim Logistics Inc.",
+    "total_amount": "9554.50"
+  },
+  "ocr_invoice_5_typewriter.png": {
+    "invoice_number": "IGW-2024-0033",
+    "invoice_date": "2024-06-28",
+    "due_date": "2024-07-28",
+    "issuer_name": "Iron Gate Welding & Fabrication",
+    "recipient_name": "Capital Industrial Partners",
+    "total_amount": "6310.00"
+  },
+  "ocr_invoice_6_degraded.png": {
+    "invoice_number": "OP-2024-037",
+    "invoice_date": "2024-07-05",
+    "due_date": "2024-08-04",
+    "issuer_name": "Olivia Park",
+    "recipient_name": "Whitmore & Cole Publishing",
+    "total_amount": "7830.00"
+  },
+  "ocr_invoice_7_degraded.png": {
+    "invoice_number": "BCC-2024-0178",
+    "invoice_date": "2024-05-18",
+    "due_date": "2024-06-17",
+    "issuer_name": "Bella Cucina Catering",
+    "recipient_name": "Hartley & Fox Events LLC",
+    "total_amount": "23710.92"
+  }
+}
