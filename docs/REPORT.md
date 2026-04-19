@@ -77,6 +77,8 @@ The classification stage is based on **classical machine learning over TF-IDF fe
 
 The classification stage is important because it determines whether invoice extraction will run at all. One practical weakness observed during development is that invoice-like documents that resemble receipts can be misclassified upstream, which then blocks Phase 3 extraction.
 
+> Note: Current integrated pipeline loads `best_model.pkl`, documented as LogisticRegression (Baseline). Although held-out test metrics are currently 100%, the split is only stratified by label and does not control for template/source similarity, so classification performance is likely overestimated.
+
 ---
 
 ## 4. Phase 3 — Evolution of the Invoice Extraction Approach
@@ -352,6 +354,7 @@ Important scripts for reproducing the final workflow:
 - `scripts/evaluate_pipeline.py` — benchmark extractor versions
 - `scripts/show_eval_failures.py` — inspect per-field and per-file failures
 - `scripts/extract_invoice_fields_v5.py` — final selected extractor
+- `scripts/compare_extractors.py` — version comparison
 - `docs/v5_improvements.md` — detailed v5 change log and benchmark summary
 
 Experimental / historical extraction paths retained in the repository:
