@@ -392,7 +392,7 @@ class InvoiceExtractor:
     # 6. Main extract() entry point
     # -------------------------------------------------------------------------
 
-    def extract(self, invoice_text: str) -> Dict:
+    def extract(self, invoice_text: str, file_path: Optional[str] = None, **kwargs) -> Dict:
         """Extract all six fields from invoice text."""
         inv_date, due_date = self.extract_dates(invoice_text)
         return {

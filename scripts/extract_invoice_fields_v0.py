@@ -207,7 +207,7 @@ class InvoiceExtractor:
                     return name
         return None
 
-    def extract(self, invoice_text: str) -> Dict:
+    def extract(self, invoice_text: str, file_path: Optional[str] = None, **kwargs) -> Dict:
         """Extract all fields from invoice text."""
         return {
             "invoice_number": self.extract_invoice_number(invoice_text),
