@@ -2,6 +2,8 @@
 
 A complete **non-generative** document pipeline that classifies documents into 4 categories (**Invoice**, **Receipt**, **Email**, **Contract**) and extracts structured fields from invoices using **classical ML, OCR, rule-based extraction, and discriminative NLP/NER rescue**.
 
+> This is a high level summary + runninng guide, to see the detailed project report, check under docs/`REPORT.md`
+
 ---
 
 ## Project Overview
@@ -48,18 +50,6 @@ Phase 3 is a **hybrid extractor**, not just regex:
 - **Post-processing and bad-value filtering** for noisy real-world documents
 
 Historical extractor versions (`v0`–`v4`) are kept in the repo as baselines / checkpoints. The FATURA line-classification pipeline is also kept as an experimental track, but is **not** the selected production extractor.
-
----
-
-## Project Status
-
-| Phase | Description | Owner(s) | Status |
-|---|---|---|---|
-| **Phase 1** | Data Collection & Preprocessing | Sami | ✅ Complete |
-| **Phase 2** | Document Classification | Sofia | ✅ Complete |
-| **Phase 3** | Invoice Field Extraction | Bea & Salmane | ✅ Complete |
-| **Phase 4** | Pipeline Integration & Demo | Matthew | ✅ Complete |
-| **Phase 5** | Documentation & Presentation | Niko | ✅ Complete |
 
 ---
 
@@ -273,7 +263,9 @@ silly-stats/
 │   ├── data_modeling.md
 │   ├── dataset_report.md
 │   ├── exploration_findings.md
-│   └── v5_improvements.md
+│   ├── v5_improvements.md
+|   ├── CONTRIBUTORS.md
+|   └── REPORT.md
 │
 ├── models/
 │   ├── best_model.pkl
@@ -343,4 +335,4 @@ Remaining weak spots in real-world invoices:
 
 ## Team & Contributions
 
-See `CONTRIBUTORS.md` for phase assignments and contribution details.
+See docs/`CONTRIBUTORS.md` for phase assignments and contribution details.
